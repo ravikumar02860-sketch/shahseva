@@ -1,0 +1,73 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ===============================================================
+    // Assumed Data Model
+    // ===============================================================
+    //
+    // Collection: campaigns
+    // Fields:
+    //   - title: string (required)
+    //   - description: string (optional)
+    //   - active: boolean (required)
+    //   - createdAt: timestamp (required)
+    //
+    // Collection: donors
+    // Fields:
+    //   - name: string (required, < 100 chars)
+    //   - phone: string (required, < 20 chars)
+    //   - email: string (optional, < 100 chars)
+    //   - amount: number (required, > 0)
+    //   - campaignId: string (optional)
+    //   - timestamp: timestamp (required)
+    //   - emailedInBatch: boolean (required)
+    //
+    // ===============================================================
+
+    // Helper Functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isAuthenticated() &&
+        (request.auth.token.email == "ravikumar02860@gmail.com" && request.auth.token.email_verified == true);
+    }
+
+    function isValidCampaign(data) {
+      return data.keys().hasAll(['title', 'active', 'createdAt']) &&
+             data.title is string && data.title.size() < 200 &&
+             data.active is bool &&
+             data.createdAt is timestamp;
+    }
+
+    function isValidDonor(data) {
+      return data.keys().hasAll(['name', 'phone', 'amount', 'timestamp', 'emailedInBatch']) &&
+             data.name is string && data.name.size() < 100 &&
+             data.phone is string && data.phone.size() < 20 &&
+             (data.amount is number || data.amount is int) && data.amount > 0 &&
+             data.timestamp is timestamp &&
+             data.emailedInBatch is bool &&
+             (!('email' in data) || (data.email is string && data.email.size() < 100)) &&
+             (!('campaignId' in data) || (data.campaignId is string || data.campaignId == null));
+    }
+
+    // Default deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Campaigns
+    match /campaigns/{campaignId} {
+      allow read: if true; // Publicly readable
+      allow create, update, delete: if isAdmin() && isValidCampaign(request.resource.data);
+    }
+
+    // Donors
+    match /donors/{donorId} {
+      allow read: if isAdmin(); // Only admins can read donor lists
+      allow create: if isValidDonor(request.resource.data); // Anyone can record a donation
+      allow update, delete: if isAdmin(); // Only admins can modify/delete
+    }
+  }
+}

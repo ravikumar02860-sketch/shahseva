@@ -4,8 +4,41 @@ import { CreditCard, Smartphone, QrCode, CheckCircle2, Copy, Heart } from 'lucid
 import { cn } from '../utils/cn';
 import { useLanguage } from '../LanguageContext';
 import SEO from '../components/SEO';
+import { db, collection, addDoc, getDocs, query, where, orderBy, Timestamp, auth } from '../firebase';
 
 const amounts = [500, 1000, 5000];
+
+enum OperationType {
+  CREATE = 'create',
+  UPDATE = 'update',
+  DELETE = 'delete',
+  LIST = 'list',
+  GET = 'get',
+  WRITE = 'write',
+}
+
+interface FirestoreErrorInfo {
+  error: string;
+  operationType: OperationType;
+  path: string | null;
+  authInfo: any;
+}
+
+function handleFirestoreError(error: unknown, operationType: OperationType, path: string | null) {
+  const errInfo: FirestoreErrorInfo = {
+    error: error instanceof Error ? error.message : String(error),
+    authInfo: {
+      userId: auth.currentUser?.uid,
+      email: auth.currentUser?.email,
+      emailVerified: auth.currentUser?.emailVerified,
+      isAnonymous: auth.currentUser?.isAnonymous,
+    },
+    operationType,
+    path
+  };
+  console.error('Firestore Error: ', JSON.stringify(errInfo));
+  throw new Error(JSON.stringify(errInfo));
+}
 
 export default function DonationPage() {
   const { t } = useLanguage();
@@ -22,10 +55,19 @@ export default function DonationPage() {
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
-    fetch('/api/campaigns')
-      .then(res => res.json())
-      .then(data => setCampaigns(data))
-      .catch(err => console.error('Failed to fetch campaigns', err));
+    const fetchCampaigns = async () => {
+      const path = 'campaigns';
+      try {
+        const q = query(collection(db, path), where('active', '==', true), orderBy('createdAt', 'desc'));
+        const querySnapshot = await getDocs(q);
+        const campaignsData = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        setCampaigns(campaignsData);
+      } catch (err) {
+        console.error('Failed to fetch campaigns', err);
+        // handleFirestoreError(err, OperationType.LIST, path); // Don't crash on initial load if possible
+      }
+    };
+    fetchCampaigns();
   }, []);
 
   const upiId = "6350489219.eazypay@icici";
@@ -40,21 +82,23 @@ export default function DonationPage() {
     }
 
     setLoading(true);
+    const path = 'donors';
     try {
-      const response = await fetch('/api/donate', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, phone, email, amount, campaignId }),
+      // Record donation in Firestore
+      await addDoc(collection(db, path), {
+        name,
+        phone,
+        email: email || null,
+        amount: Number(amount),
+        campaignId: campaignId || null,
+        timestamp: Timestamp.now(),
+        emailedInBatch: false
       });
 
-      if (response.ok) {
-        setShowQR(true);
-      } else {
-        alert("Something went wrong. Please try again.");
-      }
+      setShowQR(true);
     } catch (error) {
       console.error("Error submitting donation:", error);
-      alert("Error connecting to server.");
+      handleFirestoreError(error, OperationType.CREATE, path);
     } finally {
       setLoading(false);
     }
@@ -66,20 +110,10 @@ export default function DonationPage() {
     // Simulate a verification delay to make it feel more real
     await new Promise(resolve => setTimeout(resolve, 2000));
 
-    try {
-      await fetch('/api/confirm-payment', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, phone, amount, campaignId }),
-      });
-      setPaymentFinished(true);
-    } catch (error) {
-      console.error("Error sending confirmation SMS:", error);
-      // Still show success to user even if SMS fails, as it's a secondary action
-      setPaymentFinished(true);
-    } finally {
-      setVerifying(false);
-    }
+    // In a real app, we might trigger a serverless function here to send SMS/Email
+    // For now, we just mark it as finished on the client side
+    setPaymentFinished(true);
+    setVerifying(false);
   };
 
   const handleCopy = () => {

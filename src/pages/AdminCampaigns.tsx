@@ -1,15 +1,48 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { Plus, Trash2, Megaphone, CheckCircle2, AlertCircle, Image as ImageIcon } from 'lucide-react';
+import { Plus, Trash2, Megaphone, CheckCircle2, AlertCircle, Image as ImageIcon, LogIn, LogOut } from 'lucide-react';
 import { cn } from '../utils/cn';
+import { db, collection, addDoc, getDocs, query, where, orderBy, Timestamp, auth, signInWithPopup, GoogleAuthProvider, doc, updateDoc, onSnapshot } from '../firebase';
 
 interface Campaign {
-  id: number;
+  id: string;
   title: string;
   description: string;
-  active: number;
-  created_at: string;
+  active: boolean;
+  createdAt: any;
+}
+
+enum OperationType {
+  CREATE = 'create',
+  UPDATE = 'update',
+  DELETE = 'delete',
+  LIST = 'list',
+  GET = 'get',
+  WRITE = 'write',
+}
+
+interface FirestoreErrorInfo {
+  error: string;
+  operationType: OperationType;
+  path: string | null;
+  authInfo: any;
+}
+
+function handleFirestoreError(error: unknown, operationType: OperationType, path: string | null) {
+  const errInfo: FirestoreErrorInfo = {
+    error: error instanceof Error ? error.message : String(error),
+    authInfo: {
+      userId: auth.currentUser?.uid,
+      email: auth.currentUser?.email,
+      emailVerified: auth.currentUser?.emailVerified,
+      isAnonymous: auth.currentUser?.isAnonymous,
+    },
+    operationType,
+    path
+  };
+  console.error('Firestore Error: ', JSON.stringify(errInfo));
+  throw new Error(JSON.stringify(errInfo));
 }
 
 export default function AdminCampaigns() {
@@ -18,60 +51,123 @@ export default function AdminCampaigns() {
   const [description, setDescription] = useState('');
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null);
+  const [user, setUser] = useState<any>(null);
+  const [authReady, setAuthReady] = useState(false);
 
   useEffect(() => {
-    fetchCampaigns();
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      setUser(user);
+      setAuthReady(true);
+    });
+    return () => unsubscribe();
   }, []);
 
-  const fetchCampaigns = async () => {
+  useEffect(() => {
+    if (!user) {
+      setCampaigns([]);
+      return;
+    }
+
+    const path = 'campaigns';
+    const q = query(collection(db, path), where('active', '==', true), orderBy('createdAt', 'desc'));
+    
+    const unsubscribe = onSnapshot(q, (snapshot) => {
+      const campaignsData = snapshot.docs.map(doc => ({ 
+        id: doc.id, 
+        ...doc.data() 
+      } as Campaign));
+      setCampaigns(campaignsData);
+    }, (error) => {
+      console.error('Failed to fetch campaigns', error);
+      // handleFirestoreError(error, OperationType.LIST, path);
+    });
+
+    return () => unsubscribe();
+  }, [user]);
+
+  const handleLogin = async () => {
+    const provider = new GoogleAuthProvider();
     try {
-      const res = await fetch('/api/campaigns');
-      const data = await res.json();
-      setCampaigns(data);
-    } catch (err) {
-      console.error('Failed to fetch campaigns', err);
+      await signInWithPopup(auth, provider);
+    } catch (error) {
+      console.error("Login failed", error);
+      alert("Login failed. Please try again.");
     }
   };
 
+  const handleLogout = () => auth.signOut();
+
   const handleCreate = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!user) return;
+    
     setLoading(true);
     setMessage(null);
 
+    const path = 'campaigns';
     try {
-      const res = await fetch('/api/campaigns', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ title, description }),
+      await addDoc(collection(db, path), {
+        title,
+        description,
+        active: true,
+        createdAt: Timestamp.now(),
+        createdBy: user.uid
       });
 
-      if (res.ok) {
-        setTitle('');
-        setDescription('');
-        setMessage({ type: 'success', text: 'Campaign created successfully!' });
-        fetchCampaigns();
-      } else {
-        setMessage({ type: 'error', text: 'Failed to create campaign.' });
-      }
+      setTitle('');
+      setDescription('');
+      setMessage({ type: 'success', text: 'Campaign created successfully!' });
     } catch (err) {
-      setMessage({ type: 'error', text: 'Error connecting to server.' });
+      console.error("Error creating campaign:", err);
+      handleFirestoreError(err, OperationType.CREATE, path);
     } finally {
       setLoading(false);
     }
   };
 
-  const handleDelete = async (id: number) => {
-    if (!confirm('Are you sure you want to deactivate this campaign?')) return;
+  const handleDelete = async (id: string) => {
+    if (!user) return;
+    if (!window.confirm('Are you sure you want to deactivate this campaign?')) return;
 
+    const path = `campaigns/${id}`;
     try {
-      const res = await fetch(`/api/campaigns/${id}`, { method: 'DELETE' });
-      if (res.ok) {
-        fetchCampaigns();
-      }
+      await updateDoc(doc(db, 'campaigns', id), {
+        active: false
+      });
     } catch (err) {
       console.error('Failed to delete campaign', err);
+      handleFirestoreError(err, OperationType.UPDATE, path);
     }
   };
+
+  if (!authReady) {
+    return (
+      <div className="pt-32 pb-24 px-6 bg-slate-50 min-h-screen flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+      </div>
+    );
+  }
+
+  if (!user) {
+    return (
+      <div className="pt-32 pb-24 px-6 bg-slate-50 min-h-screen flex items-center justify-center">
+        <div className="max-w-md w-full bg-white p-8 rounded-3xl shadow-xl text-center">
+          <div className="w-16 h-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <Megaphone size={32} />
+          </div>
+          <h1 className="text-2xl font-serif font-bold text-primary mb-2">Admin Access</h1>
+          <p className="text-slate-500 mb-8">Please sign in with your admin account to manage campaigns.</p>
+          <button 
+            onClick={handleLogin}
+            className="btn-primary w-full flex items-center justify-center gap-2"
+          >
+            <LogIn size={20} />
+            Sign in with Google
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="pt-32 pb-24 px-6 bg-slate-50 min-h-screen">
@@ -83,16 +179,25 @@ export default function AdminCampaigns() {
             </div>
             <div>
               <h1 className="text-3xl font-serif font-bold text-primary">Manage Campaigns</h1>
-              <p className="text-slate-500">Create and manage your donation drives</p>
+              <p className="text-slate-500">Welcome, {user.displayName || 'Admin'}</p>
             </div>
           </div>
-          <Link 
-            to="/admin/generate-images"
-            className="btn-outline btn-sm group"
-          >
-            <ImageIcon size={18} className="text-accent group-hover:text-primary transition-colors" />
-            Image Generator
-          </Link>
+          <div className="flex items-center gap-3">
+            <Link 
+              to="/admin/generate-images"
+              className="btn-outline btn-sm group"
+            >
+              <ImageIcon size={18} className="text-accent group-hover:text-primary transition-colors" />
+              Image Generator
+            </Link>
+            <button 
+              onClick={handleLogout}
+              className="p-2 text-slate-400 hover:text-rose-500 hover:bg-rose-50 rounded-lg transition-all"
+              title="Sign Out"
+            >
+              <LogOut size={20} />
+            </button>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

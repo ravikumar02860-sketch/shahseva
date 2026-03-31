@@ -27,36 +27,40 @@ function ScrollToTop() {
   return null;
 }
 
+import ErrorBoundary from './components/ErrorBoundary';
+
 export default function App() {
   return (
-    <HelmetProvider>
-      <LanguageProvider>
-        <Router>
-          <SEO />
-          <ScrollToTop />
-          <div className="min-h-screen flex flex-col">
-            <Header />
-            <main className="flex-grow">
-              <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/about" element={<AboutPage />} />
-                <Route path="/work" element={<WorkPage />} />
-                <Route path="/donate" element={<DonationPage />} />
-                <Route path="/impact" element={<ImpactPage />} />
-                <Route path="/gallery" element={<GalleryPage />} />
-                <Route path="/contact" element={<ContactPage />} />
-                <Route path="/privacy" element={<PrivacyPolicy />} />
-                <Route path="/terms" element={<Terms />} />
-                <Route path="/faq" element={<FAQ />} />
-                <Route path="/volunteer" element={<Volunteer />} />
-                <Route path="/admin/campaigns" element={<AdminCampaigns />} />
-                <Route path="/admin/generate-images" element={<ImageGenerator />} />
-              </Routes>
-            </main>
-            <Footer />
-          </div>
-        </Router>
-      </LanguageProvider>
-    </HelmetProvider>
+    <ErrorBoundary>
+      <HelmetProvider>
+        <LanguageProvider>
+          <Router>
+            <SEO />
+            <ScrollToTop />
+            <div className="min-h-screen flex flex-col">
+              <Header />
+              <main className="flex-grow">
+                <Routes>
+                  <Route path="/" element={<HomePage />} />
+                  <Route path="/about" element={<AboutPage />} />
+                  <Route path="/work" element={<WorkPage />} />
+                  <Route path="/donate" element={<DonationPage />} />
+                  <Route path="/impact" element={<ImpactPage />} />
+                  <Route path="/gallery" element={<GalleryPage />} />
+                  <Route path="/contact" element={<ContactPage />} />
+                  <Route path="/privacy" element={<PrivacyPolicy />} />
+                  <Route path="/terms" element={<Terms />} />
+                  <Route path="/faq" element={<FAQ />} />
+                  <Route path="/volunteer" element={<Volunteer />} />
+                  <Route path="/admin/campaigns" element={<AdminCampaigns />} />
+                  <Route path="/admin/generate-images" element={<ImageGenerator />} />
+                </Routes>
+              </main>
+              <Footer />
+            </div>
+          </Router>
+        </LanguageProvider>
+      </HelmetProvider>
+    </ErrorBoundary>
   );
 }
