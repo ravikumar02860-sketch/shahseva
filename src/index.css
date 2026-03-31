@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+
+  --color-primary: #004d2c; /* Dark Green */
+  --color-primary-light: #006b3d;
+  --color-primary-dark: #00361f;
+  --color-accent: #d4af37; /* Gold */
+  --color-accent-light: #f1d592;
+  --color-accent-dark: #b8952d;
+  
+  --shadow-soft: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+  --shadow-strong: 0 20px 40px -15px rgba(0, 0, 0, 0.2);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-slate-900 bg-white antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-tight;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white font-bold px-8 py-4 rounded-2xl shadow-lg hover:bg-primary-light transition-all active:scale-95 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .btn-accent {
+    @apply bg-accent text-primary font-bold px-8 py-4 rounded-2xl shadow-lg hover:bg-accent-light transition-all active:scale-95 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary font-bold px-8 py-4 rounded-2xl hover:bg-primary hover:text-white transition-all active:scale-95 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-sm {
+    @apply px-4 py-2 text-sm rounded-xl;
+  }
+
+  .btn-lg {
+    @apply px-10 py-5 text-lg rounded-2xl;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-6 py-24;
+  }
+
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-xl border border-white/20 shadow-soft rounded-3xl overflow-hidden transition-all duration-500 hover:shadow-strong;
+  }
+
+  .card-hover {
+    @apply transition-all duration-500 hover:-translate-y-2 hover:shadow-strong;
+  }
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #d4af37 0%, #f1d592 50%, #d4af37 100%);
+}
+
+.green-gradient {
+  background: linear-gradient(135deg, #004d2c 0%, #006b3d 100%);
+}
+
+.text-gradient-gold {
+  @apply bg-clip-text text-transparent;
+  background-image: linear-gradient(135deg, #d4af37 0%, #f1d592 50%, #d4af37 100%);
+}
+
+.mask-fade-bottom {
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
