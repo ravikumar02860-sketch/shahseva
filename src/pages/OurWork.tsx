@@ -93,6 +93,36 @@ export default function WorkPage() {
           </motion.p>
         </div>
 
+        {/* How It Works Section */}
+        <section className="mb-48">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">{t.work.howItWorksTitle}</h2>
+            <p className="text-slate-600 max-w-3xl mx-auto text-lg">{t.work.howItWorksDesc}</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {[
+              { title: t.work.step1Title, desc: t.work.step1Desc, step: "01" },
+              { title: t.work.step2Title, desc: t.work.step2Desc, step: "02" },
+              { title: t.work.step3Title, desc: t.work.step3Desc, step: "03" }
+            ].map((step, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.2 }}
+                className="relative p-10 bg-white rounded-[3rem] shadow-strong border border-slate-50"
+              >
+                <span className="absolute -top-6 -left-6 w-16 h-16 bg-accent text-primary font-serif font-bold text-2xl flex items-center justify-center rounded-2xl shadow-lg">
+                  {step.step}
+                </span>
+                <h3 className="text-2xl font-bold text-primary mb-4 mt-4">{step.title}</h3>
+                <p className="text-slate-500 leading-relaxed">{step.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </section>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {activities.map((act, idx) => (
             <motion.div 

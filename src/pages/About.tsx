@@ -59,6 +59,52 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* History Section */}
+      <section className="py-24 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8 tracking-tight">
+                {t.about.historyTitle}
+              </h2>
+              <p className="text-slate-600 text-lg leading-relaxed mb-8">
+                {t.about.historyDesc}
+              </p>
+              <div className="grid grid-cols-2 gap-8">
+                <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                  <p className="text-3xl font-bold text-accent mb-2">15+</p>
+                  <p className="text-sm font-bold text-primary uppercase tracking-widest">Years of Service</p>
+                </div>
+                <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                  <p className="text-3xl font-bold text-accent mb-2">25+</p>
+                  <p className="text-sm font-bold text-primary uppercase tracking-widest">Villages Reached</p>
+                </div>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <div className="aspect-video rounded-[3rem] overflow-hidden shadow-strong">
+                <img 
+                  src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1000" 
+                  alt="Our History" 
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-accent rounded-full -z-10 blur-3xl opacity-20"></div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Mission & Vision */}
       <section className="py-40 bg-primary/5 px-6 relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none" 

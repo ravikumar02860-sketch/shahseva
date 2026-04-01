@@ -263,6 +263,89 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Transparency Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
+              <span className="inline-block px-4 py-1.5 bg-accent/10 text-accent-dark font-bold rounded-full text-[10px] uppercase tracking-widest mb-6">
+                Transparency & Trust
+              </span>
+              <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8 leading-tight">
+                Where Your <span className="text-gradient-gold">Donations</span> Go
+              </h2>
+              <p className="text-slate-600 mb-8 text-lg leading-relaxed">
+                We believe in 100% transparency. Every rupee you donate to our NGO is utilized efficiently to provide maximum impact for poor families in India.
+              </p>
+              <div className="space-y-6">
+                {[
+                  { label: "Direct Aid (Food, Meds, Fees)", value: "85%" },
+                  { label: "Logistics & Distribution", value: "10%" },
+                  { label: "Administration", value: "5%" }
+                ].map((item, i) => (
+                  <div key={i}>
+                    <div className="flex justify-between mb-2">
+                      <span className="font-bold text-primary">{item.label}</span>
+                      <span className="text-accent-dark font-bold">{item.value}</span>
+                    </div>
+                    <div className="w-full h-3 bg-slate-100 rounded-full overflow-hidden">
+                      <motion.div 
+                        initial={{ width: 0 }}
+                        whileInView={{ width: item.value }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1, delay: i * 0.2 }}
+                        className="h-full bg-accent"
+                      ></motion.div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="bg-primary p-12 rounded-[3rem] text-white relative overflow-hidden shadow-strong"
+            >
+              <div className="relative z-10">
+                <h3 className="text-3xl font-serif font-bold mb-6">Transparency Report</h3>
+                <p className="text-slate-300 mb-8">
+                  Our annual reports are audited and available for public review. We are committed to maintaining the highest standards of accountability.
+                </p>
+                <ul className="space-y-4 mb-10">
+                  <li className="flex items-center gap-3">
+                    <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center text-primary">
+                      <Heart size={14} fill="currentColor" />
+                    </div>
+                    <span>Audited Financial Statements</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center text-primary">
+                      <Heart size={14} fill="currentColor" />
+                    </div>
+                    <span>Monthly Impact Reports</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center text-primary">
+                      <Heart size={14} fill="currentColor" />
+                    </div>
+                    <span>Donor Feedback Mechanism</span>
+                  </li>
+                </ul>
+                <Link to="/impact" className="btn-accent w-full justify-center">
+                  View Full Impact Report
+                </Link>
+              </div>
+              <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Activities Section */}
       <section className="py-32 bg-primary relative overflow-hidden">
         {/* Decorative background elements */}

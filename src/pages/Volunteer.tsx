@@ -45,27 +45,27 @@ export default function Volunteer() {
               <Users size={32} strokeWidth={1.5} />
             </motion.div>
             <h1 className="text-5xl md:text-7xl font-serif font-bold text-primary mb-8 leading-[1.1]">
-              Become a <span className="text-accent italic">Volunteer</span> and Change Lives.
+              {t.volunteer.title}
             </h1>
             <p className="text-slate-600 text-lg md:text-xl mb-12 leading-relaxed max-w-xl">
-              Dargah Saiyad Ali Shah Seva Sansthan is built on the dedication of volunteers who believe in serving humanity. Whether you can spare a few hours a week or contribute your professional skills, your help is invaluable.
+              {t.volunteer.desc}
             </p>
 
             <div className="space-y-10 mb-12">
               {[
                 {
-                  title: "Community Outreach",
-                  desc: "Help us identify families in need and coordinate food distribution drives.",
+                  title: t.volunteer.roles.outreach.title,
+                  desc: t.volunteer.roles.outreach.desc,
                   icon: Heart
                 },
                 {
-                  title: "Education Support",
-                  desc: "Volunteer as a tutor or help organize educational workshops for children.",
+                  title: t.volunteer.roles.education.title,
+                  desc: t.volunteer.roles.education.desc,
                   icon: CheckCircle
                 },
                 {
-                  title: "Medical Assistance",
-                  desc: "Medical professionals can volunteer their time for our free health camps.",
+                  title: t.volunteer.roles.medical.title,
+                  desc: t.volunteer.roles.medical.desc,
                   icon: CheckCircle
                 }
               ].map((item, idx) => (

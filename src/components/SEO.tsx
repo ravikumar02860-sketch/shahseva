@@ -12,10 +12,10 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = "Dargah Saiyad Ali Shah Seva Sansthan - NGO in Bhilwara, Rajasthan",
-  description = "Dargah Saiyad Ali Shah Seva Sansthan is a leading NGO in Bhilwara, Rajasthan, providing food, education, and medical aid to poor families. Join us in serving humanity.",
-  keywords = "NGO in Bhilwara, Charity in Rajasthan, Help poor families Bhilwara, Education support NGO India, Medical aid for poor Rajasthan, Dargah Saiyad Ali Shah Seva Sansthan",
-  canonical = "https://dargahsaiyadali.org",
+  title = "NGO Donation India | Help Poor Families | Dargah Saiyad Ali Shah",
+  description = "Donate to Dargah Saiyad Ali Shah Seva Sansthan, a trusted NGO in Bhilwara, India. Support education, medical aid, and food distribution for poor families. Join our mission today.",
+  keywords = "NGO donation India, donate for poor, charity donation India, support education donation, help poor families donation, NGO support India, Dargah Saiyad Ali Shah Seva Sansthan, Bhilwara NGO, social welfare Rajasthan, food distribution charity, medical aid for poor",
+  canonical = "https://shahseva.vercel.app",
   ogImage = "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F",
   ogType = "website",
   twitterHandle = "@dargahsaiyadali"
@@ -52,19 +52,23 @@ export default function SEO({
           "@context": "https://schema.org",
           "@type": "NGO",
           "name": siteName,
-          "url": "https://dargahsaiyadali.org",
+          "url": "https://shahseva.vercel.app",
           "logo": "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F",
           "description": description,
           "address": {
             "@type": "PostalAddress",
+            "streetAddress": "Murad Ali Dargah Ke Pass, Khel Mohalla, Pur",
             "addressLocality": "Bhilwara",
             "addressRegion": "Rajasthan",
+            "postalCode": "311001",
             "addressCountry": "IN"
           },
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+91-XXXXXXXXXX",
-            "contactType": "customer service"
+            "telephone": "+91-6350489219",
+            "contactType": "customer service",
+            "areaServed": "IN",
+            "availableLanguage": ["English", "Hindi"]
           },
           "sameAs": [
             "https://facebook.com/dargahsaiyadali",

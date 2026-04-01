@@ -11,11 +11,11 @@ export const translations = {
       istikhara: 'Istikhara Guide',
     },
     hero: {
-      badge: 'Serving Humanity Since 2010',
-      title: 'Empowering Lives,',
-      subtitle: 'Restoring Hope.',
-      desc: 'Dargah Saiyad Ali Shah Seva Sansthan is dedicated to helping poor families, supporting education, and providing essential medical care to those in need.',
-      ctaWork: 'Our Work',
+      badge: 'Trusted NGO in India Since 2010',
+      title: 'NGO Donation India:',
+      subtitle: 'Help Poor Families Today.',
+      desc: 'Dargah Saiyad Ali Shah Seva Sansthan is a leading charity organization in India. We provide food, education, and medical aid to underprivileged families. Your support can change lives.',
+      ctaWork: 'Our Charity Work',
     },
     stats: {
       families: 'Families Helped',
@@ -24,14 +24,14 @@ export const translations = {
       camps: 'Medical Camps',
     },
     aboutSummary: {
-      badge: 'About Our Organization',
-      title: 'A Mission to Serve Humanity with Love.',
-      desc: 'Dargah Saiyad Ali Shah Seva Sansthan is a non-profit organization based in Bhilwara, Rajasthan. Our mission is to uplift the underprivileged through sustainable support in education, healthcare, and basic necessities.',
-      item1: 'Supporting poor families with monthly rations',
-      item2: 'Educational scholarships for bright students',
-      item3: 'Emergency medical aid and free clinics',
-      item4: 'Community welfare and disaster relief',
-      learnMore: 'Learn More About Us',
+      badge: 'About Our NGO Mission',
+      title: 'The Best Charity for Poor Families in India.',
+      desc: 'Dargah Saiyad Ali Shah Seva Sansthan is a registered NGO in Bhilwara, Rajasthan. We are committed to supporting education for poor children and providing medical aid to the needy. Our transparency and impact make us a trusted choice for your donations.',
+      item1: 'Donate for poor families (Monthly Rations)',
+      item2: 'Support education donation for bright students',
+      item3: 'Medical aid for poor families in Rajasthan',
+      item4: 'NGO support India: Community welfare projects',
+      learnMore: 'Learn More About Our Mission',
       quote: '"The best among you are those who bring most benefit to others."',
     },
     founder: {
@@ -42,16 +42,16 @@ export const translations = {
       signature: "With Gratitude,"
     },
     activities: {
-      badge: 'What We Do',
-      title: 'Our Charity Activities',
-      desc: 'We focus on key areas that create long-term impact in the lives of the needy.',
-      foodTitle: 'Food Distribution',
-      foodDesc: 'Providing nutritious meals to families struggling with hunger.',
-      eduTitle: 'Education Support',
-      eduDesc: 'Ensuring every child has the tools and resources to learn.',
-      medTitle: 'Medical Help',
-      medDesc: 'Free health checkups and medicine for those who cannot afford it.',
-      readMore: 'Read More',
+      badge: 'Our NGO Impact',
+      title: 'Charity Donation India: Our Work',
+      desc: 'We focus on key areas that create long-term impact. Your NGO donation helps us reach more people in need.',
+      foodTitle: 'Donate for Poor: Food Distribution',
+      foodDesc: 'Providing nutritious meals and monthly ration kits to families struggling with hunger in India.',
+      eduTitle: 'Support Education Donation',
+      eduDesc: 'Ensuring every child has the tools to learn. Your donation funds school fees, books, and uniforms.',
+      medTitle: 'Medical Aid for Poor',
+      medDesc: 'Free health checkups, medicines, and surgical support for those who cannot afford healthcare.',
+      readMore: 'Read More Impact Stories',
     },
     cta: {
       title: "Your Small Contribution Can Change Someone's World.",
@@ -148,30 +148,32 @@ export const translations = {
       }
     },
     about: {
-      badge: 'Our Story',
-      title: 'Serving Humanity with Dedication.',
-      desc: 'Dargah Saiyad Ali Shah Seva Sansthan was founded with a simple yet powerful goal: to ensure that no one in our community goes hungry or lacks basic education and healthcare.',
-      missionTitle: 'Our Mission',
-      missionDesc: 'To provide immediate relief and long-term support to poor families, ensuring access to nutritious food, quality education for children, and essential medical care for the needy. We strive to create a society where everyone has the opportunity to live with dignity.',
-      visionTitle: 'Our Vision',
-      visionDesc: "We envision a world where poverty does not limit a child's potential, where hunger is a thing of the past, and where healthcare is a right, not a privilege. Our goal is to expand our reach across Rajasthan and beyond, touching thousands of lives through compassion.",
-      valuesTitle: 'Our Core Values',
+      badge: 'Our NGO Story',
+      title: 'Trusted NGO in India for Charity & Donations.',
+      desc: 'Dargah Saiyad Ali Shah Seva Sansthan is a non-profit organization dedicated to serving humanity. We are one of the most trusted NGOs in India for donations, focusing on food, education, and medical aid.',
+      historyTitle: 'Our Journey Since 2010',
+      historyDesc: 'Starting as a small community initiative in Bhilwara, we have grown into a registered Seva Sansthan. Over the last decade, we have expanded our reach from a single neighborhood to over 25 villages across Rajasthan, driven by the spirit of selfless service.',
+      missionTitle: 'Our Mission: NGO Support India',
+      missionDesc: 'Our mission is to provide immediate relief and long-term support to poor families in India. We ensure access to nutritious food, quality education for children, and essential medical care. We strive to create a society where everyone can live with dignity.',
+      visionTitle: 'Our Vision for a Better India',
+      visionDesc: "We envision an India where poverty does not limit potential. Our goal is to expand our reach across Rajasthan and beyond, touching thousands of lives through compassionate charity work.",
+      valuesTitle: 'Our Core NGO Values',
       values: {
         compassion: {
           title: 'Compassion',
-          desc: 'Acting with kindness in everything we do.'
+          desc: 'Acting with kindness in every charity project.'
         },
         transparency: {
           title: 'Transparency',
-          desc: 'Full accountability for every donation received.'
+          desc: 'Full accountability for every NGO donation received.'
         },
         integrity: {
           title: 'Integrity',
-          desc: 'Honesty and strong moral principles.'
+          desc: 'Honesty and strong moral principles in our work.'
         },
         service: {
           title: 'Service',
-          desc: 'Selfless dedication to the welfare of others.'
+          desc: 'Selfless dedication to helping poor families.'
         }
       }
     },
@@ -272,34 +274,101 @@ export const translations = {
       storyLabel: 'Impact Story'
     },
     work: {
-      title: 'Our Charity Work',
-      desc: 'Through various initiatives, we aim to address the most pressing needs of our community and create a lasting positive impact.',
+      title: 'Charity Work in India',
+      desc: 'Through various NGO initiatives, we aim to address the most pressing needs of poor families in India and create a lasting positive impact.',
+      howItWorksTitle: 'Our Systematic Approach to Charity',
+      howItWorksDesc: 'We don\'t just give aid; we build sustainable support systems. Our process involves identifying the most vulnerable families, assessing their specific needs, and providing targeted assistance that empowers them.',
+      step1Title: 'Identification',
+      step1Desc: 'Our volunteers visit local communities to identify families in extreme need.',
+      step2Title: 'Verification',
+      step2Desc: 'We verify the needs through home visits and community feedback to ensure transparency.',
+      step3Title: 'Distribution',
+      step3Desc: 'Aid is distributed directly to the beneficiaries through organized camps and door-to-step delivery.',
       activities: {
         food: {
-          title: 'Food Distribution',
-          desc: 'We provide monthly ration kits and daily meals to families struggling with extreme poverty. Our goal is to ensure no one in our community goes to bed hungry.'
+          title: 'Donate for Poor: Food Distribution',
+          desc: 'We provide monthly ration kits and daily meals to families struggling with extreme poverty. Your food donation ensures no one in Bhilwara goes to bed hungry.'
         },
         education: {
-          title: 'Education Support',
-          desc: 'Education is the key to breaking the cycle of poverty. We provide school fees, books, uniforms, and stationery to children from underprivileged backgrounds.'
+          title: 'Support Education Donation',
+          desc: 'Education is the key to breaking the cycle of poverty. We provide school fees, books, and uniforms to underprivileged children in Rajasthan.'
         },
         medical: {
-          title: 'Medical Help',
-          desc: 'We organize free medical camps and provide financial assistance for surgeries and medicines to those who cannot afford healthcare.'
+          title: 'Medical Aid for Poor',
+          desc: 'We organize free medical camps and provide financial assistance for surgeries and medicines to those who cannot afford healthcare in India.'
         },
         families: {
-          title: 'Helping Poor Families',
+          title: 'Help Poor Families Donation',
           desc: 'From home repairs to financial aid for marriages, we stand by poor families in their times of need, providing a safety net for the vulnerable.'
         },
         welfare: {
-          title: 'Community Welfare',
-          desc: 'We work on local infrastructure, clean water access, and sanitation projects to improve the overall quality of life in our neighborhoods.'
+          title: 'NGO Support India: Community Welfare',
+          desc: 'We work on local infrastructure, clean water access, and sanitation projects to improve the overall quality of life in Indian neighborhoods.'
         },
         relief: {
-          title: 'Emergency Relief',
+          title: 'Emergency Relief Charity',
           desc: 'During natural disasters or emergencies, we are the first responders, providing immediate aid, shelter, and support to affected families.'
         }
       }
+    },
+    volunteer: {
+      title: 'Volunteer With Us',
+      desc: 'Join Dargah Saiyad Ali Shah Seva Sansthan as a volunteer. Help us in our mission to serve humanity through community outreach, education support, and medical assistance in Bhilwara.',
+      badge: 'Join Our Community',
+      formTitle: 'Volunteer Application',
+      benefitsTitle: 'Why Volunteer With Us?',
+      benefitsDesc: 'Volunteering with our NGO is a rewarding experience that allows you to make a direct impact on the lives of poor families in India.',
+      benefit1Title: 'Personal Growth',
+      benefit1Desc: 'Develop new skills and gain a deeper understanding of social issues.',
+      benefit2Title: 'Community Impact',
+      benefit2Desc: 'See the direct results of your efforts in the smiles of the people we help.',
+      benefit3Title: 'Networking',
+      benefit3Desc: 'Connect with like-minded individuals who share your passion for service.',
+      roles: {
+        outreach: {
+          title: 'Community Outreach',
+          desc: 'Help us identify families in need and coordinate food distribution drives.'
+        },
+        education: {
+          title: 'Education Support',
+          desc: 'Volunteer as a tutor or help organize educational workshops for children.'
+        },
+        medical: {
+          title: 'Medical Assistance',
+          desc: 'Medical professionals can volunteer their time for our free health camps.'
+        }
+      }
+    },
+    faq: {
+      title: 'Frequently Asked Questions',
+      desc: 'Find answers to common questions about our mission, activities, and how you can get involved.',
+      badge: 'Help Center',
+      items: [
+        {
+          q: "What is Dargah Saiyad Ali Shah Seva Sansthan?",
+          a: "Dargah Saiyad Ali Shah Seva Sansthan is a non-profit organization dedicated to serving humanity through food distribution, education support, and medical aid for the poor and needy."
+        },
+        {
+          q: "How can I donate to the organization?",
+          a: "You can donate directly through our website using the 'Donate Now' button. We accept UPI payments and other online methods. Your contributions go directly towards our charity projects."
+        },
+        {
+          q: "Is my donation tax-deductible?",
+          a: "We are a registered non-profit organization. Please contact us at darveshwelfares@gmail.com for specific details regarding tax-deductible receipts under Section 80G (if applicable)."
+        },
+        {
+          q: "How is my donation used?",
+          a: "100% of your donation is used for our charity activities, such as providing monthly rations to poor families, paying school fees for students, and organizing free medical camps."
+        },
+        {
+          q: "Can I volunteer for the organization?",
+          a: "Yes! We welcome volunteers who are passionate about serving humanity. You can reach out to us through our contact page or visit our office in Bhilwara, Rajasthan."
+        },
+        {
+          q: "Where is the organization located?",
+          a: "Our main office is located near Murad Ali Dargah, Khel Mohalla, Pur, Bhilwara, Rajasthan, India."
+        }
+      ]
     }
   },
   hi: {
@@ -603,6 +672,65 @@ export const translations = {
           desc: 'प्राकृतिक आपदाओं या आपात स्थितियों के दौरान, हम पहले उत्तरदाता होते हैं, प्रभावित परिवारों को तत्काल सहायता, आश्रय और समर्थन प्रदान करते हैं।'
         }
       }
+    },
+    volunteer: {
+      title: 'हमारे साथ स्वयंसेवक बनें',
+      desc: 'दरगाह सैयद अली शाह सेवा संस्थान में एक स्वयंसेवक के रूप में शामिल हों। भीलवाड़ा में सामुदायिक आउटरीच, शिक्षा सहायता और चिकित्सा सहायता के माध्यम से मानवता की सेवा करने के हमारे मिशन में हमारी मदद करें।',
+      badge: 'हमारे समुदाय में शामिल हों',
+      formTitle: 'स्वयंसेवक आवेदन',
+      benefitsTitle: 'हमारे साथ स्वयंसेवक क्यों बनें?',
+      benefitsDesc: 'हमारे एनजीओ के साथ स्वयंसेवा करना एक पुरस्कृत अनुभव है जो आपको भारत में गरीब परिवारों के जीवन पर सीधा प्रभाव डालने की अनुमति देता है।',
+      benefit1Title: 'व्यक्तिगत विकास',
+      benefit1Desc: 'नए कौशल विकसित करें और सामाजिक मुद्दों की गहरी समझ प्राप्त करें।',
+      benefit2Title: 'सामुदायिक प्रभाव',
+      benefit2Desc: 'जिन लोगों की हम मदद करते हैं उनके चेहरों पर अपनी कोशिशों के सीधे परिणाम देखें।',
+      benefit3Title: 'नेटवर्किंग',
+      benefit3Desc: 'समान विचारधारा वाले व्यक्तियों से जुड़ें जो सेवा के प्रति आपके जुनून को साझा करते हैं।',
+      roles: {
+        outreach: {
+          title: 'सामुदायिक आउटरीच',
+          desc: 'जरूरतमंद परिवारों की पहचान करने और भोजन वितरण अभियान समन्वयित करने में हमारी सहायता करें।'
+        },
+        education: {
+          title: 'शिक्षा सहायता',
+          desc: 'एक शिक्षक के रूप में स्वयंसेवा करें या बच्चों के लिए शैक्षिक कार्यशालाएं आयोजित करने में मदद करें।'
+        },
+        medical: {
+          title: 'चिकित्सा सहायता',
+          desc: 'चिकित्सा पेशेवर हमारे मुफ्त स्वास्थ्य शिविरों के लिए अपना समय स्वयंसेवा कर सकते हैं।'
+        }
+      }
+    },
+    faq: {
+      title: 'अक्सर पूछे जाने वाले प्रश्न',
+      desc: 'हमारे मिशन, गतिविधियों और आप कैसे शामिल हो सकते हैं, इसके बारे में सामान्य प्रश्नों के उत्तर खोजें।',
+      badge: 'सहायता केंद्र',
+      items: [
+        {
+          q: "दरगाह सैयद अली शाह सेवा संस्थान क्या है?",
+          a: "दरगाह सैयद अली शाह सेवा संस्थान एक गैर-लाभकारी संगठन है जो गरीबों और जरूरतमंदों के लिए भोजन वितरण, शिक्षा सहायता और चिकित्सा सहायता के माध्यम से मानवता की सेवा के लिए समर्पित है।"
+        },
+        {
+          q: "मैं संगठन को दान कैसे दे सकता हूँ?",
+          a: "आप 'अभी दान करें' बटन का उपयोग करके सीधे हमारी वेबसाइट के माध्यम से दान कर सकते हैं। हम यूपीआई भुगतान और अन्य ऑनलाइन तरीके स्वीकार करते हैं। आपका योगदान सीधे हमारे धर्मार्थ प्रोजेक्ट्स में जाता है।"
+        },
+        {
+          q: "क्या मेरा दान कर-कटौती योग्य है?",
+          a: "हम एक पंजीकृत गैर-लाभकारी संगठन हैं। धारा 80जी (यदि लागू हो) के तहत विशिष्ट विवरण के लिए कृपया हमसे darveshwelfares@gmail.com पर संपर्क करें।"
+        },
+        {
+          q: "मेरे दान का उपयोग कैसे किया जाता है?",
+          a: "आपके दान का 100% हमारी धर्मार्थ गतिविधियों के लिए उपयोग किया जाता है, जैसे गरीब परिवारों को मासिक राशन प्रदान करना, छात्रों की स्कूल फीस का भुगतान करना और मुफ्त चिकित्सा शिविर आयोजित करना।"
+        },
+        {
+          q: "क्या मैं संगठन के लिए स्वयंसेवा कर सकता हूँ?",
+          a: "हाँ! हम उन स्वयंसेवकों का स्वागत करते हैं जो मानवता की सेवा के प्रति उत्साही हैं। आप हमारे संपर्क पृष्ठ के माध्यम से हमसे संपर्क कर सकते हैं या भीलवाड़ा, राजस्थान में हमारे कार्यालय में आ सकते हैं।"
+        },
+        {
+          q: "संगठन कहाँ स्थित है?",
+          a: "हमारा मुख्य कार्यालय मुराद अली दरगाह के पास, खेल मोहल्ला, पुर, भीलवाड़ा, राजस्थान, भारत में स्थित है।"
+        }
+      ]
     }
   }
 };

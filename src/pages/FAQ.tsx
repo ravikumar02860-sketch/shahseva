@@ -65,15 +65,15 @@ export default function FAQ() {
             <HelpCircle size={32} strokeWidth={1.5} />
           </motion.div>
           <h1 className="text-5xl md:text-6xl font-serif font-bold text-primary mb-6 leading-tight">
-            Frequently Asked <span className="text-accent italic">Questions</span>
+            {t.faq.title}
           </h1>
           <p className="text-slate-600 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Find answers to common questions about our mission, activities, and how you can get involved.
+            {t.faq.desc}
           </p>
         </motion.div>
 
         <div className="space-y-6">
-          {faqs.map((faq, idx) => (
+          {t.faq.items.map((faq: any, idx: number) => (
             <motion.div
               key={idx}
               initial={{ opacity: 0, y: 20 }}

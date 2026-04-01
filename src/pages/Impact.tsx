@@ -89,8 +89,60 @@ export default function ImpactPage() {
           ))}
         </div>
 
+        {/* Transparency & Accountability */}
+        <div className="mt-48 bg-primary rounded-[5rem] p-16 lg:p-24 text-white relative overflow-hidden shadow-strong">
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div>
+              <span className="inline-block px-4 py-1.5 bg-white/10 text-accent-light font-bold rounded-full text-[10px] uppercase tracking-widest mb-8">
+                Accountability
+              </span>
+              <h2 className="text-5xl md:text-7xl font-serif font-bold mb-10 leading-tight">
+                Our Commitment to <span className="text-gradient-gold">Transparency</span>
+              </h2>
+              <p className="text-slate-300 text-xl leading-relaxed mb-12">
+                We understand that your trust is our most valuable asset. That's why we maintain strict financial controls and provide detailed reports on how every donation is spent.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                {[
+                  { title: "Audited Accounts", desc: "Annual financial audits by certified professionals." },
+                  { title: "Real-time Updates", desc: "Regular updates on project progress and impact." },
+                  { title: "Direct Impact", desc: "85% of funds go directly to on-ground activities." },
+                  { title: "Donor Rights", desc: "Full control over your data and communication." }
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-4">
+                    <div className="w-10 h-10 bg-accent/20 rounded-xl flex items-center justify-center text-accent shrink-0">
+                      <Award size={20} />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg mb-1">{item.title}</h4>
+                      <p className="text-slate-400 text-sm">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="relative">
+              <div className="aspect-square rounded-[4rem] overflow-hidden shadow-strong border-8 border-white/10">
+                <img 
+                  src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800" 
+                  alt="Transparency" 
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              {/* Floating badge */}
+              <div className="absolute -bottom-10 -left-10 bg-white p-8 rounded-[2.5rem] shadow-strong text-primary max-w-[200px] animate-bounce-slow">
+                <p className="text-3xl font-serif font-bold mb-2">100%</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-slate-500">Transparency Guaranteed</p>
+              </div>
+            </div>
+          </div>
+          {/* Decorative background */}
+          <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 translate-x-1/2"></div>
+        </div>
+
         {/* Impact Stories */}
-        <div className="space-y-48">
+        <div className="space-y-48 mt-48">
           <div className="text-center mb-32">
             <h2 className="text-5xl md:text-6xl font-serif font-bold text-primary tracking-tight">{t.impact.storiesTitle}</h2>
             <div className="w-32 h-2 bg-accent mx-auto mt-8 rounded-full shadow-lg shadow-accent/20"></div>
