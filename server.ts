@@ -3,7 +3,7 @@ import { createServer as createViteServer } from "vite";
 import path from "path";
 import { fileURLToPath } from "url";
 import dotenv from "dotenv";
-import { db, collection, addDoc, getDocs, query, where, orderBy, Timestamp, doc, updateDoc } from './src/firebase.js';
+import { db, collection, addDoc, getDocs, query, where, orderBy, Timestamp, doc, updateDoc } from './src/firebase.ts';
 
 dotenv.config();
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { CreditCard, Smartphone, QrCode, CheckCircle2, Copy, Heart } from 'lucide-react';
+import { QRCodeSVG } from 'qrcode.react';
 import { cn } from '../utils/cn';
 import { useLanguage } from '../LanguageContext';
 import SEO from '../components/SEO';
@@ -72,7 +73,6 @@ export default function DonationPage() {
 
   const upiId = "6350489219.eazypay@icici";
   const upiUri = `upi://pay?pa=${upiId}&pn=Dargah%20Saiyad%20Ali%20Shah%20Seva%20Sansthan&cu=INR&am=${amount}`;
-  const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(upiUri)}`;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -400,14 +400,18 @@ export default function DonationPage() {
                   <div className="flex justify-center mb-10">
                     <div className="bg-white p-6 rounded-[2rem] shadow-2xl relative group">
                       {showQR ? (
-                        <motion.img 
+                        <motion.div 
                           initial={{ scale: 0.8, opacity: 0 }}
                           animate={{ scale: 1, opacity: 1 }}
-                          src={qrUrl} 
-                          alt="UPI QR Code" 
-                          className="w-56 h-56"
-                          referrerPolicy="no-referrer"
-                        />
+                          className="w-56 h-56 flex items-center justify-center bg-white"
+                        >
+                          <QRCodeSVG 
+                            value={upiUri} 
+                            size={224}
+                            level="H"
+                            includeMargin={true}
+                          />
+                        </motion.div>
                       ) : (
                         <div className="w-56 h-56 bg-slate-50 flex items-center justify-center text-slate-200 border-2 border-dashed border-slate-200 rounded-3xl">
                           <QrCode size={80} strokeWidth={1} />
