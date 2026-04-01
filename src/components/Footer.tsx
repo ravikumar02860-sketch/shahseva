@@ -62,8 +62,10 @@ export default function Footer() {
           <ul className="space-y-4 text-slate-400 text-sm font-medium">
             {[
               { to: "/about", label: t.footer.links.about },
+              { to: "/mission", label: t.footer.links.mission },
               { to: "/work", label: t.footer.links.work },
               { to: "/impact", label: t.footer.links.impact },
+              { to: "/transparency", label: t.footer.links.transparency },
               { to: "/gallery", label: t.footer.links.gallery },
               { to: "/volunteer", label: t.footer.volunteer },
               { to: "/faq", label: t.footer.faq },

@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { Target, Eye, Heart, ShieldCheck } from 'lucide-react';
+import { Target, Eye, Heart, ShieldCheck, Shield } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 import SEO from '../components/SEO';
 
@@ -17,8 +18,8 @@ export default function AboutPage() {
   return (
     <div className="relative min-h-screen pt-32 pb-24 overflow-hidden">
       <SEO 
-        title="About Us" 
-        description="Learn about Dargah Saiyad Ali Shah Seva Sansthan, our mission to serve humanity, and our vision for a better Bhilwara through charity and social work."
+        title={t.seo.about.title} 
+        description={t.seo.about.description}
       />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">
@@ -52,10 +53,20 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-slate-600 text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed font-medium opacity-90"
+            className="text-slate-600 text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed font-medium opacity-90 mb-8"
           >
             {t.about.desc}
           </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-50 text-slate-500 font-bold text-sm border border-slate-100"
+          >
+            <Shield size={16} className="text-primary" />
+            {t.aboutSummary.regNo}
+          </motion.div>
         </div>
       </section>
 
@@ -74,6 +85,11 @@ export default function AboutPage() {
               <p className="text-slate-600 text-lg leading-relaxed mb-8">
                 {t.about.historyDesc}
               </p>
+              <div className="mb-10">
+                <Link to="/donate" className="btn-primary btn-lg inline-flex">
+                  Support Our Mission
+                </Link>
+              </div>
               <div className="grid grid-cols-2 gap-8">
                 <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                   <p className="text-3xl font-bold text-accent mb-2">15+</p>

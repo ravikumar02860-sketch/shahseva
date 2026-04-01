@@ -12,9 +12,9 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = "NGO Donation India | Help Poor Families | Dargah Saiyad Ali Shah",
-  description = "Donate to Dargah Saiyad Ali Shah Seva Sansthan, a trusted NGO in Bhilwara, India. Support education, medical aid, and food distribution for poor families. Join our mission today.",
-  keywords = "NGO donation India, donate for poor, charity donation India, support education donation, help poor families donation, NGO support India, Dargah Saiyad Ali Shah Seva Sansthan, Bhilwara NGO, social welfare Rajasthan, food distribution charity, medical aid for poor",
+  title = "NGO Donation India | Help Poor Families | Dargah Seva Sansthan",
+  description = "Donate to Dargah Saiyad Ali Shah Seva Sansthan, a trusted NGO in India. We provide food, education, and medical aid to poor families and children in Rajasthan.",
+  keywords = "NGO donation India, donate for poor children, charity organization India, help poor families, support education donation, donate to NGO India, charity helping poor families, NGO helping children education, Bhilwara NGO, Rajasthan charity",
   canonical = "https://shahseva.vercel.app",
   ogImage = "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F",
   ogType = "website",
@@ -52,6 +52,7 @@ export default function SEO({
           "@context": "https://schema.org",
           "@type": "NGO",
           "name": siteName,
+          "taxID": "REG-XXXXXXXXXX", // NGO Registration Number
           "url": "https://shahseva.vercel.app",
           "logo": "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F",
           "description": description,

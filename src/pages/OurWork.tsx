@@ -55,8 +55,8 @@ export default function WorkPage() {
   return (
     <div className="relative min-h-screen pt-32 pb-24 overflow-hidden">
       <SEO 
-        title="Our Work" 
-        description="Explore the various social initiatives by Dargah Saiyad Ali Shah Seva Sansthan, including food distribution, education support, and medical aid in Bhilwara."
+        title={t.seo.work.title} 
+        description={t.seo.work.description}
       />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">

@@ -40,8 +40,8 @@ export default function FAQ() {
   return (
     <div className="relative min-h-screen pt-32 pb-24 overflow-hidden">
       <SEO 
-        title="Frequently Asked Questions" 
-        description="Find answers to common questions about Dargah Saiyad Ali Shah Seva Sansthan, our mission, how to donate, and how to get involved in our charity work in Bhilwara."
+        title={t.seo.faq.title} 
+        description={t.seo.faq.description}
       />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">

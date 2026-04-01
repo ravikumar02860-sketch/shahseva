@@ -125,8 +125,8 @@ export default function DonationPage() {
   return (
     <div className="relative min-h-screen pt-32 pb-24 overflow-hidden">
       <SEO 
-        title="Donate Now" 
-        description="Support Dargah Saiyad Ali Shah Seva Sansthan by donating online. Your contribution helps us provide food, education, and medical aid to those in need in Bhilwara."
+        title={t.seo.donate.title} 
+        description={t.seo.donate.description}
       />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">

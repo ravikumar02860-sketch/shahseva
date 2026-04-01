@@ -62,8 +62,8 @@ export default function ContactPage() {
   return (
     <div className="relative min-h-screen pt-32 pb-24 overflow-hidden">
       <SEO 
-        title="Contact Us" 
-        description="Get in touch with Dargah Saiyad Ali Shah Seva Sansthan. Contact us for volunteering, donations, or any inquiries about our social work in Bhilwara, Rajasthan."
+        title={t.seo.contact.title} 
+        description={t.seo.contact.description}
       />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">

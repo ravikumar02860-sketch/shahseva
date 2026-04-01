@@ -30,8 +30,8 @@ export default function ImpactPage() {
   return (
     <div className="relative min-h-screen pt-32 pb-24 overflow-hidden">
       <SEO 
-        title="Our Impact" 
-        description="See the real-world impact of Dargah Saiyad Ali Shah Seva Sansthan. We have helped over 12,500 people across 25 villages with food, education, and healthcare."
+        title={t.seo.impact.title} 
+        description={t.seo.impact.description}
       />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">

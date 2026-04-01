@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight, Users, BookOpen, HeartPulse, Utensils, Home, Heart } from 'lucide-react';
+import { ArrowRight, Users, BookOpen, HeartPulse, Utensils, Home, Heart, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../LanguageContext';
 import SEO from '../components/SEO';
@@ -39,8 +39,8 @@ export default function HomePage() {
   return (
     <div className="overflow-hidden bg-slate-50/50">
       <SEO 
-        title="Home" 
-        description="Dargah Saiyad Ali Shah Seva Sansthan is a leading NGO in Bhilwara, Rajasthan, providing food, education, and medical aid to poor families. Join us in serving humanity."
+        title={t.seo.home.title} 
+        description={t.seo.home.description}
       />
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center pt-28 pb-16">
@@ -190,9 +190,13 @@ export default function HomePage() {
             <h2 className="text-4xl md:text-6xl font-serif font-bold text-primary mb-8 leading-[1.1]">
               {t.aboutSummary.title}
             </h2>
-            <p className="text-slate-600 mb-10 leading-relaxed text-lg">
+            <p className="text-slate-600 mb-6 leading-relaxed text-lg">
               {t.aboutSummary.desc}
             </p>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-50 text-slate-500 font-bold text-xs mb-10 border border-slate-100">
+              <Shield size={14} className="text-primary" />
+              {t.aboutSummary.regNo}
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
               {[
                 t.aboutSummary.item1,
@@ -415,23 +419,23 @@ export default function HomePage() {
               Why Support Our <span className="text-gradient-gold">NGO in Bhilwara</span>, Rajasthan?
             </h2>
             <p className="text-slate-600 mb-10 text-lg leading-relaxed">
-              Dargah Saiyad Ali Shah Seva Sansthan is one of the most trusted non-profit organizations in Bhilwara, dedicated to uplifting the marginalized communities. Our charity work in Rajasthan focuses on sustainable development through education and healthcare.
+              Dargah Saiyad Ali Shah Seva Sansthan is a trusted charity organization in India and a leading NGO in Bhilwara, dedicated to uplifting marginalized communities. As a charity helping poor families and an NGO helping children's education, our work in Rajasthan focuses on sustainable development through food, education, and healthcare.
             </p>
             <div className="space-y-8">
               {[
                 {
-                  title: "Helping Poor Families",
-                  desc: "We provide direct financial and food aid to families living below the poverty line in Bhilwara and nearby villages.",
+                  title: "Help Poor Families Donation",
+                  desc: "We provide direct financial and food aid to families living below the poverty line in Bhilwara and nearby villages, ensuring they have the basics for survival.",
                   icon: Heart
                 },
                 {
-                  title: "Education Support NGO",
-                  desc: "Our scholarship programs help bright students from underprivileged backgrounds pursue their dreams without financial barriers.",
+                  title: "NGO Helping Children Education",
+                  desc: "Our scholarship programs help bright students from underprivileged backgrounds pursue their dreams, providing a path out of poverty through education.",
                   icon: BookOpen
                 },
                 {
-                  title: "Medical Aid for Poor",
-                  desc: "We organize free medical camps and provide essential medicines to ensure healthcare is accessible to all in Rajasthan.",
+                  title: "Medical Aid for Poor Families",
+                  desc: "We organize free medical camps and provide essential medicines to ensure healthcare is accessible to all in Rajasthan, regardless of their financial status.",
                   icon: HeartPulse
                 }
               ].map((item, i) => (
@@ -445,6 +449,11 @@ export default function HomePage() {
                   </div>
                 </div>
               ))}
+              <div className="pt-6">
+                <Link to="/impact" className="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all group">
+                  See Our Full Impact <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
             </div>
           </motion.div>
           

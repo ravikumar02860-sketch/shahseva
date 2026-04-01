@@ -16,6 +16,8 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import Terms from './pages/Terms';
 import FAQ from './pages/FAQ';
 import Volunteer from './pages/Volunteer';
+import MissionPage from './pages/Mission';
+import TransparencyPage from './pages/Transparency';
 import AdminCampaigns from './pages/AdminCampaigns';
 import ImageGenerator from './pages/ImageGenerator';
 
@@ -52,6 +54,8 @@ export default function App() {
                   <Route path="/terms" element={<Terms />} />
                   <Route path="/faq" element={<FAQ />} />
                   <Route path="/volunteer" element={<Volunteer />} />
+                  <Route path="/mission" element={<MissionPage />} />
+                  <Route path="/transparency" element={<TransparencyPage />} />
                   <Route path="/admin/campaigns" element={<AdminCampaigns />} />
                   <Route path="/admin/generate-images" element={<ImageGenerator />} />
                 </Routes>
