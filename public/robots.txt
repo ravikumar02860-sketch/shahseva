@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dargahsaiyadali.org/sitemap.xml
+Sitemap: https://shahseva.vercel.app/sitemap.xml
