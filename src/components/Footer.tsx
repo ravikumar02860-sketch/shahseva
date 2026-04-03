@@ -67,6 +67,7 @@ export default function Footer() {
               { to: "/impact", label: t.footer.links.impact },
               { to: "/transparency", label: t.footer.links.transparency },
               { to: "/gallery", label: t.footer.links.gallery },
+              { to: "/blog", label: t.nav.blog },
               { to: "/volunteer", label: t.footer.volunteer },
               { to: "/faq", label: t.footer.faq },
               { to: "/donate", label: t.footer.links.donate }
@@ -94,7 +95,11 @@ export default function Footer() {
               { to: "/donate-for-medical-help", label: t.footer.categories.medical },
               { to: "/donate-for-food-for-poor", label: t.footer.categories.food },
               { to: "/donate-for-disaster-relief", label: t.footer.categories.disaster },
-              { to: "/donate-to-orphanage-india", label: t.footer.categories.orphanage }
+              { to: "/donate-to-orphanage-india", label: t.footer.categories.orphanage },
+              { to: "/donate-for-girl-child-education", label: t.footer.categories.girlChild },
+              { to: "/donate-for-cancer-patient-treatment", label: t.footer.categories.cancer },
+              { to: "/donate-for-old-age-home", label: t.footer.categories.oldAge },
+              { to: "/donate-for-homeless-people", label: t.footer.categories.homeless }
             ].map((link, i) => (
               <li key={i}>
                 <Link to={link.to} className="hover:text-accent transition-colors flex items-center gap-2 group">

@@ -12,12 +12,13 @@ export const translations = {
       mission: 'Mission',
       transparency: 'Transparency',
       categories: 'Donation Categories',
+      blog: 'Blog',
     },
     hero: {
       badge: 'Trusted NGO in India Since 2010',
       title: 'Transforming Lives: Your NGO Donation in India Makes a Difference',
       subtitle: 'Join Us to Help Poor Families and Children Break the Cycle of Poverty.',
-      desc: 'Dargah Saiyad Ali Shah Seva Sansthan is a trusted charity organization in India. We provide life-saving food, medical aid, and education to underprivileged families. Your support for poor children and families can change a world today.',
+      desc: 'Dargah Saiyad Ali Shah Seva Sansthan is a trusted charity organization in India. We provide life-saving food, medical aid, and education to underprivileged families. Your safe online donation for poor people can change a world today. Learn how to donate money to NGO online securely with us.',
       ctaWork: 'View Our Impact',
     },
     stats: {
@@ -30,7 +31,7 @@ export const translations = {
       badge: 'Our Mission of Compassion',
       title: 'A Trusted NGO Dedicated to Helping Children\'s Education and Families in Need.',
       regNo: 'Registration No: COOP/2025/BHILWARA/500577',
-      desc: 'Based in Bhilwara, Rajasthan, our Seva Sansthan is committed to uplifting the underprivileged. We believe every child deserves a future and every family deserves a meal. When you donate to our NGO in India, you fund transparent, high-impact projects that transform lives.',
+      desc: 'Based in Bhilwara, Rajasthan, our Seva Sansthan is a trusted NGO to donate online in India. We are committed to uplifting the underprivileged, believing every child deserves a future and every family deserves a meal. When you donate money to charity online India through our platform, you fund transparent, high-impact projects that transform lives.',
       item1: 'Donate for poor families: Monthly Ration Kits',
       item2: 'Support education donation for bright students',
       item3: 'Emergency medical aid for poor families',
@@ -99,6 +100,10 @@ export const translations = {
         food: 'Food Distribution',
         disaster: 'Disaster Relief',
         orphanage: 'Orphanage Support',
+        girlChild: 'Girl Child Education',
+        cancer: 'Cancer Treatment',
+        oldAge: 'Old Age Home',
+        homeless: 'Help Homeless',
       },
       contact: 'Contact Us',
       address: 'Murad Ali Dargah Ke Pass, Khel Mohalla, Pur, Bhilwara Rajasthan',
@@ -113,6 +118,34 @@ export const translations = {
       terms: 'Terms of Service',
       faq: 'FAQ',
       volunteer: 'Volunteer',
+    },
+    blog: {
+      title: 'Our Blog | NGO Insights & Impact Stories',
+      desc: 'Read about our latest activities, impact stories, and guides on how to donate money to NGO online. Learn why we are a trusted NGO to donate online in India and how you can donate money to charity online India to help poor families.',
+      readMore: 'Read More',
+      posts: [
+        {
+          id: 'how-to-donate-securely',
+          title: 'How to Donate Money to NGO Online Securely in India: A Complete Guide',
+          excerpt: 'Wondering how to donate money to NGO online? Learn how to ensure your online charity donation reaches those in need safely through a trusted NGO to donate online in India.',
+          date: 'April 1, 2026',
+          category: 'Guide'
+        },
+        {
+          id: 'impact-of-education-donation',
+          title: 'The Impact of Education Donation for Poor Children: Why Donate Money to Charity Online India?',
+          excerpt: 'Discover how you can donate money to charity online India to sponsor a child\'s education and break the cycle of poverty for an entire family.',
+          date: 'March 25, 2026',
+          category: 'Education'
+        },
+        {
+          id: 'supporting-cancer-patients',
+          title: 'Supporting Cancer Patients: Why We Are a Trusted NGO to Donate Online in India',
+          excerpt: 'Real stories of how medical aid for poor patients is making a difference. Learn how to donate money to NGO online to support life-saving cancer treatments.',
+          date: 'March 15, 2026',
+          category: 'Medical'
+        }
+      ]
     },
     seo: {
       home: {
@@ -168,16 +201,16 @@ export const translations = {
       education: {
         title: 'Donate for Education | Empowering Bright Futures',
         h1: 'Support Education Donation: Give a Child the Gift of Learning',
-        description: 'Education is the most powerful weapon to change the world. Your donation for education helps underprivileged children in India access quality schooling, books, and a brighter future.',
+        description: 'Education is the most powerful weapon to change the world. Your donation for education helps underprivileged children in India access quality schooling, books, and a brighter future. Sponsor a poor child education online today.',
         metaDescription: 'Donate for education in India. Support underprivileged children with school fees, books, and uniforms. Your contribution helps break the cycle of poverty through learning.',
         section1Title: 'Why Your Education Donation Matters',
-        section1Text: 'In many parts of Rajasthan, bright children are forced to drop out of school due to financial constraints. Your support ensures they stay in the classroom and reach their full potential.',
+        section1Text: 'In many parts of Rajasthan, bright children are forced to drop out of school due to financial constraints. Help poor child education donation reach those who need it most.',
         cta: 'Help a Child Today'
       },
       children: {
         title: 'Donate for Poor Children | Save a Childhood Today',
         h1: 'Donate for Poor Children: Provide Hope and Opportunity',
-        description: 'Every child deserves a safe childhood filled with hope. Your donation for poor children provides essential nutrition, clothing, and a supportive environment for those in need.',
+        description: 'Every child deserves a safe childhood filled with hope. Your donate for poor children education in India provides essential nutrition, clothing, and a supportive environment for those in need.',
         metaDescription: 'Help poor children in India with your donation. Provide food, clothing, and care to underprivileged kids. Join our mission to protect and empower the next generation.',
         section1Title: 'Protecting the Most Vulnerable',
         section1Text: 'Children are the most affected by poverty. We work on the ground to provide immediate relief and long-term care for children living in extreme hardship.',
@@ -185,8 +218,8 @@ export const translations = {
       },
       medical: {
         title: 'Donate for Medical Help | Saving Lives in India',
-        h1: 'Donate for Medical Help: Provide Life-Saving Care',
-        description: 'Healthcare is a basic right, yet many families in India cannot afford even basic medicines. Your donation for medical help funds surgeries, treatments, and health camps.',
+        h1: 'Medical Help Donation for Poor Patients: Provide Life-Saving Care',
+        description: 'Healthcare is a basic right, yet many families in India cannot afford even basic medicines. Your medical help donation for poor patients funds surgeries, treatments, and health camps. Donate for hospital bills for poor families.',
         metaDescription: 'Support medical aid for poor families in India. Your donation funds life-saving surgeries, medicines, and free health checkup camps in Rajasthan.',
         section1Title: 'Bridging the Healthcare Gap',
         section1Text: 'We organize free medical camps in remote villages of Rajasthan, bringing doctors and medicines to those who have no other access to healthcare.',
@@ -194,8 +227,8 @@ export const translations = {
       },
       food: {
         title: 'Donate for Food for Poor | Ending Hunger Together',
-        h1: 'Donate for Food Distribution: No One Should Go Hungry',
-        description: 'Hunger is a daily reality for thousands of families. Your donation for food for the poor provides monthly ration kits and nutritious meals to those struggling with extreme poverty.',
+        h1: 'Donate Food for Poor People Online: No One Should Go Hungry',
+        description: 'Hunger is a daily reality for thousands of families. Your donate meals for poor families India provides monthly ration kits and nutritious meals to those struggling with extreme poverty. Help feed hungry people donation drives.',
         metaDescription: 'Donate for food distribution in India. Help us provide monthly ration kits and nutritious meals to poor families. Join our mission to end hunger in Rajasthan.',
         section1Title: 'Fighting Hunger on the Frontlines',
         section1Text: 'Our food distribution drives reach the most neglected communities, ensuring that widows, elderly, and daily wage earners have enough to eat.',
@@ -203,21 +236,57 @@ export const translations = {
       },
       disaster: {
         title: 'Donate for Disaster Relief | Immediate Aid When It Matters',
-        h1: 'Donate for Disaster Relief: Be the First Responder',
-        description: 'When disaster strikes, every second counts. Your donation for disaster relief allows us to provide immediate food, shelter, and medical aid to affected families.',
+        h1: 'Donate for Disaster Relief Fund India: Be the First Responder',
+        description: 'When disaster strikes, every second counts. Your donate for flood relief India allows us to provide immediate food, shelter, and medical aid to affected families.',
         metaDescription: 'Support emergency disaster relief in India. Your donation provides immediate aid, food, and shelter to families affected by natural disasters and emergencies.',
         section1Title: 'Rapid Response in Times of Crisis',
         section1Text: 'We maintain an emergency fund to ensure we can mobilize volunteers and resources within hours of a disaster, providing a lifeline to those who have lost everything.',
         cta: 'Support Relief Efforts'
       },
       orphanage: {
-        title: 'Donate to Orphanage India | Caring for Orphan Children',
-        h1: 'Donate for Orphanage Support: A Family for Every Child',
+        title: 'Donate to Orphanage in India Online | Caring for Orphan Children',
+        h1: 'Donate to Orphanage in India Online: A Family for Every Child',
         description: 'Orphan children are among the most vulnerable in our society. Your donation to our orphanage support program provides a safe home, education, and a loving environment.',
         metaDescription: 'Donate to orphanage support in India. Help us provide a safe home, education, and care for orphan children. Your support gives them a chance at a better life.',
         section1Title: 'Providing a Safe Haven',
         section1Text: 'We support local orphanages and care centers, ensuring that children without families receive the same opportunities and love as any other child.',
         cta: 'Support an Orphan Today'
+      },
+      girlChild: {
+        title: 'Donate for Girl Child Education India | Empowering Girls',
+        h1: 'Donate for Girl Child Education India: Break the Barriers',
+        description: 'Educating a girl means educating a family. Your donate for girl child education India helps girls overcome social and financial hurdles to reach their dreams.',
+        metaDescription: 'Support girl child education in India. Your donation helps girls stay in school and build a better future. Empower the next generation of women leaders.',
+        section1Title: 'Why Educate Girls?',
+        section1Text: 'Girls often face the brunt of poverty and social exclusion. By supporting their education, we are investing in a more equitable and prosperous future for all.',
+        cta: 'Support a Girl\'s Education'
+      },
+      cancer: {
+        title: 'Donate for Cancer Patient Treatment India | Saving Lives',
+        h1: 'Donate for Cancer Patient Treatment India: Give Hope',
+        description: 'Cancer treatment is prohibitively expensive for many. Your donate for cancer patient treatment India provides financial assistance for chemotherapy, radiation, and medication.',
+        metaDescription: 'Help cancer patients in India with your donation. Provide financial support for life-saving treatments and care. Join our fight against cancer.',
+        section1Title: 'Fighting Cancer Together',
+        section1Text: 'We help poor patients navigate the complex and costly journey of cancer treatment, ensuring they don\'t have to fight alone.',
+        cta: 'Donate for Treatment'
+      },
+      oldAge: {
+        title: 'Donate for Old Age Home India | Caring for Elders',
+        h1: 'Donate for Old Age Home India: Dignity in Senior Years',
+        description: 'Many elderly people are left without care or support. Your donate for old age home India ensures they have a safe place to live, nutritious food, and medical attention.',
+        metaDescription: 'Support old age homes in India. Your donation provides care, shelter, and medical aid to abandoned elderly people. Help them live with dignity.',
+        section1Title: 'Honoring Our Elders',
+        section1Text: 'We believe every senior citizen deserves to live their final years with respect and comfort. Your support makes this possible.',
+        cta: 'Support Our Elders'
+      },
+      homeless: {
+        title: 'Donate for Homeless People India | Shelter and Hope',
+        h1: 'Donate for Homeless People India: A Roof Over Every Head',
+        description: 'Living on the streets is a harsh reality for many. Your donate for homeless people India provides temporary shelter, warm blankets, and hot meals.',
+        metaDescription: 'Help homeless people in India. Your donation provides shelter, food, and essential supplies to those living on the streets. Join our mission to end homelessness.',
+        section1Title: 'Providing Immediate Relief',
+        section1Text: 'During harsh winters and monsoons, our teams work tirelessly to provide blankets and shelter to those exposed to the elements.',
+        cta: 'Help the Homeless'
       }
     },
     donation: {
@@ -533,12 +602,13 @@ export const translations = {
       mission: 'मिशन',
       transparency: 'पारदर्शिता',
       categories: 'दान श्रेणियां',
+      blog: 'ब्लॉग',
     },
     hero: {
       badge: '2010 से भारत में विश्वसनीय एनजीओ',
       title: 'भारत में आपके एनजीओ दान के माध्यम से जीवन को सशक्त बनाना',
       subtitle: 'गरीब परिवारों को गरीबी के चक्र से बाहर निकालने में मदद करें।',
-      desc: 'दरगाह सैयद अली शाह सेवा संस्थान भारत में मानवता की सेवा के लिए समर्पित एक प्रमुख धर्मार्थ संगठन है। हम गरीब परिवारों को भोजन, शिक्षा और चिकित्सा सहायता प्रदान करते हैं। आपका समर्थन आज एक दुनिया बदल सकता है।',
+      desc: 'दरगाह सैयद अली शाह सेवा संस्थान भारत में मानवता की सेवा के लिए समर्पित एक प्रमुख धर्मार्थ संगठन है। हम गरीब परिवारों को भोजन, शिक्षा और चिकित्सा सहायता प्रदान करते हैं। गरीबों के लिए आपका सुरक्षित ऑनलाइन दान आज एक दुनिया बदल सकता है। जानें कि हमारे साथ सुरक्षित रूप से एनजीओ को ऑनलाइन पैसे कैसे दान करें।',
       ctaWork: 'हमारा प्रभाव देखें',
     },
     stats: {
@@ -551,7 +621,7 @@ export const translations = {
       badge: 'करुणा का हमारा मिशन',
       title: 'गरीब बच्चों की शिक्षा और जरूरतमंद परिवारों की मदद करने वाला एक विश्वसनीय एनजीओ।',
       regNo: 'पंजीकरण संख्या: COOP/2025/BHILWARA/500577',
-      desc: 'भीलवाड़ा, राजस्थान में स्थित, हमारा सेवा संस्थान वंचितों के उत्थान के लिए प्रतिबद्ध है। हमारा मानना है कि हर बच्चे का भविष्य है और हर परिवार को भोजन मिलना चाहिए। भारत में हमारे एनजीओ को दान देकर, आप पारदर्शी और उच्च-प्रभाव वाले प्रोजेक्ट्स का समर्थन कर रहे हैं जो जीवन बदल देते हैं।',
+      desc: 'भीलवाड़ा, राजस्थान में स्थित, हमारा सेवा संस्थान भारत में ऑनलाइन दान करने के लिए एक विश्वसनीय एनजीओ है। हम वंचितों के उत्थान के लिए प्रतिबद्ध हैं। जब आप हमारे प्लेटफॉर्म के माध्यम से भारत में चैरिटी के लिए ऑनलाइन पैसे दान करते हैं, तो आप पारदर्शी और उच्च-प्रभाव वाले प्रोजेक्ट्स का समर्थन करते हैं।',
       item1: 'गरीब परिवारों के लिए दान: मासिक राशन किट',
       item2: 'होनहार छात्रों के लिए शिक्षा दान का समर्थन करें',
       item3: 'गरीब परिवारों के लिए आपातकालीन चिकित्सा सहायता',
@@ -620,6 +690,10 @@ export const translations = {
         food: 'भोजन वितरण',
         disaster: 'आपदा राहत',
         orphanage: 'अनाथालय सहायता',
+        girlChild: 'बालिका शिक्षा',
+        cancer: 'कैंसर उपचार',
+        oldAge: 'वृद्धाश्रम',
+        homeless: 'बेघरों की मदद',
       },
       contact: 'संपर्क करें',
       address: 'मुराद अली दरगाह के पास, खेल मोहल्ला, पुर, भीलवाड़ा राजस्थान',
@@ -634,6 +708,34 @@ export const translations = {
       terms: 'सेवा की शर्तें',
       faq: 'अक्सर पूछे जाने वाले प्रश्न',
       volunteer: 'स्वयंसेवक',
+    },
+    blog: {
+      title: 'हमारा ब्लॉग | एनजीओ अंतर्दृष्टि और प्रभाव की कहानियाँ',
+      desc: 'हमारी नवीनतम गतिविधियों, प्रभाव की कहानियों और एनजीओ को ऑनलाइन पैसे कैसे दान करें, इस पर गाइड पढ़ें। जानें कि हम भारत में ऑनलाइन दान करने के लिए एक विश्वसनीय एनजीओ क्यों हैं और आप गरीब परिवारों की मदद के लिए भारत में ऑनलाइन चैरिटी के लिए पैसे कैसे दान कर सकते हैं।',
+      readMore: 'और पढ़ें',
+      posts: [
+        {
+          id: 'how-to-donate-securely',
+          title: 'भारत में एनजीओ को ऑनलाइन सुरक्षित रूप से पैसे कैसे दान करें: एक पूर्ण गाइड',
+          excerpt: 'सोच रहे हैं कि एनजीओ को ऑनलाइन पैसे कैसे दान करें? जानें कि भारत में ऑनलाइन दान करने के लिए एक विश्वसनीय एनजीओ के माध्यम से अपना ऑनलाइन चैरिटी दान सुरक्षित रूप से जरूरतमंदों तक कैसे पहुँचाया जाए।',
+          date: '1 अप्रैल, 2026',
+          category: 'गाइड'
+        },
+        {
+          id: 'impact-of-education-donation',
+          title: 'गरीब बच्चों के लिए शिक्षा दान का प्रभाव: भारत में ऑनलाइन चैरिटी के लिए पैसे क्यों दान करें?',
+          excerpt: 'जानें कि कैसे आप भारत में ऑनलाइन चैरिटी के लिए पैसे दान कर सकते हैं ताकि एक बच्चे की शिक्षा को प्रायोजित किया जा सके और पूरे परिवार के लिए गरीबी के चक्र को तोड़ा जा सके।',
+          date: '25 मार्च, 2026',
+          category: 'शिक्षा'
+        },
+        {
+          id: 'supporting-cancer-patients',
+          title: 'कैंसर रोगियों की सहायता: हम भारत में ऑनलाइन दान करने के लिए एक विश्वसनीय एनजीओ क्यों हैं',
+          excerpt: 'गरीब मरीजों के लिए चिकित्सा सहायता कैसे बदलाव ला रही है, इसकी वास्तविक कहानियाँ। जीवन रक्षक कैंसर उपचारों का समर्थन करने के लिए एनजीओ को ऑनलाइन पैसे कैसे दान करें, इसके बारे में जानें।',
+          date: '15 मार्च, 2026',
+          category: 'चिकित्सा'
+        }
+      ]
     },
     seo: {
       home: {
@@ -732,13 +834,49 @@ export const translations = {
         cta: 'राहत प्रयासों का समर्थन करें'
       },
       orphanage: {
-        title: 'अनाथालय भारत को दान दें | अनाथ बच्चों की देखभाल',
-        h1: 'अनाथालय सहायता के लिए दान: हर बच्चे के लिए एक परिवार',
+        title: 'अनाथालय भारत को ऑनलाइन दान दें | अनाथ बच्चों की देखभाल',
+        h1: 'अनाथालय भारत को ऑनलाइन दान दें: हर बच्चे के लिए एक परिवार',
         description: 'अनाथ बच्चे हमारे समाज में सबसे कमजोर लोगों में से हैं। हमारे अनाथालय सहायता कार्यक्रम के लिए आपका दान एक सुरक्षित घर, शिक्षा और एक प्यार भरा वातावरण प्रदान करता है।',
         metaDescription: 'भारत में अनाथालय सहायता के लिए दान करें। अनाथ बच्चों के लिए एक सुरक्षित घर, शिक्षा और देखभाल प्रदान करने में हमारी मदद करें। आपका समर्थन उन्हें बेहतर जीवन का मौका देता है।',
         section1Title: 'एक सुरक्षित ठिकाना प्रदान करना',
         section1Text: 'हम स्थानीय अनाथालयों और देखभाल केंद्रों का समर्थन करते हैं, यह सुनिश्चित करते हैं कि बिना परिवार के बच्चों को किसी भी अन्य बच्चे की तरह ही अवसर और प्यार मिले।',
         cta: 'आज ही एक अनाथ का समर्थन करें'
+      },
+      girlChild: {
+        title: 'बालिका शिक्षा भारत के लिए दान | बालिकाओं को सशक्त बनाना',
+        h1: 'बालिका शिक्षा भारत के लिए दान: बाधाओं को तोड़ें',
+        description: 'एक लड़की को शिक्षित करने का अर्थ है एक परिवार को शिक्षित करना। बालिका शिक्षा के लिए आपका दान लड़कियों को उनके सपनों तक पहुँचने के लिए सामाजिक और वित्तीय बाधाओं को दूर करने में मदद करता है।',
+        metaDescription: 'भारत में बालिका शिक्षा का समर्थन करें। आपका दान लड़कियों को स्कूल में रहने और बेहतर भविष्य बनाने में मदद करता है। महिला नेताओं की अगली पीढ़ी को सशक्त बनाएं।',
+        section1Title: 'लड़कियों को क्यों शिक्षित करें?',
+        section1Text: 'लड़कियां अक्सर गरीबी और सामाजिक बहिष्कार का खामियाजा भुगतती हैं। उनकी शिक्षा का समर्थन करके, हम सभी के लिए एक अधिक न्यायसंगत और समृद्ध भविष्य में निवेश कर रहे हैं।',
+        cta: 'एक लड़की की शिक्षा का समर्थन करें'
+      },
+      cancer: {
+        title: 'कैंसर रोगी उपचार भारत के लिए दान | जीवन बचाना',
+        h1: 'कैंसर रोगी उपचार भारत के लिए दान: आशा दें',
+        description: 'कैंसर का इलाज कई लोगों के लिए बहुत महंगा है। कैंसर रोगी उपचार के लिए आपका दान कीमोथेरेपी, विकिरण और दवाओं के लिए वित्तीय सहायता प्रदान करता है।',
+        metaDescription: 'भारत में कैंसर रोगियों की मदद करें। जीवन रक्षक उपचार और देखभाल के लिए वित्तीय सहायता प्रदान करें। कैंसर के खिलाफ हमारी लड़ाई में शामिल हों।',
+        section1Title: 'कैंसर से मिलकर लड़ना',
+        section1Text: 'हम गरीब मरीजों को कैंसर उपचार की जटिल और महंगी यात्रा में मदद करते हैं, यह सुनिश्चित करते हुए कि उन्हें अकेले नहीं लड़ना पड़े।',
+        cta: 'उपचार के लिए दान करें'
+      },
+      oldAge: {
+        title: 'वृद्धाश्रम भारत के लिए दान | बुजुर्गों की देखभाल',
+        h1: 'वृद्धाश्रम भारत के लिए दान: वरिष्ठ वर्षों में गरिमा',
+        description: 'कई बुजुर्गों को देखभाल या सहायता के बिना छोड़ दिया जाता है। वृद्धाश्रम के लिए आपका दान सुनिश्चित करता है कि उनके पास रहने के लिए एक सुरक्षित जगह, पौष्टिक भोजन और चिकित्सा ध्यान हो।',
+        metaDescription: 'भारत में वृद्धाश्रमों का समर्थन करें। आपका दान परित्यक्त बुजुर्गों को देखभाल, आश्रय और चिकित्सा सहायता प्रदान करता है। उन्हें गरिमा के साथ जीने में मदद करें।',
+        section1Title: 'हमारे बुजुर्गों का सम्मान करना',
+        section1Text: 'हमारा मानना है कि हर वरिष्ठ नागरिक सम्मान और आराम के साथ अपने अंतिम वर्ष जीने का हकदार है। आपका समर्थन इसे संभव बनाता है।',
+        cta: 'हमारे बुजुर्गों का समर्थन करें'
+      },
+      homeless: {
+        title: 'बेघर लोगों के लिए दान भारत | आश्रय और आशा',
+        h1: 'बेघर लोगों के लिए दान भारत: हर सिर पर छत',
+        description: 'सड़कों पर रहना कई लोगों के लिए एक कड़वी सच्चाई है। बेघर लोगों के लिए आपका दान अस्थायी आश्रय, गर्म कंबल और गर्म भोजन प्रदान करता है।',
+        metaDescription: 'भारत में बेघर लोगों की मदद करें। आपका दान सड़कों पर रहने वालों को आश्रय, भोजन और आवश्यक आपूर्ति प्रदान करता. बेघरपन को समाप्त करने के हमारे मिशन में शामिल हों।',
+        section1Title: 'तत्काल राहत प्रदान करना',
+        section1Text: 'कड़ाके की ठंड और मानसून के दौरान, हमारी टीमें उन लोगों को कंबल और आश्रय प्रदान करने के लिए अथक प्रयास करती हैं जो तत्वों के संपर्क में हैं।',
+        cta: 'बेघरों की मदद करें'
       }
     },
     donation: {

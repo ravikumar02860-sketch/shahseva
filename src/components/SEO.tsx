@@ -16,7 +16,7 @@ export default function SEO({
   title = "NGO Donation India | Help Poor Families | Dargah Seva Sansthan",
   description = "Donate to Dargah Saiyad Ali Shah Seva Sansthan, a trusted NGO in India. We provide food, education, and medical aid to poor families and children in Rajasthan.",
   keywords = "NGO donation India, donate for poor children, charity organization India, help poor families, support education donation, donate to NGO India, charity helping poor families, NGO helping children education, Bhilwara NGO, Rajasthan charity",
-  canonical = "https://shahseva.vercel.app",
+  canonical = "https://dargahsaiyadali.org",
   ogImage = "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F",
   ogType = "website",
   twitterHandle = "@dargahsaiyadali",
@@ -30,7 +30,7 @@ export default function SEO({
     "@type": "NGO",
     "name": siteName,
     "taxID": "COOP/2025/BHILWARA/500577",
-    "url": "https://shahseva.vercel.app",
+    "url": "https://dargahsaiyadali.org",
     "logo": "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F",
     "description": description,
     "address": {
@@ -52,7 +52,7 @@ export default function SEO({
       "@type": "DonateAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://shahseva.vercel.app/donate",
+        "urlTemplate": "https://dargahsaiyadali.org/donate",
         "actionPlatform": [
           "http://schema.org/DesktopWebPlatform",
           "http://schema.org/MobileWebPlatform"
@@ -76,6 +76,9 @@ export default function SEO({
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
+      <meta name="author" content={siteName} />
+      <meta name="robots" content="index, follow" />
+      <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F" />
       <link rel="canonical" href={canonical} />
 
       {/* Open Graph tags (Facebook, LinkedIn) */}

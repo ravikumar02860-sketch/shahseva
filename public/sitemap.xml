@@ -1,88 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://shahseva.vercel.app/</loc>
-    <lastmod>2026-04-01</lastmod>
+    <loc>https://dargahsaiyadali.org/</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://shahseva.vercel.app/about</loc>
-    <lastmod>2026-04-01</lastmod>
+    <loc>https://dargahsaiyadali.org/about</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://shahseva.vercel.app/work</loc>
-    <lastmod>2026-04-01</lastmod>
+    <loc>https://dargahsaiyadali.org/work</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://shahseva.vercel.app/donate</loc>
-    <lastmod>2026-04-01</lastmod>
+    <loc>https://dargahsaiyadali.org/donate</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://shahseva.vercel.app/impact</loc>
-    <lastmod>2026-04-01</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://shahseva.vercel.app/gallery</loc>
-    <lastmod>2026-04-01</lastmod>
+    <loc>https://dargahsaiyadali.org/impact</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://shahseva.vercel.app/contact</loc>
-    <lastmod>2026-04-01</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://shahseva.vercel.app/faq</loc>
-    <lastmod>2026-04-01</lastmod>
+    <loc>https://dargahsaiyadali.org/gallery</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://shahseva.vercel.app/volunteer</loc>
-    <lastmod>2026-04-01</lastmod>
+    <loc>https://dargahsaiyadali.org/contact</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://shahseva.vercel.app/mission</loc>
-    <lastmod>2026-04-01</lastmod>
+    <loc>https://dargahsaiyadali.org/faq</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://dargahsaiyadali.org/volunteer</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dargahsaiyadali.org/mission</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://dargahsaiyadali.org/transparency</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://dargahsaiyadali.org/blog</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dargahsaiyadali.org/blog/how-to-donate-securely</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dargahsaiyadali.org/blog/impact-of-education-donation</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dargahsaiyadali.org/blog/supporting-cancer-patients</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dargahsaiyadali.org/privacy</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://dargahsaiyadali.org/terms</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://dargahsaiyadali.org/donate-for-education</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://shahseva.vercel.app/transparency</loc>
-    <lastmod>2026-04-01</lastmod>
+    <loc>https://dargahsaiyadali.org/donate-for-poor-children</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://shahseva.vercel.app/donate-for-education</loc>
+    <loc>https://dargahsaiyadali.org/donate-for-medical-help</loc>
     <lastmod>2026-04-03</lastmod>
-    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://shahseva.vercel.app/donate-for-poor-children</loc>
+    <loc>https://dargahsaiyadali.org/donate-for-food-for-poor</loc>
     <lastmod>2026-04-03</lastmod>
-    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://shahseva.vercel.app/donate-for-medical-help</loc>
+    <loc>https://dargahsaiyadali.org/donate-for-disaster-relief</loc>
     <lastmod>2026-04-03</lastmod>
-    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://shahseva.vercel.app/donate-for-food-for-poor</loc>
+    <loc>https://dargahsaiyadali.org/donate-to-orphanage-india</loc>
     <lastmod>2026-04-03</lastmod>
-    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://shahseva.vercel.app/donate-for-disaster-relief</loc>
+    <loc>https://dargahsaiyadali.org/donate-for-girl-child-education</loc>
     <lastmod>2026-04-03</lastmod>
-    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://shahseva.vercel.app/donate-to-orphanage-india</loc>
+    <loc>https://dargahsaiyadali.org/donate-for-cancer-patient-treatment</loc>
     <lastmod>2026-04-03</lastmod>
-    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dargahsaiyadali.org/donate-for-old-age-home</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dargahsaiyadali.org/donate-for-homeless-people</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

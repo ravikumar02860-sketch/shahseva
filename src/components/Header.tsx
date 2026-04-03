@@ -19,6 +19,7 @@ export default function Header() {
     { name: t.nav.impact, path: '/impact' },
     { name: t.nav.transparency, path: '/transparency' },
     { name: t.nav.gallery, path: '/gallery' },
+    { name: t.nav.blog, path: '/blog' },
     { name: t.nav.contact, path: '/contact' },
   ];
 
@@ -29,6 +30,10 @@ export default function Header() {
     { name: t.footer.categories.food, path: '/donate-for-food-for-poor' },
     { name: t.footer.categories.disaster, path: '/donate-for-disaster-relief' },
     { name: t.footer.categories.orphanage, path: '/donate-to-orphanage-india' },
+    { name: t.footer.categories.girlChild, path: '/donate-for-girl-child-education' },
+    { name: t.footer.categories.cancer, path: '/donate-for-cancer-patient-treatment' },
+    { name: t.footer.categories.oldAge, path: '/donate-for-old-age-home' },
+    { name: t.footer.categories.homeless, path: '/donate-for-homeless-people' },
   ];
 
   return (

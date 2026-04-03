@@ -21,19 +21,31 @@ export default function HomePage() {
       desc: t.activities.foodDesc,
       icon: Utensils,
       img: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=800',
+      link: '/donate-for-food-for-poor'
     },
     {
       title: t.activities.eduTitle,
       desc: t.activities.eduDesc,
       icon: BookOpen,
       img: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=800',
+      link: '/donate-for-education'
     },
     {
       title: t.activities.medTitle,
       desc: t.activities.medDesc,
       icon: HeartPulse,
       img: 'https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=800',
+      link: '/donate-for-medical-help'
     },
+  ];
+
+  const featuredCauses = [
+    { id: 'girlChild', icon: BookOpen, link: '/donate-for-girl-child-education' },
+    { id: 'cancer', icon: HeartPulse, link: '/donate-for-cancer-patient-treatment' },
+    { id: 'oldAge', icon: Users, link: '/donate-for-old-age-home' },
+    { id: 'homeless', icon: Shield, link: '/donate-for-homeless-people' },
+    { id: 'orphanage', icon: Home, link: '/donate-to-orphanage-india' },
+    { id: 'children', icon: Heart, link: '/donate-for-poor-children' },
   ];
 
   return (
@@ -394,12 +406,56 @@ export default function HomePage() {
                 <div className="p-10">
                   <h3 className="text-2xl font-serif font-bold mb-4 text-white">{act.title}</h3>
                   <p className="text-slate-400 text-sm leading-relaxed mb-8">{act.desc}</p>
-                  <Link to="/work" className="inline-flex items-center gap-2 text-accent font-bold hover:gap-4 transition-all">
+                  <Link to={act.link} className="inline-flex items-center gap-2 text-accent font-bold hover:gap-4 transition-all">
                     {t.activities.readMore} <ArrowRight size={18} />
                   </Link>
                 </div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Causes Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <span className="inline-block px-4 py-1.5 bg-primary/5 text-primary font-bold rounded-full text-[10px] uppercase tracking-widest mb-6">
+              Support a Cause
+            </span>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">Featured Donation Causes</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              Choose a specific cause to support and see the direct impact of your online charity donation.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {featuredCauses.map((cause, idx) => {
+              const category = t.categories[cause.id as keyof typeof t.categories];
+              return (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.1 }}
+                  className="group bg-slate-50 p-8 rounded-[2rem] border border-slate-100 hover:bg-primary hover:text-white transition-all duration-500 shadow-sm hover:shadow-xl"
+                >
+                  <div className="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:bg-white/20 group-hover:text-white transition-all">
+                    <cause.icon size={28} />
+                  </div>
+                  <h3 className="text-xl font-bold mb-4">{category.title.split('|')[0].trim()}</h3>
+                  <p className="text-slate-500 group-hover:text-slate-200 text-sm mb-8 line-clamp-2">
+                    {category.description}
+                  </p>
+                  <Link 
+                    to={cause.link} 
+                    className="inline-flex items-center gap-2 font-bold text-primary group-hover:text-accent transition-colors"
+                  >
+                    Donate Now <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>

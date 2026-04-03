@@ -12,7 +12,11 @@ import {
   ArrowRight,
   ShieldCheck,
   Users,
-  CheckCircle2
+  CheckCircle2,
+  GraduationCap,
+  Activity,
+  HeartPulse,
+  Shield
 } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import SEO from '../components/SEO';
@@ -24,6 +28,10 @@ const iconMap: Record<string, any> = {
   food: Utensils,
   disaster: AlertTriangle,
   orphanage: HomeIcon,
+  girlChild: GraduationCap,
+  cancer: Activity,
+  oldAge: HeartPulse,
+  homeless: Shield,
 };
 
 interface CategoryPageProps {

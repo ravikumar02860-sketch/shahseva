@@ -21,6 +21,8 @@ import TransparencyPage from './pages/Transparency';
 import AdminCampaigns from './pages/AdminCampaigns';
 import ImageGenerator from './pages/ImageGenerator';
 import CategoryPage from './pages/CategoryPage';
+import BlogPage from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -54,6 +56,8 @@ export default function App() {
                   <Route path="/privacy" element={<PrivacyPolicy />} />
                   <Route path="/terms" element={<Terms />} />
                   <Route path="/faq" element={<FAQ />} />
+                  <Route path="/blog" element={<BlogPage />} />
+                  <Route path="/blog/:id" element={<BlogPost />} />
                   <Route path="/volunteer" element={<Volunteer />} />
                   <Route path="/mission" element={<MissionPage />} />
                   <Route path="/transparency" element={<TransparencyPage />} />
@@ -65,6 +69,10 @@ export default function App() {
                   <Route path="/donate-for-food-for-poor" element={<CategoryPage categoryId="food" />} />
                   <Route path="/donate-for-disaster-relief" element={<CategoryPage categoryId="disaster" />} />
                   <Route path="/donate-to-orphanage-india" element={<CategoryPage categoryId="orphanage" />} />
+                  <Route path="/donate-for-girl-child-education" element={<CategoryPage categoryId="girlChild" />} />
+                  <Route path="/donate-for-cancer-patient-treatment" element={<CategoryPage categoryId="cancer" />} />
+                  <Route path="/donate-for-old-age-home" element={<CategoryPage categoryId="oldAge" />} />
+                  <Route path="/donate-for-homeless-people" element={<CategoryPage categoryId="homeless" />} />
                 </Routes>
               </main>
               <Footer />
