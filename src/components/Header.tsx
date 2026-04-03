@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Globe, Heart } from 'lucide-react';
+import { Menu, X, Globe, Heart, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { cn } from '../utils/cn';
 import { useLanguage } from '../LanguageContext';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isCategoriesOpen, setIsCategoriesOpen] = useState(false);
   const location = useLocation();
   const { language, setLanguage, t } = useLanguage();
 
@@ -19,6 +20,15 @@ export default function Header() {
     { name: t.nav.transparency, path: '/transparency' },
     { name: t.nav.gallery, path: '/gallery' },
     { name: t.nav.contact, path: '/contact' },
+  ];
+
+  const categoryLinks = [
+    { name: t.footer.categories.education, path: '/donate-for-education' },
+    { name: t.footer.categories.children, path: '/donate-for-poor-children' },
+    { name: t.footer.categories.medical, path: '/donate-for-medical-help' },
+    { name: t.footer.categories.food, path: '/donate-for-food-for-poor' },
+    { name: t.footer.categories.disaster, path: '/donate-for-disaster-relief' },
+    { name: t.footer.categories.orphanage, path: '/donate-to-orphanage-india' },
   ];
 
   return (
@@ -43,7 +53,62 @@ export default function Header() {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-1">
-            {navLinks.map((link) => (
+            {navLinks.slice(0, 4).map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className={cn(
+                  'px-4 py-2 text-base font-semibold rounded-xl transition-all duration-300 hover:bg-slate-50',
+                  location.pathname === link.path 
+                    ? 'text-primary bg-slate-50' 
+                    : 'text-slate-600 hover:text-primary'
+                )}
+              >
+                {link.name}
+              </Link>
+            ))}
+
+            {/* Categories Dropdown */}
+            <div className="relative group">
+              <button
+                onMouseEnter={() => setIsCategoriesOpen(true)}
+                className={cn(
+                  'px-4 py-2 text-base font-semibold rounded-xl transition-all duration-300 hover:bg-slate-50 flex items-center gap-1',
+                  categoryLinks.some(link => location.pathname === link.path)
+                    ? 'text-primary bg-slate-50'
+                    : 'text-slate-600 hover:text-primary'
+                )}
+              >
+                {t.nav.categories}
+                <ChevronDown size={16} className={cn("transition-transform duration-300", isCategoriesOpen && "rotate-180")} />
+              </button>
+              
+              <div 
+                onMouseLeave={() => setIsCategoriesOpen(false)}
+                className={cn(
+                  "absolute top-full left-0 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 p-2 transition-all duration-300 origin-top",
+                  isCategoriesOpen ? "opacity-100 scale-100 translate-y-2" : "opacity-0 scale-95 pointer-events-none"
+                )}
+              >
+                {categoryLinks.map((link) => (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    onClick={() => setIsCategoriesOpen(false)}
+                    className={cn(
+                      "block px-4 py-3 text-sm font-medium rounded-xl transition-colors",
+                      location.pathname === link.path
+                        ? "bg-primary/5 text-primary"
+                        : "text-slate-600 hover:bg-slate-50 hover:text-primary"
+                    )}
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {navLinks.slice(4).map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
@@ -112,7 +177,56 @@ export default function Header() {
             exit={{ opacity: 0, y: -20 }}
             className="absolute top-full left-0 right-0 bg-white shadow-2xl border-t border-slate-100 p-6 flex flex-col gap-4 md:hidden"
           >
-            {navLinks.map((link) => (
+            {navLinks.slice(0, 4).map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                onClick={() => setIsOpen(false)}
+                className={cn(
+                  'text-lg font-medium py-2 border-b border-slate-50',
+                  location.pathname === link.path ? 'text-accent' : 'text-primary'
+                )}
+              >
+                {link.name}
+              </Link>
+            ))}
+
+            {/* Mobile Categories */}
+            <div className="py-2 border-b border-slate-50">
+              <button 
+                onClick={() => setIsCategoriesOpen(!isCategoriesOpen)}
+                className="flex items-center justify-between w-full text-lg font-medium text-primary"
+              >
+                {t.nav.categories}
+                <ChevronDown size={20} className={cn("transition-transform", isCategoriesOpen && "rotate-180")} />
+              </button>
+              <AnimatePresence>
+                {isCategoriesOpen && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: 'auto', opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    className="overflow-hidden flex flex-col gap-2 mt-2 pl-4"
+                  >
+                    {categoryLinks.map((link) => (
+                      <Link
+                        key={link.path}
+                        to={link.path}
+                        onClick={() => { setIsOpen(false); setIsCategoriesOpen(false); }}
+                        className={cn(
+                          "text-base py-2",
+                          location.pathname === link.path ? "text-accent" : "text-slate-600"
+                        )}
+                      >
+                        {link.name}
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            {navLinks.slice(4).map((link) => (
               <Link
                 key={link.path}
                 to={link.path}

@@ -9,6 +9,7 @@ interface SEOProps {
   ogImage?: string;
   ogType?: string;
   twitterHandle?: string;
+  schema?: any;
 }
 
 export default function SEO({
@@ -18,10 +19,56 @@ export default function SEO({
   canonical = "https://shahseva.vercel.app",
   ogImage = "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F",
   ogType = "website",
-  twitterHandle = "@dargahsaiyadali"
+  twitterHandle = "@dargahsaiyadali",
+  schema
 }: SEOProps) {
   const siteName = "Dargah Saiyad Ali Shah Seva Sansthan";
   const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
+
+  const defaultSchema = {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": siteName,
+    "taxID": "COOP/2025/BHILWARA/500577",
+    "url": "https://shahseva.vercel.app",
+    "logo": "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F",
+    "description": description,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Murad Ali Dargah Ke Pass, Khel Mohalla, Pur",
+      "addressLocality": "Bhilwara",
+      "addressRegion": "Rajasthan",
+      "postalCode": "311001",
+      "addressCountry": "IN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-6350489219",
+      "contactType": "customer service",
+      "areaServed": "IN",
+      "availableLanguage": ["English", "Hindi"]
+    },
+    "potentialAction": {
+      "@type": "DonateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://shahseva.vercel.app/donate",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "recipient": {
+        "@type": "NGO",
+        "name": siteName
+      }
+    },
+    "sameAs": [
+      "https://facebook.com/dargahsaiyadali",
+      "https://twitter.com/dargahsaiyadali",
+      "https://instagram.com/dargahsaiyadali"
+    ]
+  };
 
   return (
     <Helmet>
@@ -48,35 +95,7 @@ export default function SEO({
 
       {/* Structured Data (JSON-LD) */}
       <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "NGO",
-          "name": siteName,
-          "taxID": "REG-XXXXXXXXXX", // NGO Registration Number
-          "url": "https://shahseva.vercel.app",
-          "logo": "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F",
-          "description": description,
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Murad Ali Dargah Ke Pass, Khel Mohalla, Pur",
-            "addressLocality": "Bhilwara",
-            "addressRegion": "Rajasthan",
-            "postalCode": "311001",
-            "addressCountry": "IN"
-          },
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+91-6350489219",
-            "contactType": "customer service",
-            "areaServed": "IN",
-            "availableLanguage": ["English", "Hindi"]
-          },
-          "sameAs": [
-            "https://facebook.com/dargahsaiyadali",
-            "https://twitter.com/dargahsaiyadali",
-            "https://instagram.com/dargahsaiyadali"
-          ]
-        })}
+        {JSON.stringify(schema || defaultSchema)}
       </script>
     </Helmet>
   );

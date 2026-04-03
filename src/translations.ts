@@ -11,6 +11,7 @@ export const translations = {
       istikhara: 'Istikhara Guide',
       mission: 'Mission',
       transparency: 'Transparency',
+      categories: 'Donation Categories',
     },
     hero: {
       badge: 'Trusted NGO in India Since 2010',
@@ -28,7 +29,7 @@ export const translations = {
     aboutSummary: {
       badge: 'Our Mission of Compassion',
       title: 'A Trusted NGO Dedicated to Helping Children\'s Education and Families in Need.',
-      regNo: 'Registration No: REG-XXXXXXXXXX',
+      regNo: 'Registration No: COOP/2025/BHILWARA/500577',
       desc: 'Based in Bhilwara, Rajasthan, our Seva Sansthan is committed to uplifting the underprivileged. We believe every child deserves a future and every family deserves a meal. When you donate to our NGO in India, you fund transparent, high-impact projects that transform lives.',
       item1: 'Donate for poor families: Monthly Ration Kits',
       item2: 'Support education donation for bright students',
@@ -89,6 +90,15 @@ export const translations = {
         donate: 'Support Us',
         mission: 'Our Mission',
         transparency: 'Transparency Report',
+      },
+      categories: {
+        title: 'Donation Categories',
+        education: 'Donate for Education',
+        children: 'Donate for Poor Children',
+        medical: 'Medical Help Donation',
+        food: 'Food Distribution',
+        disaster: 'Disaster Relief',
+        orphanage: 'Orphanage Support',
       },
       contact: 'Contact Us',
       address: 'Murad Ali Dargah Ke Pass, Khel Mohalla, Pur, Bhilwara Rajasthan',
@@ -153,6 +163,62 @@ export const translations = {
         title: 'Volunteer with NGO | Join Our Charity Mission in India',
         description: 'Join Dargah Saiyad Ali Shah Seva Sansthan as a volunteer. Help us serve poor families and children through community outreach and social work.',
       },
+    },
+    categories: {
+      education: {
+        title: 'Donate for Education | Empowering Bright Futures',
+        h1: 'Support Education Donation: Give a Child the Gift of Learning',
+        description: 'Education is the most powerful weapon to change the world. Your donation for education helps underprivileged children in India access quality schooling, books, and a brighter future.',
+        metaDescription: 'Donate for education in India. Support underprivileged children with school fees, books, and uniforms. Your contribution helps break the cycle of poverty through learning.',
+        section1Title: 'Why Your Education Donation Matters',
+        section1Text: 'In many parts of Rajasthan, bright children are forced to drop out of school due to financial constraints. Your support ensures they stay in the classroom and reach their full potential.',
+        cta: 'Help a Child Today'
+      },
+      children: {
+        title: 'Donate for Poor Children | Save a Childhood Today',
+        h1: 'Donate for Poor Children: Provide Hope and Opportunity',
+        description: 'Every child deserves a safe childhood filled with hope. Your donation for poor children provides essential nutrition, clothing, and a supportive environment for those in need.',
+        metaDescription: 'Help poor children in India with your donation. Provide food, clothing, and care to underprivileged kids. Join our mission to protect and empower the next generation.',
+        section1Title: 'Protecting the Most Vulnerable',
+        section1Text: 'Children are the most affected by poverty. We work on the ground to provide immediate relief and long-term care for children living in extreme hardship.',
+        cta: 'Change a Child\'s Life'
+      },
+      medical: {
+        title: 'Donate for Medical Help | Saving Lives in India',
+        h1: 'Donate for Medical Help: Provide Life-Saving Care',
+        description: 'Healthcare is a basic right, yet many families in India cannot afford even basic medicines. Your donation for medical help funds surgeries, treatments, and health camps.',
+        metaDescription: 'Support medical aid for poor families in India. Your donation funds life-saving surgeries, medicines, and free health checkup camps in Rajasthan.',
+        section1Title: 'Bridging the Healthcare Gap',
+        section1Text: 'We organize free medical camps in remote villages of Rajasthan, bringing doctors and medicines to those who have no other access to healthcare.',
+        cta: 'Save a Life Today'
+      },
+      food: {
+        title: 'Donate for Food for Poor | Ending Hunger Together',
+        h1: 'Donate for Food Distribution: No One Should Go Hungry',
+        description: 'Hunger is a daily reality for thousands of families. Your donation for food for the poor provides monthly ration kits and nutritious meals to those struggling with extreme poverty.',
+        metaDescription: 'Donate for food distribution in India. Help us provide monthly ration kits and nutritious meals to poor families. Join our mission to end hunger in Rajasthan.',
+        section1Title: 'Fighting Hunger on the Frontlines',
+        section1Text: 'Our food distribution drives reach the most neglected communities, ensuring that widows, elderly, and daily wage earners have enough to eat.',
+        cta: 'Feed a Family Today'
+      },
+      disaster: {
+        title: 'Donate for Disaster Relief | Immediate Aid When It Matters',
+        h1: 'Donate for Disaster Relief: Be the First Responder',
+        description: 'When disaster strikes, every second counts. Your donation for disaster relief allows us to provide immediate food, shelter, and medical aid to affected families.',
+        metaDescription: 'Support emergency disaster relief in India. Your donation provides immediate aid, food, and shelter to families affected by natural disasters and emergencies.',
+        section1Title: 'Rapid Response in Times of Crisis',
+        section1Text: 'We maintain an emergency fund to ensure we can mobilize volunteers and resources within hours of a disaster, providing a lifeline to those who have lost everything.',
+        cta: 'Support Relief Efforts'
+      },
+      orphanage: {
+        title: 'Donate to Orphanage India | Caring for Orphan Children',
+        h1: 'Donate for Orphanage Support: A Family for Every Child',
+        description: 'Orphan children are among the most vulnerable in our society. Your donation to our orphanage support program provides a safe home, education, and a loving environment.',
+        metaDescription: 'Donate to orphanage support in India. Help us provide a safe home, education, and care for orphan children. Your support gives them a chance at a better life.',
+        section1Title: 'Providing a Safe Haven',
+        section1Text: 'We support local orphanages and care centers, ensuring that children without families receive the same opportunities and love as any other child.',
+        cta: 'Support an Orphan Today'
+      }
     },
     donation: {
       title: 'Support Our Cause',
@@ -265,7 +331,7 @@ export const translations = {
       step3: 'Recite the Istikhara dua after prayer',
       step4: 'Ask Allah sincerely for guidance',
       step5: 'Observe what path becomes easier for you',
-      duaArabic: 'اللَّهُمَّ إِنِّي أَسْتَخِيرُكَ بِعِلْمِكَ وَأَسْتَقْدِرُكَ بِقُدْرَتِكَ، وَأَسْأَلُكَ مِنْ فَضْلِكَ الْعَظِيمِ، فَإِنَّكَ تَقْدِرُ وَلاَ أَقْدِرُ، وَتَعْلَمُ وَلاَ أَعْلَمُ، وَأَنْتَ عَلاَّمُ الْغُيُوبِ، اللَّهُمَّ إِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ خَيْرٌ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي فَاقْدُرْهُ لِي وَيَسِّرْهُ لِي ثُمَّ بَارِكْ لِي فِيهِ، وَإِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ شَرٌّ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي فَاصْرِفْهُ عَنِّي وَاصْرِفْنِي عَنْهُ وَاقْدُرْ لِيَ الْخَيْرَ حَيْثُ كَانَ ثُمَّ أَرْضِنِي بِهِ',
+      duaArabic: 'اللَّهُمَّ إِنِّي أَسْتَखِيرُكَ بِعِلْمِكَ وَأَسْتَقْدِرُكَ بِقُدْرَتِكَ، وَأَسْأَلُكَ مِنْ فَضْلِكَ الْعَظِيمِ، فَإِنَّكَ تَقْدِرُ وَلاَ أَقْدِرُ، وَتَعْلَمُ وَلاَ أَعْلَمُ، وَأَنْتَ عَلاَّمُ الْغُيُوبِ، اللَّهُمَّ إِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ خَيْرٌ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي فَاقْدُرْهُ لِي وَيَسِّرْهُ لِي ثُمَّ بَارِكْ لِي फِيهِ، وَإِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الأَمْرَ شَرٌّ لِي फِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي فَاصْرِفْهُ عَنِّي وَاصْرِفْنِي عَنْهُ وَاقْدُرْ لِيَ الْخَيْرَ حَيْثُ كَانَ ثُمَّ أَرْضِنِي بِهِ',
       duaTransliteration: 'Allahumma inni astakhiruka bi\'ilmika, wa astaqdiruka bi-qudratika, wa as\'aluka min fadlika al-azim...',
       duaMeaning: 'O Allah, I seek Your guidance [in making a choice] by virtue of Your knowledge, and I seek ability by virtue of Your power...',
       next: 'Next',
@@ -466,6 +532,7 @@ export const translations = {
       istikhara: 'इस्तखारा गाइड',
       mission: 'मिशन',
       transparency: 'पारदर्शिता',
+      categories: 'दान श्रेणियां',
     },
     hero: {
       badge: '2010 से भारत में विश्वसनीय एनजीओ',
@@ -483,7 +550,7 @@ export const translations = {
     aboutSummary: {
       badge: 'करुणा का हमारा मिशन',
       title: 'गरीब बच्चों की शिक्षा और जरूरतमंद परिवारों की मदद करने वाला एक विश्वसनीय एनजीओ।',
-      regNo: 'पंजीकरण संख्या: REG-XXXXXXXXXX',
+      regNo: 'पंजीकरण संख्या: COOP/2025/BHILWARA/500577',
       desc: 'भीलवाड़ा, राजस्थान में स्थित, हमारा सेवा संस्थान वंचितों के उत्थान के लिए प्रतिबद्ध है। हमारा मानना है कि हर बच्चे का भविष्य है और हर परिवार को भोजन मिलना चाहिए। भारत में हमारे एनजीओ को दान देकर, आप पारदर्शी और उच्च-प्रभाव वाले प्रोजेक्ट्स का समर्थन कर रहे हैं जो जीवन बदल देते हैं।',
       item1: 'गरीब परिवारों के लिए दान: मासिक राशन किट',
       item2: 'होनहार छात्रों के लिए शिक्षा दान का समर्थन करें',
@@ -508,7 +575,7 @@ export const translations = {
       eduTitle: 'बच्चों की शिक्षा में मदद करने वाला एनजीओ',
       eduDesc: 'शिक्षा एक बेहतर भविष्य की कुंजी है। आपका समर्थन वंचित छात्रों के लिए स्कूल की फीस, किताबों और वर्दी के लिए धन प्रदान करता है।',
       medTitle: 'गरीब परिवारों के लिए चिकित्सा सहायता',
-      medDesc: 'हम उन लोगों के लिए मुफ्त स्वास्थ्य जांच, जीवन रक्षक दवाएं और सर्जिकल सहायता प्रदान करते हैं जो स्वास्थ्य देखभाल का खर्च नहीं उठा सकते।',
+      medDesc: 'हम उन लोगों के लिए मुफ्त स्वास्थ्य जांच, जीवन रक्षक दवाएं और सर्जिकल सहायता प्रदान करते हैं जो भारत में स्वास्थ्य देखभाल का खर्च नहीं उठा सकते।',
       readMore: 'प्रभाव की और कहानियाँ पढ़ें',
     },
     cta: {
@@ -545,6 +612,15 @@ export const translations = {
         mission: 'हमारा मिशन',
         transparency: 'पारदर्शिता रिपोर्ट',
       },
+      categories: {
+        title: 'दान श्रेणियां',
+        education: 'शिक्षा के लिए दान',
+        children: 'गरीब बच्चों के लिए दान',
+        medical: 'चिकित्सा सहायता दान',
+        food: 'भोजन वितरण',
+        disaster: 'आपदा राहत',
+        orphanage: 'अनाथालय सहायता',
+      },
       contact: 'संपर्क करें',
       address: 'मुराद अली दरगाह के पास, खेल मोहल्ला, पुर, भीलवाड़ा राजस्थान',
       newsletter: {
@@ -561,8 +637,8 @@ export const translations = {
     },
     seo: {
       home: {
-        title: 'एनजीओ डोनेशन इंडिया | गरीब परिवारों की मदद करें | दरगाह सेवा संस्थान',
-        description: 'दरगाह सैयद अली शाह सेवा संस्थान को दान दें, जो भारत में एक विश्वसनीय एनजीओ है। हम राजस्थान में गरीब परिवारों और बच्चों को भोजन, शिक्षा और चिकित्सा सहायता प्रदान करते हैं।',
+        title: 'एनजीओ दान भारत | गरीब परिवारों की मदद करें | दरगाह सेवा संस्थान',
+        description: 'भारत में एक विश्वसनीय एनजीओ, दरगाह सैयद अली शाह सेवा संस्थान को दान दें। हम राजस्थान में गरीब परिवारों और बच्चों को भोजन, शिक्षा और चिकित्सा सहायता प्रदान करते हैं।',
       },
       about: {
         title: 'हमारे एनजीओ के बारे में | भारत में विश्वसनीय चैरिटी संगठन',
@@ -578,7 +654,7 @@ export const translations = {
       },
       gallery: {
         title: 'फोटो गैलरी | भीलवाड़ा, राजस्थान में एनजीओ गतिविधियाँ',
-        description: 'भीलवाड़ा, राजस्थान में गरीब परिवारों के लिए हमारी एनजीओ गतिविधियों, भोजन वितरण अभियानों और शिक्षा सहायता कार्यक्रमों की तस्वीरें देखें।',
+        description: 'भीलवाड़ा, राजस्थान में गरीब परिवारों के लिए हमारी एनजीओ गतिविधियाँ, भोजन वितरण अभियानों और शिक्षा सहायता कार्यक्रमों की तस्वीरें देखें।',
       },
       contact: {
         title: 'हमारे एनजीओ से संपर्क करें | भारत में स्वयंसेवक बनें या दान करें',
@@ -608,6 +684,62 @@ export const translations = {
         title: 'एनजीओ के साथ स्वयंसेवक बनें | भारत में हमारे चैरिटी मिशन में शामिल हों',
         description: 'एक स्वयंसेवक के रूप में दरगाह सैयद अली शाह सेवा संस्थान में शामिल हों। सामुदायिक आउटरीच और सामाजिक कार्य के माध्यम से गरीब परिवारों और बच्चों की सेवा करने में हमारी मदद करें।',
       },
+    },
+    categories: {
+      education: {
+        title: 'शिक्षा के लिए दान | उज्ज्वल भविष्य को सशक्त बनाना',
+        h1: 'शिक्षा दान का समर्थन करें: एक बच्चे को सीखने का उपहार दें',
+        description: 'शिक्षा दुनिया को बदलने का सबसे शक्तिशाली हथियार है। शिक्षा के लिए आपका दान भारत में वंचित बच्चों को गुणवत्तापूर्ण स्कूली शिक्षा, किताबें और उज्ज्वल भविष्य प्राप्त करने में मदद करता है।',
+        metaDescription: 'भारत में शिक्षा के लिए दान करें। स्कूल की फीस, किताबों और वर्दी के साथ वंचित बच्चों का समर्थन करें। आपका योगदान सीखने के माध्यम से गरीबी के चक्र को तोड़ने में मदद करता है।',
+        section1Title: 'आपका शिक्षा दान क्यों मायने रखता है',
+        section1Text: 'राजस्थान के कई हिस्सों में, होनहार बच्चों को वित्तीय बाधाओं के कारण स्कूल छोड़ने के लिए मजबूर होना पड़ता है। आपका समर्थन सुनिश्चित करता है कि वे कक्षा में रहें और अपनी पूरी क्षमता तक पहुँचें।',
+        cta: 'आज ही एक बच्चे की मदद करें'
+      },
+      children: {
+        title: 'गरीब बच्चों के लिए दान | आज ही एक बचपन बचाएं',
+        h1: 'गरीब बच्चों के लिए दान: आशा और अवसर प्रदान करें',
+        description: 'हर बच्चा आशा से भरे सुरक्षित बचपन का हकदार है। गरीब बच्चों के लिए आपका दान जरूरतमंदों के लिए आवश्यक पोषण, कपड़े और एक सहायक वातावरण प्रदान करता है।',
+        metaDescription: 'अपने दान से भारत में गरीब बच्चों की मदद करें। वंचित बच्चों को भोजन, कपड़े और देखभाल प्रदान करें। अगली पीढ़ी की रक्षा और सशक्तिकरण के हमारे मिशन में शामिल हों।',
+        section1Title: 'सबसे कमजोर लोगों की रक्षा करना',
+        section1Text: 'बच्चे गरीबी से सबसे अधिक प्रभावित होते हैं। हम अत्यधिक कठिनाई में रहने वाले बच्चों के लिए तत्काल राहत और दीर्घकालिक देखभाल प्रदान करने के लिए जमीन पर काम करते हैं।',
+        cta: 'एक बच्चे का जीवन बदलें'
+      },
+      medical: {
+        title: 'चिकित्सा सहायता के लिए दान | भारत में जीवन बचाना',
+        h1: 'चिकित्सा सहायता के लिए दान: जीवन रक्षक देखभाल प्रदान करें',
+        description: 'स्वास्थ्य देखभाल एक बुनियादी अधिकार है, फिर भी भारत में कई परिवार बुनियादी दवाओं का खर्च भी नहीं उठा सकते हैं। चिकित्सा सहायता के लिए आपका दान सर्जरी, उपचार और स्वास्थ्य शिविरों के लिए धन प्रदान करता है।',
+        metaDescription: 'भारत में गरीब परिवारों के लिए चिकित्सा सहायता का समर्थन करें। आपका दान राजस्थान में जीवन रक्षक सर्जरी, दवाओं और मुफ्त स्वास्थ्य जांच शिविरों के लिए धन प्रदान करता है।',
+        section1Title: 'स्वास्थ्य देखभाल के अंतर को पाटना',
+        section1Text: 'हम राजस्थान के दूरदराज के गांवों में मुफ्त चिकित्सा शिविर आयोजित करते हैं, उन लोगों तक डॉक्टरों और दवाओं को पहुँचाते हैं जिनके पास स्वास्थ्य देखभाल का कोई अन्य साधन नहीं है।',
+        cta: 'आज ही एक जीवन बचाएं'
+      },
+      food: {
+        title: 'गरीबों के लिए भोजन दान | मिलकर भूख मिटाएं',
+        h1: 'भोजन वितरण के लिए दान: कोई भी भूखा नहीं रहना चाहिए',
+        description: 'हजारों परिवारों के लिए भूख एक दैनिक वास्तविकता है। गरीबों के लिए भोजन के लिए आपका दान अत्यधिक गरीबी से जूझ रहे लोगों को मासिक राशन किट और पौष्टिक भोजन प्रदान करता है।',
+        metaDescription: 'भारत में भोजन वितरण के लिए दान करें। गरीब परिवारों को मासिक राशन किट और पौष्टिक भोजन प्रदान करने में हमारी मदद करें। राजस्थान में भूख मिटाने के हमारे मिशन में शामिल हों।',
+        section1Title: 'अग्रिम पंक्ति में भूख से लड़ना',
+        section1Text: 'हमारा भोजन वितरण अभियान सबसे उपेक्षित समुदायों तक पहुँचता है, यह सुनिश्चित करता है कि विधवाओं, बुजुर्गों और दिहाड़ी मजदूरों के पास खाने के लिए पर्याप्त हो।',
+        cta: 'आज ही एक परिवार को खिलाएं'
+      },
+      disaster: {
+        title: 'आपदा राहत के लिए दान | जब जरूरत हो तब तत्काल सहायता',
+        h1: 'आपदा राहत के लिए दान: प्रथम प्रतिक्रियाकर्ता बनें',
+        description: 'जब आपदा आती है, तो हर सेकंड मायने रखता है। आपदा राहत के लिए आपका दान हमें प्रभावित परिवारों को तत्काल भोजन, आश्रय और चिकित्सा सहायता प्रदान करने की अनुमति देता है।',
+        metaDescription: 'भारत में आपातकालीन आपदा राहत का समर्थन करें। आपका दान प्राकृतिक आपदाओं और आपात स्थितियों से प्रभावित परिवारों को तत्काल सहायता, भोजन और आश्रय प्रदान करता।',
+        section1Title: 'संकट के समय में त्वरित प्रतिक्रिया',
+        section1Text: 'हम यह सुनिश्चित करने के लिए एक आपातकालीन कोष बनाए रखते हैं कि हम आपदा के कुछ घंटों के भीतर स्वयंसेवकों और संसाधनों को जुटा सकें, उन लोगों को जीवन रेखा प्रदान कर सकें जिन्होंने सब कुछ खो दिया है।',
+        cta: 'राहत प्रयासों का समर्थन करें'
+      },
+      orphanage: {
+        title: 'अनाथालय भारत को दान दें | अनाथ बच्चों की देखभाल',
+        h1: 'अनाथालय सहायता के लिए दान: हर बच्चे के लिए एक परिवार',
+        description: 'अनाथ बच्चे हमारे समाज में सबसे कमजोर लोगों में से हैं। हमारे अनाथालय सहायता कार्यक्रम के लिए आपका दान एक सुरक्षित घर, शिक्षा और एक प्यार भरा वातावरण प्रदान करता है।',
+        metaDescription: 'भारत में अनाथालय सहायता के लिए दान करें। अनाथ बच्चों के लिए एक सुरक्षित घर, शिक्षा और देखभाल प्रदान करने में हमारी मदद करें। आपका समर्थन उन्हें बेहतर जीवन का मौका देता है।',
+        section1Title: 'एक सुरक्षित ठिकाना प्रदान करना',
+        section1Text: 'हम स्थानीय अनाथालयों और देखभाल केंद्रों का समर्थन करते हैं, यह सुनिश्चित करते हैं कि बिना परिवार के बच्चों को किसी भी अन्य बच्चे की तरह ही अवसर और प्यार मिले।',
+        cta: 'आज ही एक अनाथ का समर्थन करें'
+      }
     },
     donation: {
       title: 'हमारे उद्देश्य का समर्थन करें',
@@ -657,7 +789,7 @@ export const translations = {
         ],
       },
     },
-      rights: 'सर्वाधिकार सुरक्षित�    about: {
+    about: {
       badge: 'हमारी एनजीओ कहानी',
       title: 'चैरिटी और दान के लिए भारत में विश्वसनीय एनजीओ।',
       desc: 'दरगाह सैयद अली शाह सेवा संस्थान मानवता की सेवा के लिए समर्पित एक गैर-लाभकारी संगठन है। हम दान के लिए भारत के सबसे भरोसेमंद एनजीओ में से एक हैं, जो भोजन, शिक्षा और चिकित्सा सहायता पर ध्यान केंद्रित करते हैं।',
@@ -707,285 +839,6 @@ export const translations = {
       error: 'कृपया सभी आवश्यक फ़ील्ड सही ढंग से भरें।',
       sending: 'भेजा जा रहा है...',
       mapPlaceholder: 'गूगल मैप्स एकीकरण',
-    },
-    istikhara: {
-      title: 'इस्तखारा गाइड',
-      desc: 'इस्तखारा की नमाज़ और दुआ के माध्यम से अल्लाह से मार्गदर्शन प्राप्त करें।',
-      askName: 'आपका नाम क्या है? (वैकल्पिक)',
-      askDecision: 'आप किस निर्णय को लेकर भ्रमित हैं?',
-      askAlreadyPrayed: 'क्या आपने इस मामले के लिए पहले ही इस्तखारा की नमाज़ पढ़ ली है?',
-      step1: 'वज़ू करें',
-      step2: 'दो रकात नफिल नमाज़ पढ़ें',
-      step3: 'नमाज़ के बाद इस्तखारा की दुआ पढ़ें',
-      step4: 'अल्लाह से ईमानदारी से मार्गदर्शन मांगें',
-      step5: 'देखें कि आपके लिए कौन सा रास्ता आसान हो जाता है',
-      duaArabic: 'اللَّهُمَّ إِنِّي أَسْتَखِيرُكَ بِعِلْمِكَ وَأَسْتَقْدِرُكَ بِقُدْرَتِكَ...',
-      duaTransliteration: 'अल्लाहुम्मा इन्नी अस्तखीरुका बि-इल्मिका, व अस्तकदीरुका बि-कुदरतिका...',
-      duaMeaning: 'ऐ अल्लाह, मैं तेरे इल्म के ज़रिए तुझसे खैर (भलाई) मांगता हूँ, और तेरी कुदरत के ज़रिए तुझसे ताकत मांगता हूँ...',
-      next: 'अगला',
-      continue: 'जारी रखें',
-      processTitle: 'इस्तखारा की प्रक्रिया',
-      duaTitle: 'पैगंबर की दुआ',
-      transliteration: 'ट्रांसलिट्रेशन',
-      meaning: 'अर्थ',
-      signsTitle: 'संकेतों को कैसे समझें?',
-      personalizedTitle: 'व्यक्तिगत मार्गदर्शन दुआ',
-      generateNow: 'व्यक्तिगत दुआ जेनरेट करें',
-      seekingGuidance: 'मार्गदर्शन मांग रहे हैं...',
-      duaPrompt: 'व्यक्तिगत दुआ प्राप्त करने के लिए अपना निर्णय साझा करें।',
-      copyDua: 'दुआ कॉपी करें',
-      copied: 'कॉपी किया गया!',
-      share: 'मार्गदर्शन साझा करें',
-      dreamNote: 'सपने ही एकमात्र संकेत नहीं हैं। असली संकेत निर्णय में आसानी या कठिनाई है।',
-      guidanceNote: 'यदि अल्लाह रास्ते को आसान और आरामदायक बनाता है, तो यह आपके लिए अच्छा हो सकता है। यदि बाधाएं बनी रहती हैं, तो इसे छोड़ देना बेहतर हो सकता है।',
-      trustRemind: 'अल्लाह पर भरोसा रखें, और याद रखें कि अल्लाह जानता है कि आपके लिए सबसे अच्छा क्या है।',
-      reference: 'संदर्भ: सहीह अल-बुखारी, जाबिर इब्न अब्दुल्ला द्वारा वर्णित।',
-      startBtn: 'मार्गदर्शन शुरू करें',
-      resetBtn: 'फिर से शुरू करें',
-      yes: 'हाँ',
-      no: 'नहीं',
-    },
-    gallery: {
-      title: 'फोटो गैलरी',
-      desc: 'हमारे समुदाय में सेवा, आशा और परिवर्तन के क्षणों को कैद करना।',
-      images: {
-        food: 'भोजन वितरण अभियान',
-        education: 'सभी के लिए शिक्षा',
-        medical: 'मेडिकल कैंप 2025',
-        families: 'परिवारों का समर्थन',
-        welfare: 'सामुदायिक कल्याण',
-        relief: 'आपातकालीन राहत',
-        smiles: 'बच्चों की मुस्कान',
-        success: 'छात्रों की सफलता',
-        hope: 'भविष्य के लिए आशा'
-      }
-    },
-    impact: {
-      title: 'हमारा प्रभाव',
-      desc: 'प्रत्येक दान वास्तविक दुनिया के परिवर्तन में बदल जाता है। यहाँ उन जीवन की एक झलक है जिन्हें हमने साथ मिलकर छुआ है।',
-      stats: {
-        lives: 'कुल प्रभावित जीवन',
-        villages: 'कवर किए गए गाँव',
-        volunteers: 'सक्रिय स्वयंसेवक',
-        years: 'सेवा के वर्ष'
-      },
-      storiesTitle: 'परिवर्तन की कहानियाँ',
-      stories: [
-        {
-          name: "रहीम की नई शुरुआत",
-          text: "अपने पिता को खोने के बाद, रहीम की शिक्षा खतरे में थी। हमारे छात्रवृत्ति कार्यक्रम ने सुनिश्चित किया कि वह स्कूल में रहे। आज, वह अपनी कक्षा में एक शीर्ष छात्र है।"
-        },
-        {
-          name: "जोया का स्वास्थ्य सुधार",
-          text: "जोया को तत्काल सर्जरी की आवश्यकता थी जिसे उसका परिवार वहन नहीं कर सकता था। सामुदायिक दान के माध्यम से, हमने उसके उपचार के लिए धन दिया। वह अब स्वस्थ और खुश है।"
-        }
-      ],
-      storyLabel: 'प्रभाव की कहानी'
-    },
-    work: {
-      title: 'हमारा धर्मार्थ कार्य',
-      desc: 'विभिन्न पहलों के माध्यम से, हमारा लक्ष्य हमारे समुदाय की सबसे अधिक दबाव वाली जरूरतों को पूरा करना और एक स्थायी सकारात्मक प्रभाव पैदा करना है।',
-      activities: {
-        food: {
-          title: 'भोजन वितरण',
-          desc: 'हम अत्यधिक गरीबी से जूझ रहे परिवारों को मासिक राशन किट और दैनिक भोजन प्रदान करते हैं। हमारा लक्ष्य यह सुनिश्चित करना है कि हमारे समुदाय में कोई भी भूखा न सोए।'
-        },
-        education: {
-          title: 'शिक्षा सहायता',
-          desc: 'गरीबी के चक्र को तोड़ने के लिए शिक्षा महत्वपूर्ण है। हम वंचित पृष्ठभूमि के बच्चों को स्कूल की फीस, किताबें, वर्दी और स्टेशनरी प्रदान करते हैं।'
-        },
-        medical: {
-          title: 'चिकित्सा सहायता',
-          desc: 'हम मुफ्त चिकित्सा शिविर आयोजित करते हैं और उन लोगों को सर्जरी और दवाओं के लिए वित्तीय सहायता प्रदान करते हैं जो स्वास्थ्य देखभाल का खर्च नहीं उठा सकते।'
-        },
-        families: {
-          title: 'गरीब परिवारों की मदद',
-          desc: 'घर की मरम्मत से लेकर विवाह के लिए वित्तीय सहायता तक, हम जरूरत के समय में गरीब परिवारों के साथ खड़े होते हैं, कमजोरों के लिए एक सुरक्षा जाल प्रदान करते हैं।'
-        },
-        welfare: {
-          title: 'सामुदायिक कल्याण',
-          desc: 'हम अपने पड़ोस में जीवन की समग्र गुणवत्ता में सुधार के लिए स्थानीय बुनियादी ढांचे, स्वच्छ पानी की पहुंच और स्वच्छता परियोजनाओं पर काम करते हैं।'
-        },
-        relief: {
-          title: 'आपातकालीन राहत',
-          desc: 'प्राकृतिक आपदाओं या आपात स्थितियों के दौरान, हम पहले उत्तरदाता होते हैं, प्रभावित परिवारों को तत्काल सहायता, आश्रय और समर्थन प्रदान करते हैं।'
-        }
-      }
-    },
-    mission: {
-      title: 'हमारा मिशन और विजन',
-      desc: 'भीलवाड़ा, राजस्थान में करुणा, पारदर्शिता और निस्वार्थ सेवा के माध्यम से मानवता की सेवा के लिए समर्पित।',
-      missionTitle: 'हमारा मिशन',
-      missionDesc: 'भोजन, शिक्षा और चिकित्सा सहायता के माध्यम से वंचित परिवारों को तत्काल राहत और दीर्घकालिक सहायता प्रदान करना, सभी के लिए सम्मानजनक जीवन सुनिश्चित करना।',
-      visionTitle: 'हमारा विजन',
-      visionDesc: 'एक ऐसा भारत जहाँ गरीबी क्षमता को सीमित नहीं करती है, और प्रत्येक व्यक्ति की बुनियादी जरूरतों और विकास के अवसरों तक पहुँच हो।',
-      goalsTitle: 'हमारे रणनीतिक लक्ष्य',
-      goal1: 'नियमित भोजन वितरण के माध्यम से हमारे लक्षित समुदायों में शून्य भूख।',
-      goal2: 'समर्थित परिवारों के बच्चों के बीच 100% साक्षरता।',
-      goal3: 'उन लोगों के लिए सुलभ स्वास्थ्य सेवा जो इसे वहन नहीं कर सकते।',
-      goal4: 'कौशल विकास और सहायता के माध्यम से महिलाओं का सशक्तिकरण।'
-    },
-    transparency: {
-      title: 'पारदर्शिता रिपोर्ट',
-      desc: 'हम पूर्ण जवाबदेही में विश्वास करते हैं। देखें कि आपका दान जमीन पर कैसे वास्तविक बदलाव ला रहा है।',
-      reportTitle: 'वित्तीय जवाबदेही',
-      reportDesc: 'दरगाह सैयद अली शाह सेवा संस्थान में, हम सख्त वित्तीय नियंत्रण बनाए रखते हैं। प्रत्येक दान का 85% सीधे हमारे कार्यक्रमों में जाता है, जबकि 15% आवश्यक परिचालन और धन उगाहने की लागतों को कवर करता है।',
-      auditTitle: 'ऑडिटेड वित्तीय विवरण',
-      auditDesc: 'हमारे खातों का स्वतंत्र प्रमाणित पेशेवरों द्वारा प्रतिवर्ष ऑडिट किया जाता है ताकि यह सुनिश्चित हो सके कि प्रत्येक रुपये का हिसाब रखा गया है और प्रभावी ढंग से उपयोग किया गया है।',
-      usageTitle: 'आपके पैसे का उपयोग कैसे किया जाता है',
-      usage: [
-        { label: 'प्रत्यक्ष सहायता (भोजन, दवा, फीस)', value: '85%' },
-        { label: 'कार्यक्रम प्रबंधन', value: '8%' },
-        { label: 'धन उगाहना और जागरूकता', value: '4%' },
-        { label: 'प्रशासन', value: '3%' }
-      ]
-    },
-    volunteer: {
-      title: 'हमारे साथ स्वयंसेवक बनें',
-      desc: 'दरगाह सैयद अली शाह सेवा संस्थान में एक स्वयंसेवक के रूप में शामिल हों। भीलवाड़ा में सामुदायिक आउटरीच, शिक्षा सहायता और चिकित्सा सहायता के माध्यम से मानवता की सेवा करने के हमारे मिशन में हमारी मदद करें।',
-      badge: 'हमारे समुदाय में शामिल हों',
-      formTitle: 'स्वयंसेवक आवेदन',
-      benefitsTitle: 'हमारे साथ स्वयंसेवक क्यों बनें?',
-      benefitsDesc: 'हमारे एनजीओ के साथ स्वयंसेवा करना एक पुरस्कृत अनुभव है जो आपको भारत में गरीब परिवारों के जीवन पर सीधा प्रभाव डालने की अनुमति देता है।',
-      benefit1Title: 'व्यक्तिगत विकास',
-      benefit1Desc: 'नए कौशल विकसित करें और सामाजिक मुद्दों की गहरी समझ प्राप्त करें।',
-      benefit2Title: 'सामुदायिक प्रभाव',
-      benefit2Desc: 'जिन लोगों की हम मदद करते हैं उनके चेहरों पर अपनी कोशिशों के सीधे परिणाम देखें।',
-      benefit3Title: 'नेटवर्किंग',
-      benefit3Desc: 'समान विचारधारा वाले व्यक्तियों से जुड़ें जो सेवा के प्रति आपके जुनून को साझा करते हैं।',
-      roles: {
-        outreach: {
-          title: 'सामुदायिक आउटरीच',
-          desc: 'जरूरतमंद परिवारों की पहचान करने और भोजन वितरण अभियान समन्वयित करने में हमारी सहायता करें।'
-        },
-        education: {
-          title: 'शिक्षा सहायता',
-          desc: 'एक शिक्षक के रूप में स्वयंसेवा करें या बच्चों के लिए शैक्षिक कार्यशालाएं आयोजित करने में मदद करें।'
-        },
-        medical: {
-          title: 'चिकित्सा सहायता',
-          desc: 'चिकित्सा पेशेवर हमारे मुफ्त स्वास्थ्य शिविरों के लिए अपना समय स्वयंसेवा कर सकते हैं।'
-        }
-      }
-    },
-    faq: {
-      title: 'अक्सर पूछे जाने वाले प्रश्न',
-      desc: 'हमारे मिशन, गतिविधियों और आप कैसे शामिल हो सकते हैं, इसके बारे में सामान्य प्रश्नों के उत्तर खोजें।',
-      badge: 'सहायता केंद्र',
-      items: [
-        {
-          q: "दरगाह सैयद अली शाह सेवा संस्थान क्या है?",
-          a: "दरगाह सैयद अली शाह सेवा संस्थान एक गैर-लाभकारी संगठन है जो गरीबों और जरूरतमंदों के लिए भोजन वितरण, शिक्षा सहायता और चिकित्सा सहायता के माध्यम से मानवता की सेवा के लिए समर्पित है।"
-        },
-        {
-          q: "मैं संगठन को दान कैसे दे सकता हूँ?",
-          a: "आप 'अभी दान करें' बटन का उपयोग करके सीधे हमारी वेबसाइट के माध्यम से दान कर सकते हैं। हम यूपीआई भुगतान और अन्य ऑनलाइन तरीके स्वीकार करते हैं। आपका योगदान सीधे हमारे धर्मार्थ प्रोजेक्ट्स में जाता है।"
-        },
-        {
-          q: "क्या मेरा दान कर-कटौती योग्य है?",
-          a: "हम एक पंजीकृत गैर-लाभकारी संगठन हैं। धारा 80जी (यदि लागू हो) के तहत विशिष्ट विवरण के लिए कृपया हमसे darveshwelfares@gmail.com पर संपर्क करें।"
-        },
-        {
-          q: "मेरे दान का उपयोग कैसे किया जाता है?",
-          a: "आपके दान का 100% हमारी धर्मार्थ गतिविधियों के लिए उपयोग किया जाता है, जैसे गरीब परिवारों को मासिक राशन प्रदान करना, छात्रों की स्कूल फीस का भुगतान करना और मुफ्त चिकित्सा शिविर आयोजित करना।"
-        },
-        {
-          q: "क्या मैं संगठन के लिए स्वयंसेवा कर सकता हूँ?",
-          a: "हाँ! हम उन स्वयंसेवकों का स्वागत करते हैं जो मानवता की सेवा के प्रति उत्साही हैं। आप हमारे संपर्क पृष्ठ के माध्यम से हमसे संपर्क कर सकते हैं या भीलवाड़ा, राजस्थान में हमारे कार्यालय में आ सकते हैं।"
-        },
-        {
-          q: "संगठन कहाँ स्थित है?",
-          a: "हमारा मुख्य कार्यालय मुराद अली दरगाह के पास, खेल मोहल्ला, पुर, भीलवाड़ा, राजस्थान, भारत में स्थित है।"
-        }
-      ]
-    }
-  }
-};
-      title: 'हमारा मिशन और विजन',
-      desc: 'भीलवाड़ा, राजस्थान में करुणा, पारदर्शिता और निस्वार्थ सेवा के माध्यम से मानवता की सेवा के लिए समर्पित।',
-      missionTitle: 'हमारा मिशन',
-      missionDesc: 'भोजन, शिक्षा और चिकित्सा सहायता के माध्यम से वंचित परिवारों को तत्काल राहत और दीर्घकालिक सहायता प्रदान करना, सभी के लिए सम्मानजनक जीवन सुनिश्चित करना।',
-      visionTitle: 'हमारा विजन',
-      visionDesc: 'एक ऐसा भारत जहाँ गरीबी क्षमता को सीमित नहीं करती है, और प्रत्येक व्यक्ति की बुनियादी जरूरतों और विकास के अवसरों तक पहुँच हो।',
-      goalsTitle: 'हमारे रणनीतिक लक्ष्य',
-      goal1: 'नियमित भोजन वितरण के माध्यम से हमारे लक्षित समुदायों में शून्य भूख।',
-      goal2: 'समर्थित परिवारों के बच्चों के बीच 100% साक्षरता।',
-      goal3: 'उन लोगों के लिए सुलभ स्वास्थ्य सेवा जो इसे वहन नहीं कर सकते।',
-      goal4: 'कौशल विकास और सहायता के माध्यम से महिलाओं का सशक्तिकरण।',
-    },
-    transparency: {
-      title: 'पारदर्शिता रिपोर्ट',
-      desc: 'हम पूर्ण जवाबदेही में विश्वास करते हैं। देखें कि आपका दान जमीन पर कैसे वास्तविक बदलाव ला रहा है।',
-      reportTitle: 'वित्तीय जवाबदेही',
-      reportDesc: 'दरगाह सैयद अली शाह सेवा संस्थान में, हम सख्त वित्तीय नियंत्रण बनाए रखते हैं। प्रत्येक दान का 85% सीधे हमारे कार्यक्रमों में जाता है, जबकि 15% आवश्यक परिचालन और धन उगाहने की लागतों को कवर करता है।',
-      auditTitle: 'ऑडिटेड वित्तीय विवरण',
-      auditDesc: 'हमारे खातों का स्वतंत्र प्रमाणित पेशेवरों द्वारा प्रतिवर्ष ऑडिट किया जाता है ताकि यह सुनिश्चित हो सके कि प्रत्येक रुपये का हिसाब रखा गया है और प्रभावी ढंग से उपयोग किया गया है।',
-      usageTitle: 'आपके पैसे का उपयोग कैसे किया जाता है',
-      usage: [
-        { label: 'प्रत्यक्ष सहायता (भोजन, दवा, फीस)', value: '85%' },
-        { label: 'कार्यक्रम प्रबंधन', value: '8%' },
-        { label: 'धन उगाहना और जागरूकता', value: '4%' },
-        { label: 'प्रशासन', value: '3%' },
-      ],
-    },
-    volunteer: {
-      title: 'हमारे साथ स्वयंसेवक बनें',
-      desc: 'दरगाह सैयद अली शाह सेवा संस्थान में एक स्वयंसेवक के रूप में शामिल हों। भीलवाड़ा में सामुदायिक आउटरीच, शिक्षा सहायता और चिकित्सा सहायता के माध्यम से मानवता की सेवा करने के हमारे मिशन में हमारी मदद करें।',
-      badge: 'हमारे समुदाय में शामिल हों',
-      formTitle: 'स्वयंसेवक आवेदन',
-      benefitsTitle: 'हमारे साथ स्वयंसेवक क्यों बनें?',
-      benefitsDesc: 'हमारे एनजीओ के साथ स्वयंसेवा करना एक पुरस्कृत अनुभव है जो आपको भारत में गरीब परिवारों के जीवन पर सीधा प्रभाव डालने की अनुमति देता है।',
-      benefit1Title: 'व्यक्तिगत विकास',
-      benefit1Desc: 'नए कौशल विकसित करें और सामाजिक मुद्दों की गहरी समझ प्राप्त करें।',
-      benefit2Title: 'सामुदायिक प्रभाव',
-      benefit2Desc: 'जिन लोगों की हम मदद करते हैं उनके चेहरों पर अपनी कोशिशों के सीधे परिणाम देखें।',
-      benefit3Title: 'नेटवर्किंग',
-      benefit3Desc: 'समान विचारधारा वाले व्यक्तियों से जुड़ें जो सेवा के प्रति आपके जुनून को साझा करते हैं।',
-      roles: {
-        outreach: {
-          title: 'सामुदायिक आउटरीच',
-          desc: 'जरूरतमंद परिवारों की पहचान करने और भोजन वितरण अभियान समन्वयित करने में हमारी सहायता करें।',
-        },
-        education: {
-          title: 'शिक्षा सहायता',
-          desc: 'एक शिक्षक के रूप में स्वयंसेवा करें या बच्चों के लिए शैक्षिक कार्यशालाएं आयोजित करने में मदद करें।',
-        },
-        medical: {
-          title: 'चिकित्सा सहायता',
-          desc: 'चिकित्सा पेशेवर हमारे मुफ्त स्वास्थ्य शिविरों के लिए अपना समय स्वयंसेवा कर सकते हैं।',
-        },
-      },
-    },
-    faq: {
-      title: 'अक्सर पूछे जाने वाले प्रश्न',
-      desc: 'हमारे मिशन, गतिविधियों और आप कैसे शामिल हो सकते हैं, इसके बारे में सामान्य प्रश्नों के उत्तर खोजें।',
-      badge: 'सहायता केंद्र',
-      items: [
-        {
-          q: "दरगाह सैयद अली शाह सेवा संस्थान क्या है?",
-          a: "दरगाह सैयद अली शाह सेवा संस्थान एक गैर-लाभकारी संगठन है जो गरीबों और जरूरतमंदों के लिए भोजन वितरण, शिक्षा सहायता और चिकित्सा सहायता के माध्यम से मानवता की सेवा के लिए समर्पित है।",
-        },
-        {
-          q: "मैं संगठन को दान कैसे दे सकता हूँ?",
-          a: "आप 'अभी दान करें' बटन का उपयोग करके सीधे हमारी वेबसाइट के माध्यम से दान कर सकते हैं। हम यूपीआई भुगतान और अन्य ऑनलाइन तरीके स्वीकार करते हैं। आपका योगदान सीधे हमारे धर्मार्थ प्रोजेक्ट्स में जाता है।",
-        },
-        {
-          q: "क्या मेरा दान कर-कटौती योग्य है?",
-          a: "हम एक पंजीकृत गैर-लाभकारी संगठन हैं। धारा 80जी (यदि लागू हो) के तहत विशिष्ट विवरण के लिए कृपया हमसे darveshwelfares@gmail.com पर संपर्क करें।",
-        },
-        {
-          q: "मेरे दान का उपयोग कैसे किया जाता है?",
-          a: "आपके दान का 100% हमारी धर्मार्थ गतिविधियों के लिए उपयोग किया जाता है, जैसे गरीब परिवारों को मासिक राशन प्रदान करना, छात्रों की स्कूल फीस का भुगतान करना और मुफ्त चिकित्सा शिविर आयोजित करना।",
-        },
-        {
-          q: "क्या मैं संगठन के लिए स्वयंसेवा कर सकता हूँ?",
-          a: "हाँ! हम उन स्वयंसेवकों का स्वागत करते हैं जो मानवता की सेवा के प्रति उत्साही हैं। आप हमारे संपर्क पृष्ठ के माध्यम से हमसे संपर्क कर सकते हैं या भीलवाड़ा, राजस्थान में हमारे कार्यालय में आ सकते हैं।",
-        },
-        {
-          q: "संगठन कहाँ स्थित है?",
-          a: "हमारा मुख्य कार्यालय मुराद अली दरगाह के पास, खेल मोहल्ला, पुर, भीलवाड़ा, राजस्थान, भारत में स्थित है।",
-        },
-      ],
     },
     istikhara: {
       title: 'इस्तखारा गाइड',

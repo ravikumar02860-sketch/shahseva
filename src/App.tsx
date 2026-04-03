@@ -20,6 +20,7 @@ import MissionPage from './pages/Mission';
 import TransparencyPage from './pages/Transparency';
 import AdminCampaigns from './pages/AdminCampaigns';
 import ImageGenerator from './pages/ImageGenerator';
+import CategoryPage from './pages/CategoryPage';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -58,6 +59,12 @@ export default function App() {
                   <Route path="/transparency" element={<TransparencyPage />} />
                   <Route path="/admin/campaigns" element={<AdminCampaigns />} />
                   <Route path="/admin/generate-images" element={<ImageGenerator />} />
+                  <Route path="/donate-for-education" element={<CategoryPage categoryId="education" />} />
+                  <Route path="/donate-for-poor-children" element={<CategoryPage categoryId="children" />} />
+                  <Route path="/donate-for-medical-help" element={<CategoryPage categoryId="medical" />} />
+                  <Route path="/donate-for-food-for-poor" element={<CategoryPage categoryId="food" />} />
+                  <Route path="/donate-for-disaster-relief" element={<CategoryPage categoryId="disaster" />} />
+                  <Route path="/donate-to-orphanage-india" element={<CategoryPage categoryId="orphanage" />} />
                 </Routes>
               </main>
               <Footer />

@@ -81,6 +81,31 @@ export default function Footer() {
           </ul>
         </div>
 
+        {/* Donation Categories */}
+        <div>
+          <h4 className="font-serif text-xl font-bold mb-8 text-white relative inline-block">
+            {t.footer.categories.title}
+            <div className="absolute -bottom-2 left-0 w-8 h-1 bg-accent rounded-full"></div>
+          </h4>
+          <ul className="space-y-4 text-slate-400 text-sm font-medium">
+            {[
+              { to: "/donate-for-education", label: t.footer.categories.education },
+              { to: "/donate-for-poor-children", label: t.footer.categories.children },
+              { to: "/donate-for-medical-help", label: t.footer.categories.medical },
+              { to: "/donate-for-food-for-poor", label: t.footer.categories.food },
+              { to: "/donate-for-disaster-relief", label: t.footer.categories.disaster },
+              { to: "/donate-to-orphanage-india", label: t.footer.categories.orphanage }
+            ].map((link, i) => (
+              <li key={i}>
+                <Link to={link.to} className="hover:text-accent transition-colors flex items-center gap-2 group">
+                  <div className="w-1.5 h-1.5 rounded-full bg-accent/30 group-hover:bg-accent transition-colors"></div>
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
         {/* Contact Info */}
         <div>
           <h4 className="font-serif text-xl font-bold mb-8 text-white relative inline-block">
