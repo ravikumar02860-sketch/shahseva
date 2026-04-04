@@ -10,8 +10,8 @@ export default function FAQ() {
 
   const faqs = [
     {
-      q: "What is Dargah Saiyad Ali Shah Seva Sansthan?",
-      a: "Dargah Saiyad Ali Shah Seva Sansthan is a non-profit organization dedicated to serving humanity through food distribution, education support, and medical aid for the poor and needy."
+      q: "What is Shah Seva Sansthan Society?",
+      a: "Shah Seva Sansthan Society is a non-profit organization dedicated to serving humanity through food distribution, education support, and medical aid for the poor and needy."
     },
     {
       q: "How can I donate to the organization?",

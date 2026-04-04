@@ -295,7 +295,7 @@ export default function HomePage() {
                 Where Your <span className="text-gradient-gold">Donations</span> Go
               </h2>
               <p className="text-slate-600 mb-8 text-lg leading-relaxed">
-                We believe in 100% transparency. Every rupee you donate to our NGO is utilized efficiently to provide maximum impact for poor families in India.
+                We believe in 100% transparency. Every rupee you donate to our Society is utilized efficiently to provide maximum impact for poor families in India.
               </p>
               <div className="space-y-6">
                 {[
@@ -472,10 +472,10 @@ export default function HomePage() {
               Our Impact
             </span>
             <h2 className="text-4xl md:text-6xl font-serif font-bold text-primary mb-10 leading-[1.1]">
-              Why Support Our <span className="text-gradient-gold">NGO in Bhilwara</span>, Rajasthan?
+              Why Support Our <span className="text-gradient-gold">Society in Bhilwara</span>, Rajasthan?
             </h2>
             <p className="text-slate-600 mb-10 text-lg leading-relaxed">
-              Dargah Saiyad Ali Shah Seva Sansthan is a trusted charity organization in India and a leading NGO in Bhilwara, dedicated to uplifting marginalized communities. As a charity helping poor families and an NGO helping children's education, our work in Rajasthan focuses on sustainable development through food, education, and healthcare.
+              Shah Seva Sansthan Society is a trusted charity organization in India and a leading Society in Bhilwara, dedicated to uplifting marginalized communities. As a charity helping poor families and a Society helping children's education, our work in Rajasthan focuses on sustainable development through food, education, and healthcare.
             </p>
             <div className="space-y-8">
               {[
@@ -485,7 +485,7 @@ export default function HomePage() {
                   icon: Heart
                 },
                 {
-                  title: "NGO Helping Children Education",
+                  title: "Society Helping Children Education",
                   desc: "Our scholarship programs help bright students from underprivileged backgrounds pursue their dreams, providing a path out of poverty through education.",
                   icon: BookOpen
                 },
@@ -522,13 +522,13 @@ export default function HomePage() {
             <div className="space-y-6">
               <img 
                 src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=600" 
-                alt="NGO Work Bhilwara" 
+                alt="Society Work Bhilwara" 
                 className="rounded-[2rem] shadow-strong w-full h-80 object-cover card-hover"
                 referrerPolicy="no-referrer"
               />
               <img 
                 src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=600" 
-                alt="Medical Aid NGO" 
+                alt="Medical Aid Society" 
                 className="rounded-[2rem] shadow-strong w-full h-64 object-cover card-hover"
                 referrerPolicy="no-referrer"
               />

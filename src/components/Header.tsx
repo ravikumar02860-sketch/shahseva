@@ -49,7 +49,7 @@ export default function Header() {
             <Link to="/" className="flex items-center transition-transform hover:scale-105">
               <img 
                 src="https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F" 
-                alt="Dargah Saiyad Ali Shah Seva Sansthan Logo"
+                alt="Shah Seva Sansthan Society Logo"
                 className="h-28 w-auto object-contain"
                 referrerPolicy="no-referrer"
               />

@@ -10,15 +10,15 @@ const blogContent: Record<string, any> = {
     sections: [
       {
         title: 'Why Online Donation Security Matters',
-        content: 'In the digital age, to donate money to charity online India has become easier than ever. However, ensuring your contribution reaches the right hands safely is paramount. Safe online donation for poor people requires a few simple but critical steps to verify the legitimacy of the NGO. Many donors often ask how to donate money to NGO online without any risks.'
+        content: 'In the digital age, to donate money to charity online India has become easier than ever. However, ensuring your contribution reaches the right hands safely is paramount. Safe online donation for poor people requires a few simple but critical steps to verify the legitimacy of the Society. Many donors often ask how to donate money to Society online without any risks.'
       },
       {
-        title: 'How to Verify a Trusted NGO in India',
-        content: 'Before you decide to donate money to charity online India, always check for the NGO\'s registration number. For instance, Dargah Saiyad Ali Shah Seva Sansthan is registered under COOP/2025/BHILWARA/500577. A trusted NGO to donate online in India will always be transparent about its registration, financial audits, and on-ground impact.'
+        title: 'How to Verify a Trusted Society in India',
+        content: 'Before you decide to donate money to charity online India, always check for the Society\'s registration number. For instance, Shah Seva Sansthan Society is registered under COOP/2025/BHILWARA/500577. A trusted Society to donate online in India will always be transparent about its registration, financial audits, and on-ground impact.'
       },
       {
         title: 'Steps for a Secure Online Charity Donation',
-        content: 'If you are looking for how to donate money to NGO online securely, follow these steps:\n1. Use official website links only.\n2. Check for HTTPS in the URL.\n3. Verify the UPI ID or bank details match the NGO name.\n4. Look for transparency reports and donor testimonials. By following these guidelines, you can ensure your support reaches those who need it most through a trusted NGO to donate online in India.'
+        content: 'If you are looking for how to donate money to Society online securely, follow these steps:\n1. Use official website links only.\n2. Check for HTTPS in the URL.\n3. Verify the UPI ID or bank details match the Society name.\n4. Look for transparency reports and donor testimonials. By following these guidelines, you can ensure your support reaches those who need it most through a trusted Society to donate online in India.'
       }
     ]
   },
@@ -26,11 +26,11 @@ const blogContent: Record<string, any> = {
     sections: [
       {
         title: 'Breaking the Cycle of Poverty',
-        content: 'When you choose to donate money to charity online India for poor children education, you create a lasting impact. Education is not just about learning to read and write; it\'s about providing a path out of generational poverty. Many people search for how to donate money to NGO online to support such causes, and your contribution can be the turning point for a child\'s life.'
+        content: 'When you choose to donate money to charity online India for poor children education, you create a lasting impact. Education is not just about learning to read and write; it\'s about providing a path out of generational poverty. Many people search for how to donate money to Society online to support such causes, and your contribution can be the turning point for a child\'s life.'
       },
       {
         title: 'What Your Education Donation Provides',
-        content: 'Your support helps us provide essential school supplies, including books, uniforms, and stationery. As a trusted NGO to donate online in India, we ensure that your education donation covers school fees for children who would otherwise be forced into child labor. Sponsor a poor child education online today and witness the transformation firsthand.'
+        content: 'Your support helps us provide essential school supplies, including books, uniforms, and stationery. As a trusted Society to donate online in India, we ensure that your education donation covers school fees for children who would otherwise be forced into child labor. Sponsor a poor child education online today and witness the transformation firsthand.'
       }
     ]
   },
@@ -38,11 +38,11 @@ const blogContent: Record<string, any> = {
     sections: [
       {
         title: 'The Battle Against Cancer in Underprivileged Communities',
-        content: 'To donate money to charity online India for cancer patient treatment is to give the gift of life. Medical help donation for poor patients is a critical need, as the cost of chemotherapy and surgery can bankrupt a family living in poverty. If you are wondering how to donate money to NGO online for medical aid, our platform provides a secure and direct way to help.'
+        content: 'To donate money to charity online India for cancer patient treatment is to give the gift of life. Medical help donation for poor patients is a critical need, as the cost of chemotherapy and surgery can bankrupt a family living in poverty. If you are wondering how to donate money to Society online for medical aid, our platform provides a secure and direct way to help.'
       },
       {
         title: 'How We Use Your Medical Donation',
-        content: 'We work directly with hospitals to pay for the bills of poor patients. As a trusted NGO to donate online in India, we provide complete transparency on how your medical donation is used. Your contribution ensures that no one is denied treatment due to lack of funds. Donate for hospital bills for poor and give someone a second chance at life.'
+        content: 'We work directly with hospitals to pay for the bills of poor patients. As a trusted Society to donate online in India, we provide complete transparency on how your medical donation is used. Your contribution ensures that no one is denied treatment due to lack of funds. Donate for hospital bills for poor and give someone a second chance at life.'
       }
     ]
   }
@@ -68,7 +68,7 @@ export default function BlogPost() {
   return (
     <div className="bg-white min-h-screen pt-28 pb-20">
       <SEO 
-        title={`${post.title} | Dargah Seva Sansthan Blog`}
+        title={`${post.title} | Shah Seva Sansthan Blog`}
         description={post.excerpt}
       />
       

@@ -15,10 +15,10 @@ export const translations = {
       blog: 'Blog',
     },
     hero: {
-      badge: 'Trusted NGO in India Since 2010',
-      title: 'Transforming Lives: Your NGO Donation in India Makes a Difference',
+      badge: 'Trusted Society in India Since 2010',
+      title: 'Transforming Lives: Your Society Donation in India Makes a Difference',
       subtitle: 'Join Us to Help Poor Families and Children Break the Cycle of Poverty.',
-      desc: 'Dargah Saiyad Ali Shah Seva Sansthan is a trusted charity organization in India. We provide life-saving food, medical aid, and education to underprivileged families. Your safe online donation for poor people can change a world today. Learn how to donate money to NGO online securely with us.',
+      desc: 'Shah Seva Sansthan Society is a trusted charity organization in India. We provide life-saving food, medical aid, and education to underprivileged families. Your safe online donation for poor people can change a world today. Learn how to donate money to Society online securely with us.',
       ctaWork: 'View Our Impact',
     },
     stats: {
@@ -29,13 +29,13 @@ export const translations = {
     },
     aboutSummary: {
       badge: 'Our Mission of Compassion',
-      title: 'A Trusted NGO Dedicated to Helping Children\'s Education and Families in Need.',
+      title: 'A Trusted Society Dedicated to Helping Children\'s Education and Families in Need.',
       regNo: 'Registration No: COOP/2025/BHILWARA/500577',
-      desc: 'Based in Bhilwara, Rajasthan, our Seva Sansthan is a trusted NGO to donate online in India. We are committed to uplifting the underprivileged, believing every child deserves a future and every family deserves a meal. When you donate money to charity online India through our platform, you fund transparent, high-impact projects that transform lives.',
+      desc: 'Based in Bhilwara, Rajasthan, our Seva Sansthan is a trusted Society to donate online in India. We are committed to uplifting the underprivileged, believing every child deserves a future and every family deserves a meal. When you donate money to charity online India through our platform, you fund transparent, high-impact projects that transform lives.',
       item1: 'Donate for poor families: Monthly Ration Kits',
       item2: 'Support education donation for bright students',
       item3: 'Emergency medical aid for poor families',
-      item4: 'NGO support India: Community welfare projects',
+      item4: 'Society support India: Community welfare projects',
       learnMore: 'Learn More About Our Mission',
       quote: '"The best among you are those who bring most benefit to others."',
     },
@@ -47,12 +47,12 @@ export const translations = {
       signature: "With Gratitude,",
     },
     activities: {
-      badge: 'Our NGO Impact',
+      badge: 'Our Society Impact',
       title: 'How Your Charity Donation in India Creates Real Change',
       desc: 'We focus on sustainable impact. Whether you donate for poor children\'s schooling or provide medical relief, your contribution is handled with the utmost integrity and transparency.',
       foodTitle: 'Donate for Poor: Ending Hunger',
       foodDesc: 'We provide nutritious meals and monthly ration kits to families struggling with extreme poverty across India, ensuring no one goes hungry.',
-      eduTitle: 'NGO Helping Children Education',
+      eduTitle: 'Society Helping Children Education',
       eduDesc: 'Education is the key to a better future. Your support funds school fees, books, and uniforms for underprivileged students in Rajasthan.',
       medTitle: 'Medical Aid for Poor Families',
       medDesc: 'We provide free health checkups, life-saving medicines, and surgical support for those who cannot afford healthcare in India.',
@@ -120,14 +120,14 @@ export const translations = {
       volunteer: 'Volunteer',
     },
     blog: {
-      title: 'Our Blog | NGO Insights & Impact Stories',
-      desc: 'Read about our latest activities, impact stories, and guides on how to donate money to NGO online. Learn why we are a trusted NGO to donate online in India and how you can donate money to charity online India to help poor families.',
+      title: 'Our Blog | Society Insights & Impact Stories',
+      desc: 'Read about our latest activities, impact stories, and guides on how to donate money to Society online. Learn why we are a trusted Society to donate online in India and how you can donate money to charity online India to help poor families.',
       readMore: 'Read More',
       posts: [
         {
           id: 'how-to-donate-securely',
-          title: 'How to Donate Money to NGO Online Securely in India: A Complete Guide',
-          excerpt: 'Wondering how to donate money to NGO online? Learn how to ensure your online charity donation reaches those in need safely through a trusted NGO to donate online in India.',
+          title: 'How to Donate Money to Society Online Securely in India: A Complete Guide',
+          excerpt: 'Wondering how to donate money to Society online? Learn how to ensure your online charity donation reaches those in need safely through a trusted Society to donate online in India.',
           date: 'April 1, 2026',
           category: 'Guide'
         },
@@ -140,8 +140,8 @@ export const translations = {
         },
         {
           id: 'supporting-cancer-patients',
-          title: 'Supporting Cancer Patients: Why We Are a Trusted NGO to Donate Online in India',
-          excerpt: 'Real stories of how medical aid for poor patients is making a difference. Learn how to donate money to NGO online to support life-saving cancer treatments.',
+          title: 'Supporting Cancer Patients: Why We Are a Trusted Society to Donate Online in India',
+          excerpt: 'Real stories of how medical aid for poor patients is making a difference. Learn how to donate money to Society online to support life-saving cancer treatments.',
           date: 'March 15, 2026',
           category: 'Medical'
         }
@@ -149,52 +149,52 @@ export const translations = {
     },
     seo: {
       home: {
-        title: 'NGO Donation India | Help Poor Families | Dargah Seva Sansthan',
-        description: 'Donate to Dargah Saiyad Ali Shah Seva Sansthan, a trusted NGO in India. We provide food, education, and medical aid to poor families and children in Rajasthan.',
+        title: 'Society Donation India | Help Poor Families | Shah Seva Sansthan',
+        description: 'Donate to Shah Seva Sansthan Society, a trusted Society in India. We provide food, education, and medical aid to poor families and children in Rajasthan.',
       },
       about: {
-        title: 'About Our NGO | Trusted Charity Organization in India',
-        description: 'Learn about Dargah Saiyad Ali Shah Seva Sansthan, a trusted NGO in India. Our mission is to serve poor families and children through selfless charity work.',
+        title: 'About Our Society | Trusted Charity Organization in India',
+        description: 'Learn about Shah Seva Sansthan Society, a trusted Society in India. Our mission is to serve poor families and children through selfless charity work.',
       },
       work: {
-        title: 'Our Charity Work | NGO Support for Poor Families in India',
-        description: 'Explore our NGO initiatives in India, including food distribution, education support, and medical aid for poor families and children in Rajasthan.',
+        title: 'Our Charity Work | Society Support for Poor Families in India',
+        description: 'Explore our Society initiatives in India, including food distribution, education support, and medical aid for poor families and children in Rajasthan.',
       },
       impact: {
-        title: 'NGO Impact Stories | Charity Work in Rajasthan',
-        description: 'Discover the real-world impact of Dargah Saiyad Ali Shah Seva Sansthan. Our NGO in India has helped over 12,500 people with food, education, and medical aid.',
+        title: 'Society Impact Stories | Charity Work in Rajasthan',
+        description: 'Discover the real-world impact of Shah Seva Sansthan Society. Our Society in India has helped over 12,500 people with food, education, and medical aid.',
       },
       gallery: {
-        title: 'Photo Gallery | NGO Activities in Bhilwara, Rajasthan',
-        description: 'View photos of our NGO activities, food distribution drives, and education support programs for poor families in Bhilwara, Rajasthan.',
+        title: 'Photo Gallery | Society Activities in Bhilwara, Rajasthan',
+        description: 'View photos of our Society activities, food distribution drives, and education support programs for poor families in Bhilwara, Rajasthan.',
       },
       contact: {
-        title: 'Contact Our NGO | Volunteer or Donate in India',
-        description: 'Get in touch with Dargah Saiyad Ali Shah Seva Sansthan. Contact us for volunteering, NGO donations, or inquiries about our charity work in Rajasthan.',
+        title: 'Contact Our Society | Volunteer or Donate in India',
+        description: 'Get in touch with Shah Seva Sansthan Society. Contact us for volunteering, Society donations, or inquiries about our charity work in Rajasthan.',
       },
       donate: {
-        title: 'Donate to NGO India | Support Poor Families & Children',
-        description: 'Support Dargah Saiyad Ali Shah Seva Sansthan by donating online. Your charity donation helps us provide food, education, and medical aid to poor families.',
+        title: 'Donate to Society India | Support Poor Families & Children',
+        description: 'Support Shah Seva Sansthan Society by donating online. Your charity donation helps us provide food, education, and medical aid to poor families.',
       },
       faq: {
-        title: 'FAQ | NGO Donation & Charity Questions',
-        description: 'Find answers to common questions about our NGO, how to donate for poor children, and how your charity donation in India is used for social welfare.',
+        title: 'FAQ | Society Donation & Charity Questions',
+        description: 'Find answers to common questions about our Society, how to donate for poor children, and how your charity donation in India is used for social welfare.',
       },
       mission: {
-        title: 'Our Mission & Vision | NGO for Poor Families in India',
-        description: 'Read about the mission and vision of Dargah Saiyad Ali Shah Seva Sansthan. We are dedicated to serving humanity through selfless charity work.',
+        title: 'Our Mission & Vision | Society for Poor Families in India',
+        description: 'Read about the mission and vision of Shah Seva Sansthan Society. We are dedicated to serving humanity through selfless charity work.',
       },
       istikhara: {
         title: 'Istikhara Guide | Islamic Guidance for Decisions',
         description: 'Learn how to perform Istikhara prayer and seek guidance from Allah for important life decisions according to authentic Islamic teachings.',
       },
       transparency: {
-        title: 'Transparency Report | NGO Accountability in India',
-        description: 'Review our transparency report to see how your NGO donations are utilized for food, education, and medical aid for poor families in India.',
+        title: 'Transparency Report | Society Accountability in India',
+        description: 'Review our transparency report to see how your Society donations are utilized for food, education, and medical aid for poor families in India.',
       },
       volunteer: {
-        title: 'Volunteer with NGO | Join Our Charity Mission in India',
-        description: 'Join Dargah Saiyad Ali Shah Seva Sansthan as a volunteer. Help us serve poor families and children through community outreach and social work.',
+        title: 'Volunteer with Society | Join Our Charity Mission in India',
+        description: 'Join Shah Seva Sansthan Society as a volunteer. Help us serve poor families and children through community outreach and social work.',
       },
     },
     categories: {
@@ -338,16 +338,16 @@ export const translations = {
       },
     },
     about: {
-      badge: 'Our NGO Story',
-      title: 'Trusted NGO in India for Charity & Donations.',
-      desc: 'Dargah Saiyad Ali Shah Seva Sansthan is a non-profit organization dedicated to serving humanity. We are one of the most trusted NGOs in India for donations, focusing on food, education, and medical aid.',
+      badge: 'Our Society Story',
+      title: 'Trusted Society in India for Charity & Donations.',
+      desc: 'Shah Seva Sansthan Society is a non-profit organization dedicated to serving humanity. We are one of the most trusted Societies in India for donations, focusing on food, education, and medical aid.',
       historyTitle: 'Our Journey Since 2010',
       historyDesc: 'Starting as a small community initiative in Bhilwara, we have grown into a registered Seva Sansthan. Over the last decade, we have expanded our reach from a single neighborhood to over 25 villages across Rajasthan, driven by the spirit of selfless service.',
-      missionTitle: 'Our Mission: NGO Support India',
+      missionTitle: 'Our Mission: Society Support India',
       missionDesc: 'Our mission is to provide immediate relief and long-term support to poor families in India. We ensure access to nutritious food, quality education for children, and essential medical care. We strive to create a society where everyone can live with dignity.',
       visionTitle: 'Our Vision for a Better India',
       visionDesc: "We envision an India where poverty does not limit potential. Our goal is to expand our reach across Rajasthan and beyond, touching thousands of lives through compassionate charity work.",
-      valuesTitle: 'Our Core NGO Values',
+      valuesTitle: 'Our Core Society Values',
       values: {
         compassion: {
           title: 'Compassion',
@@ -355,7 +355,7 @@ export const translations = {
         },
         transparency: {
           title: 'Transparency',
-          desc: 'Full accountability for every NGO donation received.',
+          desc: 'Full accountability for every Society donation received.',
         },
         integrity: {
           title: 'Integrity',
@@ -465,7 +465,7 @@ export const translations = {
     },
     work: {
       title: 'Charity Work in India',
-      desc: 'Through various NGO initiatives, we aim to address the most pressing needs of poor families in India and create a lasting positive impact.',
+      desc: 'Through various Society initiatives, we aim to address the most pressing needs of poor families in India and create a lasting positive impact.',
       howItWorksTitle: 'Our Systematic Approach to Charity',
       howItWorksDesc: 'We don\'t just give aid; we build sustainable support systems. Our process involves identifying the most vulnerable families, assessing their specific needs, and providing targeted assistance that empowers them.',
       step1Title: 'Identification',
@@ -492,7 +492,7 @@ export const translations = {
           desc: 'From home repairs to financial aid for marriages, we stand by poor families in their times of need, providing a safety net for the vulnerable.',
         },
         welfare: {
-          title: 'NGO Support India: Community Welfare',
+          title: 'Society Support India: Community Welfare',
           desc: 'We work on local infrastructure, clean water access, and sanitation projects to improve the overall quality of life in Indian neighborhoods.',
         },
         relief: {
@@ -518,7 +518,7 @@ export const translations = {
       title: 'Transparency Report',
       desc: 'We believe in full accountability. See how your donations are making a real difference on the ground.',
       reportTitle: 'Financial Accountability',
-      reportDesc: 'At Dargah Saiyad Ali Shah Seva Sansthan, we maintain strict financial controls. 85% of every donation goes directly to our programs, while 15% covers essential operational and fundraising costs.',
+      reportDesc: 'At Shah Seva Sansthan Society, we maintain strict financial controls. 85% of every donation goes directly to our programs, while 15% covers essential operational and fundraising costs.',
       auditTitle: 'Audited Financials',
       auditDesc: 'Our accounts are audited annually by independent certified professionals to ensure every rupee is accounted for and used effectively.',
       usageTitle: 'How Your Money is Used',
@@ -531,11 +531,11 @@ export const translations = {
     },
     volunteer: {
       title: 'Volunteer With Us',
-      desc: 'Join Dargah Saiyad Ali Shah Seva Sansthan as a volunteer. Help us in our mission to serve humanity through community outreach, education support, and medical assistance in Bhilwara.',
+      desc: 'Join Shah Seva Sansthan Society as a volunteer. Help us in our mission to serve humanity through community outreach, education support, and medical assistance in Bhilwara.',
       badge: 'Join Our Community',
       formTitle: 'Volunteer Application',
       benefitsTitle: 'Why Volunteer With Us?',
-      benefitsDesc: 'Volunteering with our NGO is a rewarding experience that allows you to make a direct impact on the lives of poor families in India.',
+      benefitsDesc: 'Volunteering with our Society is a rewarding experience that allows you to make a direct impact on the lives of poor families in India.',
       benefit1Title: 'Personal Growth',
       benefit1Desc: 'Develop new skills and gain a deeper understanding of social issues.',
       benefit2Title: 'Community Impact',
@@ -563,8 +563,8 @@ export const translations = {
       badge: 'Help Center',
       items: [
         {
-          q: "What is Dargah Saiyad Ali Shah Seva Sansthan?",
-          a: "Dargah Saiyad Ali Shah Seva Sansthan is a non-profit organization dedicated to serving humanity through food distribution, education support, and medical aid for the poor and needy.",
+          q: "What is Shah Seva Sansthan Society?",
+          a: "Shah Seva Sansthan Society is a non-profit organization dedicated to serving humanity through food distribution, education support, and medical aid for the poor and needy.",
         },
         {
           q: "How can I donate to the organization?",
@@ -605,10 +605,10 @@ export const translations = {
       blog: 'ब्लॉग',
     },
     hero: {
-      badge: '2010 से भारत में विश्वसनीय एनजीओ',
-      title: 'भारत में आपके एनजीओ दान के माध्यम से जीवन को सशक्त बनाना',
+      badge: '2010 से भारत में विश्वसनीय सोसाइटी',
+      title: 'भारत में आपके सोसाइटी दान के माध्यम से जीवन को सशक्त बनाना',
       subtitle: 'गरीब परिवारों को गरीबी के चक्र से बाहर निकालने में मदद करें।',
-      desc: 'दरगाह सैयद अली शाह सेवा संस्थान भारत में मानवता की सेवा के लिए समर्पित एक प्रमुख धर्मार्थ संगठन है। हम गरीब परिवारों को भोजन, शिक्षा और चिकित्सा सहायता प्रदान करते हैं। गरीबों के लिए आपका सुरक्षित ऑनलाइन दान आज एक दुनिया बदल सकता है। जानें कि हमारे साथ सुरक्षित रूप से एनजीओ को ऑनलाइन पैसे कैसे दान करें।',
+      desc: 'शाह सेवा संस्थान सोसाइटी भारत में मानवता की सेवा के लिए समर्पित एक प्रमुख धर्मार्थ संगठन है। हम गरीब परिवारों को भोजन, शिक्षा और चिकित्सा सहायता प्रदान करते हैं। गरीबों के लिए आपका सुरक्षित ऑनलाइन दान आज एक दुनिया बदल सकता है। जानें कि हमारे साथ सुरक्षित रूप से सोसाइटी को ऑनलाइन पैसे कैसे दान करें।',
       ctaWork: 'हमारा प्रभाव देखें',
     },
     stats: {
@@ -619,13 +619,13 @@ export const translations = {
     },
     aboutSummary: {
       badge: 'करुणा का हमारा मिशन',
-      title: 'गरीब बच्चों की शिक्षा और जरूरतमंद परिवारों की मदद करने वाला एक विश्वसनीय एनजीओ।',
+      title: 'गरीब बच्चों की शिक्षा और जरूरतमंद परिवारों की मदद करने वाली एक विश्वसनीय सोसाइटी।',
       regNo: 'पंजीकरण संख्या: COOP/2025/BHILWARA/500577',
-      desc: 'भीलवाड़ा, राजस्थान में स्थित, हमारा सेवा संस्थान भारत में ऑनलाइन दान करने के लिए एक विश्वसनीय एनजीओ है। हम वंचितों के उत्थान के लिए प्रतिबद्ध हैं। जब आप हमारे प्लेटफॉर्म के माध्यम से भारत में चैरिटी के लिए ऑनलाइन पैसे दान करते हैं, तो आप पारदर्शी और उच्च-प्रभाव वाले प्रोजेक्ट्स का समर्थन करते हैं।',
+      desc: 'भीलवाड़ा, राजस्थान में स्थित, हमारा सेवा संस्थान भारत में ऑनलाइन दान करने के लिए एक विश्वसनीय सोसाइटी है। हम वंचितों के उत्थान के लिए प्रतिबद्ध हैं। जब आप हमारे प्लेटफॉर्म के माध्यम से भारत में चैरिटी के लिए ऑनलाइन पैसे दान करते हैं, तो आप पारदर्शी और उच्च-प्रभाव वाले प्रोजेक्ट्स का समर्थन करते हैं।',
       item1: 'गरीब परिवारों के लिए दान: मासिक राशन किट',
       item2: 'होनहार छात्रों के लिए शिक्षा दान का समर्थन करें',
       item3: 'गरीब परिवारों के लिए आपातकालीन चिकित्सा सहायता',
-      item4: 'एनजीओ सपोर्ट इंडिया: सामुदायिक कल्याण परियोजनाएं',
+      item4: 'सोसाइटी सपोर्ट इंडिया: सामुदायिक कल्याण परियोजनाएं',
       learnMore: 'हमारे मिशन के बारे में और जानें',
       quote: '"तुम में से सबसे अच्छा वह है जो दूसरों को सबसे अधिक लाभ पहुँचाता है। "',
     },
@@ -637,12 +637,12 @@ export const translations = {
       signature: "आभार के साथ,",
     },
     activities: {
-      badge: 'हमारा एनजीओ प्रभाव',
+      badge: 'हमारा सोसाइटी प्रभाव',
       title: 'भारत में आपका दान कैसे वास्तविक बदलाव लाता है',
       desc: 'हम स्थायी प्रभाव पर ध्यान केंद्रित करते हैं। चाहे आप गरीब बच्चों की स्कूली शिक्षा के लिए दान दें या चिकित्सा राहत प्रदान करें, आपके योगदान को पूरी ईमानदारी के साथ संभाला जाता है।',
       foodTitle: 'गरीबों के लिए दान: भूख मिटाना',
       foodDesc: 'हम पूरे भारत में अत्यधिक गरीबी से जूझ रहे परिवारों को पौष्टिक भोजन और मासिक राशन किट प्रदान करते हैं।',
-      eduTitle: 'बच्चों की शिक्षा में मदद करने वाला एनजीओ',
+      eduTitle: 'बच्चों की शिक्षा में मदद करने वाली सोसाइटी',
       eduDesc: 'शिक्षा एक बेहतर भविष्य की कुंजी है। आपका समर्थन वंचित छात्रों के लिए स्कूल की फीस, किताबों और वर्दी के लिए धन प्रदान करता है।',
       medTitle: 'गरीब परिवारों के लिए चिकित्सा सहायता',
       medDesc: 'हम उन लोगों के लिए मुफ्त स्वास्थ्य जांच, जीवन रक्षक दवाएं और सर्जिकल सहायता प्रदान करते हैं जो भारत में स्वास्थ्य देखभाल का खर्च नहीं उठा सकते।',
@@ -710,14 +710,14 @@ export const translations = {
       volunteer: 'स्वयंसेवक',
     },
     blog: {
-      title: 'हमारा ब्लॉग | एनजीओ अंतर्दृष्टि और प्रभाव की कहानियाँ',
-      desc: 'हमारी नवीनतम गतिविधियों, प्रभाव की कहानियों और एनजीओ को ऑनलाइन पैसे कैसे दान करें, इस पर गाइड पढ़ें। जानें कि हम भारत में ऑनलाइन दान करने के लिए एक विश्वसनीय एनजीओ क्यों हैं और आप गरीब परिवारों की मदद के लिए भारत में ऑनलाइन चैरिटी के लिए पैसे कैसे दान कर सकते हैं।',
+      title: 'हमारा ब्लॉग | सोसाइटी अंतर्दृष्टि और प्रभाव की कहानियाँ',
+      desc: 'हमारी नवीनतम गतिविधियों, प्रभाव की कहानियों और सोसाइटी को ऑनलाइन पैसे कैसे दान करें, इस पर गाइड पढ़ें। जानें कि हम भारत में ऑनलाइन दान करने के लिए एक विश्वसनीय सोसाइटी क्यों हैं और आप गरीब परिवारों की मदद के लिए भारत में ऑनलाइन चैरिटी के लिए पैसे कैसे दान कर सकते हैं।',
       readMore: 'और पढ़ें',
       posts: [
         {
           id: 'how-to-donate-securely',
-          title: 'भारत में एनजीओ को ऑनलाइन सुरक्षित रूप से पैसे कैसे दान करें: एक पूर्ण गाइड',
-          excerpt: 'सोच रहे हैं कि एनजीओ को ऑनलाइन पैसे कैसे दान करें? जानें कि भारत में ऑनलाइन दान करने के लिए एक विश्वसनीय एनजीओ के माध्यम से अपना ऑनलाइन चैरिटी दान सुरक्षित रूप से जरूरतमंदों तक कैसे पहुँचाया जाए।',
+          title: 'भारत में सोसाइटी को ऑनलाइन सुरक्षित रूप से पैसे कैसे दान करें: एक पूर्ण गाइड',
+          excerpt: 'सोच रहे हैं कि सोसाइटी को ऑनलाइन पैसे कैसे दान करें? जानें कि भारत में ऑनलाइन दान करने के लिए एक विश्वसनीय सोसाइटी के माध्यम से अपना ऑनलाइन चैरिटी दान सुरक्षित रूप से जरूरतमंदों तक कैसे पहुँचाया जाए।',
           date: '1 अप्रैल, 2026',
           category: 'गाइड'
         },
@@ -730,8 +730,8 @@ export const translations = {
         },
         {
           id: 'supporting-cancer-patients',
-          title: 'कैंसर रोगियों की सहायता: हम भारत में ऑनलाइन दान करने के लिए एक विश्वसनीय एनजीओ क्यों हैं',
-          excerpt: 'गरीब मरीजों के लिए चिकित्सा सहायता कैसे बदलाव ला रही है, इसकी वास्तविक कहानियाँ। जीवन रक्षक कैंसर उपचारों का समर्थन करने के लिए एनजीओ को ऑनलाइन पैसे कैसे दान करें, इसके बारे में जानें।',
+          title: 'कैंसर रोगियों की सहायता: हम भारत में ऑनलाइन दान करने के लिए एक विश्वसनीय सोसाइटी क्यों हैं',
+          excerpt: 'गरीब मरीजों के लिए चिकित्सा सहायता कैसे बदलाव ला रही है, इसकी वास्तविक कहानियाँ। जीवन रक्षक कैंसर उपचारों का समर्थन करने के लिए सोसाइटी को ऑनलाइन पैसे कैसे दान करें, इसके बारे में जानें।',
           date: '15 मार्च, 2026',
           category: 'चिकित्सा'
         }
@@ -739,52 +739,52 @@ export const translations = {
     },
     seo: {
       home: {
-        title: 'एनजीओ दान भारत | गरीब परिवारों की मदद करें | दरगाह सेवा संस्थान',
-        description: 'भारत में एक विश्वसनीय एनजीओ, दरगाह सैयद अली शाह सेवा संस्थान को दान दें। हम राजस्थान में गरीब परिवारों और बच्चों को भोजन, शिक्षा और चिकित्सा सहायता प्रदान करते हैं।',
+        title: 'सोसाइटी दान भारत | गरीब परिवारों की मदद करें | शाह सेवा संस्थान',
+        description: 'भारत में एक विश्वसनीय सोसाइटी, शाह सेवा संस्थान सोसाइटी को दान दें। हम राजस्थान में गरीब परिवारों और बच्चों को भोजन, शिक्षा और चिकित्सा सहायता प्रदान करते हैं।',
       },
       about: {
-        title: 'हमारे एनजीओ के बारे में | भारत में विश्वसनीय चैरिटी संगठन',
-        description: 'दरगाह सैयद अली शाह सेवा संस्थान के बारे में जानें। हमारा मिशन निस्वार्थ धर्मार्थ कार्य के माध्यम से गरीब परिवारों और बच्चों की सेवा करना है।',
+        title: 'हमारी सोसाइटी के बारे में | भारत में विश्वसनीय चैरिटी संगठन',
+        description: 'शाह सेवा संस्थान सोसाइटी के बारे में जानें। हमारा मिशन निस्वार्थ धर्मार्थ कार्य के माध्यम से गरीब परिवारों और बच्चों की सेवा करना है।',
       },
       work: {
-        title: 'हमारा धर्मार्थ कार्य | भारत में गरीब परिवारों के लिए एनजीओ सहायता',
-        description: 'भारत में हमारी एनजीओ पहलों का अन्वेषण करें, जिसमें राजस्थान में गरीब परिवारों और बच्चों के लिए भोजन वितरण, शिक्षा सहायता और चिकित्सा सहायता शामिल है।',
+        title: 'हमारा धर्मार्थ कार्य | भारत में गरीब परिवारों के लिए सोसाइटी सहायता',
+        description: 'भारत में हमारी सोसाइटी पहलों का अन्वेषण करें, जिसमें राजस्थान में गरीब परिवारों और बच्चों के लिए भोजन वितरण, शिक्षा सहायता और चिकित्सा सहायता शामिल है।',
       },
       impact: {
-        title: 'एनजीओ प्रभाव की कहानियाँ | राजस्थान में चैरिटी कार्य',
-        description: 'दरगाह सैयद अली शाह सेवा संस्थान के वास्तविक दुनिया के प्रभाव की खोज करें। हमारे एनजीओ ने भोजन, शिक्षा और चिकित्सा सहायता के साथ 12,500 से अधिक लोगों की मदद की है।',
+        title: 'सोसाइटी प्रभाव की कहानियाँ | राजस्थान में चैरिटी कार्य',
+        description: 'शाह सेवा संस्थान सोसाइटी के वास्तविक दुनिया के प्रभाव की खोज करें। हमारी सोसाइटी ने भोजन, शिक्षा और चिकित्सा सहायता के साथ 12,500 से अधिक लोगों की मदद की है।',
       },
       gallery: {
-        title: 'फोटो गैलरी | भीलवाड़ा, राजस्थान में एनजीओ गतिविधियाँ',
-        description: 'भीलवाड़ा, राजस्थान में गरीब परिवारों के लिए हमारी एनजीओ गतिविधियाँ, भोजन वितरण अभियानों और शिक्षा सहायता कार्यक्रमों की तस्वीरें देखें।',
+        title: 'फोटो गैलरी | भीलवाड़ा, राजस्थान में सोसाइटी गतिविधियाँ',
+        description: 'भीलवाड़ा, राजस्थान में गरीब परिवारों के लिए हमारी सोसाइटी गतिविधियाँ, भोजन वितरण अभियानों और शिक्षा सहायता कार्यक्रमों की तस्वीरें देखें।',
       },
       contact: {
-        title: 'हमारे एनजीओ से संपर्क करें | भारत में स्वयंसेवक बनें या दान करें',
-        description: 'दरगाह सैयद अली शाह सेवा संस्थान के साथ जुड़ें। राजस्थान में स्वयंसेवा, एनजीओ दान या हमारे धर्मार्थ कार्य के बारे में पूछताछ के लिए हमसे संपर्क करें।',
+        title: 'हमारी सोसाइटी से संपर्क करें | भारत में स्वयंसेवक बनें या दान करें',
+        description: 'शाह सेवा संस्थान सोसाइटी के साथ जुड़ें। राजस्थान में स्वयंसेवा, सोसाइटी दान या हमारे धर्मार्थ कार्य के बारे में पूछताछ के लिए हमसे संपर्क करें।',
       },
       donate: {
-        title: 'एनजीओ इंडिया को दान दें | गरीब परिवारों और बच्चों का समर्थन करें',
-        description: 'ऑनलाइन दान करके दरगाह सैयद अली शाह सेवा संस्थान का समर्थन करें। आपका दान हमें गरीब परिवारों को भोजन, शिक्षा और चिकित्सा सहायता प्रदान करने में मदद करता है।',
+        title: 'सोसाइटी इंडिया को दान दें | गरीब परिवारों और बच्चों का समर्थन करें',
+        description: 'ऑनलाइन दान करके शाह सेवा संस्थान सोसाइटी का समर्थन करें। आपका दान हमें गरीब परिवारों को भोजन, शिक्षा और चिकित्सा सहायता प्रदान करने में मदद करता है।',
       },
       faq: {
-        title: 'अक्सर पूछे जाने वाले प्रश्न | एनजीओ दान और चैरिटी प्रश्न',
-        description: 'हमारे एनजीओ के बारे में सामान्य प्रश्नों के उत्तर खोजें, गरीब बच्चों के लिए दान कैसे करें, और भारत में आपके दान का उपयोग सामाजिक कल्याण के लिए कैसे किया जाता है।',
+        title: 'अक्सर पूछे जाने वाले प्रश्न | सोसाइटी दान और चैरिटी प्रश्न',
+        description: 'हमारी सोसाइटी के बारे में सामान्य प्रश्नों के उत्तर खोजें, गरीब बच्चों के लिए दान कैसे करें, और भारत में आपके दान का उपयोग सामाजिक कल्याण के लिए कैसे किया जाता है।',
       },
       mission: {
-        title: 'हमारा मिशन और विजन | भारत में गरीब परिवारों के लिए एनजीओ',
-        description: 'दरगाह सैयद अली शाह सेवा संस्थान के मिशन और विजन के बारे में पढ़ें। हम निस्वार्थ धर्मार्थ कार्य के माध्यम से मानवता की सेवा के लिए समर्पित हैं।',
+        title: 'हमारा मिशन और विजन | भारत में गरीब परिवारों के लिए सोसाइटी',
+        description: 'शाह सेवा संस्थान सोसाइटी के मिशन और विजन के बारे में पढ़ें। हम निस्वार्थ धर्मार्थ कार्य के माध्यम से मानवता की सेवा के लिए समर्पित हैं।',
       },
       istikhara: {
         title: 'इस्तखारा गाइड | निर्णयों के लिए इस्लामी मार्गदर्शन',
         description: 'प्रामाणिक इस्लामी शिक्षाओं के अनुसार इस्तखारा की नमाज़ पढ़ना और महत्वपूर्ण जीवन निर्णयों के लिए अल्लाह से मार्गदर्शन मांगना सीखें।',
       },
       transparency: {
-        title: 'पारदर्शिता रिपोर्ट | भारत में एनजीओ जवाबदेही',
-        description: 'यह देखने के लिए हमारी पारदर्शिता रिपोर्ट की समीक्षा करें कि आपके एनजीओ दान का उपयोग भारत में गरीब परिवारों के लिए भोजन, शिक्षा और चिकित्सा सहायता के लिए कैसे किया जाता है।',
+        title: 'पारदर्शिता रिपोर्ट | भारत में सोसाइटी जवाबदेही',
+        description: 'यह देखने के लिए हमारी पारदर्शिता रिपोर्ट की समीक्षा करें कि आपके सोसाइटी दान का उपयोग भारत में गरीब परिवारों के लिए भोजन, शिक्षा और चिकित्सा सहायता के लिए कैसे किया जाता है।',
       },
       volunteer: {
-        title: 'एनजीओ के साथ स्वयंसेवक बनें | भारत में हमारे चैरिटी मिशन में शामिल हों',
-        description: 'एक स्वयंसेवक के रूप में दरगाह सैयद अली शाह सेवा संस्थान में शामिल हों। सामुदायिक आउटरीच और सामाजिक कार्य के माध्यम से गरीब परिवारों और बच्चों की सेवा करने में हमारी मदद करें।',
+        title: 'सोसाइटी के साथ स्वयंसेवक बनें | भारत में हमारे चैरिटी मिशन में शामिल हों',
+        description: 'एक स्वयंसेवक के रूप में शाह सेवा संस्थान सोसाइटी में शामिल हों। सामुदायिक आउटरीच और सामाजिक कार्य के माध्यम से गरीब परिवारों और बच्चों की सेवा करने में हमारी मदद करें।',
       },
     },
     categories: {
@@ -928,16 +928,16 @@ export const translations = {
       },
     },
     about: {
-      badge: 'हमारी एनजीओ कहानी',
-      title: 'चैरिटी और दान के लिए भारत में विश्वसनीय एनजीओ।',
-      desc: 'दरगाह सैयद अली शाह सेवा संस्थान मानवता की सेवा के लिए समर्पित एक गैर-लाभकारी संगठन है। हम दान के लिए भारत के सबसे भरोसेमंद एनजीओ में से एक हैं, जो भोजन, शिक्षा और चिकित्सा सहायता पर ध्यान केंद्रित करते हैं।',
+      badge: 'हमारी सोसाइटी कहानी',
+      title: 'चैरिटी और दान के लिए भारत में विश्वसनीय सोसाइटी।',
+      desc: 'शाह सेवा संस्थान सोसाइटी मानवता की सेवा के लिए समर्पित एक गैर-लाभकारी संगठन है। हम दान के लिए भारत के सबसे भरोसेमंद सोसाइटी में से एक हैं, जो भोजन, शिक्षा और चिकित्सा सहायता पर ध्यान केंद्रित करते हैं।',
       historyTitle: '2010 से हमारी यात्रा',
       historyDesc: 'भीलवाड़ा में एक छोटी सामुदायिक पहल के रूप में शुरू होकर, हम एक पंजीकृत सेवा संस्थान के रूप में विकसित हुए हैं। पिछले एक दशक में, हमने निस्वार्थ सेवा की भावना से प्रेरित होकर, राजस्थान के 25 से अधिक गांवों में अपनी पहुँच का विस्तार किया है।',
-      missionTitle: 'हमारा मिशन: एनजीओ सपोर्ट इंडिया',
+      missionTitle: 'हमारा मिशन: सोसाइटी सपोर्ट इंडिया',
       missionDesc: 'हमारा मिशन भारत में गरीब परिवारों को तत्काल राहत और दीर्घकालिक सहायता प्रदान करना है। हम पौष्टिक भोजन, बच्चों के लिए गुणवत्तापूर्ण शिक्षा और आवश्यक चिकित्सा देखभाल सुनिश्चित करते हैं। हम एक ऐसे समाज के निर्माण का प्रयास करते हैं जहाँ सभी गरिमा के साथ रह सकें।',
       visionTitle: 'बेहतर भारत के लिए हमारा विजन',
       visionDesc: 'हम एक ऐसे भारत की कल्पना करते हैं जहाँ गरीबी क्षमता को सीमित न करे। हमारा लक्ष्य राजस्थान और उससे आगे अपनी पहुँच का विस्तार करना है, करुणापूर्ण धर्मार्थ कार्य के माध्यम से हजारों लोगों के जीवन को छूना है।',
-      valuesTitle: 'हमारे मूल एनजीओ मूल्य',
+      valuesTitle: 'हमारे मूल सोसाइटी मूल्य',
       values: {
         compassion: {
           title: 'करुणा',
@@ -945,7 +945,7 @@ export const translations = {
         },
         transparency: {
           title: 'पारदर्शिता',
-          desc: 'प्राप्त प्रत्येक एनजीओ दान के लिए पूर्ण जवाबदेही।',
+          desc: 'प्राप्त प्रत्येक सोसाइटी दान के लिए पूर्ण जवाबदेही।',
         },
         integrity: {
           title: 'अखंडता',
@@ -1099,7 +1099,7 @@ export const translations = {
       title: 'पारदर्शिता रिपोर्ट',
       desc: 'हम पूर्ण जवाबदेही में विश्वास करते हैं। देखें कि आपका दान जमीन पर कैसे वास्तविक बदलाव ला रहा है।',
       reportTitle: 'वित्तीय जवाबदेही',
-      reportDesc: 'दरगाह सैयद अली शाह सेवा संस्थान में, हम सख्त वित्तीय नियंत्रण बनाए रखते हैं। प्रत्येक दान का 85% सीधे हमारे कार्यक्रमों में जाता है, जबकि 15% आवश्यक परिचालन और धन उगाहने की लागतों को कवर करता है।',
+      reportDesc: 'शाह सेवा संस्थान सोसाइटी में, हम सख्त वित्तीय नियंत्रण बनाए रखते हैं। प्रत्येक दान का 85% सीधे हमारे कार्यक्रमों में जाता है, जबकि 15% आवश्यक परिचालन और धन उगाहने की लागतों को कवर करता है।',
       auditTitle: 'ऑडिटेड वित्तीय विवरण',
       auditDesc: 'हमारे खातों का स्वतंत्र प्रमाणित पेशेवरों द्वारा प्रतिवर्ष ऑडिट किया जाता है ताकि यह सुनिश्चित हो सके कि प्रत्येक रुपये का हिसाब रखा गया है और प्रभावी ढंग से उपयोग किया गया है।',
       usageTitle: 'आपके पैसे का उपयोग कैसे किया जाता है',
@@ -1112,11 +1112,11 @@ export const translations = {
     },
     volunteer: {
       title: 'हमारे साथ स्वयंसेवक बनें',
-      desc: 'दरगाह सैयद अली शाह सेवा संस्थान में एक स्वयंसेवक के रूप में शामिल हों। भीलवाड़ा में सामुदायिक आउटरीच, शिक्षा सहायता और चिकित्सा सहायता के माध्यम से मानवता की सेवा करने के हमारे मिशन में हमारी मदद करें।',
+      desc: 'शाह सेवा संस्थान सोसाइटी में एक स्वयंसेवक के रूप में शामिल हों। भीलवाड़ा में सामुदायिक आउटरीच, शिक्षा सहायता और चिकित्सा सहायता के माध्यम से मानवता की सेवा करने के हमारे मिशन में हमारी मदद करें।',
       badge: 'हमारे समुदाय में शामिल हों',
       formTitle: 'स्वयंसेवक आवेदन',
       benefitsTitle: 'हमारे साथ स्वयंसेवक क्यों बनें?',
-      benefitsDesc: 'हमारे एनजीओ के साथ स्वयंसेवा करना एक पुरस्कृत अनुभव है जो आपको भारत में गरीब परिवारों के जीवन पर सीधा प्रभाव डालने की अनुमति देता है।',
+      benefitsDesc: 'हमारी सोसाइटी के साथ स्वयंसेवा करना एक पुरस्कृत अनुभव है जो आपको भारत में गरीब परिवारों के जीवन पर सीधा प्रभाव डालने की अनुमति देता है।',
       benefit1Title: 'व्यक्तिगत विकास',
       benefit1Desc: 'नए कौशल विकसित करें और सामाजिक मुद्दों की गहरी समझ प्राप्त करें।',
       benefit2Title: 'सामुदायिक प्रभाव',
@@ -1144,8 +1144,8 @@ export const translations = {
       badge: 'सहायता केंद्र',
       items: [
         {
-          q: "दरगाह सैयद अली शाह सेवा संस्थान क्या है?",
-          a: "दरगाह सैयद अली शाह सेवा संस्थान एक गैर-लाभकारी संगठन है जो गरीबों और जरूरतमंदों के लिए भोजन वितरण, शिक्षा सहायता और चिकित्सा सहायता के माध्यम से मानवता की सेवा के लिए समर्पित है।"
+          q: "शाह सेवा संस्थान सोसाइटी क्या है?",
+          a: "शाह सेवा संस्थान सोसाइटी एक गैर-लाभकारी संगठन है जो गरीबों और जरूरतमंदों के लिए भोजन वितरण, शिक्षा सहायता और चिकित्सा सहायता के माध्यम से मानवता की सेवा के लिए समर्पित है।"
         },
         {
           q: "मैं संगठन को दान कैसे दे सकता हूँ?",

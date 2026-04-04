@@ -1,6 +1,6 @@
 {
-  "name": "Dargah Saiyad Ali Shah Seva Sansthan",
-  "description": "A premium NGO platform dedicated to helping poor families, supporting education, and providing medical aid.",
+  "name": "Shah Seva Sansthan Society",
+  "description": "A premium Society platform dedicated to helping poor families, supporting education, and providing medical aid.",
   "requestFramePermissions": [
     "geolocation"
   ]

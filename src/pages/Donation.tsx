@@ -72,7 +72,7 @@ export default function DonationPage() {
   }, []);
 
   const upiId = "6350489219.eazypay@icici";
-  const upiUri = `upi://pay?pa=${upiId}&pn=Dargah%20Saiyad%20Ali%20Shah%20Seva%20Sansthan&cu=INR&am=${amount}`;
+  const upiUri = `upi://pay?pa=${upiId}&pn=Shah%20Seva%20Sansthan%20Society&cu=INR&am=${amount}`;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

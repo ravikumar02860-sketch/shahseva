@@ -20,7 +20,7 @@ export default function Volunteer() {
     <div className="relative min-h-screen pt-32 pb-24 overflow-hidden">
       <SEO 
         title="Volunteer With Us" 
-        description="Join Dargah Saiyad Ali Shah Seva Sansthan as a volunteer. Help us in our mission to serve humanity through community outreach, education support, and medical assistance in Bhilwara."
+        description="Join Shah Seva Sansthan Society as a volunteer. Help us in our mission to serve humanity through community outreach, education support, and medical assistance in Bhilwara."
       />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">

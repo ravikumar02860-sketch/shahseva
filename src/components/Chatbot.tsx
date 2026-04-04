@@ -32,7 +32,7 @@ export default function Chatbot() {
   // Initial greeting
   useEffect(() => {
     if (isOpen && messages.length === 0) {
-      const greeting = "Hello. Welcome to Dargah Saiyad Ali Shah Seva Sansthan.\nPlease choose your language: English, Hindi, or Hinglish.";
+      const greeting = "Hello. Welcome to Shah Seva Sansthan Society.\nPlease choose your language: English, Hindi, or Hinglish.";
       setMessages([{ role: 'bot', text: greeting }]);
     }
   }, [isOpen]);
@@ -50,7 +50,7 @@ export default function Chatbot() {
         model: "gemini-3-flash-preview",
         config: {
           systemInstruction: `
-            You are the official website chatbot for Dargah Saiyad Ali Shah Seva Sansthan.
+            You are the official website chatbot for Shah Seva Sansthan Society.
             Your job is to help website visitors in a clear, friendly, respectful, and natural way.
 
             IMPORTANT LANGUAGE RULES:
@@ -80,7 +80,7 @@ export default function Chatbot() {
             Keep answers concise unless the user asks for details.
 
             IDENTITY:
-            You are a helpful virtual assistant for Dargah Saiyad Ali Shah Seva Sansthan.
+            You are a helpful virtual assistant for Shah Seva Sansthan Society.
             You help with donations, contact info, mission, programs, volunteering, and general guidance.
 
             TONE: Warm, respectful, clear, calm, human-like, supportive.

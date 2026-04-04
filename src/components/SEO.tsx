@@ -13,24 +13,24 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = "NGO Donation India | Help Poor Families | Dargah Seva Sansthan",
-  description = "Donate to Dargah Saiyad Ali Shah Seva Sansthan, a trusted NGO in India. We provide food, education, and medical aid to poor families and children in Rajasthan.",
-  keywords = "NGO donation India, donate for poor children, charity organization India, help poor families, support education donation, donate to NGO India, charity helping poor families, NGO helping children education, Bhilwara NGO, Rajasthan charity",
-  canonical = "https://dargahsaiyadali.org",
+  title = "Society Donation India | Help Poor Families | Shah Seva Sansthan",
+  description = "Donate to Shah Seva Sansthan Society, a trusted charitable organization in India. We provide food, education, and medical aid to poor families and children in Rajasthan.",
+  keywords = "Society donation India, donate for poor children, charity organization India, help poor families, support education donation, donate to Society India, charity helping poor families, Society helping children education, Bhilwara Society, Rajasthan charity",
+  canonical = "https://shahseva.vercel.app",
   ogImage = "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F",
   ogType = "website",
-  twitterHandle = "@dargahsaiyadali",
+  twitterHandle = "@shahseva",
   schema
 }: SEOProps) {
-  const siteName = "Dargah Saiyad Ali Shah Seva Sansthan";
+  const siteName = "Shah Seva Sansthan Society";
   const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
 
   const defaultSchema = {
     "@context": "https://schema.org",
-    "@type": "NGO",
+    "@type": "Organization",
     "name": siteName,
     "taxID": "COOP/2025/BHILWARA/500577",
-    "url": "https://dargahsaiyadali.org",
+    "url": "https://shahseva.vercel.app",
     "logo": "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F",
     "description": description,
     "address": {
@@ -52,21 +52,21 @@ export default function SEO({
       "@type": "DonateAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://dargahsaiyadali.org/donate",
+        "urlTemplate": "https://shahseva.vercel.app/donate",
         "actionPlatform": [
           "http://schema.org/DesktopWebPlatform",
           "http://schema.org/MobileWebPlatform"
         ]
       },
       "recipient": {
-        "@type": "NGO",
+        "@type": "Organization",
         "name": siteName
       }
     },
     "sameAs": [
-      "https://facebook.com/dargahsaiyadali",
-      "https://twitter.com/dargahsaiyadali",
-      "https://instagram.com/dargahsaiyadali"
+      "https://facebook.com/shahseva",
+      "https://twitter.com/shahseva",
+      "https://instagram.com/shahseva"
     ]
   };
 

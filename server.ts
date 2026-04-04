@@ -106,7 +106,7 @@ async function startServer() {
 
   // Sitemap route
   app.get("/sitemap.xml", (req, res) => {
-    const baseUrl = process.env.APP_URL || "https://dargahsaiyadali.org";
+    const baseUrl = process.env.APP_URL || "https://shahseva.vercel.app";
     const pages = [
       "",
       "/about",

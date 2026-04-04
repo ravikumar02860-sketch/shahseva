@@ -47,7 +47,7 @@ export default function PrivacyPolicy() {
             <section className="mb-12">
               <h2 className="text-3xl font-serif font-bold text-primary mb-6">1. Introduction</h2>
               <p className="text-slate-600 text-lg leading-relaxed">
-                Dargah Saiyad Ali Shah Seva Sansthan ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website or donate to our cause.
+                Shah Seva Sansthan Society ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website or donate to our cause.
               </p>
             </section>
 
