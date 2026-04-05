@@ -19,8 +19,8 @@ export default function Volunteer() {
   return (
     <div className="relative min-h-screen pt-32 pb-24 overflow-hidden">
       <SEO 
-        title="Volunteer With Us" 
-        description="Join Shah Seva Sansthan Society as a volunteer. Help us in our mission to serve humanity through community outreach, education support, and medical assistance in Bhilwara."
+        title={t.volunteer.title} 
+        description={t.volunteer.desc}
       />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">
@@ -106,15 +106,15 @@ export default function Volunteer() {
                 >
                   <CheckCircle size={56} strokeWidth={1.5} />
                 </motion.div>
-                <h2 className="text-4xl font-serif font-bold text-primary mb-6">Application Received!</h2>
+                <h2 className="text-4xl font-serif font-bold text-primary mb-6">{t.volunteer.form.success.title}</h2>
                 <p className="text-slate-600 text-lg mb-10 leading-relaxed max-w-sm mx-auto">
-                  Thank you for your interest in volunteering with us. Our team will review your application and get back to you shortly.
+                  {t.volunteer.form.success.desc}
                 </p>
                 <button
                   onClick={() => setFormStatus('idle')}
                   className="group relative inline-flex items-center gap-2 text-primary font-bold text-lg hover:text-accent transition-colors"
                 >
-                  Apply for another role
+                  {t.volunteer.form.success.button}
                   <div className="absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
                 </button>
               </div>
@@ -124,60 +124,60 @@ export default function Volunteer() {
                   <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
                     <Send size={24} />
                   </div>
-                  <h2 className="text-3xl font-serif font-bold text-primary">Volunteer Application</h2>
+                  <h2 className="text-3xl font-serif font-bold text-primary">{t.volunteer.formTitle}</h2>
                 </div>
 
                 <form onSubmit={handleSubmit} className="space-y-8">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <label className="text-sm font-bold text-slate-500 ml-1 uppercase tracking-wider">Full Name</label>
+                      <label className="text-sm font-bold text-slate-500 ml-1 uppercase tracking-wider">{t.volunteer.form.name}</label>
                       <input
                         required
                         type="text"
                         className="w-full bg-slate-50/50 border border-slate-200 rounded-2xl px-6 py-4 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary focus:bg-white transition-all text-slate-800"
-                        placeholder="John Doe"
+                        placeholder={t.volunteer.form.placeholder.name}
                       />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-sm font-bold text-slate-500 ml-1 uppercase tracking-wider">Email Address</label>
+                      <label className="text-sm font-bold text-slate-500 ml-1 uppercase tracking-wider">{t.volunteer.form.email}</label>
                       <input
                         required
                         type="email"
                         className="w-full bg-slate-50/50 border border-slate-200 rounded-2xl px-6 py-4 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary focus:bg-white transition-all text-slate-800"
-                        placeholder="john@example.com"
+                        placeholder={t.volunteer.form.placeholder.email}
                       />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <label className="text-sm font-bold text-slate-500 ml-1 uppercase tracking-wider">Phone Number</label>
+                      <label className="text-sm font-bold text-slate-500 ml-1 uppercase tracking-wider">{t.volunteer.form.phone}</label>
                       <input
                         required
                         type="tel"
                         className="w-full bg-slate-50/50 border border-slate-200 rounded-2xl px-6 py-4 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary focus:bg-white transition-all text-slate-800"
-                        placeholder="+91 0000000000"
+                        placeholder={t.volunteer.form.placeholder.phone}
                       />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-sm font-bold text-slate-500 ml-1 uppercase tracking-wider">Area of Interest</label>
+                      <label className="text-sm font-bold text-slate-500 ml-1 uppercase tracking-wider">{t.volunteer.form.interest}</label>
                       <select className="w-full bg-slate-50/50 border border-slate-200 rounded-2xl px-6 py-4 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary focus:bg-white transition-all text-slate-800 appearance-none">
-                        <option>Community Outreach</option>
-                        <option>Education Support</option>
-                        <option>Medical Assistance</option>
-                        <option>Fundraising</option>
-                        <option>Other</option>
+                        <option>{t.volunteer.form.options.outreach}</option>
+                        <option>{t.volunteer.form.options.education}</option>
+                        <option>{t.volunteer.form.options.medical}</option>
+                        <option>{t.volunteer.form.options.fundraising}</option>
+                        <option>{t.volunteer.form.options.other}</option>
                       </select>
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-sm font-bold text-slate-500 ml-1 uppercase tracking-wider">Why do you want to volunteer?</label>
+                    <label className="text-sm font-bold text-slate-500 ml-1 uppercase tracking-wider">{t.volunteer.form.motivation}</label>
                     <textarea
                       required
                       rows={4}
                       className="w-full bg-slate-50/50 border border-slate-200 rounded-2xl px-6 py-4 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary focus:bg-white transition-all text-slate-800 resize-none"
-                      placeholder="Tell us a bit about yourself and your motivation..."
+                      placeholder={t.volunteer.form.placeholder.motivation}
                     ></textarea>
                   </div>
 
@@ -188,11 +188,11 @@ export default function Volunteer() {
                     {formStatus === 'sending' ? (
                       <>
                         <div className="w-6 h-6 border-3 border-white border-t-transparent rounded-full animate-spin" />
-                        Sending...
+                        {t.volunteer.form.sending}
                       </>
                     ) : (
                       <>
-                        Submit Application <Send size={20} />
+                        {t.volunteer.form.submit} <Send size={20} />
                       </>
                     )}
                   </button>

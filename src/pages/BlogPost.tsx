@@ -14,7 +14,7 @@ const blogContent: Record<string, any> = {
       },
       {
         title: 'How to Verify a Trusted Society in India',
-        content: 'Before you decide to donate money to charity online India, always check for the Society\'s registration number. For instance, Shah Seva Sansthan Society is registered under COOP/2025/BHILWARA/500577. A trusted Society to donate online in India will always be transparent about its registration, financial audits, and on-ground impact.'
+        content: 'Before you decide to donate money to charity online India, always check for the Society\'s registration number. For instance, Dargah Saiyad Ali Shah Seva Sansthan is registered under COOP/2025/BHILWARA/500577. A trusted Society to donate online in India will always be transparent about its registration, financial audits, and on-ground impact.'
       },
       {
         title: 'Steps for a Secure Online Charity Donation',
@@ -68,7 +68,7 @@ export default function BlogPost() {
   return (
     <div className="bg-white min-h-screen pt-28 pb-20">
       <SEO 
-        title={`${post.title} | Shah Seva Sansthan Blog`}
+        title={`${post.title} | Dargah Saiyad Ali Shah Seva Sansthan Blog`}
         description={post.excerpt}
       />
       

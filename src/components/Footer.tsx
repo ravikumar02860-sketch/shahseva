@@ -19,17 +19,14 @@ export default function Footer() {
             <div className="w-36 h-36 bg-white rounded-2xl flex items-center justify-center shadow-lg group-hover:rotate-6 transition-transform duration-500 p-4">
               <img 
                 src="https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F" 
-                alt="Shah Seva Sansthan Society Logo"
+                alt="Dargah Saiyad Ali Shah Seva Sansthan Logo"
                 className="w-full h-full object-contain"
                 referrerPolicy="no-referrer"
               />
             </div>
             <div className="flex flex-col">
               <span className="font-serif font-bold text-3xl leading-tight text-white tracking-tight">
-                Shah Seva Sansthan
-              </span>
-              <span className="text-[12px] uppercase tracking-[0.3em] font-bold text-accent">
-                Society
+                Dargah Saiyad Ali Shah Seva Sansthan
               </span>
             </div>
           </Link>
@@ -160,7 +157,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-500 text-[10px] uppercase tracking-widest font-bold">
-        <p>© 2026 Shah Seva Sansthan Society. {t.footer.rights}</p>
+        <p>© 2026 Dargah Saiyad Ali Shah Seva Sansthan. {t.footer.rights}</p>
         <div className="flex gap-8">
           <Link to="/privacy" className="hover:text-accent transition-colors">{t.footer.privacy}</Link>
           <Link to="/terms" className="hover:text-accent transition-colors">{t.footer.terms}</Link>

@@ -49,7 +49,7 @@ export default function GalleryPage() {
     <div className="relative min-h-screen pt-32 pb-24 overflow-hidden">
       <SEO 
         title="Photo Gallery" 
-        description="Explore the visual journey of Shah Seva Sansthan Society. See our social impact, community service, and charity events in Bhilwara through our photo gallery."
+        description="Explore the visual journey of Dargah Saiyad Ali Shah Seva Sansthan. See our social impact, community service, and charity events in Bhilwara through our photo gallery."
       />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">

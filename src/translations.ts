@@ -18,7 +18,7 @@ export const translations = {
       badge: 'Trusted Society in India Since 2010',
       title: 'Transforming Lives: Your Society Donation in India Makes a Difference',
       subtitle: 'Join Us to Help Poor Families and Children Break the Cycle of Poverty.',
-      desc: 'Shah Seva Sansthan Society is a trusted charity organization in India. We provide life-saving food, medical aid, and education to underprivileged families. Your safe online donation for poor people can change a world today. Learn how to donate money to Society online securely with us.',
+      desc: 'Dargah Saiyad Ali Shah Seva Sansthan is a trusted charity organization in India. We provide life-saving food, medical aid, and education to underprivileged families. Your safe online donation for poor people can change a world today. Learn how to donate money to Society online securely with us.',
       ctaWork: 'View Our Impact',
     },
     stats: {
@@ -149,12 +149,12 @@ export const translations = {
     },
     seo: {
       home: {
-        title: 'Society Donation India | Help Poor Families | Shah Seva Sansthan',
-        description: 'Donate to Shah Seva Sansthan Society, a trusted Society in India. We provide food, education, and medical aid to poor families and children in Rajasthan.',
+        title: 'Society Donation India | Help Poor Families | Dargah Saiyad Ali Shah Seva Sansthan',
+        description: 'Donate to Dargah Saiyad Ali Shah Seva Sansthan, a trusted Society in India. We provide food, education, and medical aid to poor families and children in Rajasthan.',
       },
       about: {
         title: 'About Our Society | Trusted Charity Organization in India',
-        description: 'Learn about Shah Seva Sansthan Society, a trusted Society in India. Our mission is to serve poor families and children through selfless charity work.',
+        description: 'Learn about Dargah Saiyad Ali Shah Seva Sansthan, a trusted Society in India. Our mission is to serve poor families and children through selfless charity work.',
       },
       work: {
         title: 'Our Charity Work | Society Support for Poor Families in India',
@@ -162,7 +162,7 @@ export const translations = {
       },
       impact: {
         title: 'Society Impact Stories | Charity Work in Rajasthan',
-        description: 'Discover the real-world impact of Shah Seva Sansthan Society. Our Society in India has helped over 12,500 people with food, education, and medical aid.',
+        description: 'Discover the real-world impact of Dargah Saiyad Ali Shah Seva Sansthan. Our Society in India has helped over 12,500 people with food, education, and medical aid.',
       },
       gallery: {
         title: 'Photo Gallery | Society Activities in Bhilwara, Rajasthan',
@@ -170,11 +170,11 @@ export const translations = {
       },
       contact: {
         title: 'Contact Our Society | Volunteer or Donate in India',
-        description: 'Get in touch with Shah Seva Sansthan Society. Contact us for volunteering, Society donations, or inquiries about our charity work in Rajasthan.',
+        description: 'Get in touch with Dargah Saiyad Ali Shah Seva Sansthan. Contact us for volunteering, Society donations, or inquiries about our charity work in Rajasthan.',
       },
       donate: {
         title: 'Donate to Society India | Support Poor Families & Children',
-        description: 'Support Shah Seva Sansthan Society by donating online. Your charity donation helps us provide food, education, and medical aid to poor families.',
+        description: 'Support Dargah Saiyad Ali Shah Seva Sansthan by donating online. Your charity donation helps us provide food, education, and medical aid to poor families.',
       },
       faq: {
         title: 'FAQ | Society Donation & Charity Questions',
@@ -182,7 +182,7 @@ export const translations = {
       },
       mission: {
         title: 'Our Mission & Vision | Society for Poor Families in India',
-        description: 'Read about the mission and vision of Shah Seva Sansthan Society. We are dedicated to serving humanity through selfless charity work.',
+        description: 'Read about the mission and vision of Dargah Saiyad Ali Shah Seva Sansthan. We are dedicated to serving humanity through selfless charity work.',
       },
       istikhara: {
         title: 'Istikhara Guide | Islamic Guidance for Decisions',
@@ -194,7 +194,7 @@ export const translations = {
       },
       volunteer: {
         title: 'Volunteer with Society | Join Our Charity Mission in India',
-        description: 'Join Shah Seva Sansthan Society as a volunteer. Help us serve poor families and children through community outreach and social work.',
+        description: 'Join Dargah Saiyad Ali Shah Seva Sansthan as a volunteer. Help us serve poor families and children through community outreach and social work.',
       },
     },
     categories: {
@@ -340,7 +340,7 @@ export const translations = {
     about: {
       badge: 'Our Society Story',
       title: 'Trusted Society in India for Charity & Donations.',
-      desc: 'Shah Seva Sansthan Society is a non-profit organization dedicated to serving humanity. We are one of the most trusted Societies in India for donations, focusing on food, education, and medical aid.',
+      desc: 'Dargah Saiyad Ali Shah Seva Sansthan is a non-profit organization dedicated to serving humanity. We are one of the most trusted Societies in India for donations, focusing on food, education, and medical aid.',
       historyTitle: 'Our Journey Since 2010',
       historyDesc: 'Starting as a small community initiative in Bhilwara, we have grown into a registered Seva Sansthan. Over the last decade, we have expanded our reach from a single neighborhood to over 25 villages across Rajasthan, driven by the spirit of selfless service.',
       missionTitle: 'Our Mission: Society Support India',
@@ -518,7 +518,7 @@ export const translations = {
       title: 'Transparency Report',
       desc: 'We believe in full accountability. See how your donations are making a real difference on the ground.',
       reportTitle: 'Financial Accountability',
-      reportDesc: 'At Shah Seva Sansthan Society, we maintain strict financial controls. 85% of every donation goes directly to our programs, while 15% covers essential operational and fundraising costs.',
+      reportDesc: 'At Dargah Saiyad Ali Shah Seva Sansthan, we maintain strict financial controls. 85% of every donation goes directly to our programs, while 15% covers essential operational and fundraising costs.',
       auditTitle: 'Audited Financials',
       auditDesc: 'Our accounts are audited annually by independent certified professionals to ensure every rupee is accounted for and used effectively.',
       usageTitle: 'How Your Money is Used',
@@ -531,7 +531,7 @@ export const translations = {
     },
     volunteer: {
       title: 'Volunteer With Us',
-      desc: 'Join Shah Seva Sansthan Society as a volunteer. Help us in our mission to serve humanity through community outreach, education support, and medical assistance in Bhilwara.',
+      desc: 'Join Dargah Saiyad Ali Shah Seva Sansthan as a volunteer. Help us in our mission to serve humanity through community outreach, education support, and medical assistance in Bhilwara.',
       badge: 'Join Our Community',
       formTitle: 'Volunteer Application',
       benefitsTitle: 'Why Volunteer With Us?',
@@ -556,6 +556,33 @@ export const translations = {
           desc: 'Medical professionals can volunteer their time for our free health camps.',
         },
       },
+      form: {
+        name: 'Full Name',
+        email: 'Email Address',
+        phone: 'Phone Number',
+        interest: 'Area of Interest',
+        motivation: 'Why do you want to volunteer?',
+        placeholder: {
+          name: 'John Doe',
+          email: 'john@example.com',
+          phone: '+91 0000000000',
+          motivation: 'Tell us a bit about yourself and your motivation...',
+        },
+        options: {
+          outreach: 'Community Outreach',
+          education: 'Education Support',
+          medical: 'Medical Assistance',
+          fundraising: 'Fundraising',
+          other: 'Other',
+        },
+        submit: 'Submit Application',
+        sending: 'Sending...',
+        success: {
+          title: 'Application Received!',
+          desc: 'Thank you for your interest in volunteering with us. Our team will review your application and get back to you shortly.',
+          button: 'Apply for another role',
+        },
+      },
     },
     faq: {
       title: 'Frequently Asked Questions',
@@ -563,8 +590,8 @@ export const translations = {
       badge: 'Help Center',
       items: [
         {
-          q: "What is Shah Seva Sansthan Society?",
-          a: "Shah Seva Sansthan Society is a non-profit organization dedicated to serving humanity through food distribution, education support, and medical aid for the poor and needy.",
+          q: "What is Dargah Saiyad Ali Shah Seva Sansthan?",
+          a: "Dargah Saiyad Ali Shah Seva Sansthan is a non-profit organization dedicated to serving humanity through food distribution, education support, and medical aid for the poor and needy.",
         },
         {
           q: "How can I donate to the organization?",
@@ -608,7 +635,7 @@ export const translations = {
       badge: '2010 से भारत में विश्वसनीय सोसाइटी',
       title: 'भारत में आपके सोसाइटी दान के माध्यम से जीवन को सशक्त बनाना',
       subtitle: 'गरीब परिवारों को गरीबी के चक्र से बाहर निकालने में मदद करें।',
-      desc: 'शाह सेवा संस्थान सोसाइटी भारत में मानवता की सेवा के लिए समर्पित एक प्रमुख धर्मार्थ संगठन है। हम गरीब परिवारों को भोजन, शिक्षा और चिकित्सा सहायता प्रदान करते हैं। गरीबों के लिए आपका सुरक्षित ऑनलाइन दान आज एक दुनिया बदल सकता है। जानें कि हमारे साथ सुरक्षित रूप से सोसाइटी को ऑनलाइन पैसे कैसे दान करें।',
+      desc: 'दरगाह सैयद अली शाह सेवा संस्थान भारत में मानवता की सेवा के लिए समर्पित एक प्रमुख धर्मार्थ संगठन है। हम गरीब परिवारों को भोजन, शिक्षा और चिकित्सा सहायता प्रदान करते हैं। गरीबों के लिए आपका सुरक्षित ऑनलाइन दान आज एक दुनिया बदल सकता है। जानें कि हमारे साथ सुरक्षित रूप से सोसाइटी को ऑनलाइन पैसे कैसे दान करें।',
       ctaWork: 'हमारा प्रभाव देखें',
     },
     stats: {
@@ -739,12 +766,12 @@ export const translations = {
     },
     seo: {
       home: {
-        title: 'सोसाइटी दान भारत | गरीब परिवारों की मदद करें | शाह सेवा संस्थान',
-        description: 'भारत में एक विश्वसनीय सोसाइटी, शाह सेवा संस्थान सोसाइटी को दान दें। हम राजस्थान में गरीब परिवारों और बच्चों को भोजन, शिक्षा और चिकित्सा सहायता प्रदान करते हैं।',
+        title: 'सोसाइटी दान भारत | गरीब परिवारों की मदद करें | दरगाह सैयद अली शाह सेवा संस्थान',
+        description: 'भारत में एक विश्वसनीय सोसाइटी, दरगाह सैयद अली शाह सेवा संस्थान को दान दें। हम राजस्थान में गरीब परिवारों और बच्चों को भोजन, शिक्षा और चिकित्सा सहायता प्रदान करते हैं।',
       },
       about: {
         title: 'हमारी सोसाइटी के बारे में | भारत में विश्वसनीय चैरिटी संगठन',
-        description: 'शाह सेवा संस्थान सोसाइटी के बारे में जानें। हमारा मिशन निस्वार्थ धर्मार्थ कार्य के माध्यम से गरीब परिवारों और बच्चों की सेवा करना है।',
+        description: 'दरगाह सैयद अली शाह सेवा संस्थान के बारे में जानें। हमारा मिशन निस्वार्थ धर्मार्थ कार्य के माध्यम से गरीब परिवारों और बच्चों की सेवा करना है।',
       },
       work: {
         title: 'हमारा धर्मार्थ कार्य | भारत में गरीब परिवारों के लिए सोसाइटी सहायता',
@@ -752,7 +779,7 @@ export const translations = {
       },
       impact: {
         title: 'सोसाइटी प्रभाव की कहानियाँ | राजस्थान में चैरिटी कार्य',
-        description: 'शाह सेवा संस्थान सोसाइटी के वास्तविक दुनिया के प्रभाव की खोज करें। हमारी सोसाइटी ने भोजन, शिक्षा और चिकित्सा सहायता के साथ 12,500 से अधिक लोगों की मदद की है।',
+        description: 'दरगाह सैयद अली शाह सेवा संस्थान के वास्तविक दुनिया के प्रभाव की खोज करें। हमारी सोसाइटी ने भोजन, शिक्षा और चिकित्सा सहायता के साथ 12,500 से अधिक लोगों की मदद की है।',
       },
       gallery: {
         title: 'फोटो गैलरी | भीलवाड़ा, राजस्थान में सोसाइटी गतिविधियाँ',
@@ -760,11 +787,11 @@ export const translations = {
       },
       contact: {
         title: 'हमारी सोसाइटी से संपर्क करें | भारत में स्वयंसेवक बनें या दान करें',
-        description: 'शाह सेवा संस्थान सोसाइटी के साथ जुड़ें। राजस्थान में स्वयंसेवा, सोसाइटी दान या हमारे धर्मार्थ कार्य के बारे में पूछताछ के लिए हमसे संपर्क करें।',
+        description: 'दरगाह सैयद अली शाह सेवा संस्थान के साथ जुड़ें। राजस्थान में स्वयंसेवा, सोसाइटी दान या हमारे धर्मार्थ कार्य के बारे में पूछताछ के लिए हमसे संपर्क करें।',
       },
       donate: {
         title: 'सोसाइटी इंडिया को दान दें | गरीब परिवारों और बच्चों का समर्थन करें',
-        description: 'ऑनलाइन दान करके शाह सेवा संस्थान सोसाइटी का समर्थन करें। आपका दान हमें गरीब परिवारों को भोजन, शिक्षा और चिकित्सा सहायता प्रदान करने में मदद करता है।',
+        description: 'ऑनलाइन दान करके दरगाह सैयद अली शाह सेवा संस्थान का समर्थन करें। आपका दान हमें गरीब परिवारों को भोजन, शिक्षा और चिकित्सा सहायता प्रदान करने में मदद करता है।',
       },
       faq: {
         title: 'अक्सर पूछे जाने वाले प्रश्न | सोसाइटी दान और चैरिटी प्रश्न',
@@ -772,7 +799,7 @@ export const translations = {
       },
       mission: {
         title: 'हमारा मिशन और विजन | भारत में गरीब परिवारों के लिए सोसाइटी',
-        description: 'शाह सेवा संस्थान सोसाइटी के मिशन और विजन के बारे में पढ़ें। हम निस्वार्थ धर्मार्थ कार्य के माध्यम से मानवता की सेवा के लिए समर्पित हैं।',
+        description: 'दरगाह सैयद अली शाह सेवा संस्थान के मिशन और विजन के बारे में पढ़ें। हम निस्वार्थ धर्मार्थ कार्य के माध्यम से मानवता की सेवा के लिए समर्पित हैं।',
       },
       istikhara: {
         title: 'इस्तखारा गाइड | निर्णयों के लिए इस्लामी मार्गदर्शन',
@@ -784,7 +811,7 @@ export const translations = {
       },
       volunteer: {
         title: 'सोसाइटी के साथ स्वयंसेवक बनें | भारत में हमारे चैरिटी मिशन में शामिल हों',
-        description: 'एक स्वयंसेवक के रूप में शाह सेवा संस्थान सोसाइटी में शामिल हों। सामुदायिक आउटरीच और सामाजिक कार्य के माध्यम से गरीब परिवारों और बच्चों की सेवा करने में हमारी मदद करें।',
+        description: 'एक स्वयंसेवक के रूप में दरगाह सैयद अली शाह सेवा संस्थान में शामिल हों। सामुदायिक आउटरीच और सामाजिक कार्य के माध्यम से गरीब परिवारों और बच्चों की सेवा करने में हमारी मदद करें।',
       },
     },
     categories: {
@@ -930,7 +957,7 @@ export const translations = {
     about: {
       badge: 'हमारी सोसाइटी कहानी',
       title: 'चैरिटी और दान के लिए भारत में विश्वसनीय सोसाइटी।',
-      desc: 'शाह सेवा संस्थान सोसाइटी मानवता की सेवा के लिए समर्पित एक गैर-लाभकारी संगठन है। हम दान के लिए भारत के सबसे भरोसेमंद सोसाइटी में से एक हैं, जो भोजन, शिक्षा और चिकित्सा सहायता पर ध्यान केंद्रित करते हैं।',
+      desc: 'दरगाह सैयद अली शाह सेवा संस्थान मानवता की सेवा के लिए समर्पित एक गैर-लाभकारी संगठन है। हम दान के लिए भारत के सबसे भरोसेमंद सोसाइटी में से एक हैं, जो भोजन, शिक्षा और चिकित्सा सहायता पर ध्यान केंद्रित करते हैं।',
       historyTitle: '2010 से हमारी यात्रा',
       historyDesc: 'भीलवाड़ा में एक छोटी सामुदायिक पहल के रूप में शुरू होकर, हम एक पंजीकृत सेवा संस्थान के रूप में विकसित हुए हैं। पिछले एक दशक में, हमने निस्वार्थ सेवा की भावना से प्रेरित होकर, राजस्थान के 25 से अधिक गांवों में अपनी पहुँच का विस्तार किया है।',
       missionTitle: 'हमारा मिशन: सोसाइटी सपोर्ट इंडिया',
@@ -1099,7 +1126,7 @@ export const translations = {
       title: 'पारदर्शिता रिपोर्ट',
       desc: 'हम पूर्ण जवाबदेही में विश्वास करते हैं। देखें कि आपका दान जमीन पर कैसे वास्तविक बदलाव ला रहा है।',
       reportTitle: 'वित्तीय जवाबदेही',
-      reportDesc: 'शाह सेवा संस्थान सोसाइटी में, हम सख्त वित्तीय नियंत्रण बनाए रखते हैं। प्रत्येक दान का 85% सीधे हमारे कार्यक्रमों में जाता है, जबकि 15% आवश्यक परिचालन और धन उगाहने की लागतों को कवर करता है।',
+      reportDesc: 'दरगाह सैयद अली शाह सेवा संस्थान में, हम सख्त वित्तीय नियंत्रण बनाए रखते हैं। प्रत्येक दान का 85% सीधे हमारे कार्यक्रमों में जाता है, जबकि 15% आवश्यक परिचालन और धन उगाहने की लागतों को कवर करता है।',
       auditTitle: 'ऑडिटेड वित्तीय विवरण',
       auditDesc: 'हमारे खातों का स्वतंत्र प्रमाणित पेशेवरों द्वारा प्रतिवर्ष ऑडिट किया जाता है ताकि यह सुनिश्चित हो सके कि प्रत्येक रुपये का हिसाब रखा गया है और प्रभावी ढंग से उपयोग किया गया है।',
       usageTitle: 'आपके पैसे का उपयोग कैसे किया जाता है',
@@ -1112,7 +1139,7 @@ export const translations = {
     },
     volunteer: {
       title: 'हमारे साथ स्वयंसेवक बनें',
-      desc: 'शाह सेवा संस्थान सोसाइटी में एक स्वयंसेवक के रूप में शामिल हों। भीलवाड़ा में सामुदायिक आउटरीच, शिक्षा सहायता और चिकित्सा सहायता के माध्यम से मानवता की सेवा करने के हमारे मिशन में हमारी मदद करें।',
+      desc: 'दरगाह सैयद अली शाह सेवा संस्थान में एक स्वयंसेवक के रूप में शामिल हों। भीलवाड़ा में सामुदायिक आउटरीच, शिक्षा सहायता और चिकित्सा सहायता के माध्यम से मानवता की सेवा करने के हमारे मिशन में हमारी मदद करें।',
       badge: 'हमारे समुदाय में शामिल हों',
       formTitle: 'स्वयंसेवक आवेदन',
       benefitsTitle: 'हमारे साथ स्वयंसेवक क्यों बनें?',
@@ -1136,7 +1163,34 @@ export const translations = {
           title: 'चिकित्सा सहायता',
           desc: 'चिकित्सा पेशेवर हमारे मुफ्त स्वास्थ्य शिविरों के लिए अपना समय स्वयंसेवा कर सकते हैं।'
         }
-      }
+      },
+      form: {
+        name: 'पूरा नाम',
+        email: 'ईमेल पता',
+        phone: 'फ़ोन नंबर',
+        interest: 'रुचि का क्षेत्र',
+        motivation: 'आप स्वयंसेवा क्यों करना चाहते हैं?',
+        placeholder: {
+          name: 'जॉन डो',
+          email: 'john@example.com',
+          phone: '+91 0000000000',
+          motivation: 'हमें अपने और अपनी प्रेरणा के बारे में थोड़ा बताएं...',
+        },
+        options: {
+          outreach: 'सामुदायिक आउटरीच',
+          education: 'शिक्षा सहायता',
+          medical: 'चिकित्सा सहायता',
+          fundraising: 'धन उगाहना',
+          other: 'अन्य',
+        },
+        submit: 'आवेदन जमा करें',
+        sending: 'भेज रहा है...',
+        success: {
+          title: 'आवेदन प्राप्त हुआ!',
+          desc: 'स्वयंसेवा में आपकी रुचि के लिए धन्यवाद। हमारी टीम आपके आवेदन की समीक्षा करेगी और जल्द ही आपसे संपर्क करेगी।',
+          button: 'एक और भूमिका के लिए आवेदन करें',
+        },
+      },
     },
     faq: {
       title: 'अक्सर पूछे जाने वाले प्रश्न',
@@ -1144,8 +1198,8 @@ export const translations = {
       badge: 'सहायता केंद्र',
       items: [
         {
-          q: "शाह सेवा संस्थान सोसाइटी क्या है?",
-          a: "शाह सेवा संस्थान सोसाइटी एक गैर-लाभकारी संगठन है जो गरीबों और जरूरतमंदों के लिए भोजन वितरण, शिक्षा सहायता और चिकित्सा सहायता के माध्यम से मानवता की सेवा के लिए समर्पित है।"
+          q: "दरगाह सैयद अली शाह सेवा संस्थान क्या है?",
+          a: "दरगाह सैयद अली शाह सेवा संस्थान एक गैर-लाभकारी संगठन है जो गरीबों और जरूरतमंदों के लिए भोजन वितरण, शिक्षा सहायता और चिकित्सा सहायता के माध्यम से मानवता की सेवा के लिए समर्पित है।"
         },
         {
           q: "मैं संगठन को दान कैसे दे सकता हूँ?",

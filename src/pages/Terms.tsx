@@ -94,7 +94,7 @@ export default function Terms() {
             <section className="mb-12">
               <h2 className="text-3xl font-serif font-bold text-primary mb-6">4. Intellectual Property</h2>
               <p className="text-slate-600 text-lg leading-relaxed">
-                All content on this website, including text, images, and logos, is the property of Shah Seva Sansthan Society and is protected by intellectual property laws. You may not use our content without prior written permission.
+                All content on this website, including text, images, and logos, is the property of Dargah Saiyad Ali Shah Seva Sansthan and is protected by intellectual property laws. You may not use our content without prior written permission.
               </p>
             </section>
 
