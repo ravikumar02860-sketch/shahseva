@@ -53,7 +53,7 @@ export default function WorkPage() {
   ];
 
   return (
-    <div className="relative min-h-screen pt-32 pb-24 overflow-hidden">
+    <div className="relative min-h-screen pt-24 pb-24 overflow-hidden">
       <SEO 
         title={t.seo.work.title} 
         description={t.seo.work.description}

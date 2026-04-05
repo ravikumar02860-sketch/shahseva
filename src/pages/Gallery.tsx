@@ -46,7 +46,7 @@ export default function GalleryPage() {
   ];
 
   return (
-    <div className="relative min-h-screen pt-32 pb-24 overflow-hidden">
+    <div className="relative min-h-screen pt-24 pb-24 overflow-hidden">
       <SEO 
         title="Photo Gallery" 
         description="Explore the visual journey of Dargah Saiyad Ali Shah Seva Sansthan. See our social impact, community service, and charity events in Bhilwara through our photo gallery."

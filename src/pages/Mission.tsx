@@ -10,7 +10,7 @@ export default function MissionPage() {
   const icons = [Target, Eye, Shield, Heart];
 
   return (
-    <div className="relative min-h-screen pt-32 pb-24 overflow-hidden">
+    <div className="relative min-h-screen pt-24 pb-24 overflow-hidden">
       <SEO 
         title={t.seo.mission.title} 
         description={t.seo.mission.description}

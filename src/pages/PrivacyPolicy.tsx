@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
   const { t } = useLanguage();
 
   return (
-    <div className="relative min-h-screen pt-32 pb-24 overflow-hidden">
+    <div className="relative min-h-screen pt-24 pb-24 overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] right-[-5%] w-[40%] h-[40%] bg-primary/5 rounded-full blur-[120px] animate-pulse" />

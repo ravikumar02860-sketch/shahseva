@@ -66,7 +66,7 @@ export default function BlogPost() {
   }
 
   return (
-    <div className="bg-white min-h-screen pt-28 pb-20">
+    <div className="bg-white min-h-screen pt-20 pb-20">
       <SEO 
         title={`${post.title} | Dargah Saiyad Ali Shah Seva Sansthan Blog`}
         description={post.excerpt}

@@ -9,7 +9,7 @@ export default function BlogPage() {
   const { t } = useLanguage();
 
   return (
-    <div className="bg-slate-50 min-h-screen pt-28 pb-20">
+    <div className="bg-slate-50 min-h-screen pt-20 pb-20">
       <SEO 
         title={t.blog.title} 
         description={t.blog.desc}

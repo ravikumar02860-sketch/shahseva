@@ -77,7 +77,7 @@ export default function IstikharaPage() {
   };
 
   return (
-    <div className="pt-32 pb-24 px-6 bg-[#fdfcf8] min-h-screen font-sans">
+    <div className="pt-24 pb-24 px-6 bg-[#fdfcf8] min-h-screen font-sans">
       {/* Decorative Elements */}
       <div className="fixed top-0 left-0 w-full h-full pointer-events-none overflow-hidden opacity-5 z-0">
         <Moon className="absolute top-20 left-10 w-64 h-64 text-primary rotate-12" />

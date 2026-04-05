@@ -142,7 +142,7 @@ export default function AdminCampaigns() {
 
   if (!authReady) {
     return (
-      <div className="pt-32 pb-24 px-6 bg-slate-50 min-h-screen flex items-center justify-center">
+      <div className="pt-24 pb-24 px-6 bg-slate-50 min-h-screen flex items-center justify-center">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
       </div>
     );
@@ -150,7 +150,7 @@ export default function AdminCampaigns() {
 
   if (!user) {
     return (
-      <div className="pt-32 pb-24 px-6 bg-slate-50 min-h-screen flex items-center justify-center">
+      <div className="pt-24 pb-24 px-6 bg-slate-50 min-h-screen flex items-center justify-center">
         <div className="max-w-md w-full bg-white p-8 rounded-3xl shadow-xl text-center">
           <div className="w-16 h-16 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mx-auto mb-6">
             <Megaphone size={32} />
@@ -170,7 +170,7 @@ export default function AdminCampaigns() {
   }
 
   return (
-    <div className="pt-32 pb-24 px-6 bg-slate-50 min-h-screen">
+    <div className="pt-24 pb-24 px-6 bg-slate-50 min-h-screen">
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center justify-between gap-4 mb-12">
           <div className="flex items-center gap-4">

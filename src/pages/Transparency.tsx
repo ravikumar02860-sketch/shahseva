@@ -8,7 +8,7 @@ export default function TransparencyPage() {
   const { t } = useLanguage();
 
   return (
-    <div className="relative min-h-screen pt-32 pb-24 overflow-hidden">
+    <div className="relative min-h-screen pt-24 pb-24 overflow-hidden">
       <SEO 
         title={t.transparency.title} 
         description={t.transparency.desc}

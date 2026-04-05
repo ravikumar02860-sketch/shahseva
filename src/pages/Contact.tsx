@@ -60,7 +60,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="relative min-h-screen pt-32 pb-24 overflow-hidden">
+    <div className="relative min-h-screen pt-24 pb-24 overflow-hidden">
       <SEO 
         title={t.seo.contact.title} 
         description={t.seo.contact.description}

@@ -129,7 +129,7 @@ export default function ImageGenerator() {
   };
 
   return (
-    <div className="pt-32 pb-24 px-6 bg-slate-50 min-h-screen">
+    <div className="pt-24 pb-24 px-6 bg-slate-50 min-h-screen">
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-4 mb-12">
           <div className="w-12 h-12 bg-primary text-accent rounded-2xl flex items-center justify-center shadow-lg">

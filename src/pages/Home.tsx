@@ -55,7 +55,7 @@ export default function HomePage() {
         description={t.seo.home.description}
       />
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center pt-28 pb-16">
+      <section className="relative min-h-[90vh] flex items-center pt-20 pb-16">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&q=80&w=1920" 
