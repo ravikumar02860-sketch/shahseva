@@ -13,9 +13,9 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = "Society Donation India | Help Poor Families | Dargah Saiyad Ali Shah Seva Sansthan",
-  description = "Donate to Dargah Saiyad Ali Shah Seva Sansthan, a trusted charitable organization in India. We provide food, education, and medical aid to poor families and children in Rajasthan.",
-  keywords = "Society donation India, donate for poor children, charity organization India, help poor families, support education donation, donate to Society India, charity helping poor families, Society helping children education, Bhilwara Society, Rajasthan charity",
+  title = "Shah Seva | Society Donation India | Help Poor Families | Dargah Saiyad Ali Shah Seva Sansthan",
+  description = "Donate to Shah Seva (Dargah Saiyad Ali Shah Seva Sansthan), a trusted charitable organization in India. We provide food, education, and medical aid to poor families and children in Rajasthan.",
+  keywords = "Shah Seva, Shah Seva Society, Shah Seva Sansthan, Society donation India, donate for poor children, charity organization India, help poor families, support education donation, donate to Society India, charity helping poor families, Society helping children education, Bhilwara Society, Rajasthan charity",
   canonical = "https://shahseva.vercel.app",
   ogImage = "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F",
   ogType = "website",

@@ -15,10 +15,10 @@ export const translations = {
       blog: 'Blog',
     },
     hero: {
-      badge: 'Trusted Society in India Since 2010',
-      title: 'Transforming Lives: Your Society Donation in India Makes a Difference',
-      subtitle: 'Join Us to Help Poor Families and Children Break the Cycle of Poverty.',
-      desc: 'Dargah Saiyad Ali Shah Seva Sansthan is a trusted charity organization in India. We provide life-saving food, medical aid, and education to underprivileged families. Your safe online donation for poor people can change a world today. Learn how to donate money to Society online securely with us.',
+      badge: 'Shah Seva: Trusted Society in India Since 2010',
+      title: 'Transforming Lives: Your Shah Seva Society Donation in India Makes a Difference',
+      subtitle: 'Join Shah Seva to Help Poor Families and Children Break the Cycle of Poverty.',
+      desc: 'Shah Seva (Dargah Saiyad Ali Shah Seva Sansthan) is a trusted charity organization in India. We provide life-saving food, medical aid, and education to underprivileged families. Your safe online donation for poor people can change a world today. Learn how to donate money to Society online securely with Shah Seva.',
       ctaWork: 'View Our Impact',
     },
     stats: {
@@ -28,14 +28,14 @@ export const translations = {
       camps: 'Medical Camps',
     },
     aboutSummary: {
-      badge: 'Our Mission of Compassion',
-      title: 'A Trusted Society Dedicated to Helping Children\'s Education and Families in Need.',
+      badge: 'Shah Seva: Our Mission of Compassion',
+      title: 'Shah Seva is a Trusted Society Dedicated to Helping Children\'s Education and Families in Need.',
       regNo: 'Registration No: COOP/2025/BHILWARA/500577',
-      desc: 'Based in Bhilwara, Rajasthan, our Seva Sansthan is a trusted Society to donate online in India. We are committed to uplifting the underprivileged, believing every child deserves a future and every family deserves a meal. When you donate money to charity online India through our platform, you fund transparent, high-impact projects that transform lives.',
-      item1: 'Donate for poor families: Monthly Ration Kits',
+      desc: 'Based in Bhilwara, Rajasthan, Shah Seva (Dargah Saiyad Ali Shah Seva Sansthan) is a trusted Society to donate online in India. We are committed to uplifting the underprivileged, believing every child deserves a future and every family deserves a meal. When you donate money to charity online India through our platform, you fund transparent, high-impact projects that transform lives.',
+      item1: 'Shah Seva for poor families: Monthly Ration Kits',
       item2: 'Support education donation for bright students',
       item3: 'Emergency medical aid for poor families',
-      item4: 'Society support India: Community welfare projects',
+      item4: 'Shah Seva support India: Community welfare projects',
       learnMore: 'Learn More About Our Mission',
       quote: '"The best among you are those who bring most benefit to others."',
     },
@@ -81,7 +81,7 @@ export const translations = {
       },
     },
     footer: {
-      desc: 'Dedicated to serving humanity through education, healthcare, and social welfare in India since 2010.',
+      desc: 'Shah Seva (Dargah Saiyad Ali Shah Seva Sansthan) is dedicated to serving humanity through education, healthcare, and social welfare in India since 2010.',
       quickLinks: 'Quick Links',
       links: {
         about: 'About Our Mission',
@@ -149,16 +149,16 @@ export const translations = {
     },
     seo: {
       home: {
-        title: 'Society Donation India | Help Poor Families | Dargah Saiyad Ali Shah Seva Sansthan',
-        description: 'Donate to Dargah Saiyad Ali Shah Seva Sansthan, a trusted Society in India. We provide food, education, and medical aid to poor families and children in Rajasthan.',
+        title: 'Shah Seva | Society Donation India | Help Poor Families | Dargah Saiyad Ali Shah Seva Sansthan',
+        description: 'Donate to Shah Seva (Dargah Saiyad Ali Shah Seva Sansthan), a trusted Society in India. We provide food, education, and medical aid to poor families and children in Rajasthan.',
       },
       about: {
-        title: 'About Our Society | Trusted Charity Organization in India',
-        description: 'Learn about Dargah Saiyad Ali Shah Seva Sansthan, a trusted Society in India. Our mission is to serve poor families and children through selfless charity work.',
+        title: 'Shah Seva | About Our Society | Trusted Charity Organization in India',
+        description: 'Learn about Shah Seva (Dargah Saiyad Ali Shah Seva Sansthan), a trusted Society in India. Our mission is to serve poor families and children through selfless charity work.',
       },
       work: {
-        title: 'Our Charity Work | Society Support for Poor Families in India',
-        description: 'Explore our Society initiatives in India, including food distribution, education support, and medical aid for poor families and children in Rajasthan.',
+        title: 'Shah Seva | Our Charity Work | Society Support for Poor Families in India',
+        description: 'Explore Shah Seva initiatives in India, including food distribution, education support, and medical aid for poor families and children in Rajasthan.',
       },
       impact: {
         title: 'Society Impact Stories | Charity Work in Rajasthan',
@@ -632,10 +632,10 @@ export const translations = {
       blog: 'ब्लॉग',
     },
     hero: {
-      badge: '2010 से भारत में विश्वसनीय सोसाइटी',
-      title: 'भारत में आपके सोसाइटी दान के माध्यम से जीवन को सशक्त बनाना',
-      subtitle: 'गरीब परिवारों को गरीबी के चक्र से बाहर निकालने में मदद करें।',
-      desc: 'दरगाह सैयद अली शाह सेवा संस्थान भारत में मानवता की सेवा के लिए समर्पित एक प्रमुख धर्मार्थ संगठन है। हम गरीब परिवारों को भोजन, शिक्षा और चिकित्सा सहायता प्रदान करते हैं। गरीबों के लिए आपका सुरक्षित ऑनलाइन दान आज एक दुनिया बदल सकता है। जानें कि हमारे साथ सुरक्षित रूप से सोसाइटी को ऑनलाइन पैसे कैसे दान करें।',
+      badge: 'शाह सेवा: 2010 से भारत में विश्वसनीय सोसाइटी',
+      title: 'शाह सेवा: भारत में आपके सोसाइटी दान के माध्यम से जीवन को सशक्त बनाना',
+      subtitle: 'शाह सेवा के साथ गरीब परिवारों को गरीबी के चक्र से बाहर निकालने में मदद करें।',
+      desc: 'शाह सेवा (दरगाह सैयद अली शाह सेवा संस्थान) भारत में मानवता की सेवा के लिए समर्पित एक प्रमुख धर्मार्थ संगठन है। हम गरीब परिवारों को भोजन, शिक्षा और चिकित्सा सहायता प्रदान करते हैं। गरीबों के लिए आपका सुरक्षित ऑनलाइन दान आज एक दुनिया बदल सकता है। जानें कि शाह सेवा के साथ सुरक्षित रूप से सोसाइटी को ऑनलाइन पैसे कैसे दान करें।',
       ctaWork: 'हमारा प्रभाव देखें',
     },
     stats: {
@@ -645,14 +645,14 @@ export const translations = {
       camps: 'चिकित्सा शिविर',
     },
     aboutSummary: {
-      badge: 'करुणा का हमारा मिशन',
-      title: 'गरीब बच्चों की शिक्षा और जरूरतमंद परिवारों की मदद करने वाली एक विश्वसनीय सोसाइटी।',
+      badge: 'शाह सेवा: करुणा का हमारा मिशन',
+      title: 'शाह सेवा: गरीब बच्चों की शिक्षा और जरूरतमंद परिवारों की मदद करने वाली एक विश्वसनीय सोसाइटी।',
       regNo: 'पंजीकरण संख्या: COOP/2025/BHILWARA/500577',
-      desc: 'भीलवाड़ा, राजस्थान में स्थित, हमारा सेवा संस्थान भारत में ऑनलाइन दान करने के लिए एक विश्वसनीय सोसाइटी है। हम वंचितों के उत्थान के लिए प्रतिबद्ध हैं। जब आप हमारे प्लेटफॉर्म के माध्यम से भारत में चैरिटी के लिए ऑनलाइन पैसे दान करते हैं, तो आप पारदर्शी और उच्च-प्रभाव वाले प्रोजेक्ट्स का समर्थन करते हैं।',
-      item1: 'गरीब परिवारों के लिए दान: मासिक राशन किट',
+      desc: 'भीलवाड़ा, राजस्थान में स्थित, शाह सेवा (दरगाह सैयद अली शाह सेवा संस्थान) भारत में ऑनलाइन दान करने के लिए एक विश्वसनीय सोसाइटी है। हम वंचितों के उत्थान के लिए प्रतिबद्ध हैं। जब आप शाह सेवा के माध्यम से भारत में चैरिटी के लिए ऑनलाइन पैसे दान करते हैं, तो आप पारदर्शी और उच्च-प्रभाव वाले प्रोजेक्ट्स का समर्थन करते हैं।',
+      item1: 'शाह सेवा: गरीब परिवारों के लिए दान (मासिक राशन किट)',
       item2: 'होनहार छात्रों के लिए शिक्षा दान का समर्थन करें',
       item3: 'गरीब परिवारों के लिए आपातकालीन चिकित्सा सहायता',
-      item4: 'सोसाइटी सपोर्ट इंडिया: सामुदायिक कल्याण परियोजनाएं',
+      item4: 'शाह सेवा सपोर्ट इंडिया: सामुदायिक कल्याण परियोजनाएं',
       learnMore: 'हमारे मिशन के बारे में और जानें',
       quote: '"तुम में से सबसे अच्छा वह है जो दूसरों को सबसे अधिक लाभ पहुँचाता है। "',
     },
@@ -698,7 +698,7 @@ export const translations = {
       },
     },
     footer: {
-      desc: '2010 से भारत में शिक्षा, स्वास्थ्य देखभाल और सामाजिक कल्याण के माध्यम से मानवता की सेवा के लिए समर्पित।',
+      desc: 'शाह सेवा (दरगाह सैयद अली शाह सेवा संस्थान) 2010 से भारत में शिक्षा, स्वास्थ्य देखभाल और सामाजिक कल्याण के माध्यम से मानवता की सेवा के लिए समर्पित है।',
       quickLinks: 'त्वरित लिंक',
       links: {
         about: 'हमारे मिशन के बारे में',
@@ -766,8 +766,8 @@ export const translations = {
     },
     seo: {
       home: {
-        title: 'सोसाइटी दान भारत | गरीब परिवारों की मदद करें | दरगाह सैयद अली शाह सेवा संस्थान',
-        description: 'भारत में एक विश्वसनीय सोसाइटी, दरगाह सैयद अली शाह सेवा संस्थान को दान दें। हम राजस्थान में गरीब परिवारों और बच्चों को भोजन, शिक्षा और चिकित्सा सहायता प्रदान करते हैं।',
+        title: 'शाह सेवा | सोसाइटी दान भारत | गरीब परिवारों की मदद करें | दरगाह सैयद अली शाह सेवा संस्थान',
+        description: 'शाह सेवा (दरगाह सैयद अली शाह सेवा संस्थान) को दान दें, जो भारत में एक विश्वसनीय सोसाइटी है। हम राजस्थान में गरीब परिवारों और बच्चों को भोजन, शिक्षा और चिकित्सा सहायता प्रदान करते हैं।',
       },
       about: {
         title: 'हमारी सोसाइटी के बारे में | भारत में विश्वसनीय चैरिटी संगठन',
