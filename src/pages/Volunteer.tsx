@@ -44,7 +44,7 @@ export default function Volunteer() {
             >
               <Users size={32} strokeWidth={1.5} />
             </motion.div>
-            <h1 className="text-5xl md:text-7xl font-serif font-bold text-primary mb-8 leading-[1.1]">
+            <h1 className="text-4xl md:text-7xl font-serif font-bold text-primary mb-8 leading-[1.1]">
               {t.volunteer.title}
             </h1>
             <p className="text-slate-600 text-lg md:text-xl mb-12 leading-relaxed max-w-xl">
@@ -92,7 +92,7 @@ export default function Volunteer() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
-            className="lg:col-span-6 bg-white/80 backdrop-blur-xl p-8 md:p-12 rounded-[3rem] shadow-2xl shadow-primary/5 border border-white relative overflow-hidden"
+            className="lg:col-span-6 bg-white/80 backdrop-blur-xl p-6 md:p-12 rounded-3xl md:rounded-[3rem] shadow-2xl shadow-primary/5 border border-white relative overflow-hidden"
           >
             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 blur-2xl" />
             

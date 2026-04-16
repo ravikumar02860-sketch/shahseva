@@ -50,7 +50,7 @@ export default function Header() {
               <img 
                 src="https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F" 
                 alt="Dargah Saiyad Ali Shah Seva Sansthan Logo"
-                className="h-16 w-auto object-contain"
+                className="h-12 md:h-16 w-auto object-contain"
                 referrerPolicy="no-referrer"
               />
             </Link>
@@ -180,7 +180,7 @@ export default function Header() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 right-0 bg-white shadow-2xl border-t border-slate-100 p-6 flex flex-col gap-4 md:hidden"
+            className="absolute top-full left-4 right-4 bg-white/95 backdrop-blur-xl shadow-2xl border border-slate-100 p-6 rounded-2xl flex flex-col gap-2 md:hidden max-h-[80vh] overflow-y-auto mt-2"
           >
             {navLinks.slice(0, 4).map((link) => (
               <Link

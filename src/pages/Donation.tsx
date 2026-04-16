@@ -150,7 +150,7 @@ export default function DonationPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-5xl md:text-6xl font-serif font-bold text-primary mb-8 leading-tight"
+            className="text-4xl md:text-6xl font-serif font-bold text-primary mb-8 leading-tight"
           >
             {t.donation.title}
           </motion.h1>
@@ -171,7 +171,7 @@ export default function DonationPage() {
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
-            className="lg:col-span-7 bg-white/80 backdrop-blur-xl p-8 md:p-12 rounded-[2.5rem] shadow-2xl shadow-primary/5 border border-white relative overflow-hidden"
+            className="lg:col-span-7 bg-white/80 backdrop-blur-xl p-6 md:p-12 rounded-3xl md:rounded-[2.5rem] shadow-2xl shadow-primary/5 border border-white relative overflow-hidden"
           >
             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 blur-2xl" />
             
@@ -362,7 +362,7 @@ export default function DonationPage() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               className={cn(
-                "p-10 rounded-[2.5rem] shadow-2xl relative overflow-hidden transition-all duration-700",
+                "p-6 md:p-10 rounded-3xl md:rounded-[2.5rem] shadow-2xl relative overflow-hidden transition-all duration-700",
                 !showQR ? "bg-slate-100 text-slate-400" : "bg-primary text-white shadow-primary/20",
                 paymentFinished && "bg-emerald-900"
               )}
@@ -514,7 +514,7 @@ export default function DonationPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="bg-white/50 backdrop-blur-md p-10 rounded-[2.5rem] border border-white shadow-xl"
+              className="bg-white/50 backdrop-blur-md p-6 md:p-10 rounded-3xl md:rounded-[2.5rem] border border-white shadow-xl"
             >
               <h3 className="text-2xl font-serif font-bold text-primary mb-8">{t.donation.impactSection.title}</h3>
               <div className="space-y-8">
@@ -535,7 +535,7 @@ export default function DonationPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="bg-primary text-white p-10 rounded-[2.5rem] shadow-2xl shadow-primary/10 relative overflow-hidden"
+              className="bg-primary text-white p-6 md:p-10 rounded-3xl md:rounded-[2.5rem] shadow-2xl shadow-primary/10 relative overflow-hidden"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full -mr-16 -mt-16 blur-2xl" />
               <h3 className="text-2xl font-serif font-bold text-accent mb-8 relative z-10">{t.donation.whyDonate}</h3>

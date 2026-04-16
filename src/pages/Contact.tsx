@@ -86,7 +86,7 @@ export default function ContactPage() {
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-6xl md:text-8xl font-serif font-bold text-primary mb-12 tracking-tight leading-[1.1]"
+            className="text-4xl md:text-8xl font-serif font-bold text-primary mb-12 tracking-tight leading-[1.1]"
           >
             {t.contact.title}
           </motion.h1>
@@ -106,7 +106,7 @@ export default function ContactPage() {
             <motion.div 
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
-              className="bg-primary text-white p-12 md:p-16 rounded-[4rem] shadow-2xl shadow-primary/20 relative overflow-hidden group"
+              className="bg-primary text-white p-8 md:p-16 rounded-3xl md:rounded-[4rem] shadow-2xl shadow-primary/20 relative overflow-hidden group"
             >
               <div className="absolute top-0 right-0 w-48 h-48 bg-accent/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-[2s]"></div>
               
@@ -167,7 +167,7 @@ export default function ContactPage() {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
-              className="bg-white/80 backdrop-blur-xl p-12 md:p-20 rounded-[4rem] shadow-2xl shadow-primary/5 border border-white relative overflow-hidden"
+              className="bg-white/80 backdrop-blur-xl p-8 md:p-20 rounded-3xl md:rounded-[4rem] shadow-2xl shadow-primary/5 border border-white relative overflow-hidden"
             >
               <div className="absolute top-0 left-0 w-full h-3 bg-gradient-to-r from-accent via-primary to-accent"></div>
               
@@ -294,7 +294,7 @@ export default function ContactPage() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-32 h-[40rem] bg-slate-100 rounded-[4rem] overflow-hidden shadow-2xl shadow-primary/5 border border-slate-200 flex items-center justify-center text-slate-400 relative group"
+          className="mt-32 h-[30rem] md:h-[40rem] bg-slate-100 rounded-3xl md:rounded-[4rem] overflow-hidden shadow-2xl shadow-primary/5 border border-slate-200 flex items-center justify-center text-slate-400 relative group"
         >
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center grayscale opacity-20 group-hover:scale-105 group-hover:grayscale-0 group-hover:opacity-40 transition-all duration-[2s]"></div>
           <div className="text-center relative z-10 bg-white/80 backdrop-blur-xl p-16 md:p-24 rounded-[3rem] shadow-2xl shadow-primary/10 border border-white/50 max-w-2xl mx-6">
