@@ -41,16 +41,16 @@ export default function Header() {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="site-header fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-4 py-3"
+      className="site-header fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-2 md:px-4 py-2"
     >
       <div className="max-w-full mx-auto">
-        <div className="bg-white/80 backdrop-blur-xl border border-white/20 shadow-soft rounded-xl px-6 py-2 flex items-center justify-between">
-          <div className="logo">
+        <div className="bg-white/80 backdrop-blur-xl border border-white/20 shadow-soft rounded-xl px-4 md:px-6 py-1.5 flex items-center justify-between">
+          <div className="logo shrink-0">
             <Link to="/" className="flex items-center transition-transform hover:scale-105">
               <img 
                 src="https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F" 
                 alt="Dargah Saiyad Ali Shah Seva Sansthan Logo"
-                className="h-12 md:h-16 w-auto object-contain"
+                className="h-10 md:h-14 w-auto object-contain"
                 referrerPolicy="no-referrer"
               />
             </Link>

@@ -136,21 +136,21 @@ export default function DonationPage() {
              style={{ backgroundImage: 'radial-gradient(#064e3b 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center max-w-3xl mx-auto mb-20">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-bold tracking-wide uppercase mb-6"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-xs md:text-sm font-bold tracking-wide uppercase mb-4 md:mb-6"
           >
-            <Heart size={16} className="fill-current" />
+            <Heart size={14} className="fill-current" />
             {t.donation.title}
           </motion.div>
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-6xl font-serif font-bold text-primary mb-8 leading-tight"
+            className="text-3xl md:text-6xl font-serif font-bold text-primary mb-6 md:mb-8 leading-tight"
           >
             {t.donation.title}
           </motion.h1>
@@ -158,7 +158,7 @@ export default function DonationPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-slate-600 text-lg md:text-xl leading-relaxed"
+            className="text-slate-600 text-base md:text-xl leading-relaxed"
           >
             {paymentFinished 
               ? t.donation.successMsg
@@ -166,12 +166,12 @@ export default function DonationPage() {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-start">
           {/* Donation Form / Thank You */}
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
-            className="lg:col-span-7 bg-white/80 backdrop-blur-xl p-6 md:p-12 rounded-3xl md:rounded-[2.5rem] shadow-2xl shadow-primary/5 border border-white relative overflow-hidden"
+            className="lg:col-span-7 bg-white/80 backdrop-blur-xl p-5 md:p-12 rounded-2xl md:rounded-[2.5rem] shadow-2xl shadow-primary/5 border border-white relative overflow-hidden"
           >
             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 blur-2xl" />
             
