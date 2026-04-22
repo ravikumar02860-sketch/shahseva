@@ -32,14 +32,27 @@ export default function SEO({
     "taxID": "COOP/2025/BHILWARA/500577",
     "url": "https://shahseva.vercel.app",
     "logo": "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F",
+    "image": "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F",
     "description": description,
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Murad Ali Dargah Ke Pass, Khel Mohalla, Pur",
-      "addressLocality": "Bhilwara",
-      "addressRegion": "Rajasthan",
-      "postalCode": "311001",
-      "addressCountry": "IN"
+    "founder": {
+      "@type": "Person",
+      "name": "Rojib Khan (Bhaijaan)"
+    },
+    "foundingDate": "2010",
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Rajasthan"
+    },
+    "location": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Murad Ali Dargah Ke Pass, Khel Mohalla, Pur",
+        "addressLocality": "Bhilwara",
+        "addressRegion": "Rajasthan",
+        "postalCode": "311001",
+        "addressCountry": "IN"
+      }
     },
     "contactPoint": {
       "@type": "ContactPoint",
