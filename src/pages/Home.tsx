@@ -472,7 +472,7 @@ export default function HomePage() {
               Our Impact
             </span>
             <h2 className="text-4xl md:text-6xl font-serif font-bold text-primary mb-10 leading-[1.1]">
-              Why Support Our <span className="text-gradient-gold">Society in Bhilwara</span>, Rajasthan?
+              <span className="text-gradient-gold">Donate Money To Charity</span> Through a Trusted Society in Rajasthan
             </h2>
             <p className="text-slate-600 mb-10 text-lg leading-relaxed">
               Dargah Saiyad Ali Shah Seva Sansthan is a trusted charity organization in India and a leading Society in Bhilwara, dedicated to uplifting marginalized communities. As a charity helping poor families and a Society helping children's education, our work in Rajasthan focuses on sustainable development through food, education, and healthcare.

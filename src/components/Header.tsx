@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Globe, Heart, ChevronDown } from 'lucide-react';
+import { Menu, X, Heart, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { cn } from '../utils/cn';
 import { useLanguage } from '../LanguageContext';
@@ -9,7 +9,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isCategoriesOpen, setIsCategoriesOpen] = useState(false);
   const location = useLocation();
-  const { language, setLanguage, t } = useLanguage();
+  const { t } = useLanguage();
 
   const navLinks = [
     { name: t.nav.home, path: '/' },
@@ -128,31 +128,6 @@ export default function Header() {
               </Link>
             ))}
 
-            {/* Language Switcher */}
-            <div className="flex items-center gap-1 ml-4 mr-2 bg-slate-100/50 p-1 rounded-xl">
-              <button 
-                onClick={() => setLanguage('en')}
-                className={cn(
-                  "px-3 py-1 text-[10px] font-bold rounded-lg transition-all",
-                  language === 'en' 
-                    ? "bg-white text-primary shadow-sm" 
-                    : "text-slate-400 hover:text-primary"
-                )}
-              >
-                EN
-              </button>
-              <button 
-                onClick={() => setLanguage('hi')}
-                className={cn(
-                  "px-3 py-1 text-[10px] font-bold rounded-lg transition-all",
-                  language === 'hi' 
-                    ? "bg-white text-primary shadow-sm" 
-                    : "text-slate-400 hover:text-primary"
-                )}
-              >
-                हिन्दी
-              </button>
-            </div>
 
             <Link
               to="/donate"
@@ -245,24 +220,6 @@ export default function Header() {
               </Link>
             ))}
 
-            {/* Mobile Language Switcher */}
-            <div className="flex items-center gap-4 py-2 border-b border-slate-50">
-              <span className="text-sm font-bold text-slate-400 flex items-center gap-2">
-                <Globe size={16} /> Language:
-              </span>
-              <button 
-                onClick={() => { setLanguage('en'); setIsOpen(false); }}
-                className={cn("text-sm font-bold", language === 'en' ? "text-accent" : "text-primary")}
-              >
-                English
-              </button>
-              <button 
-                onClick={() => { setLanguage('hi'); setIsOpen(false); }}
-                className={cn("text-sm font-bold", language === 'hi' ? "text-accent" : "text-primary")}
-              >
-                हिन्दी
-              </button>
-            </div>
 
             <Link
               to="/donate"

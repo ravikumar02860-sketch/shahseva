@@ -16,9 +16,9 @@ export const translations = {
     },
     hero: {
       badge: 'Shah Seva: Trusted NGO in Bhilwara Since 2010',
-      title: 'Shah Seva: Transforming Lives Through Compassion and Social Work in India',
-      subtitle: 'Empowering Underprivileged Families and Supporting Children\'s Education in Rajasthan.',
-      desc: 'Shah Seva (Dargah Saiyad Ali Shah Seva Sansthan) is a leading NGO in Bhilwara and a trusted charity organization in Rajasthan. Since 2010, our social work NGO in India has been dedicated to providing life-saving food, medical aid, and quality education to those who need it most. When you donate for poor families through Shah Seva, you are funding transparent projects that help break the cycle of poverty. Join our mission to help children education in India and provide essential support to marginalized communities. Your safe online donation to our NGO makes a real-world impact in the lives of thousands.',
+      title: 'Donate Money to Charity in India: Shah Seva Transforming Lives Through Compassion',
+      subtitle: 'The Best Way to Donate Money to Charity Online for Poor Families and Children\'s Education in Rajasthan.',
+      desc: 'Shah Seva (Dargah Saiyad Ali Shah Seva Sansthan) is a leading NGO in Bhilwara and a trusted charity organization in Rajasthan. Since 2010, our social work NGO in India has been dedicated to providing life-saving food, medical aid, and quality education to those who need it most. If you want to donate money to charity to help poor families, Shah Seva provides transparent projects that help break the cycle of poverty. Join our mission to help children education in India and provide essential support to marginalized communities. Your safe online donation to our NGO makes a real-world impact in the lives of thousands.',
       ctaWork: 'View Our Impact',
     },
     stats: {
@@ -589,6 +589,10 @@ export const translations = {
       badge: 'Help Center',
       items: [
         {
+          q: "Is it safe to donate money to charity online through Shah Seva?",
+          a: "Yes, it is completely safe to donate money to charity online through our website. We use secure UPI payment gateways and provide instant transaction recording. Every online donation for poor families is handled with transparency and documented for your peace of mind.",
+        },
+        {
           q: "What is Dargah Saiyad Ali Shah Seva Sansthan?",
           a: "Dargah Saiyad Ali Shah Seva Sansthan is a non-profit organization dedicated to serving humanity through food distribution, education support, and medical aid for the poor and needy.",
         },
@@ -623,8 +627,8 @@ export const translations = {
     },
     hero: {
       badge: 'मानवता की सेवा',
-      title: 'शाह सेवा: भीलवाड़ा में गरीबों की उम्मीद',
-      subtitle: 'दरगाह सैयद अली शाह सेवा संस्थान के माध्यम से जरूरतमंदों को भोजन, शिक्षा और स्वास्थ्य सहायता प्रदान करके बदलाव लाएं।',
+      title: 'भारत में चैरिटी के लिए दान करें: शाह सेवा के साथ गरीबों की मदद करें',
+      subtitle: 'शाह सेवा: गरीबों को भोजन और शिक्षा के लिए दान करने का सबसे विश्वसनीय माध्यम।',
       donateBtn: 'अभी दान करें',
       workBtn: 'हमारा कार्य देखें',
       stats: {
@@ -1030,6 +1034,10 @@ export const translations = {
       desc: 'हमारे मिशन, गतिविधियों और आप कैसे शामिल हो सकते हैं, इसके बारे में सामान्य प्रश्नों के उत्तर खोजें।',
       badge: 'सहायता केंद्र',
       items: [
+        {
+          q: "क्या शाह सेवा के माध्यम से ऑनलाइन चैरिटी के लिए दान करना सुरक्षित है?",
+          a: "जी हाँ, हमारी वेबसाइट के माध्यम से दान करना पूरी तरह से सुरक्षित है। हम सुरक्षित यूपीआई गेटवे का उपयोग करते हैं और प्रत्येक ऑनलाइन दान की पारदर्शिता बनाए रखते हैं ताकि आपका योगदान भीलवाड़ा के जरूरतमंद परिवारों तक सुरक्षित रूप से पहुँचे।",
+        },
         {
           q: "दरगाह सैयद अली शाह सेवा संस्थान क्या है?",
           a: "दरगाह सैयद अली शाह सेवा संस्थान एक गैर-लाभकारी संगठन है जो गरीबों और जरूरतमंदों के लिए भोजन वितरण, शिक्षा सहायता और चिकित्सा सहायता के माध्यम से मानवता की सेवा के लिए समर्पित है।"
