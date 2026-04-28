@@ -17,8 +17,8 @@ export const translations = {
     hero: {
       badge: 'Shah Seva: Trusted NGO in Bhilwara Since 2010',
       title: 'Donate Money to Charity in India: Shah Seva Transforming Lives Through Compassion',
-      subtitle: 'The Best Way to Donate Money to Charity Online for Poor Families and Children\'s Education in Rajasthan.',
-      desc: 'Shah Seva (Dargah Saiyad Ali Shah Seva Sansthan) is a leading NGO in Bhilwara and a trusted charity organization in Rajasthan. Since 2010, our social work NGO in India has been dedicated to providing life-saving food, medical aid, and quality education to those who need it most. If you want to donate money to charity to help poor families, Shah Seva provides transparent projects that help break the cycle of poverty. Join our mission to help children education in India and provide essential support to marginalized communities. Your safe online donation to our NGO makes a real-world impact in the lives of thousands.',
+      subtitle: 'Discover How to Donate Money to Help Poor Families in India Online and Support Children\'s Education in Rajasthan.',
+      desc: 'Shah Seva (Dargah Saiyad Ali Shah Seva Sansthan) is a leading NGO in Bhilwara and a trusted charity organization in Rajasthan. If you are looking for how to donate money to help poor families in India online, our platform provides a safe and transparent way to make an impact. Since 2010, our social work NGO has been dedicated to providing life-saving food, medical aid, and quality education for underprivileged communities. Join our mission to help girl child education in Rajasthan and provide essential support to those who need it most. Your safe online donation to our NGO helps break the cycle of poverty in India.',
       ctaWork: 'View Our Impact',
     },
     stats: {
@@ -29,9 +29,9 @@ export const translations = {
     },
     aboutSummary: {
       badge: 'Shah Seva: Our Mission of Selfless Service',
-      title: 'Shah Seva is a Dedicated NGO Helping Children\'s Education and Families in Need Across Rajasthan.',
+      title: 'The Best NGO in Rajasthan for Sponsoring Child Education and Helping Poor Families.',
       regNo: 'Registration No: COOP/2025/BHILWARA/500577',
-      desc: 'Based in Bhilwara, Rajasthan, Shah Seva (Dargah Saiyad Ali Shah Seva Sansthan) is a recognized social work NGO in India. We believe that every child deserves a bright future and every family deserves a life of dignity. Our charity organization in Bhilwara works tirelessly to uplift the underprivileged through systematic intervention. Whether it is providing monthly ration kits to widows or funding the higher education of bright students, Shah Seva ensures that every donation for poor families is utilized for maximum social impact. Explore how you can support education donation and medical aid programs to join us in building a better India.',
+      desc: 'Based in Bhilwara, Rajasthan, Shah Seva (Dargah Saiyad Ali Shah Seva Sansthan) is widely recognized as the best NGO in Rajasthan for sponsoring child education and providing life-saving medical aid. Our charity organization in Bhilwara works tirelessly to uplift the underprivileged through systematic intervention. Whether it is providing monthly ration kits to widows or funding the higher education of bright students, Shah Seva ensures that every donation for poor families is utilized for maximum social impact. Learn how your contribution to our social work NGO in India helps provide medical treatment for poor patients and supports girl child education in Rajasthan.',
       item1: 'Shah Seva Support: Monthly Ration Kits',
       item2: 'Donate for Children\'s Education India',
       item3: 'Emergency Medical Help for Poor Families',
@@ -149,20 +149,20 @@ export const translations = {
     },
     seo: {
       home: {
-        title: 'Shah Seva | Trusted NGO in Bhilwara Rajasthan for Charity',
-        description: 'Support Shah Seva (Dargah Saiyad Ali Shah Seva Sansthan), a top NGO in Bhilwara. Donate for poor families, child education & medical aid in Rajasthan.',
+        title: 'Shah Seva | Donate Money to Help Poor Families in India Online',
+        description: 'Learn how to donate money to help poor families in India online through Shah Seva NGO. Best NGO in Rajasthan for sponsoring child education and food distribution in Bhilwara.',
       },
       about: {
-        title: 'About Shah Seva | Our Mission of Social Work in Bhilwara',
-        description: 'Learn about Shah Seva NGO in Bhilwara. Since 2010, our social work NGO in India has been supporting underprivileged communities with food and education.',
+        title: 'About Shah Seva | Trusted NGO in Rajasthan for Sponsoring Child Education',
+        description: 'Discover the story of Shah Seva, a trusted NGO in Rajasthan for sponsoring child education and providing medical treatment for poor patients in Bhilwara since 2010.',
       },
       work: {
-        title: 'Our Charity Work & Social Initiatives in Rajasthan | Shah Seva',
-        description: 'Explore Shah Seva projects: food distribution for poor families, children\'s education support, and medical aid in Rajasthan. Join our social work NGO today.',
+        title: 'Our Charity Work in Rajasthan | Impact of Social Work NGO in Bhilwara',
+        description: 'Explore the impact of our social work NGO in Bhilwara. We focus on girl child education in Rajasthan, food distribution, and rations for poor families in India.',
       },
       impact: {
-        title: 'Shah Seva Impact | Real Stories of Change in Rajasthan',
-        description: 'See the real-world impact of Shah Seva NGO Bhilwara. We have helped 12,500+ people through food donation, education, and medical help across Rajasthan.',
+        title: 'Our Impact | Results of Social Work for Underprivileged Communities India',
+        description: 'See the results of our social work for underprivileged communities in India. We provide medical treatment for poor patients and support girl child education in Rajasthan.',
       },
       gallery: {
         title: 'Shah Seva Photo Gallery | Capturing Our Social Work & Service',
@@ -339,14 +339,14 @@ export const translations = {
     },
     about: {
       badge: 'Our NGO Story in Bhilwara',
-      title: 'Shah Seva: A Trusted Social Work NGO in India Dedicated to Service.',
-      desc: 'Shah Seva (Dargah Saiyad Ali Shah Seva Sansthan) is a non-profit charity organization in Rajasthan, committed to serving the most vulnerable members of society. As a prominent NGO in Bhilwara, we operate with a deep-rooted belief that selfless service to humanity is the highest form of worship. Our journey began with a simple mission: to ensure that no head in our community goes hungry and no child is deprived of the light of education. Today, Shah Seva has grown into a multifaceted social work NGO in India, reaching thousands of families with life-saving interventions in health, nutrition, and literacy. We are widely recognized as a trusted NGO to donate for poor families, offering a transparent and efficient platform for donors worldwide to contribute to meaningful change in India.',
+      title: 'Shah Seva: A Trusted Way to Donate Money to Charity in India Online.',
+      desc: 'Shah Seva (Dargah Saiyad Ali Shah Seva Sansthan) is a non-profit charity organization in Rajasthan, committed to serving the most vulnerable members of society. As a prominent NGO in Bhilwara, we provide a safe and transparent way for you to donate money to charity in India. Our journey began with a simple mission: to ensure that no head in our community goes hungry and no child is deprived of the light of education. Today, Shah Seva has grown into a multifaceted social work NGO, reaching thousands of families with life-saving interventions. Our online platform makes it easy for you to donate money to charity online to help poor families, offering 100% transparency.',
       historyTitle: 'Our Journey and Social Work Since 2010',
-      historyDesc: 'What started as a small group of volunteers in Bhilwara in 2010 has transformed into the Dargah Saiyad Ali Shah Seva Sansthan, a registered NGO known for its grassroots impact. For over a decade, our dedicated team has worked on the frontlines of poverty alleviation. From distributing blankets in the harsh winters of Rajasthan to setting up emergency food stalls during the pandemic, our history is defined by rapid response and unwavering commitment. We have expanded our reach from a single street in Bhilwara to over 50 rural pockets across Rajasthan, proving that with collective support, we can build a resilient safety net for the poor. Our growth is a testament to the trust placed in us by local communities and international donors alike.',
+      historyDesc: 'What started as a small group of volunteers in Bhilwara in 2010 has transformed into the Dargah Saiyad Ali Shah Seva Sansthan, a registered NGO known for its grassroots impact. For over a decade, our dedicated team has worked on the frontlines of poverty alleviation. When people look for ways to donate money to charity to sponsor children\'s education, they trust Shah Seva because of our long-standing record of integrity and service in Rajasthan.',
       missionTitle: 'Our Mission: Support Education and Humanitarian Aid in India',
-      missionDesc: 'The mission of Shah Seva NGO is to provide immediate humanitarian relief and long-term developmental support to underprivileged families in India. Our core focus areas include help children education in India and ensuring food security for low-income households. We work to identify bright students from marginalized backgrounds and provide them with the financial backing they need to succeed in school and beyond. Simultaneously, we operate health initiatives to provide affordable medical aid for poor families who are often sidelined by the rising costs of healthcare. Our holistic approach ensures that we address both the immediate needs and the systemic causes of poverty in Rajasthan.',
+      missionDesc: 'The mission of Shah Seva NGO is to provide immediate humanitarian relief and long-term developmental support to underprivileged families in India. Our core focus areas include helping children education in India and ensuring food security. We believe that when you donate money to charity through Shah Seva, you are directly investing in the future of a child who otherwise wouldn\'t have hope.',
       visionTitle: 'Our Vision for a Hunger-Free and Educated Rajasthan',
-      visionDesc: "We envision a future where Bhilwara and every corner of Rajasthan are free from the shackles of extreme poverty and illiteracy. Shah Seva strives to be a catalyst for change, creating a society where every child, regardless of their birth, has access to quality learning and every elderly person can live with dignity and health. Our goal is to scale our successful models of food distribution and education sponsorship to other states in India, establishing Shah Seva as a global benchmark for efficient, transparent, and compassionate social work. We believe that through targeted charity work in Rajasthan, we can contribute to the larger goal of a developed and equitable India.",
+      visionDesc: "We envision a future where Bhilwara and every corner of Rajasthan are free from the shackles of extreme poverty and illiteracy. Shah Seva strives to be a catalyst for change, creating a society where every child has access to quality learning and every elderly person can live with dignity. Our goal is to be the most trusted place for people to donate money to charity online for meaningful social impact.",
       valuesTitle: 'Our Core Values as a Social Work NGO',
       values: {
         compassion: {
@@ -443,7 +443,7 @@ export const translations = {
     },
     impact: {
       title: 'Our Impact',
-      desc: 'Every donation translates into real-world change. Here is a glimpse of the lives we\'ve touched together.',
+      desc: 'Discover the real-world impact of our social work NGO in Bhilwara. Every donation translates into change, helping to provide rations to hungry families and life-saving medical treatment for poor patients in Rajasthan.',
       stats: {
         lives: 'Total Lives Impacted',
         villages: 'Villages Covered',
@@ -465,9 +465,9 @@ export const translations = {
     },
     work: {
       title: 'Our Charity Work and Social Initiatives in Rajasthan',
-      desc: 'Shah Seva NGO Bhilwara operates through a range of targeted social work initiatives designed to tackle poverty at its roots. From grassroots food distribution to advanced medical aid for poor families, our charity organization in Rajasthan ensures that your help reaches the right hands at the right time. We are committed to fostering sustainable development in rural and urban clusters alike, focusing on education, health, and nutrition for a better India.',
+      desc: 'Learn about the impact of our social work NGO in Bhilwara for underprivileged communities. From food distribution and rations in Bhilwara to girl child education in Rajasthan, Shah Seva is dedicated to creating lasting change. Our projects help provide medical treatment for poor patients and emergency disaster relief for vulnerable families across India.',
       howItWorksTitle: 'Our Systematic Approach to Effective Charity',
-      howItWorksDesc: 'Impactful charity is about more than just giving aid; it requires a structured approach to ensure sustainability and dignity. At Shah Seva, we follow a rigorous four-step process to maximize the impact of every donation for poor families. Our methodology ensures that our help children education in India programs are reaching students who are truly capable and in need, and that our health camps are placed in the most underserved regions of Bhilwara and Rajasthan.',
+      howItWorksDesc: 'Impactful charity requires a structured approach. At Shah Seva, we maximize the impact of every donation for poor families, focusing on girl child education in Rajasthan and ensuring medical aid for those who need it most.',
       step1Title: 'Comprehensive Identification',
       step1Desc: 'Our ground-level volunteers and community leaders work together to identify families and individuals facing extreme hardship. We focus on widows, orphans, and the elderly.',
       step2Title: 'Rigorous Verification',
@@ -628,7 +628,7 @@ export const translations = {
     hero: {
       badge: 'मानवता की सेवा',
       title: 'भारत में चैरिटी के लिए दान करें: शाह सेवा के साथ गरीबों की मदद करें',
-      subtitle: 'शाह सेवा: गरीबों को भोजन और शिक्षा के लिए दान करने का सबसे विश्वसनीय माध्यम।',
+      subtitle: 'भारत में गरीबों की मदद के लिए ऑनलाइन दान कैसे करें? शाह सेवा सबसे विश्वसनीय माध्यम है।',
       donateBtn: 'अभी दान करें',
       workBtn: 'हमारा कार्य देखें',
       stats: {
@@ -639,8 +639,8 @@ export const translations = {
     },
     aboutSummary: {
       badge: 'शाह सेवा के बारे में',
-      title: 'भीलवाड़ा के हाशिए पर रहने वाले समुदायों के लिए आश्रय और पोषण',
-      desc: 'दरगाह सैयद अली शाह सेवा संस्थान (शाह सेवा) एक पंजीकृत एनजीओ है जो राजस्थान के भीलवाड़ा जिले में सबसे गरीब परिवारों को तत्काल राहत और दीर्घकालिक सहायता प्रदान करने के लिए समर्पित है।',
+      title: 'राजस्थान में बच्चों की शिक्षा के लिए सबसे अच्छा एनजीओ - शाह सेवा भीलवाड़ा',
+      desc: 'दरगाह सैयद अली शाह सेवा संस्थान (शाह सेवा) भीलवाड़ा राजस्थान में बच्चों की शिक्षा के लिए सबसे अच्छा एनजीओ माना जाता है। हम सबसे गरीब परिवारों को तत्काल राहत, राशन और दीर्घकालिक सहायता प्रदान करने के लिए समर्पित हैं। यदि आप जानना चाहते हैं कि भारत में गरीबों की मदद के लिए ऑनलाइन दान कैसे करें, तो हमारा सुरक्षित मंच आपके योगदान को सीधे जरूरतमंदों तक पहुँचाता है।',
       points: [
         'भीलवाड़ा में 100% पारदर्शी दान वितरण',
         'हजारों गरीब परिवारों के लिए मासिक भोजन राशन',
@@ -676,44 +676,44 @@ export const translations = {
     },
     seo: {
       home: {
-        title: 'शाह सेवा एनजीओ भीलवाड़ा: गरीबों और वंचितों की सेवा के लिए समर्पित',
-        description: 'शाह सेवा (दरगाह सैयद अली शाह सेवा संस्थान) भीलवाड़ा राजस्थान में एक प्रमुख एनजीओ है, जो जरूरतमंदों को भोजन वितरण, शिक्षा सहायता और चिकित्सा सहायता प्रदान करता है। आज ही दान करें और बदलाव लाएं।'
+        title: 'भारत में गरीबों की मदद के लिए ऑनलाइन दान कैसे करें | शाह सेवा एनजीओ भीलवाड़ा',
+        description: 'जानें कि भारत में गरीबों की मदद के लिए ऑनलाइन दान कैसे करें। शाह सेवा राजस्थान में बच्चों की शिक्षा के लिए सबसे अच्छा एनजीओ है, जो भीलवाड़ा में भोजन वितरण और चिकित्सा सहायता प्रदान करता है।'
       },
       about: {
-        title: 'शाह सेवा के बारे में: हमारी यात्रा और मिशन',
-        description: 'दरगाह सैयद अली शाह सेवा संस्थान के बारे में जानें। हम 2010 से भीलवाड़ा में निरंतर सेवा कार्य कर रहे हैं और समाज के वंचित वर्गों के उत्थान के लिए समर्पित हैं।'
+        title: 'राजस्थान में बच्चों की शिक्षा के लिए सबसे अच्छा एनजीओ | शाह सेवा के बारे में',
+        description: 'शाह सेवा के बारे में जानें, जो राजस्थान में बच्चों की शिक्षा के लिए सबसे अच्छा एनजीओ है। हम 2010 से भीलवाड़ा में गरीब परिवारों के लिए राशन और चिकित्सा दान जुटा रहे हैं।'
       },
       donate: {
-        title: 'शाह सेवा ऑनलाइन दान: गरीबों की मदद का आसान तरीका',
-        description: 'आपके दान से किसी भूखे को खाना और बच्चों को शिक्षा मिल सकती है। शाह सेवा के सुरक्षित यूपीआई पेमेंट के माध्यम से भीलवाड़ा के जरूरतमंदों के लिए दान करें।'
+        title: 'शाह सेवा ऑनलाइन दान: भारत में गरीबों की मदद के लिए सुरक्षित माध्यम',
+        description: 'भारत में चैरिटी के लिए दान करें। शाह सेवा के माध्यम से भीलवाड़ा के जरूरतमंद परिवारों को भोजन, शिक्षा और चिकित्सा सहायता प्रदान करने के लिए ऑनलाइन दान करें।'
       }
     },
     categories: {
       food: {
-        title: 'भोजन और पोषण दान',
-        description: 'भीलवाड़ा में गरीब और भूखे लोगों को राशन और भोजन किट दान करें।',
-        metaTitle: 'भीलवाड़ा में भोजन दान | शाह सेवा एनजीओ राशन वितरण',
-        metaDescription: 'राजस्थान के भीलवाड़ा में भूखे परिवारों को भोजन और राशन दान करें। शाह सेवा एनजीओ यह सुनिश्चित करता है कि आपकी चैरिटी उन लोगों तक पहुँचे जिन्हें इसकी सबसे अधिक आवश्यकता है।',
-        section1Title: 'भीलवाड़ा में भूख मिटाना',
-        section1Text: 'हमारा राशन वितरण कार्यक्रम भीलवाड़ा के सबसे गरीब इलाकों को कवर करता है, यह सुनिश्चित करते हुए कि कोई भी बच्चा भूखा न सोए।',
+        title: 'भोजन और पोषण दान | भीलवाड़ा में राशन वितरण के लिए विश्वसनीय चैरिटी',
+        description: 'भीलवाड़ा में गरीब परिवारों और भूखे लोगों को राशन किट दान करें। शाह सेवा राशन वितरण के माध्यम से भूख मिटाने का कार्य कर रही है।',
+        metaTitle: 'भीलवाड़ा में राशन वितरण के लिए विश्वसनीय चैरिटी | शाह सेवा भोजन दान',
+        metaDescription: 'राजस्थान के भीलवाड़ा में भूखे परिवारों को राशन दान करें। शाह सेवा एनजीओ यह सुनिश्चित करता है कि आपका भोजन दान सीधे जरूरतमंद परिवारों तक सुरक्षित रूप से पहुँचे।',
+        section1Title: 'भीलवाड़ा में भूख मिटाना - राशन दान',
+        section1Text: 'हमारा राशन वितरण कार्यक्रम भीलवाड़ा के सबसे गरीब इलाकों को कवर करता है। यदि आप भीलवाड़ा में राशन वितरण के लिए विश्वसनीय चैरिटी ढूंढ रहे हैं, तो शाह सेवा से जुड़ें।',
         cta: 'अभी भोजन के लिए दान करें'
       },
       education: {
-        title: 'शिक्षा और छात्रवृत्ति चैरिटी',
-        description: 'भारत में अनाथ और वंचित बच्चों की शिक्षा के लिए दान करें।',
-        metaTitle: 'भारत में बच्चों की शिक्षा के लिए दान करें | शाह सेवा छात्रवृत्ति',
-        metaDescription: 'भीलवाड़ा में गरीब बच्चों की शिक्षा का समर्थन करें। शाह सेवा एनजीओ ट्यूशन फीस, किताबें और वर्दी प्रदान करता है। शिक्षा के माध्यम से भविष्य बदलें।',
-        section1Title: 'शिक्षा के माध्यम से सशक्तिकरण',
-        section1Text: 'हमारा मानना है कि शिक्षा गरीबी के चक्र को तोड़ने की कुंजी है। हम मेधावी लेकिन आर्थिक रूप से कमजोर छात्रों की पहचान करते हैं।',
+        title: 'शिक्षा चैरिटी | राजस्थान में बच्चों की शिक्षा के लिए सबसे अच्छा एनजीओ',
+        description: 'भारत में अनाथ और वंचित बच्चों की शिक्षा के लिए दान करें। शाह सेवा राजस्थान में बच्चों की शिक्षा के लिए सबसे अच्छा एनजीओ और सपोर्ट सिस्टम है।',
+        metaTitle: 'राजस्थान में बच्चों की शिक्षा के लिए सबसे अच्छा एनजीओ | छात्र शिक्षा दान',
+        metaDescription: 'राजस्थान में बच्चों की शिक्षा के लिए दान करें। शाह सेवा एनजीओ गरीब बच्चों को छात्रवृत्ति, किताबें और वर्दी प्रदान करता है ताकि वे अपना भविष्य संवार सकें।',
+        section1Title: 'शिक्षा के माध्यम से सशक्तिकरण - शाह सेवा',
+        section1Text: 'शिक्षा गरीबी मिटाने का सबसे सशक्त माध्यम है। शाह सेवा राजस्थान में बच्चों की शिक्षा के लिए सबसे अच्छा एनजीओ होने के नाते हर गरीब बच्चे तक स्कूल शिक्षा पहुँचाने के लिए प्रतिबद्ध है।',
         cta: 'छात्र की मदद करें'
       },
       medical: {
-        title: 'चिकित्सा सहायता और स्वास्थ्य चैरिटी',
-        description: 'उन लोगों को जीवन रक्षक चिकित्सा उपचार और दवाएं प्रदान करें जो इसे वहन नहीं कर सकते।',
-        metaTitle: 'राजस्थान में चिकित्सा सहायता के लिए दान करें | एनजीओ स्वास्थ्य पहल',
-        metaDescription: 'गरीबों के लिए चिकित्सा दान। शाह सेवा भीलवाड़ा में स्वास्थ्य शिविरों और व्यक्तिगत सर्जरी खर्चों में मदद करती है। आज ही किसी की जान बचाएं।',
-        section1Title: 'सुलभ स्वास्थ्य सेवा',
-        section1Text: 'स्वास्थ्य देखभाल एक विलासिता नहीं बल्कि एक अधिकार होना चाहिए। हम यह सुनिश्चित करने के लिए स्थानीय क्लीनिकों के साथ काम करते हैं कि गरीबों को इलाज मिले।',
+        title: 'चिकित्सा सहायता | गरीब मरीजों के इलाज के लिए चिकित्सा दान राजस्थान',
+        description: 'उन गरीब मरीजों के इलाज के लिए चिकित्सा दान दें जो महंगे उपचार का खर्च वहन नहीं कर सकते। शाह सेवा भीलवाड़ा में मुफ्त चिकित्सा शिविर और दवाएं प्रदान करती है।',
+        metaTitle: 'गरीब मरीजों के इलाज के लिए चिकित्सा दान राजस्थान | शाह सेवा एनजीओ',
+        metaDescription: 'राजस्थान में गरीब मरीजों के इलाज के लिए चिकित्सा दान करें। शाह सेवा एनजीओ कैंसर और अन्य बीमारियों के महंगे इलाज में गरीब परिवारों की वित्तीय सहायता करता है।',
+        section1Title: 'सुलभ स्वास्थ्य सेवा - चिकित्सा दान',
+        section1Text: 'स्वास्थ्य देखभाल सबका अधिकार है। गरीब मरीजों के इलाज के लिए आपका चिकित्सा दान राजस्थान के दूरदराज के क्षेत्रों में रहने वाले लोगों की जान बचा सकता है।',
         cta: 'इलाज के लिए दान करें'
       },
       widows: {

@@ -13,9 +13,9 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = "Donate Money to Charity in India | Shah Seva NGO | Help Poor Families",
-  description = "Donate money to charity with Shah Seva (NGO). Help poor families, support children's education, and provide medical aid. A trusted charitable organization in Bhilwara, Rajasthan.",
-  keywords = "donate money to charity, charity donation India, Shah Seva, NGO donation Rajasthan, help poor families, support education donation, charity organization India, donate for poor children, Shah Seva Sansthan, Indian NGO for charity",
+  title = "Donate Money to Charity in India | Shah Seva NGO | Help Poor Families Online",
+  description = "Learn how to donate money to help poor families in India online. Shah Seva is the best NGO in Rajasthan for sponsoring child education, food distribution, and medical aid for underprivileged communities in Bhilwara.",
+  keywords = "how to donate money to help poor families in India online, best NGO in Rajasthan for sponsoring child education, trusted charity for food distribution in Bhilwara, donate for medical treatment of poor patients in Rajasthan, help girl child education in Rajasthan with safe online donation, Shah Seva Sansthan, donate money to charity India, NGO donation Bhilwara",
   canonical = "https://shahseva.vercel.app",
   ogImage = "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F",
   ogType = "website",

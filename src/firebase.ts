@@ -12,6 +12,7 @@ export const auth = getAuth(app);
 // experimentalForceLongPolling: true helps avoid gRPC stream timeouts in certain network environments
 export const db = initializeFirestore(app, {
   experimentalForceLongPolling: true,
+  experimentalAutoDetectLongPolling: false,
 }, firebaseConfig.firestoreDatabaseId);
 
 export const googleProvider = new GoogleAuthProvider();

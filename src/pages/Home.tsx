@@ -475,23 +475,23 @@ export default function HomePage() {
               <span className="text-gradient-gold">Donate Money To Charity</span> Through a Trusted Society in Rajasthan
             </h2>
             <p className="text-slate-600 mb-10 text-lg leading-relaxed">
-              Dargah Saiyad Ali Shah Seva Sansthan is a trusted charity organization in India and a leading Society in Bhilwara, dedicated to uplifting marginalized communities. As a charity helping poor families and a Society helping children's education, our work in Rajasthan focuses on sustainable development through food, education, and healthcare.
+              If you are looking for how to donate money to help poor families in India online, Dargah Saiyad Ali Shah Seva Sansthan is the best NGO in Rajasthan for sponsoring child education and food distribution in Bhilwara. We are a trusted charity helping poor families with transparent social work projects including medical treatment for poor patients.
             </p>
             <div className="space-y-8">
               {[
                 {
-                  title: "Help Poor Families Donation",
-                  desc: "We provide direct financial and food aid to families living below the poverty line in Bhilwara and nearby villages, ensuring they have the basics for survival.",
+                  title: "How to Donate Money to Help Poor Families",
+                  desc: "We provide direct food rations and emergency aid to thousands of underprivileged families in Bhilwara and Rajasthan, ensuring no one goes hungry.",
                   icon: Heart
                 },
                 {
-                  title: "Society Helping Children Education",
-                  desc: "Our scholarship programs help bright students from underprivileged backgrounds pursue their dreams, providing a path out of poverty through education.",
+                  title: "Best NGO in Rajasthan for Sponsoring Child Education",
+                  desc: "Our educational grants help underprivileged bright students in India pursue their dreams, providing textbooks, fees, and uniforms through our NGO scholarship programs.",
                   icon: BookOpen
                 },
                 {
-                  title: "Medical Aid for Poor Families",
-                  desc: "We organize free medical camps and provide essential medicines to ensure healthcare is accessible to all in Rajasthan, regardless of their financial status.",
+                  title: "Medical Treatment for Poor Patients in Rajasthan",
+                  desc: "As a trusted social work NGO, we fund surgeries and provide life-saving medicines for those who cannot afford healthcare, ensuring medical aid for all.",
                   icon: HeartPulse
                 }
               ].map((item, i) => (
