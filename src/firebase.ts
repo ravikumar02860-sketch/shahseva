@@ -1,12 +1,14 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, User } from "firebase/auth";
-import { getFirestore, collection, addDoc, getDocs, query, where, orderBy, onSnapshot, doc, getDoc, setDoc, deleteDoc, updateDoc, Timestamp, getDocFromServer } from "firebase/firestore";
-import { initializeFirestore } from "firebase/firestore";
+import { getFirestore, collection, addDoc, getDocs, query, where, orderBy, onSnapshot, doc, getDoc, setDoc, deleteDoc, updateDoc, Timestamp, getDocFromServer, initializeFirestore, setLogLevel } from "firebase/firestore";
 import firebaseConfig from "../firebase-applet-config.json";
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
+
+// Suppress internal warnings/info logs that can be noisy in certain environments
+setLogLevel('error');
 
 // Use initializeFirestore instead of getFirestore to pass custom settings
 // experimentalForceLongPolling: true helps avoid gRPC stream timeouts in certain network environments

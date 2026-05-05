@@ -78,6 +78,10 @@ export default function AdminCampaigns() {
       } as Campaign));
       setCampaigns(campaignsData);
     }, (error) => {
+      // Ignore idle stream disconnects or cancelled requests as the SDK handles reconnection
+      if (error.message.includes('CANCELLED') || error.message.includes('idle stream')) {
+        return;
+      }
       console.error('Failed to fetch campaigns', error);
       // handleFirestoreError(error, OperationType.LIST, path);
     });
