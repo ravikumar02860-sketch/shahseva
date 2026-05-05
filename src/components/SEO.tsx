@@ -13,9 +13,9 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = "Donate Money to Charity in India | Shah Seva NGO | Help Poor Families Online",
-  description = "Learn how to donate money to help poor families in India online. Shah Seva is the best NGO in Rajasthan for sponsoring child education, food distribution, and medical aid for underprivileged communities in Bhilwara.",
-  keywords = "how to donate money to help poor families in India online, best NGO in Rajasthan for sponsoring child education, trusted charity for food distribution in Bhilwara, donate for medical treatment of poor patients in Rajasthan, help girl child education in Rajasthan with safe online donation, Shah Seva Sansthan, donate money to charity India, NGO donation Bhilwara",
+  title = "Donate Money to Charity in India | Shah Seva NGO | Best NGO in Rajasthan for Poor Families",
+  description = "Learn how to donate money to help poor families in India online. Shah Seva is the best NGO in Rajasthan for sponsoring child education, food distribution, and medical treatment for poor patients in Bhilwara. Trusted charity since 2010.",
+  keywords = "how to donate money to help poor families in India online, best NGO in Rajasthan for sponsoring child education, trusted charity for food distribution in Bhilwara, donate for medical treatment of poor patients in Rajasthan, help girl child education in Rajasthan with safe online donation, Shah Seva Sansthan, online platform to donate money for charity India, charitable society in Rajasthan for social work, NGO helping poor children education India",
   canonical = "https://shahseva.vercel.app",
   ogImage = "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F",
   ogType = "website",
@@ -27,8 +27,9 @@ export default function SEO({
 
   const defaultSchema = {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "NGO",
     "name": siteName,
+    "alternateName": ["Shah Seva", "Dargah Saiyad Ali Shah Seva Sansthan NGO"],
     "taxID": "COOP/2025/BHILWARA/500577",
     "url": "https://shahseva.vercel.app",
     "logo": "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F",
@@ -43,16 +44,13 @@ export default function SEO({
       "@type": "AdministrativeArea",
       "name": "Rajasthan"
     },
-    "location": {
-      "@type": "Place",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Murad Ali Dargah Ke Pass, Khel Mohalla, Pur",
-        "addressLocality": "Bhilwara",
-        "addressRegion": "Rajasthan",
-        "postalCode": "311001",
-        "addressCountry": "IN"
-      }
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Murad Ali Dargah Ke Pass, Khel Mohalla, Pur",
+      "addressLocality": "Bhilwara",
+      "addressRegion": "Rajasthan",
+      "postalCode": "311001",
+      "addressCountry": "IN"
     },
     "contactPoint": {
       "@type": "ContactPoint",
@@ -61,6 +59,7 @@ export default function SEO({
       "areaServed": "IN",
       "availableLanguage": ["English", "Hindi"]
     },
+    "nonprofitStatus": "Nonprofit501c3",
     "potentialAction": {
       "@type": "DonateAction",
       "target": {
@@ -72,7 +71,7 @@ export default function SEO({
         ]
       },
       "recipient": {
-        "@type": "Organization",
+        "@type": "NGO",
         "name": siteName
       }
     },
@@ -83,6 +82,25 @@ export default function SEO({
     ]
   };
 
+  const breadcrumbSchema = schema?.breadcrumb || {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://shahseva.vercel.app/"
+      },
+      title !== "Home" ? {
+        "@type": "ListItem",
+        "position": 2,
+        "name": title,
+        "item": canonical
+      } : null
+    ].filter(Boolean)
+  };
+
   return (
     <Helmet>
       {/* Standard metadata tags */}
@@ -90,7 +108,7 @@ export default function SEO({
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta name="author" content={siteName} />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F" />
       <link rel="canonical" href={canonical} />
 
@@ -101,9 +119,12 @@ export default function SEO({
       <meta property="og:url" content={canonical} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:site_name" content={siteName} />
+      <meta property="og:locale" content="en_IN" />
+      <meta property="og:locale:alternate" content="hi_IN" />
 
       {/* Twitter Card tags */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content={twitterHandle} />
       <meta name="twitter:creator" content={twitterHandle} />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
@@ -112,6 +133,9 @@ export default function SEO({
       {/* Structured Data (JSON-LD) */}
       <script type="application/ld+json">
         {JSON.stringify(schema || defaultSchema)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(breadcrumbSchema)}
       </script>
     </Helmet>
   );

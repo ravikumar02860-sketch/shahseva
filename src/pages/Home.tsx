@@ -522,13 +522,13 @@ export default function HomePage() {
             <div className="space-y-6">
               <img 
                 src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=600" 
-                alt="Society Work Bhilwara" 
+                alt="Social work NGO in Bhilwara - Community support" 
                 className="rounded-[2rem] shadow-strong w-full h-80 object-cover card-hover"
                 referrerPolicy="no-referrer"
               />
               <img 
                 src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=600" 
-                alt="Medical Aid Society" 
+                alt="Medical treatment for poor patients in Rajasthan - Medical aid" 
                 className="rounded-[2rem] shadow-strong w-full h-64 object-cover card-hover"
                 referrerPolicy="no-referrer"
               />
@@ -536,13 +536,13 @@ export default function HomePage() {
             <div className="space-y-6 pt-12">
               <img 
                 src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=600" 
-                alt="Charity Rajasthan" 
+                alt="Help girl child education in Rajasthan - Education support" 
                 className="rounded-[2rem] shadow-strong w-full h-64 object-cover card-hover"
                 referrerPolicy="no-referrer"
               />
               <img 
                 src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&q=80&w=600" 
-                alt="Help Poor Families" 
+                alt="How to donate money to help poor families in India online" 
                 className="rounded-[2rem] shadow-strong w-full h-80 object-cover card-hover"
                 referrerPolicy="no-referrer"
               />

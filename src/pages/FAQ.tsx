@@ -37,11 +37,25 @@ export default function FAQ() {
 
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": t.faq.items.map((item: any) => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.a
+      }
+    }))
+  };
+
   return (
     <div className="relative min-h-screen pt-24 pb-24 overflow-hidden">
       <SEO 
         title={t.seo.faq.title} 
         description={t.seo.faq.description}
+        schema={faqSchema}
       />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">

@@ -49,13 +49,13 @@ export const translations = {
     activities: {
       badge: 'Our Society Impact',
       title: 'How Your Charity Donation in India Creates Real Change',
-      desc: 'We focus on sustainable impact. Whether you donate for poor children\'s schooling or provide medical relief, your contribution is handled with the utmost integrity and transparency.',
+      desc: 'We focus on sustainable impact. If you are looking for an online platform to donate money for medical treatment of poor in India or want to contribute to food distribution for needy families in Bhilwara, your support makes it possible.',
       foodTitle: 'Donate for Poor: Ending Hunger',
-      foodDesc: 'We provide nutritious meals and monthly ration kits to families struggling with extreme poverty across India, ensuring no one goes hungry.',
-      eduTitle: 'Society Helping Children Education',
-      eduDesc: 'Education is the key to a better future. Your support funds school fees, books, and uniforms for underprivileged students in Rajasthan.',
-      medTitle: 'Medical Aid for Poor Families',
-      medDesc: 'We provide free health checkups, life-saving medicines, and surgical support for those who cannot afford healthcare in India.',
+      foodDesc: 'We provide monthly ration kits and nutritious meals for poor families and orphans, ensuring no one in Bhilwara goes hungry.',
+      eduTitle: 'Best NGO in Rajasthan for Sponsoring Child Education',
+      eduDesc: 'Education is the key to a better future. Your safe online donation helps girl child education in Rajasthan and funds school fees for underprivileged students.',
+      medTitle: 'Medical Treatment for Poor Patients in Rajasthan',
+      medDesc: 'We provide life-saving medicines and surgical support for those who cannot afford healthcare, acting as a trusted NGO for medical help donation.',
       readMore: 'Read More Impact Stories',
     },
     cta: {
@@ -200,11 +200,11 @@ export const translations = {
     categories: {
       education: {
         title: 'Education Donation for Poor Students | Help Children Study India',
-        h1: 'Sponsor a Child\'s Education: Help Children Education in India',
-        description: 'Education is the most powerful weapon we can use to change the world, yet millions of children in India are denied this basic right. At Shah Seva NGO, your education donation for poor students directly funds the dreams of underprivileged children in Rajasthan. We provide comprehensive support, including school tuition fees, high-quality textbooks, school uniforms, and learning materials. Our "Bright Sparks" program identifies talented students from marginalized backgrounds in Bhilwara and ensures they don\'t drop out due to financial stress. By sponsoring a child\'s education online with Shah Seva, you are investing in a future where poverty is no longer a barrier to potential.',
-        metaDescription: 'Donate for children\'s education in India with Shah Seva NGO. Support underprivileged kids with fees, books, and uniforms. Help us break the cycle of poverty.',
+        h1: 'NGO Helping Poor Children\'s Education in Rajasthan with Online Donation',
+        description: 'Education is a basic right, yet many are denied it. At Shah Seva NGO, your education donation for poor students helps girl child education in Rajasthan and supports bright minds in Bhilwara. We provide uniforms, fees, and books to ensure a brighter future.',
+        metaDescription: 'Donate for girl child education in Rajasthan. Shah Seva is the best NGO for sponsoring child education in India. Support underprivileged students with safe online donations.',
         section1Title: 'Why Your Education Donation to our NGO Matters',
-        section1Text: 'In rural Rajasthan, many bright minds are forced into child labor because their families cannot afford a simple school fee. Shah Seva bridges this gap by offering full educational scholarships. We believe that an educated child can pull their entire family out of poverty, creating a ripple effect of progress across the community.',
+        section1Text: 'Our scholarship programs are designed for those looking for how to donate money to help poor families in India online for educational purposes. We ensure every rupee empowers a child in Rajasthan.',
         cta: 'Sponsor a Student'
       },
       children: {
@@ -218,11 +218,11 @@ export const translations = {
       },
       medical: {
         title: 'Medical Help for Poor Families | Donate for Healthcare India',
-        h1: 'Save Lives: Donate for Medical Help for Poor Families in Rajasthan',
-        description: 'Healthcare is a basic human right, yet for many families in India, a single medical emergency can lead to lifelong debt or even loss of life. Shah Seva NGO\'s medical help donation program is designed to be a lifeline for the underprivileged in Bhilwara. We organize free diagnostic camps, provide life-saving medicines, and fund expensive surgeries for those who are sidelined by the healthcare system. As a social work NGO in India, we partner with specialized doctors to ensure that poverty never stands in the way of essential treatment. Your contribution helps us provide critical medical aid for poor families across Rajasthan.',
-        metaDescription: 'Support medical aid for poor families in India. Your donation to Shah Seva NGO funds life-saving surgeries, medicines, and free health camps in Rajasthan.',
+        h1: 'Online Platform to Donate Money for Medical Treatment of Poor in India',
+        description: 'Healthcare costs can be devastating. Shah Seva provides an online platform to donate money for medical treatment of poor in India. We help fund major surgeries, provide free medicines, and organize health camps for underprivileged communities in Rajasthan.',
+        metaDescription: 'Donate for medical treatment of poor patients in Rajasthan. Shah Seva NGO provides financial help for healthcare, surgeries, and medicines for families in need.',
         section1Title: 'Closing the Healthcare Gap in Rural India',
-        section1Text: 'Our mobile medical units travel to remote villages where primary health centers are non-existent. We treat thousands of patients monthly for chronic conditions and acute illnesses, ensuring that quality healthcare is accessible to all, regardless of their financial status.',
+        section1Text: 'If you want to donate for medical treatment of poor patients in Rajasthan, Shah Seva ensures your contribution directly saves lives in Bhilwara and surrounding rural areas.',
         cta: 'Give the Gift of Health'
       },
       food: {
@@ -656,12 +656,12 @@ export const translations = {
       desc: 'शाह सेवा की स्थापना हाजी सैयद मुराद अली शाह के विजन से हुई थी, जिनका पूरा जीवन गरीबों और अनाथों की सेवा के लिए समर्पित था। आज, हम उसी समर्पण के साथ उनके मिशन को आगे बढ़ा रहे हैं।'
     },
     activities: {
-      foodTitle: 'भोजन वितरण',
-      foodDesc: 'हम जरूरतमंद परिवारों को सूखा राशन और तैयार भोजन उपलब्ध कराते हैं।',
-      eduTitle: 'शिक्षा सहायता',
-      eduDesc: 'हम गरीब छात्रों की फीस, किताबों और वर्दी में मदद करते हैं।',
-      medTitle: 'चिकित्सा सहायता',
-      medDesc: 'हम उन लोगों को दवाएं और इलाज प्रदान करते हैं जो इसे वहन नहीं कर सकते।'
+      foodTitle: 'भोजन वितरण | भीलवाड़ा में जरूरतमंदों के लिए राशन',
+      foodDesc: 'यदि आप जानना चाहते हैं कि भीलवाड़ा में जरूरतमंद परिवारों के लिए भोजन वितरण में कैसे योगदान दें, तो शाह सेवा सबसे पारदर्शी माध्यम है। हम सूखा राशन और तैयार भोजन उपलब्ध कराते हैं।',
+      eduTitle: 'शिक्षा सहायता | राजस्थान में गरीब बच्चों की शिक्षा के लिए एनजीओ',
+      eduDesc: 'हम राजस्थान में गरीब बच्चों की शिक्षा के लिए ऑनलाइन दान के साथ एनजीओ के रूप में कार्य करते हैं, जो छात्रों की फीस, किताबों और वर्दी में मदद करते हैं।',
+      medTitle: 'चिकित्सा सहायता | गरीब मरीजों के इलाज के लिए ऑनलाइन प्लेटफॉर्म',
+      medDesc: 'भारत में गरीब मरीजों के इलाज के लिए चिकित्सा दान के लिए ऑनलाइन प्लेटफॉर्म के रूप में, हम उन लोगों को इलाज प्रदान करते हैं जो इसे वहन नहीं कर सकते।'
     },
     cta: {
       title: 'किसी के जीवन में बदलाव लाएं',
@@ -700,11 +700,11 @@ export const translations = {
       },
       education: {
         title: 'शिक्षा चैरिटी | राजस्थान में बच्चों की शिक्षा के लिए सबसे अच्छा एनजीओ',
-        description: 'भारत में अनाथ और वंचित बच्चों की शिक्षा के लिए दान करें। शाह सेवा राजस्थान में बच्चों की शिक्षा के लिए सबसे अच्छा एनजीओ और सपोर्ट सिस्टम है।',
+        description: 'राजस्थान में गरीब बच्चों की शिक्षा के लिए ऑनलाइन दान के साथ एनजीओ के रूप में शाह सेवा प्रसिद्ध है। भारत में बालिका शिक्षा और सशक्तिकरण के लिए विश्वसनीय चैरिटी होने के नाते, हम अनाथों और वंचितों को छात्रवृत्ति प्रदान करते हैं।',
         metaTitle: 'राजस्थान में बच्चों की शिक्षा के लिए सबसे अच्छा एनजीओ | छात्र शिक्षा दान',
-        metaDescription: 'राजस्थान में बच्चों की शिक्षा के लिए दान करें। शाह सेवा एनजीओ गरीब बच्चों को छात्रवृत्ति, किताबें और वर्दी प्रदान करता है ताकि वे अपना भविष्य संवार सकें।',
+        metaDescription: 'राजस्थान में बालिका शिक्षा और सशक्तिकरण के लिए विश्वसनीय चैरिटी। गरीब बच्चों को किताबें और वर्दी प्रदान करने के लिए दान करें।',
         section1Title: 'शिक्षा के माध्यम से सशक्तिकरण - शाह सेवा',
-        section1Text: 'शिक्षा गरीबी मिटाने का सबसे सशक्त माध्यम है। शाह सेवा राजस्थान में बच्चों की शिक्षा के लिए सबसे अच्छा एनजीओ होने के नाते हर गरीब बच्चे तक स्कूल शिक्षा पहुँचाने के लिए प्रतिबद्ध है।',
+        section1Text: 'यदि आप राजस्थान में गरीब बच्चों की शिक्षा के लिए ऑनलाइन दान के साथ एनजीओ खोज रहे हैं, तो शाह सेवा हर बच्चे तक गुणवत्तापूर्ण शिक्षा पहुँचाने के लिए प्रतिबद्ध है।',
         cta: 'छात्र की मदद करें'
       },
       medical: {
