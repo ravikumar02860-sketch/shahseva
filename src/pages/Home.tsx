@@ -614,6 +614,49 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Islamic Utilities Section */}
+      <section className="py-24 px-6 bg-primary-dark relative overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.2] pointer-events-none islamic-pattern"></div>
+        <div className="max-w-7xl mx-auto relative z-10 text-center">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            className="inline-flex items-center gap-2 px-4 py-1.5 bg-accent/20 text-accent font-bold rounded-full text-xs uppercase tracking-widest mb-8 border border-accent/20"
+          >
+            <span className="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+            Islamic Services
+          </motion.div>
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-16 px-4">
+            Spiritual Tools for the <span className="text-accent underline decoration-accent/30 underline-offset-8">Community</span>
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+            {[
+              { to: "/zakat-calculator", title: "Zakat Calculator", desc: "Calculate your zakat accurately with our Shariah-compliant tool.", icon: "⚖️" },
+              { to: "/tasbeeh-counter", title: "Tasbeeh Counter", desc: "A beautiful digital dhikr companion for your daily spiritual practice.", icon: "📿" },
+              { to: "/hijri-converter", title: "Hijri Converter", desc: "Convert dates between Hijri and Gregorian calendars instantly.", icon: "📅" }
+            ].map((tool, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                className="h-full"
+              >
+                <Link to={tool.to} className="block p-8 bg-white/5 border border-white/10 rounded-[2.5rem] hover:bg-white/10 transition-all group backdrop-blur-sm h-full">
+                  <div className="text-4xl mb-6 group-hover:scale-110 transition-transform">{tool.icon}</div>
+                  <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
+                    {tool.title}
+                    <ArrowRight className="text-accent opacity-0 group-hover:opacity-100 transition-opacity" size={20} />
+                  </h3>
+                  <p className="text-primary-light/70 text-sm leading-relaxed">{tool.desc}</p>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="section-container">
         <div className="relative rounded-[4rem] overflow-hidden bg-primary py-24 px-10 text-center shadow-strong">

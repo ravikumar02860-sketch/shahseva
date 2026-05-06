@@ -30,6 +30,8 @@ const ZakatPage = lazy(() => import('./pages/Zakat'));
 const StoriesPage = lazy(() => import('./pages/Stories'));
 const ZakatCalculatorPage = lazy(() => import('./pages/ZakatCalculator'));
 const IslamicConverterPage = lazy(() => import('./pages/IslamicConverter'));
+const TasbeehCounterPage = lazy(() => import('./pages/TasbeehCounter'));
+const QurbaniPage = lazy(() => import('./pages/Qurbani'));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -92,6 +94,8 @@ export default function App() {
                     <Route path="/donate-zakat-online" element={<ZakatPage />} />
                     <Route path="/zakat-calculator" element={<ZakatCalculatorPage />} />
                     <Route path="/hijri-converter" element={<IslamicConverterPage />} />
+                    <Route path="/tasbeeh-counter" element={<TasbeehCounterPage />} />
+                    <Route path="/qurbani-2026" element={<QurbaniPage />} />
                     <Route path="/success-stories" element={<StoriesPage />} />
                   </Routes>
                 </Suspense>

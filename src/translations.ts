@@ -223,6 +223,39 @@ export const translations = {
       ],
       cta: 'Calculate and Pay Zakat Online'
     },
+    tasbeeh: {
+      title: 'Digital Tasbeeh Counter | Online Dhikr Counter',
+      subtitle: 'Keep track of your Dhikr and Salawat with our elegant digital prayer beads tool.',
+      badge: 'Spiritual Utility',
+      start: 'Start counting by clicking the circle',
+      total: 'Total Count',
+      reset: 'Reset Counter',
+      target: 'Set Target',
+      save: 'Save Progress',
+      history: 'Recent Sessions',
+      dhikr: [
+        'Subhan Allah', 'Alhamdulillah', 'Allahu Akbar', 'La ilaha illallah', 'Astaghfirullah'
+      ],
+      seo: {
+        title: 'Digital Tasbeeh Counter | Online Prayer Beads Tool India',
+        description: 'Free Digital Tasbeeh Counter. Perform your daily Dhikr and Salawat online with our beautiful, mobile-ready prayer beads tool. Save your progress and stay consistent.'
+      }
+    },
+    qurbani: {
+      title: 'Qurbani 2026 | Donate for Eid al-Adha in Rajasthan',
+      subtitle: 'Perform your sacred sacrifice and share the joy of Eid with the most needy families in Bhilwara.',
+      badge: 'Eid al-Adha 2026',
+      cow: 'Cow Qurbani (7 Shares)',
+      cowShare: 'Cow Share (1 Part)',
+      goat: 'Goat / Sheep Qurbani',
+      priceTitle: 'Contribution Amount',
+      description: 'Your Qurbani meat will be distributed to widows, orphans, and homeless families living in the rural areas of Rajasthan who rarely get to eat meat throughout the year.',
+      cta: 'Donate Your Qurbani Now',
+      seo: {
+        title: 'Qurbani 2026 Donation India | Donate Eid al-Adha Sacrifice Rajasthan',
+        description: 'Perform your Qurbani 2026 online. Donate for goat or cow shares in Bhilwara, Rajasthan. Share your sacrifice with poor and homeless families through Shah Seva NGO.'
+      }
+    },
     hijri: {
       title: 'Islamic Date Converter | Hijri to Gregorian',
       subtitle: 'Convert between Gregorian and Hijri dates instantly with accuracy.',
@@ -885,6 +918,39 @@ export const translations = {
         'लघु-स्तरीय आजीविका समर्थन के माध्यम से परिवारों को सशक्त बनाना'
       ],
       cta: 'ऑनलाइन जकात गणना और भुगतान करें'
+    },
+    tasbeeh: {
+      title: 'डिजिटल तस्बीह काउंटर | ऑनलाइन ज़िक्र काउंटर',
+      subtitle: 'हमारे सुंदर डिजिटल प्रार्थना मनके टूल के साथ अपने ज़िक्र और सलावत का हिसाब रखें।',
+      badge: 'आध्यात्मिक उपयोगिता',
+      start: 'वृत्त पर क्लिक करके गिनती शुरू करें',
+      total: 'कुल गिनती',
+      reset: 'रीसेट करें',
+      target: 'लक्ष्य निर्धारित करें',
+      save: 'प्रगति सहेजें',
+      history: 'हाल के सत्र',
+      dhikr: [
+        'सुभान अल्लाह', 'अल्हम्दुलिल्लाह', 'अल्लाहू अकबर', 'ला इलाहा इल्लल्लाह', 'अस्तग़फिरुल्लाह'
+      ],
+      seo: {
+        title: 'डिजिटल तस्बीह काउंटर | ऑनलाइन प्रार्थना मनका टूल भारत',
+        description: 'मुफ्त डिजिटल तस्बीह काउंटर। हमारे सुंदर, मोबाइल-अनुकूल प्रार्थना मनके टूल के साथ अपना दैनिक ज़िक्र और सलावत ऑनलाइन करें।'
+      }
+    },
+    qurbani: {
+      title: 'कुर्बानी 2026 | राजस्थान में ईद-उल-अधा के लिए दान करें',
+      subtitle: 'अपनी पवित्र कुर्बानी करें और भीलवाड़ा के सबसे जरूरतमंद परिवारों के साथ ईद की खुशियां साझा करें।',
+      badge: 'ईद-उल-अधा 2026',
+      cow: 'गाय की कुर्बानी (7 हिस्से)',
+      cowShare: 'गाय का हिस्सा (1 हिस्सा)',
+      goat: 'बकरी / भेड़ की कुर्बानी',
+      priceTitle: 'योगदान राशि',
+      description: 'आपका कुर्बानी का मांस उन विधवाओं, अनाथों और बेघर परिवारों को वितरित किया जाएगा जो पूरे साल शायद ही कभी मांस खा पाते हैं।',
+      cta: 'अपनी कुर्बानी अभी दान करें',
+      seo: {
+        title: 'कुर्बानी 2026 दान भारत | ईद-उल-अधा कुर्बानी राजस्थान में दान करें',
+        description: 'अपनी कुर्बानी 2026 ऑनलाइन करें। भीलवाड़ा, राजस्थान में बकरी या गाय के हिस्सों के लिए दान करें। शाह सेवा एनजीओ के माध्यम से गरीब परिवारों के साथ अपना त्याग साझा करें।'
+      }
     },
     hijri: {
       title: 'इस्लामी तिथि परिवर्तक | हिजरी से ग्रेगोरियन',

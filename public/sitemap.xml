@@ -158,6 +158,18 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://shahseva.vercel.app/tasbeeh-counter</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/qurbani-2026</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://shahseva.vercel.app/success-stories</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>monthly</changefreq>
