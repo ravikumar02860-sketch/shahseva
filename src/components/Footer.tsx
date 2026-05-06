@@ -104,7 +104,8 @@ export default function Footer() {
               { to: "/zakat-calculator", label: t.zakat.calculatorTitle },
               { to: "/hijri-converter", label: t.hijri.title },
               { to: "/tasbeeh-counter", label: t.tasbeeh.title },
-              { to: "/qurbani-2026", label: t.qurbani.title }
+              { to: "/qurbani-2026", label: t.qurbani.title },
+              { to: "/islamic-names-finder", label: t.names.title }
             ].map((link, i) => (
               <li key={i}>
                 <Link to={link.to} className="hover:text-accent transition-colors flex items-center gap-2 group">

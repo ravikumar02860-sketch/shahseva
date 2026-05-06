@@ -367,6 +367,40 @@ export const translations = {
         title: 'Volunteer with Shah Seva NGO | Join Our Service Team in Bhilwara India',
         description: 'Looking to volunteer in Rajasthan? Join Shah Seva NGO in Bhilwara to assist in food drives, education support for children, and medical camps for poor families. Make a real difference today.',
       },
+      names: {
+        title: 'Islamic Name Meaning Finder | Muslim Baby Names Dictionary',
+        description: 'Discover beautiful Islamic and Muslim baby names with their meanings, origin, and significance. Search over 1,000+ names for boys and girls with Arabic and Urdu meanings.'
+      }
+    },
+    names: {
+      title: 'Islamic Name Meaning Finder',
+      subtitle: 'Discover beautiful Muslim names with meanings, origin, and Islamic significance.',
+      badge: 'Naming Companion',
+      searchPlaceholder: 'Search names, meanings, or origins...',
+      filters: {
+        all: 'All Names',
+        boy: 'Muslim Boy Names',
+        girl: 'Muslim Girl Names',
+        trending: 'Trending',
+        quranic: 'Quranic',
+        modern: 'Modern',
+        unique: 'Unique'
+      },
+      details: {
+        arabic: 'Arabic Spelling',
+        meaning: 'English Meaning',
+        urduMeaning: 'Urdu Meaning',
+        gender: 'Gender',
+        origin: 'Origin',
+        luckyNumber: 'Lucky Number',
+        significance: 'Islamic Significance',
+        similar: 'Similar Names',
+        related: 'Related Names'
+      },
+      trendingChip: 'Popular:',
+      noResults: 'No names found matching your search.',
+      favorites: 'Saved Favorites',
+      alphabet: 'Browse by Alphabet'
     },
     categories: {
       education: {
