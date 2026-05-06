@@ -64,6 +64,7 @@ export default function Footer() {
               { to: "/impact", label: t.footer.links.impact },
               { to: "/transparency", label: t.footer.links.transparency },
               { to: "/gallery", label: t.footer.links.gallery },
+              { to: "/success-stories", label: t.stories.badge },
               { to: "/blog", label: t.nav.blog },
               { to: "/volunteer", label: t.footer.volunteer },
               { to: "/faq", label: t.footer.faq },
@@ -96,7 +97,9 @@ export default function Footer() {
               { to: "/donate-for-girl-child-education", label: t.footer.categories.girlChild },
               { to: "/donate-for-cancer-patient-treatment", label: t.footer.categories.cancer },
               { to: "/donate-for-old-age-home", label: t.footer.categories.oldAge },
-              { to: "/donate-for-homeless-people", label: t.footer.categories.homeless }
+              { to: "/donate-for-homeless-people", label: t.footer.categories.homeless },
+              { to: "/csr-partnership", label: t.csr.badge },
+              { to: "/donate-zakat-online", label: t.zakat.badge }
             ].map((link, i) => (
               <li key={i}>
                 <Link to={link.to} className="hover:text-accent transition-colors flex items-center gap-2 group">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { TrendingUp, Users, Heart, Award } from 'lucide-react';
+import { TrendingUp, Users, Heart, Award, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../LanguageContext';
 import SEO from '../components/SEO';
 
@@ -193,6 +194,21 @@ export default function ImpactPage() {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        {/* CTA to More Stories */}
+        <div className="mt-48 text-center bg-slate-50 rounded-[4rem] p-12 md:p-24 border border-slate-100">
+           <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8">Want to Read More Stories?</h2>
+           <p className="text-slate-600 text-xl mb-10 max-w-2xl mx-auto">
+             Explore more stories of transformation.
+           </p>
+           <Link 
+             to="/success-stories" 
+             className="btn-primary btn-lg inline-flex items-center gap-2 group"
+           >
+             View All Success Stories
+             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+           </Link>
         </div>
       </div>
     </div>

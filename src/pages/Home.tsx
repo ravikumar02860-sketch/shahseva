@@ -94,6 +94,7 @@ export default function HomePage() {
                 <Link 
                   to="/donate" 
                   className="btn-accent btn-lg group"
+                  aria-label="Contribute to help poor families in India"
                 >
                   {t.nav.donate} 
                   <ArrowRight className="group-hover:translate-x-1 transition-transform" />
@@ -101,6 +102,7 @@ export default function HomePage() {
                 <Link 
                   to="/work" 
                   className="btn-outline btn-lg !text-white !border-white/20 hover:!bg-white/10 backdrop-blur-md"
+                  aria-label="See how our NGO works in Bhilwara"
                 >
                   {t.hero.ctaWork}
                 </Link>
@@ -525,12 +527,14 @@ export default function HomePage() {
                 alt="Social work NGO in Bhilwara - Community support" 
                 className="rounded-[2rem] shadow-strong w-full h-80 object-cover card-hover"
                 referrerPolicy="no-referrer"
+                loading="lazy"
               />
               <img 
                 src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=600" 
                 alt="Medical treatment for poor patients in Rajasthan - Medical aid" 
                 className="rounded-[2rem] shadow-strong w-full h-64 object-cover card-hover"
                 referrerPolicy="no-referrer"
+                loading="lazy"
               />
             </div>
             <div className="space-y-6 pt-12">
@@ -539,12 +543,14 @@ export default function HomePage() {
                 alt="Help girl child education in Rajasthan - Education support" 
                 className="rounded-[2rem] shadow-strong w-full h-64 object-cover card-hover"
                 referrerPolicy="no-referrer"
+                loading="lazy"
               />
               <img 
                 src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&q=80&w=600" 
                 alt="How to donate money to help poor families in India online" 
                 className="rounded-[2rem] shadow-strong w-full h-80 object-cover card-hover"
                 referrerPolicy="no-referrer"
+                loading="lazy"
               />
             </div>
           </motion.div>

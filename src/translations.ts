@@ -147,10 +147,84 @@ export const translations = {
         }
       ]
     },
+    csr: {
+      badge: 'Corporate Social Responsibility',
+      title: 'Partner with Shah Seva for Meaningful CSR Initiatives in Rajasthan',
+      desc: 'Shah Seva (Dargah Saiyad Ali Shah Seva Sansthan) offers a transparent and impactful platform for Corporate Social Responsibility (CSR) partnerships in India. As a registered NGO in Bhilwara, we design and implement CSR projects that align with your corporate values and UN Sustainable Development Goals.',
+      title2: 'Why Choose Shah Seva for Your CSR Projects?',
+      desc2: 'We provide end-to-end management of CSR initiatives, from community need assessment to impact reporting and 80G tax benefit documentation.',
+      points: [
+        {
+          title: 'Direct Grassroots Impact',
+          desc: 'Your CSR funds are utilized directly for food security, education, and health programs in the most underserved regions of Rajasthan.'
+        },
+        {
+          title: 'Full Transparency & Compliance',
+          desc: 'We maintain rigorous financial audits and provide detailed impact reports, ensuring your organization stays compliant with Section 135 of the Companies Act.'
+        },
+        {
+          title: 'Employee Engagement',
+          desc: 'Invite your employees to participate in our volunteering programs, fostering a culture of giving within your organization.'
+        }
+      ],
+      cta: 'Contact for CSR Partnership'
+    },
+    zakat: {
+      badge: 'Zakat & Charity',
+      title: 'Donate Zakat Online India: Purify Your Wealth by Helping the Needy',
+      subtitle: 'Your 100% Zakat reaching orphans, widows, and the poor in Bhilwara and Rajasthan.',
+      desc: 'Shah Seva provides a safe and Shariah-compliant way to donate Zakat online in India. We ensure that your Zakat is distributed according to Quranic principles, focusing on the eight categories of eligible recipients (Asnaf). By giving Zakat to our NGO, you are providing life-saving food, medical aid, and education to those who need it most.',
+      calculatorTitle: 'Zakat Calculation Support',
+      calculatorDesc: 'Need help calculating your Zakat? Our team can guide you in determining the correct amount to give based on your assets and liabilities.',
+      howItHelps: 'How Your Zakat Changes Lives',
+      items: [
+        'Sponsoring orphan children\'s education',
+        'Providing monthly rations for widows and the elderly',
+        'Emergency medical treatment for poor patients',
+        'Empowering low-income families through small-scale livelihood support'
+      ],
+      cta: 'Calculate and Pay Zakat Online'
+    },
+    stories: {
+      badge: 'Real Change',
+      title: 'Stories of Hope: Impact of Your Donations in Bhilwara',
+      desc: 'Behind every donation is a life changed. Read about the families and students whom your kindness has empowered to dream again.',
+      items: [
+        {
+          id: 'story-1',
+          name: 'Meera\'s Journey to Education',
+          category: 'Education',
+          image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=800',
+          excerpt: 'Meera was almost forced to leave school after her father\'s illness. Our NGO stepped in to fund her computer science degree.',
+          full: 'Meera, a bright 16-year-old from a small village near Bhilwara, was on the verge of dropping out after her father, the family\'s sole breadwinner, suffered a paralyzing accidents. Through our "Bright Sparks" scholarship program, Shah Seva covered her tuition fees for the entire year and provided her with a new laptop. Today, Meera is pursuing her dreams and ranked top in her class.'
+        },
+        {
+          id: 'story-2',
+          name: 'Survival Against All Odds',
+          category: 'Medical',
+          image: 'https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=800',
+          excerpt: 'How your medical help donation saved 5-year-old Kabir from a critical heart condition.',
+          full: 'Kabir was born with a congenital heart defect. His parents, who work as daily wage laborers, could never have afforded the costly surgery required to save his life. With the help of collective donations through Shah Seva, Kabir successfully underwent surgery at a specialized hospital in Jaipur. He is now recovering well and playing like any other 5-year-old.'
+        }
+      ],
+      readMore: 'Read Full Story'
+    },
     seo: {
       home: {
         title: 'Shah Seva | Donate Money to Help Poor Families in India Online',
         description: 'Learn how to donate money to help poor families in India online through Shah Seva NGO. Best NGO in Rajasthan for sponsoring child education and food distribution in Bhilwara.',
+      },
+      stories: {
+        title: 'Success Stories | Impact of Charity in Rajasthan | Shah Seva',
+        description: 'Read the success stories of families and children helped by Shah Seva NGO. See how your charity creates a real impact in the lives of the poor in Bhilwara.',
+      },
+      csr: {
+        title: 'CSR Partnerships in Rajasthan | NGO for Corporate Social Responsibility',
+        description: 'Partner with Shah Seva for CSR initiatives in Rajasthan. We are a trusted NGO in Bhilwara for corporate partnerships in education, healthcare, and food security.',
+      },
+      zakat: {
+        title: 'Donate Zakat Online India | Shariah Compliant Charity for Orphans',
+        description: 'Donate Zakat online in India with Shah Seva. 100% transparent distribution to orphans, widows, and poor families in Rajasthan. Safe and Shariah-compliant.',
       },
       about: {
         title: 'About Shah Seva | Trusted NGO in Rajasthan for Sponsoring Child Education',
@@ -674,10 +748,84 @@ export const translations = {
       projects: 'सफल प्रोजेक्ट्स',
       transparency: 'पारदर्शिता'
     },
+    csr: {
+      badge: 'कॉर्पोरेट सामाजिक उत्तरदायित्व',
+      title: 'राजस्थान में सार्थक सीएसआर पहल के लिए शाह सेवा के साथ साझेदारी करें',
+      desc: 'शाह सेवा (दरगाह सैयद अली शाह सेवा संस्थान) भारत में कॉर्पोरेट सामाजिक उत्तरदायित्व (CSR) साझेदारी के लिए एक पारदर्शी और प्रभावी मंच प्रदान करती है। भीलवाड़ा में एक पंजीकृत एनजीओ के रूप में, हम सीएसआर प्रोजेक्ट्स डिजाइन और कार्यान्वित करते हैं जो आपके कॉर्पोरेट मूल्यों के अनुरूप हों।',
+      title2: 'अपनी सीएसआर परियोजनाओं के लिए शाह सेवा को क्यों चुनें?',
+      desc2: 'हम सामुदायिक आवश्यकता मूल्यांकन से लेकर प्रभाव रिपोर्टिंग और 80G कर लाभ प्रलेखन तक सीएसआर पहल का एंड-टू-एंड प्रबंधन प्रदान करते हैं।',
+      points: [
+        {
+          title: 'सीधा जमीनी प्रभाव',
+          desc: 'आपका सीएसआर फंड सीधे राजस्थान के सबसे कम सेवा वाले क्षेत्रों में खाद्य सुरक्षा, शिक्षा और स्वास्थ्य कार्यक्रमों के लिए उपयोग किया जाता है।'
+        },
+        {
+          title: 'पूर्ण पारदर्शिता और अनुपालन',
+          desc: 'हम कठोर वित्तीय ऑडिट बनाए रखते हैं और विस्तृत प्रभाव रिपोर्ट प्रदान करते हैं।'
+        },
+        {
+          title: 'कर्मचारी सहभागिता',
+          desc: 'अपने कर्मचारियों को हमारे स्वयंसेवी कार्यक्रमों में भाग लेने के लिए आमंत्रित करें।'
+        }
+      ],
+      cta: 'सीएसआर साझेदारी के लिए संपर्क करें'
+    },
+    zakat: {
+      badge: 'जकात और दान',
+      title: 'ऑनलाइन जकात दान भारत: गरीबों की मदद कर अपनी संपत्ति को पवित्र करें',
+      subtitle: 'आपकी 100% जकात भीलवाड़ा और राजस्थान के अनाथों, विधवाओं और गरीबों तक पहुँचती है।',
+      desc: 'शाह सेवा भारत में ऑनलाइन जकात दान करने का एक सुरक्षित और शरीयत-अनुरूप तरीका प्रदान करती है। हम सुनिश्चित करते हैं कि आपकी जकात कुरान के सिद्धांतों के अनुसार वितरित की जाए, जो उन लोगों पर ध्यान केंद्रित करती है जिन्हें इसकी सबसे अधिक आवश्यकता है।',
+      calculatorTitle: 'जकात गणना सहायता',
+      calculatorDesc: 'जकात की गणना करने में सहायता चाहिए? हमारी टीम आपकी संपत्ति और देनदारियों के आधार पर सही राशि निर्धारित करने में आपका मार्गदर्शन कर सकती है।',
+      howItHelps: 'आपकी जकात जीवन कैसे बदलती है',
+      items: [
+        'अनाथ बच्चों की शिक्षा को प्रायोजित करना',
+        'विधवाओं और बुजुर्गों के लिए मासिक राशन प्रदान करना',
+        'गरीब मरीजों के लिए आपातकालीन चिकित्सा उपचार',
+        'लघु-स्तरीय आजीविका समर्थन के माध्यम से परिवारों को सशक्त बनाना'
+      ],
+      cta: 'ऑनलाइन जकात गणना और भुगतान करें'
+    },
+    stories: {
+      badge: 'वास्तविक परिवर्तन',
+      title: 'आशा की कहानियाँ: भीलवाड़ा में आपके दान का प्रभाव',
+      desc: 'हर दान के पीछे एक बदला हुआ जीवन है। उन परिवारों और छात्रों के बारे में पढ़ें जिन्हें आपकी दयालुता ने फिर से सपने देखने के लिए सशक्त बनाया है।',
+      items: [
+        {
+          id: 'story-1',
+          name: 'मीरा की शिक्षा की यात्रा',
+          category: 'शिक्षा',
+          image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=800',
+          excerpt: 'पिता की बीमारी के बाद मीरा को स्कूल छोड़ने के लिए मजबूर होना पड़ा। हमारे एनजीओ ने उसकी कंप्यूटर साइंस की डिग्री के लिए फंड दिया।',
+          full: 'भीलवाड़ा के पास के एक छोटे से गाँव की 16 वर्षीय मीरा, अपने पिता की बीमारी के बाद पढ़ाई छोड़ने की कगार पर थी। शाह सेवा के "ब्राइट स्पार्क्स" स्कॉलरशिप प्रोग्राम के जरिए उनकी फीस और लैपटॉप का इंतजाम किया गया।'
+        },
+        {
+          id: 'story-2',
+          name: 'हर मुश्किल के खिलाफ सर्वाइवल',
+          category: 'चिकित्सा',
+          image: 'https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=800',
+          excerpt: 'कैसे आपके चिकित्सा दान ने 5 साल के कबीर को हृदय रोग से बचाया।',
+          full: 'कबीर दिल की बीमारी के साथ पैदा हुआ था। उसके माता-पिता मजदूरी करते हैं और सर्जरी का खर्च नहीं उठा सकते थे। शाह सेवा के माध्यम से जुटे दान की मदद से कबीर की सफल सर्जरी हुई।'
+        }
+      ],
+      readMore: 'पूरी कहानी पढ़ें'
+    },
     seo: {
       home: {
         title: 'भारत में गरीबों की मदद के लिए ऑनलाइन दान कैसे करें | शाह सेवा एनजीओ भीलवाड़ा',
         description: 'जानें कि भारत में गरीबों की मदद के लिए ऑनलाइन दान कैसे करें। शाह सेवा राजस्थान में बच्चों की शिक्षा के लिए सबसे अच्छा एनजीओ है, जो भीलवाड़ा में भोजन वितरण और चिकित्सा सहायता प्रदान करता है।'
+      },
+      stories: {
+        title: 'सफलता की कहानियाँ | राजस्थान में चैरिटी का प्रभाव | शाह सेवा',
+        description: 'शाह सेवा एनजीओ द्वारा मदद किए गए परिवारों और बच्चों की सफलता की कहानियाँ पढ़ें। देखें कि आपकी चैरिटी भीलवाड़ा में गरीबों के जीवन में वास्तविक प्रभाव कैसे डालती है।'
+      },
+      csr: {
+        title: 'राजस्थान में सीएसआर साझेदारी | कॉर्पोरेट सामाजिक उत्तरदायित्व के लिए एनजीओ',
+        description: 'राजस्थान में सीएसआर पहल के लिए शाह सेवा के साथ साझेदारी करें। हम भीलवाड़ा में कॉर्पोरेट सामाजिक उत्तरदायित्व के लिए एक भरोसेमंद एनजीओ हैं।'
+      },
+      zakat: {
+        title: 'ऑनलाइन जकात दान भारत | अनाथों के लिए शरीयत अनुरूप चैरिटी',
+        description: 'शाह सेवा के साथ भारत में ऑनलाइन जकात दान करें। राजस्थान में अनाथों, विधवाओं और गरीब परिवारों को 100% पारदर्शी वितरण।'
       },
       about: {
         title: 'राजस्थान में बच्चों की शिक्षा के लिए सबसे अच्छा एनजीओ | शाह सेवा के बारे में',

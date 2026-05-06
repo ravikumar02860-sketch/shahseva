@@ -54,6 +54,28 @@ export default function BlogPost() {
   const post = t.blog.posts.find((p: any) => p.id === id);
   const content = id ? blogContent[id] : null;
 
+  const articleSchema = post ? {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": post.excerpt,
+    "image": `https://picsum.photos/seed/${post.id}/1200/800`,
+    "datePublished": "2024-03-21T08:00:00+08:00",
+    "dateModified": "2024-03-21T08:00:00+08:00",
+    "author": {
+      "@type": "Organization",
+      "name": "Shah Seva NGO"
+    },
+    "publisher": {
+      "@type": "NGO",
+      "name": "Shah Seva",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F"
+      }
+    }
+  } : null;
+
   if (!post || !content) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -70,6 +92,7 @@ export default function BlogPost() {
       <SEO 
         title={`${post.title} | Dargah Saiyad Ali Shah Seva Sansthan Blog`}
         description={post.excerpt}
+        schema={articleSchema}
       />
       
       <div className="max-w-4xl mx-auto px-6">

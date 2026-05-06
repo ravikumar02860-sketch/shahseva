@@ -86,7 +86,11 @@ export default function AboutPage() {
                 {t.about.historyDesc}
               </p>
               <div className="mb-10">
-                <Link to="/donate" className="btn-primary btn-lg inline-flex">
+                <Link 
+                  to="/donate" 
+                  className="btn-primary btn-lg inline-flex"
+                  aria-label="Donate to support our mission of helping poor families in Rajasthan"
+                >
                   Support Our Mission
                 </Link>
               </div>
