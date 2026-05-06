@@ -60,19 +60,24 @@ export default function BlogPost() {
     "headline": post.title,
     "description": post.excerpt,
     "image": `https://picsum.photos/seed/${post.id}/1200/800`,
-    "datePublished": "2024-03-21T08:00:00+08:00",
-    "dateModified": "2024-03-21T08:00:00+08:00",
+    "datePublished": `${post.isoDate}T08:00:00+05:30`,
+    "dateModified": `${post.isoDate}T08:00:00+05:30`,
     "author": {
-      "@type": "Organization",
-      "name": "Shah Seva NGO"
+      "@type": "Person",
+      "name": "Shah Seva Admin",
+      "url": "https://shahseva.vercel.app/about"
     },
     "publisher": {
       "@type": "NGO",
-      "name": "Shah Seva",
+      "name": "Shah Seva (Dargah Saiyad Ali Shah Seva Sansthan)",
       "logo": {
         "@type": "ImageObject",
         "url": "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F"
       }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://shahseva.vercel.app/blog/${id}`
     }
   } : null;
 

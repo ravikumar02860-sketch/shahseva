@@ -16,22 +16,25 @@ export const translations = {
     },
     hero: {
       badge: 'Shah Seva: Trusted NGO in Bhilwara Since 2010',
-      title: 'Donate Money to Charity in India: Shah Seva Transforming Lives Through Compassion',
-      subtitle: 'Discover How to Donate Money to Help Poor Families in India Online and Support Children\'s Education in Rajasthan.',
-      desc: 'Shah Seva (Dargah Saiyad Ali Shah Seva Sansthan) is a leading NGO in Bhilwara and a trusted charity organization in Rajasthan. If you are looking for how to donate money to help poor families in India online, our platform provides a safe and transparent way to make an impact. Since 2010, our social work NGO has been dedicated to providing life-saving food, medical aid, and quality education for underprivileged communities. Join our mission to help girl child education in Rajasthan and provide essential support to those who need it most. Your safe online donation to our NGO helps break the cycle of poverty in India.',
+      title: 'Donate Money to Charity in India: Shah Seva Helping Poor & Homeless Families',
+      subtitle: 'Discover How to Donate Money to Help Poor & Homeless Families in India Online and Support Children\'s Education in Rajasthan.',
+      desc: 'Shah Seva (Dargah Saiyad Ali Shah Seva Sansthan) is a leading NGO in Bhilwara and a trusted charity organization in Rajasthan. If you are looking for how to donate money to help poor and homeless families in India online, our platform provides a safe and transparent way to make an impact. Since 2010, our social work NGO has been dedicated to providing life-saving food, medical aid, and shelter to homeless people. Join our mission to help girl child education in Rajasthan and provide essential support to those who need it most. Your safe online donation to our NGO helps break the cycle of poverty in India.',
       ctaWork: 'View Our Impact',
     },
     stats: {
+      badge: 'Impact Report',
+      title: 'Our Impact at a Glance',
+      desc: 'Since 2010, we have been committed to creating a tangible difference in the lives of the underprivileged in Bhilwara. Your support drives these numbers.',
       families: 'Families Served',
-      meals: 'Nutritious Meals',
+      meals: 'Meals Provided',
       students: 'Students Educated',
-      camps: 'Health Camps',
+      camps: 'Health Camps Organized',
     },
     aboutSummary: {
       badge: 'Shah Seva: Our Mission of Selfless Service',
-      title: 'The Best NGO in Rajasthan for Sponsoring Child Education and Helping Poor Families.',
+      title: 'The Best NGO in Rajasthan for Sponsoring Child Education and Helping Poor & Homeless Families.',
       regNo: 'Registration No: COOP/2025/BHILWARA/500577',
-      desc: 'Based in Bhilwara, Rajasthan, Shah Seva (Dargah Saiyad Ali Shah Seva Sansthan) is widely recognized as the best NGO in Rajasthan for sponsoring child education and providing life-saving medical aid. Our charity organization in Bhilwara works tirelessly to uplift the underprivileged through systematic intervention. Whether it is providing monthly ration kits to widows or funding the higher education of bright students, Shah Seva ensures that every donation for poor families is utilized for maximum social impact. Learn how your contribution to our social work NGO in India helps provide medical treatment for poor patients and supports girl child education in Rajasthan.',
+      desc: 'Based in Bhilwara, Rajasthan, Shah Seva (Dargah Saiyad Ali Shah Seva Sansthan) is widely recognized as the best NGO in Rajasthan for sponsoring child education and providing life-saving medical aid to homeless people. Our charity organization in Bhilwara works tirelessly to uplift the underprivileged and homeless through systematic intervention. Whether it is providing monthly ration kits to widows or funding the higher education of bright students, Shah Seva ensures that every donation for poor and homeless families is utilized for maximum social impact. Learn how your contribution to our social work NGO in India helps provide medical treatment for poor patients and supports girl child education in Rajasthan.',
       item1: 'Shah Seva Support: Monthly Ration Kits',
       item2: 'Donate for Children\'s Education India',
       item3: 'Emergency Medical Help for Poor Families',
@@ -129,6 +132,7 @@ export const translations = {
           title: 'How to Donate Money to Society Online Securely in India: A Complete Guide',
           excerpt: 'Wondering how to donate money to Society online? Learn how to ensure your online charity donation reaches those in need safely through a trusted Society to donate online in India.',
           date: 'April 1, 2026',
+          isoDate: '2026-04-01',
           category: 'Guide'
         },
         {
@@ -136,6 +140,7 @@ export const translations = {
           title: 'The Impact of Education Donation for Poor Children: Why Donate Money to Charity Online India?',
           excerpt: 'Discover how you can donate money to charity online India to sponsor a child\'s education and break the cycle of poverty for an entire family.',
           date: 'March 25, 2026',
+          isoDate: '2026-03-25',
           category: 'Education'
         },
         {
@@ -143,6 +148,7 @@ export const translations = {
           title: 'Supporting Cancer Patients: Why We Are a Trusted Society to Donate Online in India',
           excerpt: 'Real stories of how medical aid for poor patients is making a difference. Learn how to donate money to Society online to support life-saving cancer treatments.',
           date: 'March 15, 2026',
+          isoDate: '2026-03-15',
           category: 'Medical'
         }
       ]
@@ -171,12 +177,44 @@ export const translations = {
     },
     zakat: {
       badge: 'Zakat & Charity',
-      title: 'Donate Zakat Online India: Purify Your Wealth by Helping the Needy',
-      subtitle: 'Your 100% Zakat reaching orphans, widows, and the poor in Bhilwara and Rajasthan.',
-      desc: 'Shah Seva provides a safe and Shariah-compliant way to donate Zakat online in India. We ensure that your Zakat is distributed according to Quranic principles, focusing on the eight categories of eligible recipients (Asnaf). By giving Zakat to our NGO, you are providing life-saving food, medical aid, and education to those who need it most.',
-      calculatorTitle: 'Zakat Calculation Support',
-      calculatorDesc: 'Need help calculating your Zakat? Our team can guide you in determining the correct amount to give based on your assets and liabilities.',
+      title: 'Donate Zakat Online India: Purify Your Wealth by Helping poor and homeless families',
+      subtitle: 'Your 100% Zakat reaching orphans, widows, and the homeless people in Bhilwara and Rajasthan.',
+      desc: 'Shah Seva provides a safe and Shariah-compliant way to donate Zakat online in India. We ensure that your Zakat is distributed according to Quranic principles, focusing on the eight categories of eligible recipients (Asnaf). By giving Zakat to our NGO, you are providing life-saving food, medical aid, and shelter to homeless and poor families who need it most.',
+      calculatorTitle: 'Online Zakat Calculator India',
+      calculatorDesc: 'Calculate your Zakat accurately with our easy-to-use Zakat Calculator tool. Use your wealth to help the poor and homeless in Rajasthan. Enter your assets and liabilities to find your Zakat obligation based on current Nisab values.',
+      nisabDetails: {
+        title: 'Understanding Nisab Values',
+        gold: 'Gold Nisab: 87.48 grams (approx. ₹6,50,000 depending on market rates)',
+        silver: 'Silver Nisab: 612.36 grams (approx. ₹48,000 depending on market rates)',
+        desc: 'If your net assets exceed the Silver Nisab value (₹48,000), you are obligated to pay 2.5% of your wealth as Zakat.'
+      },
+      utilization: {
+        title: 'How We Utilize Your Zakat',
+        desc: 'At Shah Seva, we strictly follow Shariah guidelines to ensure your Zakat reaches the most deserving recipients (Mustahiqeen).',
+        points: [
+          'Immediate medical surgery for individuals without means',
+          'Educational grants for orphan students in Rajasthan',
+          'Sustainable livelihood kits for widows and poor families',
+          'Safe housing and shelter for homeless elderly'
+        ]
+      },
       howItHelps: 'How Your Zakat Changes Lives',
+      labels: {
+        cash: 'Cash (Home & Bank)',
+        gold: 'Value of Gold',
+        silver: 'Value of Silver',
+        investments: 'Shares & Investments',
+        business: 'Business Assets / Stock',
+        moneyOwed: 'Money Owed to You',
+        liabilities: 'Debts & Liabilities',
+        calculate: 'Calculate My Zakat',
+        totalAssets: 'Total Zakatable Assets',
+        netAssets: 'Net Assets',
+        isEligible: 'You are eligible to pay Zakat',
+        notEligible: 'Your wealth is below the Nisab threshold',
+        zakatAmount: 'Your Zakat Amount',
+        nisabNotice: 'Standard Nisab (Silver) is approx. ₹48,000. Values may vary.'
+      },
       items: [
         'Sponsoring orphan children\'s education',
         'Providing monthly rations for widows and the elderly',
@@ -211,20 +249,20 @@ export const translations = {
     },
     seo: {
       home: {
-        title: 'Shah Seva | Donate Money to Help Poor Families in India Online',
-        description: 'Learn how to donate money to help poor families in India online through Shah Seva NGO. Best NGO in Rajasthan for sponsoring child education and food distribution in Bhilwara.',
+        title: 'Shah Seva | Donate to Help Poor & Homeless Families in India Online',
+        description: 'Learn how to donate money to help poor and homeless families in India online through Shah Seva NGO. Best NGO in Rajasthan for sponsoring child education and helping homeless people in Bhilwara.',
       },
       stories: {
-        title: 'Success Stories | Impact of Charity in Rajasthan | Shah Seva',
-        description: 'Read the success stories of families and children helped by Shah Seva NGO. See how your charity creates a real impact in the lives of the poor in Bhilwara.',
+        title: 'Success Stories | Impact of Charity for Homeless in Rajasthan | Shah Seva',
+        description: 'Read the success stories of homeless families and children helped by Shah Seva NGO. See how your charity creates a real impact in the lives of the poor and homeless in Bhilwara.',
       },
       csr: {
         title: 'CSR Partnerships in Rajasthan | NGO for Corporate Social Responsibility',
         description: 'Partner with Shah Seva for CSR initiatives in Rajasthan. We are a trusted NGO in Bhilwara for corporate partnerships in education, healthcare, and food security.',
       },
       zakat: {
-        title: 'Donate Zakat Online India | Shariah Compliant Charity for Orphans',
-        description: 'Donate Zakat online in India with Shah Seva. 100% transparent distribution to orphans, widows, and poor families in Rajasthan. Safe and Shariah-compliant.',
+        title: 'Zakat Calculator India | Calculate & Donate Zakat Online accurately',
+        description: 'Use our free Online Zakat Calculator India to calculate your Zakat accurately. Shariah-compliant Zakat distribution for orphans, widows, and the poor in Rajasthan.',
       },
       about: {
         title: 'About Shah Seva | Trusted NGO in Rajasthan for Sponsoring Child Education',
@@ -273,12 +311,12 @@ export const translations = {
     },
     categories: {
       education: {
-        title: 'Education Donation for Poor Students | Help Children Study India',
-        h1: 'NGO Helping Poor Children\'s Education in Rajasthan with Online Donation',
-        description: 'Education is a basic right, yet many are denied it. At Shah Seva NGO, your education donation for poor students helps girl child education in Rajasthan and supports bright minds in Bhilwara. We provide uniforms, fees, and books to ensure a brighter future.',
-        metaDescription: 'Donate for girl child education in Rajasthan. Shah Seva is the best NGO for sponsoring child education in India. Support underprivileged students with safe online donations.',
+        title: 'Education Donation for Homeless Students | Help Children Study India',
+        h1: 'NGO Helping Poor and Homeless Children\'s Education in Rajasthan',
+        description: 'Education is a basic right, yet many homeless children are denied it. At Shah Seva NGO, your education donation for poor students helps girl child education in Rajasthan and supports homeless bright minds in Bhilwara. We provide uniforms, fees, and books to ensure a brighter future for those living on the streets.',
+        metaDescription: 'Donate for girl child education and homeless children in Rajasthan. Shah Seva is the best NGO for sponsoring child education in India. Support underprivileged students with safe online donations.',
         section1Title: 'Why Your Education Donation to our NGO Matters',
-        section1Text: 'Our scholarship programs are designed for those looking for how to donate money to help poor families in India online for educational purposes. We ensure every rupee empowers a child in Rajasthan.',
+        section1Text: 'Our scholarship programs are designed for those looking for how to donate money to help poor and homeless families in India online for educational purposes. We ensure every rupee empowers a child in Rajasthan who has no home.',
         cta: 'Sponsor a Student'
       },
       children: {
@@ -700,9 +738,10 @@ export const translations = {
       transparency: 'पारदर्शिता'
     },
     hero: {
-      badge: 'मानवता की सेवा',
-      title: 'भारत में चैरिटी के लिए दान करें: शाह सेवा के साथ गरीबों की मदद करें',
-      subtitle: 'भारत में गरीबों की मदद के लिए ऑनलाइन दान कैसे करें? शाह सेवा सबसे विश्वसनीय माध्यम है।',
+      badge: 'शाह सेवा: 2010 से भीलवाड़ा में भरोसेमंद एनजीओ',
+      title: 'भारत में चैरिटी के लिए दान करें: शाह सेवा गरीबों और बेघर परिवारों की मदद कर रही है',
+      subtitle: 'जानें कि भारत में गरीब और बेघर परिवारों की मदद के लिए ऑनलाइन दान कैसे करें और राजस्थान में बच्चों की शिक्षा का समर्थन करें।',
+      desc: 'शाह सेवा (दरगाह सैयद अली शाह सेवा संस्थान) भीलवाड़ा का एक प्रमुख एनजीओ और राजस्थान में एक भरोसेमंद चैरिटी संस्था है। यदि आप यह खोज रहे हैं कि भारत में गरीबों और बेघर लोगों की मदद के लिए ऑनलाइन पैसे कैसे दान करें, तो हमारा प्लेटफॉर्म प्रभाव डालने का एक सुरक्षित और पारदर्शी तरीका प्रदान करता है। 2010 से, हमारा सामाजिक कार्य एनजीओ बेघर लोगों को भोजन, चिकित्सा सहायता और आश्रय प्रदान करने के लिए समर्पित है। राजस्थान में बालिका शिक्षा में मदद करने के हमारे मिशन में शामिल हों। एनजीओ को आपका दान भारत में गरीबी के चक्र को तोड़ने में मदद करता है।',
       donateBtn: 'अभी दान करें',
       workBtn: 'हमारा कार्य देखें',
       stats: {
@@ -743,10 +782,13 @@ export const translations = {
       button: 'अभी ऑनलाइन दान करें'
     },
     stats: {
-      donors: 'सक्रिय दाता',
-      impact: 'प्रभावित जीवन',
-      projects: 'सफल प्रोजेक्ट्स',
-      transparency: 'पारदर्शिता'
+      badge: 'प्रभाव रिपोर्ट',
+      title: 'हमारा प्रभाव एक नज़र में',
+      desc: '2010 से, हम भीलवाड़ा में वंचितों के जीवन में वास्तविक बदलाव लाने के लिए प्रतिबद्ध हैं। आपका समर्थन इन आंकड़ों को गति देता है।',
+      families: 'लाभान्वित परिवार',
+      meals: 'भोजन वितरण',
+      students: 'शिक्षित छात्र',
+      camps: 'स्वास्थ्य शिविर',
     },
     csr: {
       badge: 'कॉर्पोरेट सामाजिक उत्तरदायित्व',
@@ -772,12 +814,44 @@ export const translations = {
     },
     zakat: {
       badge: 'जकात और दान',
-      title: 'ऑनलाइन जकात दान भारत: गरीबों की मदद कर अपनी संपत्ति को पवित्र करें',
-      subtitle: 'आपकी 100% जकात भीलवाड़ा और राजस्थान के अनाथों, विधवाओं और गरीबों तक पहुँचती है।',
-      desc: 'शाह सेवा भारत में ऑनलाइन जकात दान करने का एक सुरक्षित और शरीयत-अनुरूप तरीका प्रदान करती है। हम सुनिश्चित करते हैं कि आपकी जकात कुरान के सिद्धांतों के अनुसार वितरित की जाए, जो उन लोगों पर ध्यान केंद्रित करती है जिन्हें इसकी सबसे अधिक आवश्यकता है।',
-      calculatorTitle: 'जकात गणना सहायता',
-      calculatorDesc: 'जकात की गणना करने में सहायता चाहिए? हमारी टीम आपकी संपत्ति और देनदारियों के आधार पर सही राशि निर्धारित करने में आपका मार्गदर्शन कर सकती है।',
+      title: 'ऑनलाइन जकात दान भारत: गरीब और बेघर परिवारों की मदद कर अपनी संपत्ति को पवित्र करें',
+      subtitle: 'आपकी 100% जकात भीलवाड़ा और राजस्थान के अनाथों, विधवाओं और बेघर लोगों तक पहुँचती है।',
+      desc: 'शाह सेवा भारत में ऑनलाइन जकात दान करने का एक सुरक्षित और शरीयत-अनुरूप तरीका प्रदान करती है। हम सुनिश्चित करते हैं कि आपकी जकात कुरान के सिद्धांतों के अनुसार वितरित की जाए, जो उन गरीब और बेघर लोगों पर ध्यान केंद्रित करती है जिन्हें इसकी सबसे अधिक आवश्यकता है।',
+      calculatorTitle: 'ऑनलाइन जकात कैलकुलेटर भारत',
+      calculatorDesc: 'हमारे उपयोग में आसान जकात कैलकुलेटर टूल के साथ अपनी जकात की सटीक गणना करें। राजस्थान में बेघर और गरीबों की मदद के लिए अपनी संपत्ति का उपयोग करें।',
+      nisabDetails: {
+        title: 'निसाब मूल्यों को समझना',
+        gold: 'सोना निसाब: 87.48 ग्राम (बाजार दरों के आधार पर लगभग ₹6,50,000)',
+        silver: 'चांदी निसाब: 612.36 ग्राम (बाजार दरों के आधार पर लगभग ₹48,000)',
+        desc: 'यदि आपकी कुल संपत्ति चांदी के निसाब मूल्य (₹48,000) से अधिक है, तो आप अपनी संपत्ति का 2.5% जकात के रूप में देने के पात्र हैं।'
+      },
+      utilization: {
+        title: 'हम आपकी जकात का उपयोग कैसे करते हैं',
+        desc: 'शाह सेवा में, हम यह सुनिश्चित करने के लिए शरीयत दिशानिर्देशों का कड़ाई से पालन करते हैं कि आपकी जकात सबसे अधिक पात्र प्राप्तकर्ताओं (मुस्तहीकीन) तक पहुंचे।',
+        points: [
+          'बिना साधन वाले व्यक्तियों के लिए तत्काल चिकित्सा सर्जरी',
+          'राजस्थान में अनाथ छात्रों के लिए शैक्षिक अनुदान',
+          'विधवाओं और गरीब परिवारों के लिए आजीविका किट',
+          'बेघर बुजुर्गों के लिए सुरक्षित आवास और आश्रय'
+        ]
+      },
       howItHelps: 'आपकी जकात जीवन कैसे बदलती है',
+      labels: {
+        cash: 'नकद (घर और बैंक)',
+        gold: 'सोने का मूल्य',
+        silver: 'चांदी का मूल्य',
+        investments: 'शेयर और निवेश',
+        business: 'व्यावसायिक संपत्ति / स्टॉक',
+        moneyOwed: 'आपका रुका हुआ धन',
+        liabilities: 'ऋण और देनदारियां',
+        calculate: 'अपनी जकात की गणना करें',
+        totalAssets: 'कुल जकात योग्य संपत्ति',
+        netAssets: 'शुद्ध संपत्ति',
+        isEligible: 'आप जकात देने के पात्र हैं',
+        notEligible: 'आपकी संपत्ति निसाब सीमा से कम है',
+        zakatAmount: 'आपकी जकात राशि',
+        nisabNotice: 'मानक निसाब (चांदी) लगभग ₹48,000 है। मूल्य भिन्न हो सकते हैं।'
+      },
       items: [
         'अनाथ बच्चों की शिक्षा को प्रायोजित करना',
         'विधवाओं और बुजुर्गों के लिए मासिक राशन प्रदान करना',
@@ -812,12 +886,12 @@ export const translations = {
     },
     seo: {
       home: {
-        title: 'भारत में गरीबों की मदद के लिए ऑनलाइन दान कैसे करें | शाह सेवा एनजीओ भीलवाड़ा',
-        description: 'जानें कि भारत में गरीबों की मदद के लिए ऑनलाइन दान कैसे करें। शाह सेवा राजस्थान में बच्चों की शिक्षा के लिए सबसे अच्छा एनजीओ है, जो भीलवाड़ा में भोजन वितरण और चिकित्सा सहायता प्रदान करता है।'
+        title: 'भारत में गरीबों और बेघर लोगों की मदद के लिए ऑनलाइन दान कैसे करें | शाह सेवा एनजीओ भीलवाड़ा',
+        description: 'जानें कि भारत में गरीब और बेघर परिवारों की मदद के लिए ऑनलाइन पैसे कैसे दान करें। शाह सेवा राजस्थान में बच्चों की शिक्षा को प्रायोजित करने और बेघर लोगों की मदद करने के लिए सबसे अच्छा एनजीओ है।'
       },
       stories: {
-        title: 'सफलता की कहानियाँ | राजस्थान में चैरिटी का प्रभाव | शाह सेवा',
-        description: 'शाह सेवा एनजीओ द्वारा मदद किए गए परिवारों और बच्चों की सफलता की कहानियाँ पढ़ें। देखें कि आपकी चैरिटी भीलवाड़ा में गरीबों के जीवन में वास्तविक प्रभाव कैसे डालती है।'
+        title: 'सफलता की कहानियाँ | राजस्थान में बेघर लोगों के लिए चैरिटी का प्रभाव | शाह सेवा',
+        description: 'शाह सेवा एनजीओ द्वारा मदद किए गए बेघर परिवारों और बच्चों की सफलता की कहानियाँ पढ़ें। देखें कि आपकी चैरिटी भीलवाड़ा में गरीबों और बेघर लोगों के जीवन में वास्तविक प्रभाव कैसे डालती है।'
       },
       csr: {
         title: 'राजस्थान में सीएसआर साझेदारी | कॉर्पोरेट सामाजिक उत्तरदायित्व के लिए एनजीओ',
@@ -1176,6 +1250,37 @@ export const translations = {
           button: 'एक और भूमिका के लिए आवेदन करें',
         },
       },
+    },
+    blog: {
+      title: 'हमारा ब्लॉग | सोसायटी अंतर्दृष्टि और प्रभाव की कहानियाँ',
+      desc: 'भीलवाड़ा, राजस्थान में हमारे सामाजिक कार्य, चैरिटी गतिविधियों और सामुदायिक प्रभाव के बारे में नवीनतम अपडेट और कहानियाँ पढ़ें।',
+      readMore: 'पूरा ब्लॉग पढ़ें',
+      posts: [
+        {
+          id: 'how-to-donate-securely',
+          title: 'भारत में सुरक्षित रूप से सोसाइटी को ऑनलाइन पैसा कैसे दान करें: एक पूर्ण मार्गदर्शिका',
+          excerpt: 'सोच रहे हैं कि सोसाइटी को ऑनलाइन पैसा कैसे दान करें? जानें कि भारत में ऑनलाइन चैरिटी दान के माध्यम से अपनी मदद सुरक्षित रूप से जरूरतमंदों तक कैसे पहुँचाएं।',
+          date: '1 अप्रैल, 2026',
+          isoDate: '2026-04-01',
+          category: 'मार्गदर्शिका'
+        },
+        {
+          id: 'impact-of-education-donation',
+          title: 'गरीब बच्चों की शिक्षा के लिए दान का प्रभाव: भारत में ऑनलाइन चैरिटी के लिए दान क्यों करें?',
+          excerpt: 'जानें कि आप भारत में ऑनलाइन चैरिटी के लिए दान करके कैसे किसी बच्चे की शिक्षा को प्रायोजित कर सकते हैं और एक पूरे परिवार के लिए गरीबी के चक्र को तोड़ सकते हैं।',
+          date: '25 मार्च, 2026',
+          isoDate: '2026-03-25',
+          category: 'शिक्षा'
+        },
+        {
+          id: 'supporting-cancer-patients',
+          title: 'कैंसर रोगियों का समर्थन: हम भारत में ऑनलाइन दान करने के लिए एक विश्वसनीय सोसाइटी क्यों हैं',
+          excerpt: 'गरीब मरीजों के लिए चिकित्सा सहायता कैसे बदलाव ला रही है, इसकी वास्तविक कहानियाँ। जानें कि जीवन रक्षक कैंसर उपचारों का समर्थन करने के लिए सोसाइटी को ऑनलाइन पैसा कैसे दान करें।',
+          date: '15 मार्च, 2026',
+          isoDate: '2026-03-15',
+          category: 'चिकित्सा'
+        }
+      ]
     },
     faq: {
       title: 'अक्सर पूछे जाने वाले प्रश्न',

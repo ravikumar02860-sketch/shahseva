@@ -69,7 +69,7 @@ export default function Zakat() {
           <p className="text-slate-600 text-lg leading-relaxed mb-10">
             {t.zakat.desc}
           </p>
-          <div className="space-y-4">
+          <div className="space-y-4 mb-12">
             {t.zakat.items.map((item: string, i: number) => (
               <div key={i} className="flex gap-4 items-start">
                 <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center">
@@ -78,6 +78,22 @@ export default function Zakat() {
                 <span className="text-slate-700 font-medium">{item}</span>
               </div>
             ))}
+          </div>
+
+          <div className="p-8 rounded-[2rem] bg-slate-50 border border-slate-100">
+            <h3 className="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+              <Heart className="text-primary w-5 h-5" />
+              {t.zakat.utilization.title}
+            </h3>
+            <p className="text-slate-600 text-sm mb-4">{t.zakat.utilization.desc}</p>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              {t.zakat.utilization.points.map((point: string, i: number) => (
+                <li key={i} className="text-xs text-slate-600 flex gap-2 items-start">
+                  <span className="text-primary font-bold">•</span>
+                  {point}
+                </li>
+              ))}
+            </ul>
           </div>
         </motion.div>
 
@@ -96,7 +112,7 @@ export default function Zakat() {
               {t.zakat.calculatorDesc}
             </p>
             <Link 
-              to="/donate" 
+              to="/zakat-calculator" 
               className="btn-primary w-full btn-lg flex items-center justify-center gap-2 group"
             >
               {t.zakat.cta}

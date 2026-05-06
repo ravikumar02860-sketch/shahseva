@@ -418,6 +418,63 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Impact Stats Section */}
+      <section className="py-24 bg-white relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl -mr-48 -mt-48"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -ml-48 -mb-48"></div>
+        <div className="absolute inset-0 opacity-[0.03] pointer-events-none" 
+             style={{ backgroundImage: 'radial-gradient(#064e3b 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+        
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="inline-block px-4 py-1.5 bg-primary/5 text-primary font-bold rounded-full text-[10px] uppercase tracking-widest mb-6">
+              {t.stats.badge}
+            </span>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+              {t.stats.title}
+            </h2>
+            <p className="text-slate-600 text-lg">
+              {t.stats.desc}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {stats.map((stat, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.1 }}
+                className="bg-slate-50 p-10 rounded-[3rem] border border-slate-100 text-center hover:bg-white hover:shadow-strong transition-all duration-500 group"
+              >
+                <div className="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center text-primary mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-500 group-hover:rotate-6">
+                  <stat.icon size={32} />
+                </div>
+                <div className="space-y-2">
+                  <h3 className="text-5xl font-serif font-bold text-primary tracking-tight">
+                    {stat.value}
+                  </h3>
+                  <p className="text-slate-500 font-bold text-xs uppercase tracking-widest">
+                    {stat.label}
+                  </p>
+                </div>
+                {/* Visual progress bar representation (decorative) */}
+                <div className="mt-8 h-1 w-24 bg-accent/20 mx-auto rounded-full overflow-hidden">
+                  <motion.div 
+                    initial={{ x: "-100%" }}
+                    whileInView={{ x: "0%" }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1, delay: 0.5 + idx * 0.1 }}
+                    className="h-full bg-accent w-3/4 mx-auto rounded-full"
+                  />
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Featured Causes Section */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">

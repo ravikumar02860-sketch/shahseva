@@ -99,7 +99,8 @@ export default function Footer() {
               { to: "/donate-for-old-age-home", label: t.footer.categories.oldAge },
               { to: "/donate-for-homeless-people", label: t.footer.categories.homeless },
               { to: "/csr-partnership", label: t.csr.badge },
-              { to: "/donate-zakat-online", label: t.zakat.badge }
+              { to: "/donate-zakat-online", label: t.zakat.badge },
+              { to: "/zakat-calculator", label: t.zakat.calculatorTitle }
             ].map((link, i) => (
               <li key={i}>
                 <Link to={link.to} className="hover:text-accent transition-colors flex items-center gap-2 group">
