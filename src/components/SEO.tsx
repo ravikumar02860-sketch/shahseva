@@ -16,7 +16,7 @@ export default function SEO({
   title = "Donate Money to Charity in India | Shah Seva NGO | Best NGO in Rajasthan for Poor Families",
   description = "Learn how to donate money to help poor and homeless families in India online. Shah Seva is the best NGO in Rajasthan for sponsoring child education, food distribution, and medical treatment for homeless patients in Bhilwara. Trusted charity since 2010.",
   keywords = "how to donate money to help poor families in India online, donate to help homeless people in India, best NGO in Rajasthan for homeless support, trusted charity for food distribution in Bhilwara, donate for medical treatment of poor patients in Rajasthan, homeless shelter aid Rajasthan, safe online donation for homeless in India, Shah Seva Sansthan",
-  canonical = "https://shahseva.vercel.app",
+  canonical,
   ogImage = "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F",
   ogType = "website",
   twitterHandle = "@shahseva",
@@ -24,6 +24,8 @@ export default function SEO({
 }: SEOProps) {
   const siteName = "Dargah Saiyad Ali Shah Seva Sansthan";
   const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : "https://shahseva.vercel.app";
+  const finalCanonical = canonical || currentUrl;
 
   const defaultSchema = {
     "@context": "https://schema.org",
@@ -96,7 +98,7 @@ export default function SEO({
         "@type": "ListItem",
         "position": 2,
         "name": title,
-        "item": canonical
+        "item": finalCanonical
       } : null
     ].filter(Boolean)
   };
@@ -110,13 +112,13 @@ export default function SEO({
       <meta name="author" content={siteName} />
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F" />
-      <link rel="canonical" href={canonical} />
+      <link rel="canonical" href={finalCanonical} />
 
       {/* Open Graph tags (Facebook, LinkedIn) */}
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content={ogType} />
-      <meta property="og:url" content={canonical} />
+      <meta property="og:url" content={finalCanonical} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:site_name" content={siteName} />
       <meta property="og:locale" content="en_IN" />

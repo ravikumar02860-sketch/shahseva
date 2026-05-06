@@ -245,8 +245,8 @@ export const translations = {
         'Ramadan', 'Shawwal', 'Dhu al-Qi\'dah', 'Dhu al-Hijjah'
       ],
       seo: {
-        title: 'Islamic Date Converter | Hijri Date Converter Online India',
-        description: 'Free Islamic Date Converter. Convert Gregorian to Hijri and Hijri to Gregorian today. Accurate Hijri calendar tool for Muslims in India.'
+        title: 'Islamic Date Converter | Hijri to Gregorian Converter Online India',
+        description: 'Free Islamic Date Converter & Hijri to Gregorian converter. Accurate Islamic calendar conversion and Muslim date calculator for Ramadan, Eid, and daily use.'
       }
     },
     stories: {
@@ -276,63 +276,63 @@ export const translations = {
     seo: {
       home: {
         title: 'Shah Seva | Donate to Help Poor & Homeless Families in India Online',
-        description: 'Learn how to donate money to help poor and homeless families in India online through Shah Seva NGO. Best NGO in Rajasthan for sponsoring child education and helping homeless people in Bhilwara.',
+        description: 'How to donate money to help poor and homeless families in India online? Shah Seva is the best NGO in Rajasthan for sponsoring child education, food distribution, and medical treatment for poor patients in Bhilwara. Trusted charity since 2010.',
       },
       stories: {
         title: 'Success Stories | Impact of Charity for Homeless in Rajasthan | Shah Seva',
-        description: 'Read the success stories of homeless families and children helped by Shah Seva NGO. See how your charity creates a real impact in the lives of the poor and homeless in Bhilwara.',
+        description: 'Read real success stories of underprivileged families, orphans, and patients helped by Shah Seva NGO. See how your online charity donation creates a tangible impact in Bhilwara and rural Rajasthan.',
       },
       csr: {
-        title: 'CSR Partnerships in Rajasthan | NGO for Corporate Social Responsibility',
-        description: 'Partner with Shah Seva for CSR initiatives in Rajasthan. We are a trusted NGO in Bhilwara for corporate partnerships in education, healthcare, and food security.',
+        title: 'CSR Partnerships in Rajasthan | NGO for Corporate Social Responsibility Bhilwara',
+        description: 'Partner with Shah Seva for impactful CSR initiatives in Rajasthan. We offer transparent CSR projects for education, health, and hunger relief in Bhilwara. Registered NGO with 80G benefits.',
       },
       zakat: {
-        title: 'Zakat Calculator India | Calculate & Donate Zakat Online accurately',
-        description: 'Use our free Online Zakat Calculator India to calculate your Zakat accurately. Shariah-compliant Zakat distribution for orphans, widows, and the poor in Rajasthan.',
+        title: 'Zakat Calculator India | Calculate & Donate Zakat Online Accurately | Shah Seva',
+        description: 'Use our free Online Zakat Calculator India to accurately find your Zakat obligation. Donate Zakat online in India to help orphans, widows, and homeless families in Rajasthan through a Shariah-compliant NGO.',
       },
       about: {
-        title: 'About Shah Seva | Trusted NGO in Rajasthan for Sponsoring Child Education',
-        description: 'Discover the story of Shah Seva, a trusted NGO in Rajasthan for sponsoring child education and providing medical treatment for poor patients in Bhilwara since 2010.',
+        title: 'About Shah Seva | Best NGO in Rajasthan for Sponsoring Child Education',
+        description: 'Dargah Saiyad Ali Shah Seva Sansthan (Shah Seva) is a leading social work NGO in Bhilwara, Rajasthan. Since 2010, we have been a trusted charity for helping poor families through education and medical aid.',
       },
       work: {
         title: 'Our Charity Work in Rajasthan | Impact of Social Work NGO in Bhilwara',
-        description: 'Explore the impact of our social work NGO in Bhilwara. We focus on girl child education in Rajasthan, food distribution, and rations for poor families in India.',
+        description: 'Explore our comprehensive social welfare projects in Bhilwara. From food distribution for needy families to girl child education in Rajasthan, discover how Shah Seva NGO impacts thousands of lives yearly.',
       },
       impact: {
-        title: 'Our Impact | Results of Social Work for Underprivileged Communities India',
-        description: 'See the results of our social work for underprivileged communities in India. We provide medical treatment for poor patients and support girl child education in Rajasthan.',
+        title: 'Our Impact | Social Work for Underprivileged Communities India | Shah Seva',
+        description: 'Track our progress in serving humanity. Shah Seva NGO provides verified impact reports on medical treatment for poor patients, hunger relief, and educational scholarships for underprivileged children in India.',
       },
       gallery: {
-        title: 'Shah Seva Photo Gallery | Capturing Our Social Work & Service',
-        description: 'View photos of Shah Seva NGO activities in Bhilwara. See our charity work, food drives, and children\'s education programs for poor families in India.',
+        title: 'Shah Seva Photo Gallery | Capturing Our Social Work & Service in Bhilwara',
+        description: 'View photos of our ground-level charity activities in Bhilwara, Rajasthan. See our food distribution drives, children\'s education programs, and health camps for homeless and poor families.',
       },
       contact: {
-        title: 'Contact Shah Seva | Reach Our Bhilwara NGO Office in Rajasthan',
-        description: 'Contact Shah Seva NGO in Bhilwara, Rajasthan. Join us as a volunteer or donate for poor families and help children education in India through our NGO.',
+        title: 'Contact Shah Seva NGO Bhilwara | Join Our Mission in Rajasthan',
+        description: 'Reach out to Shah Seva NGO in Bhilwara, Rajasthan for volunteering or donation inquiries. Help us support poor families and children education in India through trusted local social work.',
       },
       donate: {
-        title: 'Donate to Shah Seva | Safe Online Charity for Poor Families',
-        description: 'Donate for poor families and help children education in India via Shah Seva NGO Bhilwara. Safe online charity donation for medical aid and food relief.',
+        title: 'Donate to Shah Seva | Safe Online Charity for Poor & Homeless Families India',
+        description: 'Learn how to donate money to help poor families in India online. Support Shah Seva NGO\'s mission for food relief, children\'s education, and medical aid in Rajasthan with safe and transparent online donations.',
       },
       faq: {
-        title: 'Shah Seva FAQs | Questions About Our Donation & Charity Work',
-        description: 'Answers about Shah Seva NGO in Bhilwara, how to donate for poor families, and how our charity organization in Rajasthan utilizes your education donation.',
+        title: 'Shah Seva FAQs | Questions Help for Poor Families & Charity Work India',
+        description: 'Find answers about Shah Seva NGO\'s activities in Bhilwara. Learn how your education donation is used, how to donate for poor families, and how we ensure 100% transparency in our social work.',
       },
       mission: {
-        title: 'Our Mission & Vision | Shah Seva - Serving Humanity Since 2010',
-        description: 'Discover the mission of Shah Seva NGO Bhilwara: providing food, healthcare, and education to poor families in Rajasthan through selfless charity work.',
+        title: 'Our Mission & Vision | Shah Seva NGO - Serving Humanity Since 2010',
+        description: 'Discover the vision of Shah Seva: a hunger-free and educated Rajasthan. Our mission is providing food, healthcare, and education to poor and homeless families through selfless charity work in Bhilwara.',
       },
       istikhara: {
-        title: 'Shah Seva Istikhara Guide | Seeking Guidance in Islam',
-        description: 'Perform Istikhara prayer with Shah Seva. Learn the prophetic method to seek Allah\'s guidance for important life decisions through our authentic guide.',
+        title: 'Islamic Istikhara Guide | Seeking Guidance from Allah | Shah Seva',
+        description: 'Step-by-step guide to Istikhara prayer. Learn the prophetic method to seek divine guidance for your life decisions. Authentic Istikhara dua and instructions provided by Shah Seva NGO.',
       },
       transparency: {
-        title: 'Transparency Report | How Shah Seva Uses Your Donations',
-        description: 'Review Shah Seva NGO transparency reports. See how every donation for poor families is used for food, medical aid, and education in Bhilwara, Rajasthan.',
+        title: 'Transparency Report | How Shah Seva Uses Every Donation Responsibly',
+        description: 'Review our commitment to financial integrity. See how every rupee donated for poor families in India is utilized for food, medical aid, and education in Bhilwara through our audited transparency reports.',
       },
       volunteer: {
-        title: 'Volunteer with Shah Seva | Join Our NGO Team in Bhilwara India',
-        description: 'Become a volunteer with Shah Seva NGO in Bhilwara. Assist in our charity work for poor families and support education for underprivileged children.',
+        title: 'Volunteer with Shah Seva NGO | Join Our Service Team in Bhilwara India',
+        description: 'Looking to volunteer in Rajasthan? Join Shah Seva NGO in Bhilwara to assist in food drives, education support for children, and medical camps for poor families. Make a real difference today.',
       },
     },
     categories: {
@@ -908,8 +908,8 @@ export const translations = {
         'रमजान', 'शव्वाल', 'धुल-क़ादा', 'धुल-हिज्जा'
       ],
       seo: {
-        title: 'इस्लामी तिथि परिवर्तक | ऑनलाइन हिजरी तिथि परिवर्तक भारत',
-        description: 'मुफ्त इस्लामी तिथि परिवर्तक। ग्रेगोरियन को हिजरी और हिजरी को ग्रेगोरियन में बदलें। भारत में मुसलमानों के लिए सटीक हिजरी कैलेंडर।'
+        title: 'इस्लामी तिथि परिवर्तक | Hijri to Gregorian Converter Online India',
+        description: 'मुफ्त इस्लामी तिथि परिवर्तक और हिजरी से ग्रेगोरियन परिवर्तक। रमज़ान, ईद और दैनिक उपयोग के लिए सटीक इस्लामी कैलेंडर रूपांतरण और मुस्लिम तिथि कैलकुलेटर।'
       }
     },
     stories: {

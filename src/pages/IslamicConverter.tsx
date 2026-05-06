@@ -134,7 +134,7 @@ export default function IslamicConverter() {
       <SEO 
         title={t.hijri.seo.title}
         description={t.hijri.seo.description}
-        keywords="islamic date converter, hijri date converter, gregorian to hijri, hijri to gregorian, today islamic date, hijri calendar online"
+        keywords="islamic date converter, hijri date converter, hijri to gregorian converter, islamic calendar conversion, muslim date calculator, today islamic date, hijri calendar online"
         schema={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
@@ -147,52 +147,99 @@ export default function IslamicConverter() {
       />
 
       {/* Hero Section */}
-      <section className="bg-primary-dark py-16 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.05]">
-          <img 
-            src="https://images.unsplash.com/photo-1590076215667-873d31481e13?auto=format&fit=crop&q=80&w=1920" 
-            alt="Islamic Pattern"
-            className="w-full h-full object-cover"
-          />
-        </div>
+      <section className="bg-primary-dark py-20 px-6 relative overflow-hidden">
+        {/* Intricate Geometric Pattern Background */}
+        <div className="absolute inset-0 opacity-[0.4] pointer-events-none islamic-pattern"></div>
+
+        {/* Floating Crescent and Star Animation with Glow */}
+        <motion.div 
+          animate={{ 
+            y: [0, -25, 0],
+            rotate: [0, 8, -8, 0],
+            filter: [
+              'drop-shadow(0 0 10px rgba(212, 175, 55, 0.2))', 
+              'drop-shadow(0 0 30px rgba(212, 175, 55, 0.6))', 
+              'drop-shadow(0 0 10px rgba(212, 175, 55, 0.2))'
+            ]
+          }}
+          transition={{ 
+            duration: 10, 
+            repeat: Infinity, 
+            ease: "easeInOut" 
+          }}
+          className="absolute top-10 right-10 md:right-32 opacity-30 hidden md:block"
+        >
+          <Moon size={140} className="text-accent" strokeWidth={1.5} />
+        </motion.div>
+        
+        {/* Floating Stars */}
+        {[...Array(5)].map((_, i) => (
+          <motion.div
+            key={i}
+            animate={{ 
+              opacity: [0.2, 0.5, 0.2],
+              scale: [1, 1.2, 1]
+            }}
+            transition={{ 
+              duration: 3 + i, 
+              repeat: Infinity, 
+              ease: "easeInOut",
+              delay: i * 0.5
+            }}
+            className="absolute text-accent/30 pointer-events-none hidden md:block"
+            style={{
+              top: `${20 + i * 15}%`,
+              left: `${10 + (i % 3) * 25}%`
+            }}
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+            </svg>
+          </motion.div>
+        ))}
+
         <div className="max-w-7xl mx-auto relative z-10 text-center">
-          <motion.span 
+          <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="inline-block px-4 py-1.5 bg-accent/20 text-accent font-bold rounded-full text-xs uppercase tracking-widest mb-6"
+            className="inline-flex items-center gap-2 px-4 py-1.5 bg-accent/20 text-accent font-bold rounded-full text-xs uppercase tracking-widest mb-8 border border-accent/20"
           >
+            <span className="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
             {t.hijri.badge}
-          </motion.span>
+          </motion.div>
+          
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-serif font-bold text-white mb-6"
+            className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 relative inline-block"
           >
+            {/* Calligraphic Accent Line */}
+            <span className="block text-accent text-3xl mb-4 font-arabic opacity-90 select-none tracking-normal">التقويم الهجري</span>
             {t.hijri.title}
           </motion.h1>
-          <p className="text-primary-light text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-primary-light text-lg max-w-2xl mx-auto leading-relaxed font-light opacity-90">
             {t.hijri.subtitle}
           </p>
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-6 -mt-10 relative z-20">
+      <section className="max-w-6xl mx-auto px-6 -mt-12 relative z-20 pb-20">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           
           {/* Main Converter Tool */}
           <div className="lg:col-span-2">
-            <div className="bg-white rounded-[2.5rem] shadow-strong overflow-hidden border border-slate-100 h-full">
-              {/* Tab Switcher */}
-              <div className="flex bg-slate-50 p-2 m-4 rounded-[2rem] border border-slate-200">
+            <div className="bg-white rounded-[3rem] shadow-2xl overflow-hidden border border-slate-100 h-full backdrop-blur-sm decorative-border">
+              {/* Tab Switcher with Modern Glass Finish */}
+              <div className="flex bg-slate-50/80 p-2 m-6 rounded-2xl border border-slate-200">
                 <button 
                   onClick={() => { setMode('G2H'); setResult(null); }}
-                  className={`flex-1 py-3 text-sm font-bold rounded-[1.5rem] transition-all flex items-center justify-center gap-2 ${mode === 'G2H' ? 'bg-primary text-white shadow-md' : 'text-slate-500 hover:text-primary'}`}
+                  className={`flex-1 py-4 text-sm font-bold rounded-xl transition-all flex items-center justify-center gap-3 ${mode === 'G2H' ? 'bg-primary text-white shadow-lg ring-1 ring-primary/20' : 'text-slate-500 hover:text-primary hover:bg-white'}`}
                 >
                   <Sun size={18} /> {t.hijri.gToH}
                 </button>
                 <button 
                   onClick={() => { setMode('H2G'); setResult(null); }}
-                  className={`flex-1 py-3 text-sm font-bold rounded-[1.5rem] transition-all flex items-center justify-center gap-2 ${mode === 'H2G' ? 'bg-primary text-white shadow-md' : 'text-slate-500 hover:text-primary'}`}
+                  className={`flex-1 py-4 text-sm font-bold rounded-xl transition-all flex items-center justify-center gap-3 ${mode === 'H2G' ? 'bg-primary text-white shadow-lg ring-1 ring-primary/20' : 'text-slate-500 hover:text-primary hover:bg-white'}`}
                 >
                   <Moon size={18} /> {t.hijri.hToG}
                 </button>
@@ -330,12 +377,16 @@ export default function IslamicConverter() {
       </section>
 
       {/* SEO Content Section */}
-      <section className="py-24 px-6">
-        <div className="max-w-4xl mx-auto">
+      <section className="py-24 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.02] pointer-events-none islamic-pattern"></div>
+        <div className="max-w-4xl mx-auto relative z-10">
           <div className="prose prose-slate prose-lg max-w-none">
-            <h2 className="text-3xl font-serif font-bold text-primary mb-8">Understanding the Hijri Calendar</h2>
+            <h2 className="text-3xl font-serif font-bold text-primary mb-8">Professional Islamic Calendar Conversion & Muslim Date Calculator</h2>
             <p className="text-slate-600 mb-6">
-              The Hijri calendar (Arabic: التقويم الهجري), also known as the Lunar Hijri calendar, is a lunar calendar consisting of 12 lunar months in a year of 354 or 355 days. It is used by Muslims around the world to determine the proper days of Islamic holidays and rituals, such as the annual period of fasting and the proper time for the Hajj.
+              Our <strong>Hijri to Gregorian converter</strong> is designed to provide accurate results for the global Muslim community. Whether you are looking for an <strong>Islamic date converter</strong> for personal records or need a reliable <strong>Muslim date calculator</strong> for religious events like Ramadan or Eid, our tool ensures precise calculations based on established lunar cycles.
+            </p>
+            <p className="text-slate-600 mb-6">
+              The Hijri calendar (Arabic: التقويم الهجري), also known as the Lunar Hijri calendar, is a lunar calendar consisting of 12 lunar months in a year of 354 or 355 days. <strong>Islamic calendar conversion</strong> is essential because the lunar year is shorter than the solar year, causing dates to shift annually.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
@@ -362,7 +413,10 @@ export default function IslamicConverter() {
 
           {/* FAQ Section */}
           <div className="mt-20 border-t border-slate-200 pt-20">
-            <h2 className="text-3xl font-serif font-bold text-primary mb-12 text-center">Frequently Asked Questions</h2>
+            <div className="text-center mb-12">
+              <span className="block text-accent text-2xl font-arabic mb-2 opacity-60">الأسئلة الشائعة</span>
+              <h2 className="text-3xl font-serif font-bold text-primary">Frequently Asked Questions</h2>
+            </div>
             <div className="space-y-6">
               {[
                 {

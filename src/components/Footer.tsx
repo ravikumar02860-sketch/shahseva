@@ -10,6 +10,7 @@ export default function Footer() {
     <footer className="bg-primary-dark text-white pt-24 pb-12 px-6 relative overflow-hidden">
       {/* Decorative background */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent via-accent-light to-accent"></div>
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none islamic-pattern"></div>
       <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 relative z-10">

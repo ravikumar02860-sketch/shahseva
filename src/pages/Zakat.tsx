@@ -18,35 +18,59 @@ export default function Zakat() {
       />
 
       {/* Hero Section */}
-      <section className="relative py-20 px-6 bg-primary-dark overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <img 
-            src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=1920" 
-            alt="Islamic Pattern"
-            className="w-full h-full object-cover"
-          />
-        </div>
+      <section className="relative py-24 px-6 bg-primary-dark overflow-hidden">
+        {/* Intricate Geometric Pattern Background */}
+        <div className="absolute inset-0 opacity-[0.4] pointer-events-none islamic-pattern"></div>
+
+        {/* Floating Stars */}
+        {[...Array(5)].map((_, i) => (
+          <motion.div
+            key={i}
+            animate={{ 
+              opacity: [0.2, 0.4, 0.2],
+              scale: [1, 1.2, 1]
+            }}
+            transition={{ 
+              duration: 4 + i, 
+              repeat: Infinity, 
+              ease: "easeInOut",
+              delay: i * 0.7
+            }}
+            className="absolute text-accent/30 pointer-events-none"
+            style={{
+              top: `${15 + i * 18}%`,
+              left: `${15 + (i % 3) * 30}%`
+            }}
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+            </svg>
+          </motion.div>
+        ))}
+
         <div className="max-w-7xl mx-auto relative z-10 text-center">
-          <motion.span 
+          <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            className="inline-block px-4 py-1.5 rounded-full bg-accent/20 text-accent-light text-sm font-medium mb-6 backdrop-blur-md border border-accent/20"
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent text-accent-dark text-xs font-bold uppercase tracking-widest mb-8 border border-accent/20 shadow-lg"
           >
+            <span className="w-2 h-2 rounded-full bg-accent-dark animate-pulse"></span>
             {t.zakat.badge}
-          </motion.span>
+          </motion.div>
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-6xl font-serif font-bold text-white mb-8 leading-[1.1]"
+            className="text-4xl md:text-7xl font-serif font-bold text-white mb-8 leading-[1.1]"
           >
+            <span className="block text-accent text-3xl mb-6 font-arabic opacity-90 select-none tracking-normal">فريضة الزكاة</span>
             {t.zakat.title}
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl text-slate-200 max-w-3xl mx-auto leading-relaxed font-light"
           >
             {t.zakat.subtitle}
           </motion.p>

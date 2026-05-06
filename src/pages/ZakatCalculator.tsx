@@ -90,34 +90,74 @@ export default function ZakatCalculator() {
       />
 
       {/* Hero Section */}
-      <section className="bg-primary-dark py-16 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <img 
-            src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&q=80&w=1920" 
-            alt="Islamic Pattern"
-            className="w-full h-full object-cover"
-          />
-        </div>
+      <section className="bg-primary-dark py-20 px-6 relative overflow-hidden">
+        {/* Intricate Geometric Pattern Background */}
+        <div className="absolute inset-0 opacity-[0.4] pointer-events-none islamic-pattern"></div>
+
+        {/* Floating Motifs */}
+        <motion.div 
+          animate={{ scale: [1, 1.1, 1], opacity: [0.1, 0.2, 0.1] }}
+          transition={{ duration: 8, repeat: Infinity }}
+          className="absolute -top-20 -left-20 w-80 h-80 bg-accent rounded-full blur-[100px]"
+        />
+
+        {/* Floating Stars */}
+        {[...Array(5)].map((_, i) => (
+          <motion.div
+            key={i}
+            animate={{ 
+              opacity: [0.2, 0.4, 0.2],
+              scale: [1, 1.2, 1]
+            }}
+            transition={{ 
+              duration: 5 + i, 
+              repeat: Infinity, 
+              ease: "easeInOut",
+              delay: i * 0.8
+            }}
+            className="absolute text-accent/30 pointer-events-none"
+            style={{
+              top: `${10 + i * 20}%`,
+              left: `${20 + (i % 3) * 25}%`
+            }}
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+            </svg>
+          </motion.div>
+        ))}
+
         <div className="max-w-7xl mx-auto relative z-10 text-center">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="inline-flex items-center gap-2 px-4 py-1.5 bg-accent/20 text-accent font-bold rounded-full text-xs uppercase tracking-widest mb-8 border border-accent/20"
+          >
+            <span className="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+            {t.zakat.badge}
+          </motion.div>
+
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-serif font-bold text-white mb-6"
+            className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 relative inline-block"
           >
+            <span className="block text-accent text-3xl mb-4 font-arabic opacity-90 select-none tracking-normal">زكاة المال</span>
             {t.zakat.calculatorTitle}
           </motion.h1>
-          <p className="text-primary-light text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-primary-light text-lg max-w-2xl mx-auto leading-relaxed font-light">
             {t.zakat.calculatorDesc}
           </p>
         </div>
       </section>
 
-      <section className="py-16 px-6 max-w-5xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <section className="py-16 px-6 max-w-6xl mx-auto -mt-12 relative z-20">
+        <div className="absolute inset-0 opacity-[0.02] pointer-events-none islamic-pattern"></div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
           {/* Form Side */}
           <div className="md:col-span-2">
             <form onSubmit={calculateZakat} className="space-y-8">
-              <div className="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-soft">
+              <div className="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-soft decorative-border">
                 <h2 className="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3">
                   <Wallet className="text-primary" /> Assets
                 </h2>
@@ -141,7 +181,7 @@ export default function ZakatCalculator() {
                 </div>
               </div>
 
-              <div className="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-soft">
+              <div className="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-soft decorative-border">
                 <h2 className="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3">
                   <MinusCircle className="text-red-500" /> Liabilities
                 </h2>

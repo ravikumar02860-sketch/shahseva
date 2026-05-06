@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Amiri:wght@400;700&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Playfair Display", serif;
+  --font-arabic: "Amiri", serif;
 
   --color-primary: #004d2c; /* Dark Green */
   --color-primary-light: #006b3d;
@@ -25,6 +26,39 @@
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif tracking-tight;
+  }
+}
+
+@layer utilities {
+  .islamic-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M40 0l5.878 18.09h19.021l-15.389 11.18 5.878 18.09L40 36.18 24.612 47.36l5.878-18.09L15.101 18.09h19.021L40 0zM0 40l5.878 18.09h19.021l-15.389 11.18 5.878 18.09L0 76.18l-15.388 11.18 5.878-18.09-15.389-11.18h19.021L0 40zm80 0l5.878 18.09h19.021l-15.389 11.18 5.878 18.09L80 76.18l-15.388 11.18 5.878-18.09-15.389-11.18h19.021L80 40zM40 80l5.878 18.09h19.021l-15.389 11.18 5.878 18.09L40 116.18l-15.388 11.18 5.878-18.09-15.389-11.18h19.021L40 80z'/%3E%3Cpath d='M40 40m-20 0a20 20 0 1 0 40 0a20 20 0 1 0 -40 0' stroke='%23ffffff' stroke-opacity='0.03' fill='none'/%3E%3Cpath d='M0 0m-20 0a20 20 0 1 0 40 0a20 20 0 1 0 -40 0' stroke='%23ffffff' stroke-opacity='0.03' fill='none'/%3E%3Cpath d='M80 0m-20 0a20 20 0 1 0 40 0a20 20 0 1 0 -40 0' stroke='%23ffffff' stroke-opacity='0.03' fill='none'/%3E%3Cpath d='M0 80m-20 0a20 20 0 1 0 40 0a20 20 0 1 0 -40 0' stroke='%23ffffff' stroke-opacity='0.03' fill='none'/%3E%3Cpath d='M80 80m-20 0a20 20 0 1 0 40 0a20 20 0 1 0 -40 0' stroke='%23ffffff' stroke-opacity='0.03' fill='none'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .decorative-border {
+    position: relative;
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border: 2px solid var(--color-accent);
+      opacity: 0.3;
+      pointer-events: none;
+    }
+    &::before {
+      top: 20px;
+      left: 20px;
+      border-right: 0;
+      border-bottom: 0;
+      border-top-left-radius: 12px;
+    }
+    &::after {
+      bottom: 20px;
+      right: 20px;
+      border-left: 0;
+      border-top: 0;
+      border-bottom-right-radius: 12px;
+    }
   }
 }
 
