@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { useLanguage } from '../LanguageContext';
 import { translations } from '../translations';
 import SEO from '../components/SEO';
-import { Calculator, Wallet, Coins, Briefcase, MinusCircle, AlertCircle, CheckCircle2, ArrowRight, HelpCircle } from 'lucide-react';
+import { Calculator, Wallet, Coins, Briefcase, MinusCircle, AlertCircle, CheckCircle2, ArrowRight, HelpCircle, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const NISAB_SILVER = 48000; // Approximate Silver Nisab in INR
@@ -244,6 +244,19 @@ export default function ZakatCalculator() {
                 <p>• {t.zakat.nisabDetails.silver}</p>
                 <p className="font-bold text-slate-900 mt-2">{t.zakat.nisabDetails.desc}</p>
               </div>
+            </div>
+
+            <div className="mt-8 p-6 bg-accent/5 rounded-[1.5rem] border border-accent/10">
+              <div className="flex gap-3 mb-3">
+                <Calendar className="text-accent flex-shrink-0" size={20} />
+                <h4 className="font-bold text-slate-900 text-sm">Islamic Calendar</h4>
+              </div>
+              <p className="text-xs text-slate-600 mb-3">
+                Check important dates using our new converter tool.
+              </p>
+              <Link to="/hijri-converter" className="text-xs font-bold text-primary hover:underline flex items-center gap-1">
+                Open Hijri Converter <ArrowRight size={12} />
+              </Link>
             </div>
 
             <div className="mt-6 p-6 bg-primary/5 rounded-[1.5rem] border border-primary/10">

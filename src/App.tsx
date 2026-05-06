@@ -29,6 +29,7 @@ const CSRPage = lazy(() => import('./pages/CSR'));
 const ZakatPage = lazy(() => import('./pages/Zakat'));
 const StoriesPage = lazy(() => import('./pages/Stories'));
 const ZakatCalculatorPage = lazy(() => import('./pages/ZakatCalculator'));
+const IslamicConverterPage = lazy(() => import('./pages/IslamicConverter'));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -90,6 +91,7 @@ export default function App() {
                     <Route path="/csr-partnership" element={<CSRPage />} />
                     <Route path="/donate-zakat-online" element={<ZakatPage />} />
                     <Route path="/zakat-calculator" element={<ZakatCalculatorPage />} />
+                    <Route path="/hijri-converter" element={<IslamicConverterPage />} />
                     <Route path="/success-stories" element={<StoriesPage />} />
                   </Routes>
                 </Suspense>

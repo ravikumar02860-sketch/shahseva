@@ -223,6 +223,32 @@ export const translations = {
       ],
       cta: 'Calculate and Pay Zakat Online'
     },
+    hijri: {
+      title: 'Islamic Date Converter | Hijri to Gregorian',
+      subtitle: 'Convert between Gregorian and Hijri dates instantly with accuracy.',
+      badge: 'Date Conversion Tool',
+      gToH: 'Gregorian to Hijri',
+      hToG: 'Hijri to Gregorian',
+      labels: {
+        day: 'Day',
+        month: 'Month',
+        year: 'Year',
+        convert: 'Convert Date',
+        reset: 'Reset Tool',
+        copy: 'Copy Result',
+        today: 'Today is',
+        result: 'Converted Date'
+      },
+      months: [
+        'Muharram', 'Safar', 'Rabi al-Awwal', 'Rabi al-Thani',
+        'Jumada al-Ula', 'Jumada al-Akhira', 'Rajab', 'Sha\'ban',
+        'Ramadan', 'Shawwal', 'Dhu al-Qi\'dah', 'Dhu al-Hijjah'
+      ],
+      seo: {
+        title: 'Islamic Date Converter | Hijri Date Converter Online India',
+        description: 'Free Islamic Date Converter. Convert Gregorian to Hijri and Hijri to Gregorian today. Accurate Hijri calendar tool for Muslims in India.'
+      }
+    },
     stories: {
       badge: 'Real Change',
       title: 'Stories of Hope: Impact of Your Donations in Bhilwara',
@@ -859,6 +885,32 @@ export const translations = {
         'लघु-स्तरीय आजीविका समर्थन के माध्यम से परिवारों को सशक्त बनाना'
       ],
       cta: 'ऑनलाइन जकात गणना और भुगतान करें'
+    },
+    hijri: {
+      title: 'इस्लामी तिथि परिवर्तक | हिजरी से ग्रेगोरियन',
+      subtitle: 'ग्रेगोरियन और हिजरी तिथियों के बीच तुरंत और सटीकता से बदलें।',
+      badge: 'तिथि परिवर्तन टूल',
+      gToH: 'ग्रेगोरियन से हिजरी',
+      hToG: 'हिजरी से ग्रेगोरियन',
+      labels: {
+        day: 'दिन',
+        month: 'महीना',
+        year: 'वर्ष',
+        convert: 'तिथि बदलें',
+        reset: 'रीसेट करें',
+        copy: 'परिणाम कॉपी करें',
+        today: 'आज की तिथि:',
+        result: 'परिवर्तित तिथि'
+      },
+      months: [
+        'मुहर्रम', 'सफर', 'रबी अल-अव्वल', 'रबी अल-थानी',
+        'जुमादा अल-उला', 'जुमादा अल-आखिरा', 'रजब', 'शाबान',
+        'रमजान', 'शव्वाल', 'धुल-क़ादा', 'धुल-हिज्जा'
+      ],
+      seo: {
+        title: 'इस्लामी तिथि परिवर्तक | ऑनलाइन हिजरी तिथि परिवर्तक भारत',
+        description: 'मुफ्त इस्लामी तिथि परिवर्तक। ग्रेगोरियन को हिजरी और हिजरी को ग्रेगोरियन में बदलें। भारत में मुसलमानों के लिए सटीक हिजरी कैलेंडर।'
+      }
     },
     stories: {
       badge: 'वास्तविक परिवर्तन',
