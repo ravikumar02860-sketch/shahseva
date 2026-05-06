@@ -367,40 +367,6 @@ export const translations = {
         title: 'Volunteer with Shah Seva NGO | Join Our Service Team in Bhilwara India',
         description: 'Looking to volunteer in Rajasthan? Join Shah Seva NGO in Bhilwara to assist in food drives, education support for children, and medical camps for poor families. Make a real difference today.',
       },
-      names: {
-        title: 'Islamic Name Meaning Finder | Muslim Baby Names Dictionary',
-        description: 'Discover beautiful Islamic and Muslim baby names with their meanings, origin, and significance. Search over 1,000+ names for boys and girls with Arabic and Urdu meanings.'
-      }
-    },
-    names: {
-      title: 'Islamic Name Meaning Finder',
-      subtitle: 'Discover beautiful Muslim names with meanings, origin, and Islamic significance.',
-      badge: 'Naming Companion',
-      searchPlaceholder: 'Search names, meanings, or origins...',
-      filters: {
-        all: 'All Names',
-        boy: 'Muslim Boy Names',
-        girl: 'Muslim Girl Names',
-        trending: 'Trending',
-        quranic: 'Quranic',
-        modern: 'Modern',
-        unique: 'Unique'
-      },
-      details: {
-        arabic: 'Arabic Spelling',
-        meaning: 'English Meaning',
-        urduMeaning: 'Urdu Meaning',
-        gender: 'Gender',
-        origin: 'Origin',
-        luckyNumber: 'Lucky Number',
-        significance: 'Islamic Significance',
-        similar: 'Similar Names',
-        related: 'Related Names'
-      },
-      trendingChip: 'Popular:',
-      noResults: 'No names found matching your search.',
-      favorites: 'Saved Favorites',
-      alphabet: 'Browse by Alphabet'
     },
     categories: {
       education: {
@@ -541,6 +507,15 @@ export const translations = {
           { amount: '₹5000', desc: 'Can provide critical medical aid or a health checkup camp.' },
         ],
       },
+      errors: {
+        title: 'Error Occurred',
+        amount: 'Please enter a valid donation amount (minimum ₹1).',
+        details: 'Name and phone number are required.',
+        phone: 'Please enter a valid 10-digit phone number.',
+        email: 'Please enter a valid email address.',
+        network: 'Connection error. Please check your internet and try again.',
+        generic: 'Something went wrong. Please try again later.'
+      }
     },
     about: {
       badge: 'Our NGO Story in Bhilwara',
@@ -1156,6 +1131,15 @@ export const translations = {
           { amount: '₹5000', desc: 'महत्वपूर्ण चिकित्सा सहायता या स्वास्थ्य शिविर में मदद कर सकता है।', },
         ],
       },
+      errors: {
+        title: 'त्रुटि हुई',
+        amount: 'कृपया एक वैध दान राशि दर्ज करें (न्यूनतम ₹1)।',
+        details: 'नाम और फोन नंबर अनिवार्य हैं।',
+        phone: 'कृपया एक वैध 10-अंकीय फोन नंबर दर्ज करें।',
+        email: 'कृपया एक वैध ईमेल पता दर्ज करें।',
+        network: 'कनेक्शन त्रुटि। कृपया अपना इंटरनेट जांचें और पुन: प्रयास करें।',
+        generic: 'कुछ गलत हो गया। कृपया बाद में पुन: प्रयास करें।'
+      }
     },
     about: {
       badge: 'हमारे बारे में',

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
-import { CreditCard, Smartphone, QrCode, CheckCircle2, Copy, Heart } from 'lucide-react';
+import { CreditCard, Smartphone, QrCode, CheckCircle2, Copy, Heart, AlertCircle } from 'lucide-react';
 import { QRCodeSVG } from 'qrcode.react';
 import { cn } from '../utils/cn';
 import { useLanguage } from '../LanguageContext';
@@ -54,6 +54,7 @@ export default function DonationPage() {
   const [loading, setLoading] = useState(false);
   const [verifying, setVerifying] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchCampaigns = async () => {
@@ -65,19 +66,46 @@ export default function DonationPage() {
         setCampaigns(campaignsData);
       } catch (err) {
         console.error('Failed to fetch campaigns', err);
-        // handleFirestoreError(err, OperationType.LIST, path); // Don't crash on initial load if possible
+        setError(t.donation.errors.network);
       }
     };
     fetchCampaigns();
-  }, []);
+  }, [t.donation.errors.network]);
 
   const upiId = "6350489219.eazypay@icici";
   const upiUri = `upi://pay?pa=${upiId}&pn=Dargah%20Saiyad%20Ali%20Shah%20Seva%20Sansthan&cu=INR&am=${amount}`;
 
+  const validateForm = () => {
+    if (!name.trim() || !phone.trim() || !amount) {
+      setError(t.donation.errors.details);
+      return false;
+    }
+    
+    // Basic phone validation (10 digits)
+    const phoneRegex = /^[0-9]{10}$/;
+    if (!phoneRegex.test(phone.replace(/[^0-9]/g, ''))) {
+      setError(t.donation.errors.phone);
+      return false;
+    }
+
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setError(t.donation.errors.email);
+      return false;
+    }
+
+    if (Number(amount) <= 0) {
+      setError(t.donation.errors.amount);
+      return false;
+    }
+
+    return true;
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!name || !phone || !amount) {
-      alert("Please fill in all details");
+    setError(null);
+
+    if (!validateForm()) {
       return;
     }
 
@@ -86,9 +114,9 @@ export default function DonationPage() {
     try {
       // Record donation in Firestore
       await addDoc(collection(db, path), {
-        name,
-        phone,
-        email: email || null,
+        name: name.trim(),
+        phone: phone.trim(),
+        email: email.trim() || null,
         amount: Number(amount),
         campaignId: campaignId || null,
         timestamp: Timestamp.now(),
@@ -96,9 +124,14 @@ export default function DonationPage() {
       });
 
       setShowQR(true);
-    } catch (error) {
-      console.error("Error submitting donation:", error);
-      handleFirestoreError(error, OperationType.CREATE, path);
+    } catch (err: any) {
+      console.error("Error submitting donation:", err);
+      if (err.message?.includes('network') || !window.navigator.onLine) {
+        setError(t.donation.errors.network);
+      } else {
+        setError(t.donation.errors.generic);
+      }
+      // handleFirestoreError(err, OperationType.CREATE, path); // Logging but not crashing
     } finally {
       setLoading(false);
     }
@@ -215,7 +248,10 @@ export default function DonationPage() {
                       required
                       placeholder={t.donation.fullName}
                       value={name}
-                      onChange={(e) => setName(e.target.value)}
+                      onChange={(e) => {
+                        setName(e.target.value);
+                        setError(null);
+                      }}
                       className="w-full bg-slate-50/50 border border-slate-200 rounded-2xl px-6 py-4 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary focus:bg-white transition-all text-slate-800"
                     />
                   </div>
@@ -226,7 +262,10 @@ export default function DonationPage() {
                       required
                       placeholder={t.donation.phone}
                       value={phone}
-                      onChange={(e) => setPhone(e.target.value)}
+                      onChange={(e) => {
+                        setPhone(e.target.value);
+                        setError(null);
+                      }}
                       className="w-full bg-slate-50/50 border border-slate-200 rounded-2xl px-6 py-4 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary focus:bg-white transition-all text-slate-800"
                     />
                   </div>
@@ -236,7 +275,10 @@ export default function DonationPage() {
                       type="email" 
                       placeholder={t.donation.email}
                       value={email}
-                      onChange={(e) => setEmail(e.target.value)}
+                      onChange={(e) => {
+                        setEmail(e.target.value);
+                        setError(null);
+                      }}
                       className="w-full bg-slate-50/50 border border-slate-200 rounded-2xl px-6 py-4 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary focus:bg-white transition-all text-slate-800"
                     />
                   </div>
@@ -281,12 +323,26 @@ export default function DonationPage() {
                         required
                         placeholder={t.donation.amount}
                         value={amount}
-                        onChange={(e) => setAmount(e.target.value)}
+                        onChange={(e) => {
+                          setAmount(e.target.value);
+                          setError(null);
+                        }}
                         className="w-full bg-primary/5 border-2 border-primary/10 rounded-2xl pl-12 pr-6 py-5 text-3xl font-bold text-primary focus:outline-none focus:ring-4 focus:ring-primary/10 focus:border-primary focus:bg-white transition-all"
                       />
                     </div>
                   </div>
                 </div>
+
+                {error && (
+                  <motion.div 
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="mb-8 p-4 bg-red-50 border border-red-100 rounded-2xl flex items-center gap-3 text-red-600 text-sm font-medium"
+                  >
+                    <AlertCircle size={20} className="shrink-0" />
+                    <p>{error}</p>
+                  </motion.div>
+                )}
 
                 <button 
                   type="submit"

@@ -630,11 +630,10 @@ export default function HomePage() {
             Spiritual Tools for the <span className="text-accent underline decoration-accent/30 underline-offset-8">Community</span>
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
             {[
               { to: "/zakat-calculator", title: "Zakat Calculator", desc: "Calculate your zakat accurately with our Shariah-compliant tool.", icon: "⚖️" },
               { to: "/tasbeeh-counter", title: "Tasbeeh Counter", desc: "A beautiful digital dhikr companion for your daily spiritual practice.", icon: "📿" },
-              { to: "/islamic-names-finder", title: "Names Finder", desc: "Discover beautiful Islamic names with deep meanings and origins.", icon: "📖" },
               { to: "/hijri-converter", title: "Hijri Converter", desc: "Convert dates between Hijri and Gregorian calendars instantly.", icon: "📅" }
             ].map((tool, i) => (
               <motion.div

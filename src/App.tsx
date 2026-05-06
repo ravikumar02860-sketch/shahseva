@@ -32,7 +32,6 @@ const ZakatCalculatorPage = lazy(() => import('./pages/ZakatCalculator'));
 const IslamicConverterPage = lazy(() => import('./pages/IslamicConverter'));
 const TasbeehCounterPage = lazy(() => import('./pages/TasbeehCounter'));
 const QurbaniPage = lazy(() => import('./pages/Qurbani'));
-const NamesFinderPage = lazy(() => import('./pages/NamesFinder'));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -97,7 +96,6 @@ export default function App() {
                     <Route path="/hijri-converter" element={<IslamicConverterPage />} />
                     <Route path="/tasbeeh-counter" element={<TasbeehCounterPage />} />
                     <Route path="/qurbani-2026" element={<QurbaniPage />} />
-                    <Route path="/islamic-names-finder" element={<NamesFinderPage />} />
                     <Route path="/success-stories" element={<StoriesPage />} />
                   </Routes>
                 </Suspense>
