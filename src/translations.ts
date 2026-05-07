@@ -310,62 +310,77 @@ export const translations = {
       home: {
         title: 'Shah Seva | Donate to Help Poor & Homeless Families in India Online',
         description: 'How to donate money to help poor and homeless families in India online? Shah Seva is the best NGO in Rajasthan for sponsoring child education, food distribution, and medical treatment for poor patients in Bhilwara. Trusted charity since 2010.',
+        keywords: 'how to donate money to help poor families in India online, donate to help homeless people in India, best NGO in Rajasthan for homeless support, trusted charity for food distribution in Bhilwara, donate for medical treatment of poor patients in Rajasthan, homeless shelter aid Rajasthan, safe online donation for homeless in India, Shah Seva Sansthan',
       },
       stories: {
         title: 'Success Stories | Impact of Charity for Homeless in Rajasthan | Shah Seva',
         description: 'Read real success stories of underprivileged families, orphans, and patients helped by Shah Seva NGO. See how your online charity donation creates a tangible impact in Bhilwara and rural Rajasthan.',
+        keywords: 'success stories NGO India, charity impact stories Rajasthan, homeless support results Bhilwara, student success stories charity, medical aid impact rural India',
       },
       csr: {
         title: 'CSR Partnerships in Rajasthan | NGO for Corporate Social Responsibility Bhilwara',
         description: 'Partner with Shah Seva for impactful CSR initiatives in Rajasthan. We offer transparent CSR projects for education, health, and hunger relief in Bhilwara. Registered NGO with 80G benefits.',
+        keywords: 'CSR partnership NGO Rajasthan, corporate social responsibility Bhilwara, NGO for CSR projects India, 80G registered NGO Rajasthan, corporate giving India',
       },
       zakat: {
         title: 'Zakat Calculator India | Calculate & Donate Zakat Online Accurately | Shah Seva',
         description: 'Use our free Online Zakat Calculator India to accurately find your Zakat obligation. Donate Zakat online in India to help orphans, widows, and homeless families in Rajasthan through a Shariah-compliant NGO.',
+        keywords: 'online zakat calculator India, calculate zakat online silver nisab, donate zakat online India, Shariah compliant NGO India, zakat for poor families Rajasthan',
       },
       about: {
         title: 'About Shah Seva | Best NGO in Rajasthan for Sponsoring Child Education',
         description: 'Dargah Saiyad Ali Shah Seva Sansthan (Shah Seva) is a leading social work NGO in Bhilwara, Rajasthan. Since 2010, we have been a trusted charity for helping poor families through education and medical aid.',
+        keywords: 'about Shah Seva Sansthan, NGO in Bhilwara Rajasthan, trusted charity India since 2010, Rojib Khan Bhaijaan founder, social work NGO Rajasthan',
       },
       work: {
         title: 'Our Charity Work in Rajasthan | Impact of Social Work NGO in Bhilwara',
         description: 'Explore our comprehensive social welfare projects in Bhilwara. From food distribution for needy families to girl child education in Rajasthan, discover how Shah Seva NGO impacts thousands of lives yearly.',
+        keywords: 'charity work Rajasthan, social welfare projects Bhilwara, food distribution for poor, girl child education support India, NGO activities Rajasthan',
       },
       impact: {
         title: 'Our Impact | Social Work for Underprivileged Communities India | Shah Seva',
         description: 'Track our progress in serving humanity. Shah Seva NGO provides verified impact reports on medical treatment for poor patients, hunger relief, and educational scholarships for underprivileged children in India.',
+        keywords: 'NGO impact reports India, social work progress Rajasthan, charity transparent reporting, community development Bhilwara, lives impacted NGO',
       },
       gallery: {
         title: 'Shah Seva Photo Gallery | Capturing Our Social Work & Service in Bhilwara',
         description: 'View photos of our ground-level charity activities in Bhilwara, Rajasthan. See our food distribution drives, children\'s education programs, and health camps for homeless and poor families.',
+        keywords: 'Shah Seva photo gallery, NGO activity images, food distribution photos Bhilwara, charity event pictures Rajasthan, social work visual impact',
       },
       contact: {
         title: 'Contact Shah Seva NGO Bhilwara | Join Our Mission in Rajasthan',
         description: 'Reach out to Shah Seva NGO in Bhilwara, Rajasthan for volunteering or donation inquiries. Help us support poor families and children education in India through trusted local social work.',
+        keywords: 'contact Shah Seva NGO, Bhilwara NGO address, volunteer in Rajasthan, charity office Bhilwara, NGO phone number India',
       },
       donate: {
         title: 'Donate to Shah Seva | Safe Online Charity for Poor & Homeless Families India',
         description: 'Learn how to donate money to help poor families in India online. Support Shah Seva NGO\'s mission for food relief, children\'s education, and medical aid in Rajasthan with safe and transparent online donations.',
+        keywords: 'safe online donation India NGO, donate to help poor families, charity for education India, simple online giving Rajasthan, transparent NGO donations',
       },
       faq: {
         title: 'Shah Seva FAQs | Questions Help for Poor Families & Charity Work India',
         description: 'Find answers about Shah Seva NGO\'s activities in Bhilwara. Learn how your education donation is used, how to donate for poor families, and how we ensure 100% transparency in our social work.',
+        keywords: 'NGO FAQs India, charity donation questions, how to help poor families, NGO transparency questions, donation tax benefits India',
       },
       mission: {
         title: 'Our Mission & Vision | Shah Seva NGO - Serving Humanity Since 2010',
         description: 'Discover the vision of Shah Seva: a hunger-free and educated Rajasthan. Our mission is providing food, healthcare, and education to poor and homeless families through selfless charity work in Bhilwara.',
+        keywords: 'NGO mission and vision, serving humanity since 2010, hunger free Rajasthan vision, education for all India NGO, Shah Seva goals',
       },
       istikhara: {
         title: 'Islamic Istikhara Guide | Seeking Guidance from Allah | Shah Seva',
         description: 'Step-by-step guide to Istikhara prayer. Learn the prophetic method to seek divine guidance for your life decisions. Authentic Istikhara dua and instructions provided by Shah Seva NGO.',
+        keywords: 'how to perform istikhara prayer, istikhara dua with meaning, prophetic method of guidance, seek guidance from Allah, Islamic decision making tool',
       },
       transparency: {
         title: 'Transparency Report | How Shah Seva Uses Every Donation Responsibly',
         description: 'Review our commitment to financial integrity. See how every rupee donated for poor families in India is utilized for food, medical aid, and education in Bhilwara through our audited transparency reports.',
+        keywords: 'NGO transparency report India, financial accountability charity, how donations are used NGO, audited social work reports, Shah Seva integrity',
       },
       volunteer: {
         title: 'Volunteer with Shah Seva NGO | Join Our Service Team in Bhilwara India',
         description: 'Looking to volunteer in Rajasthan? Join Shah Seva NGO in Bhilwara to assist in food drives, education support for children, and medical camps for poor families. Make a real difference today.',
+        keywords: 'volunteer NGO Bhilwara, social work volunteering Rajasthan, join charity team India, community service opportunities Bhilwara',
       },
     },
     categories: {

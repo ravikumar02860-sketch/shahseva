@@ -55,6 +55,7 @@ export default function FAQ() {
       <SEO 
         title={t.seo.faq.title} 
         description={t.seo.faq.description}
+        keywords={t.seo.faq.keywords}
         schema={faqSchema}
       />
       {/* Background Decorative Elements */}

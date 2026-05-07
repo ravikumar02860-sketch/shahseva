@@ -33,6 +33,7 @@ export default function ImpactPage() {
       <SEO 
         title={t.seo.impact.title} 
         description={t.seo.impact.description}
+        keywords={t.seo.impact.keywords}
       />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">

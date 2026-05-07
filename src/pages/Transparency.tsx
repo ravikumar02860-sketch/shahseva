@@ -10,8 +10,9 @@ export default function TransparencyPage() {
   return (
     <div className="relative min-h-screen pt-24 pb-24 overflow-hidden">
       <SEO 
-        title={t.transparency.title} 
-        description={t.transparency.desc}
+        title={t.seo.transparency.title} 
+        description={t.seo.transparency.description}
+        keywords={t.seo.transparency.keywords}
       />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">

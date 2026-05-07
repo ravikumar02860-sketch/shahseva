@@ -19,8 +19,9 @@ export default function Volunteer() {
   return (
     <div className="relative min-h-screen pt-24 pb-24 overflow-hidden">
       <SEO 
-        title={t.volunteer.title} 
-        description={t.volunteer.desc}
+        title={t.seo.volunteer.title} 
+        description={t.seo.volunteer.description}
+        keywords={t.seo.volunteer.keywords}
       />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">

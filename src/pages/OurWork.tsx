@@ -57,6 +57,7 @@ export default function WorkPage() {
       <SEO 
         title={t.seo.work.title} 
         description={t.seo.work.description}
+        keywords={t.seo.work.keywords}
       />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">

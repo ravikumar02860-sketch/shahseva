@@ -97,6 +97,7 @@ export default function BlogPost() {
       <SEO 
         title={`${post.title} | Dargah Saiyad Ali Shah Seva Sansthan Blog`}
         description={post.excerpt}
+        keywords={`${post.title}, ${post.category}, charity stories india, trusted NGO blog, how to help poor families`}
         schema={articleSchema}
       />
       

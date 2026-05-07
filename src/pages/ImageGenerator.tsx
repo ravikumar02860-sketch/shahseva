@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Image as ImageIcon, Download, Loader2, Key, Sparkles, AlertCircle } from 'lucide-react';
 import { GoogleGenAI } from "@google/genai";
 import { cn } from '../utils/cn';
+import SEO from '../components/SEO';
 
 // Extend Window interface for AI Studio specific functions
 declare global {
@@ -130,6 +131,7 @@ export default function ImageGenerator() {
 
   return (
     <div className="pt-24 pb-24 px-6 bg-slate-50 min-h-screen">
+      <SEO title="AI Content Generator" noindex={true} />
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-4 mb-12">
           <div className="w-12 h-12 bg-primary text-accent rounded-2xl flex items-center justify-center shadow-lg">

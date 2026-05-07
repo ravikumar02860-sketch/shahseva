@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import { Plus, Trash2, Megaphone, CheckCircle2, AlertCircle, Image as ImageIcon, LogIn, LogOut } from 'lucide-react';
 import { cn } from '../utils/cn';
 import { db, collection, addDoc, getDocs, query, where, orderBy, Timestamp, auth, signInWithPopup, GoogleAuthProvider, doc, updateDoc, onSnapshot } from '../firebase';
+import SEO from '../components/SEO';
 
 interface Campaign {
   id: string;
@@ -175,6 +176,7 @@ export default function AdminCampaigns() {
 
   return (
     <div className="pt-24 pb-24 px-6 bg-slate-50 min-h-screen">
+      <SEO title="Admin - Campaign Management" noindex={true} />
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center justify-between gap-4 mb-12">
           <div className="flex items-center gap-4">

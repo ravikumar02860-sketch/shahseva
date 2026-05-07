@@ -15,6 +15,7 @@ export default function CSR() {
       <SEO 
         title={t.seo.csr.title}
         description={t.seo.csr.description}
+        keywords={t.seo.csr.keywords}
       />
 
       {/* Hero Section */}

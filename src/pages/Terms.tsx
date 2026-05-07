@@ -2,12 +2,17 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { FileText } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
+import SEO from '../components/SEO';
 
 export default function Terms() {
   const { t } = useLanguage();
 
   return (
     <div className="relative min-h-screen pt-24 pb-24 overflow-hidden">
+      <SEO 
+        title="Terms of Service | Shah Seva Sansthan"
+        description="Read our terms of service to understand the conditions of using our platform and participating in our charity programs."
+      />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] left-[-5%] w-[40%] h-[40%] bg-primary/5 rounded-full blur-[120px] animate-pulse" />

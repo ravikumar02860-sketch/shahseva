@@ -10,6 +10,7 @@ interface SEOProps {
   ogType?: string;
   twitterHandle?: string;
   schema?: any;
+  noindex?: boolean;
 }
 
 export default function SEO({
@@ -20,12 +21,15 @@ export default function SEO({
   ogImage = "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F",
   ogType = "website",
   twitterHandle = "@shahseva",
-  schema
+  schema,
+  noindex = false
 }: SEOProps) {
   const siteName = "Dargah Saiyad Ali Shah Seva Sansthan";
   const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
   const currentUrl = typeof window !== 'undefined' ? window.location.href : "https://shahseva.vercel.app";
   const finalCanonical = canonical || currentUrl;
+
+  const robotsContent = noindex ? "noindex, nofollow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
 
   const defaultSchema = {
     "@context": "https://schema.org",
@@ -110,7 +114,7 @@ export default function SEO({
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta name="author" content={siteName} />
-      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+      <meta name="robots" content={robotsContent} />
       <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F" />
       <link rel="canonical" href={finalCanonical} />
 

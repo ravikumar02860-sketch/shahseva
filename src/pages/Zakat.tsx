@@ -15,6 +15,7 @@ export default function Zakat() {
       <SEO 
         title={t.seo.zakat.title}
         description={t.seo.zakat.description}
+        keywords={t.seo.zakat.keywords}
       />
 
       {/* Hero Section */}

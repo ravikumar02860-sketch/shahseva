@@ -62,6 +62,7 @@ export default function CategoryPage({ categoryId: propCategoryId }: CategoryPag
       <SEO 
         title={category.title}
         description={category.metaDescription}
+        keywords={`${category.title}, help ${category.title.toLowerCase()}, donate for ${category.title.toLowerCase()} india, NGO ${category.title.toLowerCase()} rajasthan, Shah Seva charity`}
         schema={{
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",

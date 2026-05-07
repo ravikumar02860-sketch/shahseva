@@ -14,6 +14,7 @@ export default function MissionPage() {
       <SEO 
         title={t.seo.mission.title} 
         description={t.seo.mission.description}
+        keywords={t.seo.mission.keywords}
       />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">

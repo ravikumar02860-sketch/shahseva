@@ -64,6 +64,7 @@ export default function ContactPage() {
       <SEO 
         title={t.seo.contact.title} 
         description={t.seo.contact.description}
+        keywords={t.seo.contact.keywords}
       />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">

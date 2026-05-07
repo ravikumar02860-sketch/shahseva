@@ -68,7 +68,7 @@ export default function ZakatCalculator() {
       <SEO 
         title={t.seo.zakat.title}
         description={t.seo.zakat.description}
-        keywords="zakat calculator india, online zakat calculator, shariah compliant zakat, calculate zakat on gold, zakat on cash, charity NGO bhilwara, Shah Seva zakat"
+        keywords={t.seo.zakat.keywords}
         schema={{
           "@context": "https://schema.org",
           "@type": "WebApplication",

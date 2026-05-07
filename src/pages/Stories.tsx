@@ -15,6 +15,7 @@ export default function Stories() {
       <SEO 
         title={t.seo.stories.title}
         description={t.seo.stories.description}
+        keywords={t.seo.stories.keywords}
       />
 
       {/* Hero */}

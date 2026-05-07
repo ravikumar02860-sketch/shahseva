@@ -20,6 +20,7 @@ export default function AboutPage() {
       <SEO 
         title={t.seo.about.title} 
         description={t.seo.about.description}
+        keywords={t.seo.about.keywords}
       />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">

@@ -2,12 +2,17 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Shield } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
+import SEO from '../components/SEO';
 
 export default function PrivacyPolicy() {
   const { t } = useLanguage();
 
   return (
     <div className="relative min-h-screen pt-24 pb-24 overflow-hidden">
+      <SEO 
+        title="Privacy Policy | Shah Seva Sansthan"
+        description="Learn about how we protect your information. Our privacy policy outlines our commitment to data security and transparency for our donors and volunteers."
+      />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] right-[-5%] w-[40%] h-[40%] bg-primary/5 rounded-full blur-[120px] animate-pulse" />

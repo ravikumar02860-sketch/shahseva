@@ -48,8 +48,9 @@ export default function GalleryPage() {
   return (
     <div className="relative min-h-screen pt-24 pb-24 overflow-hidden">
       <SEO 
-        title="Photo Gallery" 
-        description="Explore the visual journey of Dargah Saiyad Ali Shah Seva Sansthan. See our social impact, community service, and charity events in Bhilwara through our photo gallery."
+        title={t.seo.gallery.title} 
+        description={t.seo.gallery.description}
+        keywords={t.seo.gallery.keywords}
       />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">

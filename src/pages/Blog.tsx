@@ -13,6 +13,7 @@ export default function BlogPage() {
       <SEO 
         title={t.blog.title} 
         description={t.blog.desc}
+        keywords="charity blog india, social work updates Rajasthan, help poor families stories, NGO impact blog, Shah Seva news"
       />
       
       <div className="max-w-7xl mx-auto px-6">

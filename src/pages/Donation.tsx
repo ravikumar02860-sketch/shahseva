@@ -160,6 +160,7 @@ export default function DonationPage() {
       <SEO 
         title={t.seo.donate.title} 
         description={t.seo.donate.description}
+        keywords={t.seo.donate.keywords}
       />
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">

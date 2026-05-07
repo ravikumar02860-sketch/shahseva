@@ -62,6 +62,7 @@ export default function HomePage() {
       <SEO 
         title={t.seo.home.title} 
         description={t.seo.home.description}
+        keywords={t.seo.home.keywords}
       />
       {/* Hero Section */}
       <section ref={heroRef} className="relative min-h-[90vh] flex items-center pt-20 pb-16 perspective-2000">
