@@ -275,45 +275,91 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Founder's Message Section */}
-      <section className="py-24 bg-white relative overflow-hidden">
+      {/* President's Message Section */}
+      <section className="py-24 bg-slate-50 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full -z-10 opacity-[0.03] pointer-events-none" 
              style={{ backgroundImage: 'radial-gradient(#064e3b 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
         
         <div className="max-w-7xl mx-auto px-6">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="max-w-4xl mx-auto text-center"
+            className="bg-white rounded-[2.5rem] p-8 md:p-16 shadow-xl shadow-primary/5 border border-slate-100"
           >
-            <span className="inline-block px-4 py-1.5 bg-primary/5 text-primary font-bold rounded-full text-[10px] uppercase tracking-widest mb-6">
-              {t.founder.title}
-            </span>
-            
-            <div className="relative mb-10">
-              <div className="absolute -top-10 left-1/2 -translate-x-1/2 text-primary/5">
-                <svg width="120" height="120" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V3H21.017V15C21.017 18.3137 18.3307 21 15.017 21H14.017ZM3.01697 21L3.01697 18C3.01697 16.8954 3.9124 16 5.01697 16H8.01697C8.56925 16 9.01697 15.5523 9.01697 15V9C9.01697 8.44772 8.56925 8 8.01697 8H5.01697C3.9124 8 3.01697 7.10457 3.01697 6V3H10.017V15C10.017 18.3137 7.33068 21 4.01697 21H3.01697Z" />
-                </svg>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+              {/* Image Column */}
+              <div className="lg:col-span-5 flex justify-center lg:justify-start">
+                <div className="relative group">
+                  {/* Decorative Elements */}
+                  <div className="absolute -inset-4 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-colors duration-500"></div>
+                  <div className="absolute -top-6 -left-6 w-24 h-24 bg-accent/20 rounded-full blur-3xl animate-pulse"></div>
+                  <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl animate-pulse delay-700"></div>
+                  
+                  {/* Main Portrait Frame */}
+                  <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-[24rem] lg:h-[24rem] rounded-full p-2 border-2 border-primary/20 bg-white shadow-2xl transition-transform duration-500 hover:scale-[1.02]">
+                    <div className="w-full h-full rounded-full overflow-hidden border-4 border-white shadow-inner bg-slate-100">
+                      <img 
+                        src="https://drive.google.com/uc?export=view&id=18lC4mjN9PvYYE5taeIcuKfMSrdgtlVUL" 
+                        alt={t.presidentMessage.altText}
+                        loading="lazy"
+                        className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
+                        onLoad={(e) => {
+                          const img = e.currentTarget;
+                          img.style.opacity = '1';
+                        }}
+                        style={{ opacity: 0, transition: 'opacity 0.5s ease-in-out' }}
+                      />
+                    </div>
+                    {/* Status Badge */}
+                    <div className="absolute bottom-6 right-6 bg-primary text-white text-[10px] font-bold px-4 py-1.5 rounded-full shadow-lg border-2 border-white uppercase tracking-widest">
+                      {t.presidentMessage.label}
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-8 leading-relaxed italic relative z-10">
-                "{t.founder.message}"
-              </h3>
-            </div>
 
-            <div className="flex flex-col items-center gap-4">
-              <div className="w-16 h-0.5 bg-accent"></div>
-              <div>
-                <h4 className="text-2xl font-serif font-bold text-primary">{t.founder.name}</h4>
-                <p className="text-slate-500 font-bold text-xs uppercase tracking-widest">{t.founder.role}</p>
-              </div>
-            </div>
-            
-            <div className="mt-12">
-              <p className="text-slate-400 font-serif italic text-lg">{t.founder.signature}</p>
-              <div className="mt-4 font-serif text-3xl text-primary/40 select-none">
-                {t.founder.name}
+              {/* Text Content Column */}
+              <div className="lg:col-span-7">
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <span className="inline-block px-4 py-1.5 bg-primary/5 text-primary font-bold rounded-full text-[10px] uppercase tracking-widest mb-6">
+                    {t.presidentMessage.heading}
+                  </span>
+                  
+                  <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-6 leading-tight">
+                    {t.presidentMessage.subheading}
+                  </h2>
+                  
+                  <div className="relative mb-8">
+                    <div className="absolute -left-4 -top-4 text-primary/5 pointer-events-none">
+                      <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V3H21.017V15C21.017 18.3137 18.3307 21 15.017 21H14.017ZM3.01697 21L3.01697 18C3.01697 16.8954 3.9124 16 5.01697 16H8.01697C8.56925 16 9.01697 15.5523 9.01697 15V9C9.01697 8.44772 8.56925 8 8.01697 8H5.01697C3.9124 8 3.01697 7.10457 3.01697 6V3H10.017V15C10.017 18.3137 7.33068 21 4.01697 21H3.01697Z" />
+                      </svg>
+                    </div>
+                    <p className="text-slate-600 text-lg md:text-xl leading-relaxed italic relative z-10 pl-4 font-serif">
+                      {t.presidentMessage.content}
+                    </p>
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-10 pt-10 border-t border-slate-100">
+                    <div>
+                      <h4 className="text-2xl font-serif font-bold text-primary">{t.presidentMessage.name}</h4>
+                      <p className="text-slate-500 font-bold text-[10px] uppercase tracking-[0.2em] mt-1">{t.presidentMessage.role}</p>
+                    </div>
+                    <div className="hidden sm:block w-px h-12 bg-slate-200"></div>
+                    <div className="flex flex-col">
+                      <span className="text-slate-400 font-serif italic text-sm mb-2">{t.presidentMessage.signature}</span>
+                      <div className="font-serif text-3xl text-primary/40 select-none tracking-tighter">
+                        {t.presidentMessage.name}
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
               </div>
             </div>
           </motion.div>

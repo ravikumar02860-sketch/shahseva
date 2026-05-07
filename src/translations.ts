@@ -49,6 +49,16 @@ export const translations = {
       message: "Our mission is to serve every soul in need with compassion and dignity. We believe that true service to God is through service to humanity. Since 2010, we have been dedicated to uplifting the underprivileged in Bhilwara, and your support is what makes this journey possible.",
       signature: "With Gratitude,",
     },
+    presidentMessage: {
+      heading: "Message From Our President",
+      subheading: "Serving Humanity With Compassion, Transparency & Dedication",
+      content: "At Shah Seva Trust (Dargah Saiyad Ali Shah Seva Sansthan), we are committed to serving humanity with compassion and transparency. Our primary mission is to uplift underprivileged families by providing direct support where it's needed most. We focus on comprehensive community welfare, encompassing nutritious food distribution to end hunger, educational sponsorship for children to break the cycle of poverty, and critical healthcare assistance for those who cannot afford life-saving treatments. Since 2010, our dedicated team has worked on the ground in Bhilwara and across Rajasthan, reaching out to poor families, orphans, and the destitute. Every contribution we receive is a sacred trust, utilized with absolute dedication to ensure it creates a real, lasting impact on the lives of our brothers and sisters in need.",
+      name: "Rojib Khan (Bhaijaan)",
+      role: "Founder & President, Shah Seva Trust",
+      label: "President, Shah Seva Trust",
+      altText: "President of Shah Seva Trust",
+      signature: "With Sincere Gratitude,"
+    },
     activities: {
       badge: 'Our Society Impact',
       title: 'How Your Charity Donation in India Creates Real Change',
@@ -850,6 +860,16 @@ export const translations = {
       title: 'हाजी सैयद मुराद अली शाह अल मरहूम',
       quote: 'असली इबादत अल्लाह की मखलूक (सृष्टि) की सेवा करना है।',
       desc: 'शाह सेवा की स्थापना हाजी सैयद मुराद अली शाह के विजन से हुई थी, जिनका पूरा जीवन गरीबों और अनाथों की सेवा के लिए समर्पित था। आज, हम उसी समर्पण के साथ उनके मिशन को आगे बढ़ा रहे हैं।'
+    },
+    presidentMessage: {
+      heading: "अध्यक्ष का संदेश",
+      subheading: "करुणा, पारदर्शिता और समर्पण के साथ मानवता की सेवा",
+      content: "शाह सेवा ट्रस्ट (दरगाह सैयद अली शाह सेवा संस्थान) में, हम करुणा और पारदर्शिता के साथ मानवता की सेवा के लिए प्रतिबद्ध हैं। हमारा प्राथमिक मिशन सबसे वंचित परिवारों को वहां सीधा समर्थन प्रदान करके उनका उत्थान करना है जहां इसकी सबसे अधिक आवश्यकता है। हम व्यापक सामुदायिक कल्याण पर ध्यान केंद्रित करते हैं, जिसमें भूख को समाप्त करने के लिए पौष्टिक भोजन वितरण, गरीबी के चक्र को तोड़ने के लिए बच्चों के लिए शैक्षिक प्रायोजन, और उन लोगों के लिए महत्वपूर्ण स्वास्थ्य सहायता शामिल है जो जीवन रक्षक उपचार का खर्च नहीं उठा सकते। 2010 से, हमारी समर्पित टीम ने भीलवाड़ा और पूरे राजस्थान में जमीनी स्तर पर काम किया है, गरीब परिवारों, अनाथों और निराश्रितों तक पहुंच बनाई है। हमें प्राप्त होने वाला प्रत्येक योगदान एक पवित्र विश्वास है, जिसका उपयोग पूर्ण समर्पण के साथ यह सुनिश्चित करने के लिए किया जाता है कि यह जरूरत में हमारे भाइयों और बहनों के जीवन पर वास्तविक और स्थायी प्रभाव डाले।",
+      name: "रोजीब खान (भाईजान)",
+      role: "संस्थापक और अध्यक्ष, शाह सेवा ट्रस्ट",
+      label: "अध्यक्ष, शाह सेवा ट्रस्ट",
+      altText: "शाह सेवा ट्रस्ट के अध्यक्ष",
+      signature: "सप्रेम आभार,"
     },
     activities: {
       foodTitle: 'भोजन वितरण | भीलवाड़ा में जरूरतमंदों के लिए राशन',
