@@ -14,6 +14,12 @@ export const translations = {
       categories: 'Donation Categories',
       blog: 'Blog',
     },
+    common: {
+      notFoundTitle: "Page Not Found",
+      notFoundDesc: "The path you follow has led to a dead end. Perhaps the content has moved or the link is broken.",
+      backHome: "Return Home",
+      goBack: "Go Back",
+    },
     hero: {
       badge: 'Shah Seva: Trusted NGO in Bhilwara Since 2010',
       title: 'Donate Money to Charity in India: Shah Seva Helping Poor & Homeless Families',
@@ -828,7 +834,13 @@ export const translations = {
       istikhara: 'इस्तखारा गाइड',
       mission: 'मिशन',
       volunteer: 'स्वयंसेवक',
-      transparency: 'पारदर्शिता'
+      blog: 'ब्लॉग',
+    },
+    common: {
+      notFoundTitle: "पेज नहीं मिला",
+      notFoundDesc: "जिस रास्ते पर आप आए हैं वह बंद है। शायद पेज हटा दिया गया है या लिंक टूट गया है।",
+      backHome: "होम पर वापस जाएं",
+      goBack: "पीछे जाएं",
     },
     hero: {
       badge: 'शाह सेवा: 2010 से भीलवाड़ा में भरोसेमंद एनजीओ',

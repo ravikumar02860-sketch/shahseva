@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import SEO from './components/SEO';
 import HomePage from './pages/Home';
+import NotFound from './components/NotFound';
 
 // Lazy load secondary pages to reduce initial bundle size
 const AboutPage = lazy(() => import('./pages/About'));
@@ -118,6 +119,7 @@ export default function App() {
                       <Route path="/tasbeeh-counter" element={<TasbeehCounterPage />} />
                       <Route path="/qurbani-2026" element={<QurbaniPage />} />
                       <Route path="/success-stories" element={<StoriesPage />} />
+                      <Route path="*" element={<NotFound />} />
                     </Routes>
                   </PageWrapper>
                 </Suspense>

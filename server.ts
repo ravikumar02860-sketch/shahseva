@@ -1,6 +1,7 @@
 import express from "express";
 import { createServer as createViteServer } from "vite";
 import path from "path";
+import { readFileSync } from "fs";
 import { fileURLToPath } from "url";
 import dotenv from "dotenv";
 import { db, collection, addDoc, getDocs, query, where, orderBy, Timestamp, doc, updateDoc } from './src/firebase.ts';
@@ -151,10 +152,17 @@ async function startServer() {
     
     // Explicit SPA fallback for dev
     app.get("*", async (req, res, next) => {
-      if (req.originalUrl.startsWith('/api')) return next();
+      // Exclude API and common static file extensions from fallback to avoid infinite loops or incorrect serving
+      if (req.originalUrl.startsWith('/api') || req.originalUrl.includes('.')) {
+        return next();
+      }
+
       try {
         const url = req.originalUrl;
-        let template = await vite.transformIndexHtml(url, `<!DOCTYPE html><html><head></head><body><div id="root"></div></body></html>`);
+        // Read the actual index.html file for dev
+        const templatePath = path.resolve(__dirname, "index.html");
+        const rawTemplate = readFileSync(templatePath, "utf-8");
+        const template = await vite.transformIndexHtml(url, rawTemplate);
         res.status(200).set({ 'Content-Type': 'text/html' }).end(template);
       } catch (e) {
         vite.ssrFixStacktrace(e as Error);
