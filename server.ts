@@ -148,9 +148,22 @@ async function startServer() {
       appType: "spa",
     });
     app.use(vite.middlewares);
+    
+    // Explicit SPA fallback for dev
+    app.get("*", async (req, res, next) => {
+      if (req.originalUrl.startsWith('/api')) return next();
+      try {
+        const url = req.originalUrl;
+        let template = await vite.transformIndexHtml(url, `<!DOCTYPE html><html><head></head><body><div id="root"></div></body></html>`);
+        res.status(200).set({ 'Content-Type': 'text/html' }).end(template);
+      } catch (e) {
+        vite.ssrFixStacktrace(e as Error);
+        next(e);
+      }
+    });
   } else {
     const distPath = path.join(process.cwd(), "dist");
-    app.use(express.static(distPath));
+    app.use(express.static(distPath, { index: false }));
     app.get("*", (req, res) => {
       res.sendFile(path.join(distPath, "index.html"));
     });

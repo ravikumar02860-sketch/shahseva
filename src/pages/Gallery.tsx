@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { useLanguage } from '../LanguageContext';
 import SEO from '../components/SEO';
+import OptimizedImage from '../components/OptimizedImage';
 
 export default function GalleryPage() {
   const { t } = useLanguage();
@@ -99,12 +100,12 @@ export default function GalleryPage() {
               className="relative group overflow-hidden rounded-[3.5rem] shadow-2xl shadow-primary/5 break-inside-avoid border border-white transition-all duration-700 hover:shadow-strong"
             >
               <div className="overflow-hidden aspect-auto">
-                <img 
-                  src={img.url} 
-                  alt={img.title} 
-                  className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-[2s]"
-                  referrerPolicy="no-referrer"
-                />
+              <OptimizedImage 
+                src={img.url} 
+                alt={img.title} 
+                className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-[2s]"
+                referrerPolicy="no-referrer"
+              />
               </div>
               
               {/* Overlay */}

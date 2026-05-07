@@ -4,6 +4,7 @@ import { ArrowRight, Users, BookOpen, HeartPulse, Utensils, Home, Heart, Shield 
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../LanguageContext';
 import SEO from '../components/SEO';
+import OptimizedImage from '../components/OptimizedImage';
 
 export default function HomePage() {
   const { t } = useLanguage();
@@ -136,11 +137,13 @@ export default function HomePage() {
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-strong border-8 border-white/10 preserve-3d"
               >
-                <img 
+                <OptimizedImage 
                   src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=1000" 
-                  alt="Hero Image" 
-                  className="w-full aspect-[4/5] object-cover"
+                  alt="Helping poor families in India - Shah Seva Trust" 
+                  containerClassName="w-full aspect-[4/5]"
+                  className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
+                  fetchPriority="high"
                 />
               </motion.div>
               {/* Decorative elements */}
@@ -298,19 +301,13 @@ export default function HomePage() {
                   
                   {/* Main Portrait Frame */}
                   <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-[24rem] lg:h-[24rem] rounded-full p-2 border-2 border-primary/20 bg-white shadow-2xl transition-transform duration-500 hover:scale-[1.02]">
-                    <div className="w-full h-full rounded-full overflow-hidden border-4 border-white shadow-inner bg-slate-100">
-                      <img 
-                        src="https://drive.google.com/uc?export=view&id=18lC4mjN9PvYYE5taeIcuKfMSrdgtlVUL" 
-                        alt={t.presidentMessage.altText}
-                        loading="lazy"
-                        className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
-                        onLoad={(e) => {
-                          const img = e.currentTarget;
-                          img.style.opacity = '1';
-                        }}
-                        style={{ opacity: 0, transition: 'opacity 0.5s ease-in-out' }}
-                      />
-                    </div>
+                    <OptimizedImage 
+                      src="https://lh3.googleusercontent.com/d/18lC4mjN9PvYYE5taeIcuKfMSrdgtlVUL" 
+                      alt={t.presidentMessage.altText}
+                      loading="lazy"
+                      containerClassName="w-full h-full rounded-full border-4 border-white shadow-inner"
+                      className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
+                    />
                     {/* Status Badge */}
                     <div className="absolute bottom-6 right-6 bg-primary text-white text-[10px] font-bold px-4 py-1.5 rounded-full shadow-lg border-2 border-white uppercase tracking-widest">
                       {t.presidentMessage.label}

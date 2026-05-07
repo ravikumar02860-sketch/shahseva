@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Utensils, BookOpen, HeartPulse, Home, Users, Heart } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 import SEO from '../components/SEO';
+import OptimizedImage from '../components/OptimizedImage';
 
 export default function WorkPage() {
   const { t } = useLanguage();
@@ -135,9 +136,10 @@ export default function WorkPage() {
               className="bg-white/80 backdrop-blur-xl rounded-[3rem] overflow-hidden shadow-2xl shadow-primary/5 border border-white group transition-all duration-700 hover:shadow-primary/10 relative"
             >
               <div className="h-80 overflow-hidden relative">
-                <img 
+                <OptimizedImage 
                   src={act.img} 
                   alt={act.title} 
+                  containerClassName="w-full h-full"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s]"
                   referrerPolicy="no-referrer"
                 />
