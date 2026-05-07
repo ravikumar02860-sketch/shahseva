@@ -1,5 +1,6 @@
 import React, { useEffect, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence, motion } from 'motion/react';
 import { HelmetProvider } from 'react-helmet-async';
 import { LanguageProvider } from './LanguageContext';
 import Header from './components/Header';
@@ -50,6 +51,25 @@ const PageLoader = () => (
 
 import ErrorBoundary from './components/ErrorBoundary';
 
+// Layout wrapper for 3D page transitions
+const PageWrapper = ({ children }: { children: React.ReactNode }) => {
+  const location = useLocation();
+  return (
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={location.pathname}
+        initial={{ opacity: 0, rotateY: 10, translateZ: -100 }}
+        animate={{ opacity: 1, rotateY: 0, translateZ: 0 }}
+        exit={{ opacity: 0, rotateY: -10, translateZ: 100 }}
+        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+        className="perspective-2000 preserve-3d"
+      >
+        {children}
+      </motion.div>
+    </AnimatePresence>
+  );
+};
+
 export default function App() {
   return (
     <ErrorBoundary>
@@ -58,46 +78,48 @@ export default function App() {
           <Router>
             <SEO />
             <ScrollToTop />
-            <div className="min-h-screen flex flex-col">
+            <div className="min-h-screen flex flex-col overflow-x-hidden">
               <Header />
               <main className="flex-grow">
                 <Suspense fallback={<PageLoader />}>
-                  <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/about" element={<AboutPage />} />
-                    <Route path="/work" element={<WorkPage />} />
-                    <Route path="/donate" element={<DonationPage />} />
-                    <Route path="/impact" element={<ImpactPage />} />
-                    <Route path="/gallery" element={<GalleryPage />} />
-                    <Route path="/contact" element={<ContactPage />} />
-                    <Route path="/privacy" element={<PrivacyPolicy />} />
-                    <Route path="/terms" element={<Terms />} />
-                    <Route path="/faq" element={<FAQ />} />
-                    <Route path="/blog" element={<BlogPage />} />
-                    <Route path="/blog/:id" element={<BlogPost />} />
-                    <Route path="/volunteer" element={<Volunteer />} />
-                    <Route path="/mission" element={<MissionPage />} />
-                    <Route path="/transparency" element={<TransparencyPage />} />
-                    <Route path="/admin/campaigns" element={<AdminCampaigns />} />
-                    <Route path="/admin/generate-images" element={<ImageGenerator />} />
-                    <Route path="/donate-for-education" element={<CategoryPage categoryId="education" />} />
-                    <Route path="/donate-for-poor-children" element={<CategoryPage categoryId="children" />} />
-                    <Route path="/donate-for-medical-help" element={<CategoryPage categoryId="medical" />} />
-                    <Route path="/donate-for-food-for-poor" element={<CategoryPage categoryId="food" />} />
-                    <Route path="/donate-for-disaster-relief" element={<CategoryPage categoryId="disaster" />} />
-                    <Route path="/donate-to-orphanage-india" element={<CategoryPage categoryId="orphanage" />} />
-                    <Route path="/donate-for-girl-child-education" element={<CategoryPage categoryId="girlChild" />} />
-                    <Route path="/donate-for-cancer-patient-treatment" element={<CategoryPage categoryId="cancer" />} />
-                    <Route path="/donate-for-old-age-home" element={<CategoryPage categoryId="oldAge" />} />
-                    <Route path="/donate-for-homeless-people" element={<CategoryPage categoryId="homeless" />} />
-                    <Route path="/csr-partnership" element={<CSRPage />} />
-                    <Route path="/donate-zakat-online" element={<ZakatPage />} />
-                    <Route path="/zakat-calculator" element={<ZakatCalculatorPage />} />
-                    <Route path="/hijri-converter" element={<IslamicConverterPage />} />
-                    <Route path="/tasbeeh-counter" element={<TasbeehCounterPage />} />
-                    <Route path="/qurbani-2026" element={<QurbaniPage />} />
-                    <Route path="/success-stories" element={<StoriesPage />} />
-                  </Routes>
+                  <PageWrapper>
+                    <Routes>
+                      <Route path="/" element={<HomePage />} />
+                      <Route path="/about" element={<AboutPage />} />
+                      <Route path="/work" element={<WorkPage />} />
+                      <Route path="/donate" element={<DonationPage />} />
+                      <Route path="/impact" element={<ImpactPage />} />
+                      <Route path="/gallery" element={<GalleryPage />} />
+                      <Route path="/contact" element={<ContactPage />} />
+                      <Route path="/privacy" element={<PrivacyPolicy />} />
+                      <Route path="/terms" element={<Terms />} />
+                      <Route path="/faq" element={<FAQ />} />
+                      <Route path="/blog" element={<BlogPage />} />
+                      <Route path="/blog/:id" element={<BlogPost />} />
+                      <Route path="/volunteer" element={<Volunteer />} />
+                      <Route path="/mission" element={<MissionPage />} />
+                      <Route path="/transparency" element={<TransparencyPage />} />
+                      <Route path="/admin/campaigns" element={<AdminCampaigns />} />
+                      <Route path="/admin/generate-images" element={<ImageGenerator />} />
+                      <Route path="/donate-for-education" element={<CategoryPage categoryId="education" />} />
+                      <Route path="/donate-for-poor-children" element={<CategoryPage categoryId="children" />} />
+                      <Route path="/donate-for-medical-help" element={<CategoryPage categoryId="medical" />} />
+                      <Route path="/donate-for-food-for-poor" element={<CategoryPage categoryId="food" />} />
+                      <Route path="/donate-for-disaster-relief" element={<CategoryPage categoryId="disaster" />} />
+                      <Route path="/donate-to-orphanage-india" element={<CategoryPage categoryId="orphanage" />} />
+                      <Route path="/donate-for-girl-child-education" element={<CategoryPage categoryId="girlChild" />} />
+                      <Route path="/donate-for-cancer-patient-treatment" element={<CategoryPage categoryId="cancer" />} />
+                      <Route path="/donate-for-old-age-home" element={<CategoryPage categoryId="oldAge" />} />
+                      <Route path="/donate-for-homeless-people" element={<CategoryPage categoryId="homeless" />} />
+                      <Route path="/csr-partnership" element={<CSRPage />} />
+                      <Route path="/donate-zakat-online" element={<ZakatPage />} />
+                      <Route path="/zakat-calculator" element={<ZakatCalculatorPage />} />
+                      <Route path="/hijri-converter" element={<IslamicConverterPage />} />
+                      <Route path="/tasbeeh-counter" element={<TasbeehCounterPage />} />
+                      <Route path="/qurbani-2026" element={<QurbaniPage />} />
+                      <Route path="/success-stories" element={<StoriesPage />} />
+                    </Routes>
+                  </PageWrapper>
                 </Suspense>
               </main>
               <Footer />

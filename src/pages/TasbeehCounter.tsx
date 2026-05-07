@@ -108,8 +108,13 @@ export default function TasbeehCounter() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
           {/* Main Counter UI */}
-          <div className="md:col-span-2">
-            <div className="bg-white rounded-[3rem] shadow-2xl p-12 text-center border border-slate-100 decorative-border relative overflow-hidden">
+          <div className="md:col-span-2 perspective-2000">
+            <motion.div 
+              initial={{ rotateX: 10, opacity: 0 }}
+              animate={{ rotateX: 0, opacity: 1 }}
+              whileHover={{ rotateX: -2, rotateY: 2 }}
+              className="bg-white rounded-[3rem] shadow-2xl p-12 text-center border border-slate-100 decorative-border relative overflow-hidden preserve-3d"
+            >
                {/* Controls Top */}
                <div className="flex justify-between items-center mb-12">
                   <button 
@@ -134,18 +139,22 @@ export default function TasbeehCounter() {
                </div>
 
                {/* Counter Circle */}
-               <div className="relative inline-block">
+               <div className="relative inline-block perspective-1000">
                  <motion.button
-                   whileTap={{ scale: 0.95 }}
+                   whileTap={{ 
+                     scale: 0.9,
+                     translateZ: -50,
+                     rotateX: 10
+                   }}
                    onClick={handleIncrement}
-                   className="w-64 h-64 rounded-full bg-slate-50 border-[12px] border-primary-dark/5 flex flex-col items-center justify-center relative z-10 group shadow-inner"
+                   className="w-64 h-64 rounded-full bg-slate-50 border-[12px] border-primary-dark/5 flex flex-col items-center justify-center relative z-10 group shadow-inner preserve-3d"
                  >
                    <AnimatePresence mode="wait">
                      <motion.span 
                         key={count}
-                        initial={{ opacity: 0, y: 10, scale: 0.8 }}
-                        animate={{ opacity: 1, y: 0, scale: 1 }}
-                        exit={{ opacity: 0, y: -10, scale: 0.8 }}
+                        initial={{ opacity: 0, y: 10, scale: 0.8, translateZ: -20 }}
+                        animate={{ opacity: 1, y: 0, scale: 1, translateZ: 0 }}
+                        exit={{ opacity: 0, y: -10, scale: 0.8, translateZ: 20 }}
                         className="text-7xl font-serif font-black text-primary-dark"
                      >
                        {count}
@@ -174,7 +183,7 @@ export default function TasbeehCounter() {
                     <RefreshCw size={18} /> {t.tasbeeh.reset}
                   </button>
                </div>
-            </div>
+            </motion.div>
           </div>
 
           {/* Sidebar / Info */}

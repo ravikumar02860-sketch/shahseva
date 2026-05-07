@@ -199,12 +199,13 @@ export default function DonationPage() {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-start perspective-2000">
           {/* Donation Form / Thank You */}
           <motion.div 
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="lg:col-span-7 bg-white/80 backdrop-blur-xl p-5 md:p-12 rounded-2xl md:rounded-[2.5rem] shadow-2xl shadow-primary/5 border border-white relative overflow-hidden"
+            initial={{ opacity: 0, x: -30, rotateY: 5 }}
+            animate={{ opacity: 1, x: 0, rotateY: 0 }}
+            whileHover={{ rotateY: -2 }}
+            className="lg:col-span-7 bg-white/80 backdrop-blur-xl p-5 md:p-12 rounded-2xl md:rounded-[2.5rem] shadow-2xl shadow-primary/5 border border-white relative overflow-hidden preserve-3d"
           >
             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 blur-2xl" />
             

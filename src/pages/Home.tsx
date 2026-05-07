@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'motion/react';
+import React, { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'motion/react';
 import { ArrowRight, Users, BookOpen, HeartPulse, Utensils, Home, Heart, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../LanguageContext';
@@ -7,6 +7,15 @@ import SEO from '../components/SEO';
 
 export default function HomePage() {
   const { t } = useLanguage();
+  const heroRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: heroRef,
+    offset: ["start start", "end start"]
+  });
+
+  const heroImageY = useTransform(scrollYProgress, [0, 1], [0, 200]);
+  const heroImageRotate = useTransform(scrollYProgress, [0, 1], [0, 15]);
+  const heroImageZ = useTransform(scrollYProgress, [0, 1], [0, 50]);
 
   const stats = [
     { label: t.stats.families, value: '5,000+', icon: Users },
@@ -55,7 +64,7 @@ export default function HomePage() {
         description={t.seo.home.description}
       />
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center pt-20 pb-16">
+      <section ref={heroRef} className="relative min-h-[90vh] flex items-center pt-20 pb-16 perspective-2000">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&q=80&w=1920" 
@@ -110,23 +119,44 @@ export default function HomePage() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, scale: 0.9, rotate: 2 }}
-              animate={{ opacity: 1, scale: 1, rotate: 0 }}
-              transition={{ duration: 1, delay: 0.4 }}
+              initial={{ opacity: 0, scale: 0.9, rotateY: 30, rotateX: 10 }}
+              animate={{ opacity: 1, scale: 1, rotateY: 0, rotateX: 0 }}
+              style={{ 
+                y: heroImageY, 
+                rotateY: heroImageRotate,
+                z: heroImageZ,
+                transformStyle: 'preserve-3d'
+              }}
+              transition={{ duration: 1.2, ease: "easeOut", delay: 0.4 }}
               className="hidden lg:block relative"
             >
-              <div className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-strong border-8 border-white/10">
+              <motion.div 
+                whileHover={{ rotateY: -10, rotateX: 10, z: 100 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-strong border-8 border-white/10 preserve-3d"
+              >
                 <img 
                   src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=1000" 
                   alt="Hero Image" 
                   className="w-full aspect-[4/5] object-cover"
                   referrerPolicy="no-referrer"
                 />
-              </div>
+              </motion.div>
               {/* Decorative elements */}
-              <div className="absolute -top-10 -right-10 w-40 h-40 bg-accent/20 rounded-full blur-3xl"></div>
-              <div className="absolute -bottom-10 -left-10 w-60 h-60 bg-primary/30 rounded-full blur-3xl"></div>
-              <div className="absolute top-1/2 -right-12 bg-white p-6 rounded-3xl shadow-strong max-w-[200px] animate-bounce-slow">
+              <motion.div 
+                animate={{ y: [0, -20, 0], rotate: [0, 5, 0] }}
+                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute -top-10 -right-10 w-40 h-40 bg-accent/20 rounded-full blur-3xl z-0"
+              ></motion.div>
+              <motion.div 
+                animate={{ y: [0, 30, 0], rotate: [0, -5, 0] }}
+                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute -bottom-10 -left-10 w-60 h-60 bg-primary/30 rounded-full blur-3xl z-0"
+              ></motion.div>
+              <motion.div 
+                style={{ translateZ: 150 }}
+                className="absolute top-1/2 -right-12 bg-white p-6 rounded-3xl shadow-strong max-w-[200px] animate-bounce-slow z-20"
+              >
                 <div className="flex items-center gap-3 mb-2">
                   <div className="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center text-accent-dark">
                     <Heart size={20} fill="currentColor" />
@@ -134,7 +164,7 @@ export default function HomePage() {
                   <span className="font-bold text-primary text-sm">Join Us</span>
                 </div>
                 <p className="text-[10px] text-slate-500 leading-tight">Every small contribution makes a big difference.</p>
-              </div>
+              </motion.div>
             </motion.div>
           </div>
         </div>
@@ -147,11 +177,18 @@ export default function HomePage() {
             {stats.map((stat, idx) => (
               <motion.div 
                 key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 20, rotateX: -20 }}
+                whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
+                whileHover={{ 
+                  y: -10, 
+                  rotateY: idx % 2 === 0 ? 10 : -10,
+                  rotateX: 5,
+                  z: 50,
+                  transition: { duration: 0.3 }
+                }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="glass-card p-8 text-center group"
+                className="glass-card p-8 text-center group preserve-3d"
               >
                 <div className="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center text-primary mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-500 group-hover:rotate-6">
                   <stat.icon size={28} />
@@ -168,10 +205,11 @@ export default function HomePage() {
       <section className="section-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -30, rotateY: 20 }}
+            whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
+            whileHover={{ rotateY: -5, scale: 1.02 }}
             viewport={{ once: true }}
-            className="relative"
+            className="relative preserve-3d"
           >
             <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-strong aspect-[4/5]">
               <img 
@@ -385,11 +423,17 @@ export default function HomePage() {
             {activities.map((act, idx) => (
               <motion.div 
                 key={idx}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 30, rotateX: 15 }}
+                whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
+                whileHover={{ 
+                  translateY: -15, 
+                  rotateY: 5,
+                  z: 100,
+                  transition: { type: "spring", stiffness: 400, damping: 25 }
+                }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="group glass-card !bg-white/5 !border-white/10 !rounded-[2.5rem] hover:!bg-white/10"
+                className="group glass-card !bg-white/5 !border-white/10 !rounded-[2.5rem] hover:!bg-white/10 preserve-3d"
               >
                 <div className="h-72 overflow-hidden relative">
                   <img 
@@ -493,11 +537,18 @@ export default function HomePage() {
               return (
                 <motion.div
                   key={idx}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0, y: 20, rotateX: 10 }}
+                  whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
+                  whileHover={{ 
+                    y: -10, 
+                    rotateY: 5,
+                    rotateX: -5,
+                    z: 50,
+                    transition: { type: "spring", stiffness: 300 }
+                  }}
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.1 }}
-                  className="group bg-slate-50 p-8 rounded-[2rem] border border-slate-100 hover:bg-primary hover:text-white transition-all duration-500 shadow-sm hover:shadow-xl"
+                  className="group bg-slate-50 p-8 rounded-[2rem] border border-slate-100 hover:bg-primary hover:text-white transition-all duration-500 shadow-sm hover:shadow-xl preserve-3d"
                 >
                   <div className="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:bg-white/20 group-hover:text-white transition-all">
                     <cause.icon size={28} />
@@ -638,13 +689,19 @@ export default function HomePage() {
             ].map((tool, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 20, rotateX: 15 }}
+                whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
+                whileHover={{ 
+                  scale: 1.05, 
+                  z: 50, 
+                  rotateY: i % 2 === 0 ? 5 : -5,
+                  transition: { type: "spring", stiffness: 200 }
+                }}
                 transition={{ delay: i * 0.1 }}
-                className="h-full"
+                className="h-full preserve-3d"
               >
-                <Link to={tool.to} className="block p-8 bg-white/5 border border-white/10 rounded-[2.5rem] hover:bg-white/10 transition-all group backdrop-blur-sm h-full">
-                  <div className="text-4xl mb-6 group-hover:scale-110 transition-transform">{tool.icon}</div>
+                <Link to={tool.to} className="block p-8 bg-white/5 border border-white/10 rounded-[2.5rem] hover:bg-white/10 transition-all group backdrop-blur-sm h-full preserve-3d shadow-xl">
+                  <div className="text-4xl mb-6 group-hover:scale-110 group-hover:translateZ-50 transition-transform">{tool.icon}</div>
                   <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
                     {tool.title}
                     <ArrowRight className="text-accent opacity-0 group-hover:opacity-100 transition-opacity" size={20} />
@@ -711,11 +768,17 @@ export default function HomePage() {
             ].map((test, i) => (
               <motion.div 
                 key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 20, rotateY: i % 2 === 0 ? 10 : -10 }}
+                whileInView={{ opacity: 1, y: 0, rotateY: 0 }}
+                whileHover={{ 
+                  y: -10, 
+                  rotateY: i % 2 === 0 ? -5 : 5,
+                  z: 30,
+                  transition: { duration: 0.4 }
+                }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-white p-10 rounded-[2.5rem] shadow-soft border border-slate-100 relative group hover:shadow-strong transition-all duration-500"
+                className="bg-white p-10 rounded-[2.5rem] shadow-soft border border-slate-100 relative group hover:shadow-strong transition-all duration-500 preserve-3d"
               >
                 <div className="absolute -top-6 left-10 w-12 h-12 bg-accent rounded-2xl flex items-center justify-center text-primary shadow-lg">
                   <Heart size={24} fill="currentColor" />
