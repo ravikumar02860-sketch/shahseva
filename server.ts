@@ -9,18 +9,21 @@ import { db, collection, addDoc, getDocs, query, where, orderBy, Timestamp, doc,
 dotenv.config();
 
 // Handle __dirname and __filename in both ESM and CJS environments
-// This is critical for locating static assets in both dev and production
 let _filename: string;
 let _dirname: string;
 
-if (typeof __filename !== 'undefined') {
-  _filename = __filename;
-  _dirname = __dirname;
-} else if (typeof import.meta !== 'undefined' && import.meta.url) {
-  _filename = fileURLToPath(import.meta.url);
-  _dirname = path.dirname(_filename);
-} else {
-  // Fallback for edge cases, though process.cwd() is less reliable than script location
+try {
+  // @ts-ignore - this is available in ESM
+  if (typeof import.meta !== 'undefined' && import.meta.url) {
+    _filename = fileURLToPath(import.meta.url);
+    _dirname = path.dirname(_filename);
+  } else {
+    // @ts-ignore - this is available in CJS
+    _filename = __filename;
+    // @ts-ignore - this is available in CJS
+    _dirname = __dirname;
+  }
+} catch (e) {
   _dirname = process.cwd();
   _filename = path.join(_dirname, 'server.ts');
 }
@@ -165,41 +168,36 @@ async function startServer() {
   if (process.env.NODE_ENV !== "production") {
     const vite = await createViteServer({
       server: { middlewareMode: true },
-      appType: "spa",
+      appType: "custom",
     });
     app.use(vite.middlewares);
     
-    // Explicit SPA fallback for development reload support
     app.get("*", async (req, res, next) => {
-      // Don't intercept API routes – they should 404 if not matched above
+      // Ignore API routes and file requests
       if (req.path.startsWith('/api') || req.path.includes('.')) {
         return next();
       }
 
       try {
         const url = req.originalUrl;
-        // In dev, index.html is at project root
         const indexHtml = await fs.readFile(path.resolve(_dirname, 'index.html'), 'utf-8');
         const template = await vite.transformIndexHtml(url, indexHtml);
         res.status(200).set({ 'Content-Type': 'text/html' }).end(template);
       } catch (e) {
-        vite.ssrFixStacktrace(e as Error);
+        if (e instanceof Error) vite.ssrFixStacktrace(e);
         next(e);
       }
     });
   } else {
-    // Production: serve from the dist directory
-    // If the server is in dist/server.cjs, _dirname is dist/
     const staticPath = path.resolve(_dirname);
     const indexPath = path.join(staticPath, "index.html");
 
-    console.log(`Serving static files from: ${staticPath}`);
-    console.log(`SPA fallback index: ${indexPath}`);
-
+    // Serve static files first
     app.use(express.static(staticPath, { index: false }));
     
+    // Fallback for all other routes to serve index.html
     app.get("*", (req, res, next) => {
-      // Don't intercept API routes
+      // Ignore API routes and file requests that weren't caught by express.static
       if (req.path.startsWith('/api') || req.path.includes('.')) {
         return next();
       }
