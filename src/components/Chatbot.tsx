@@ -5,9 +5,7 @@ import { GoogleGenAI } from "@google/genai";
 import { cn } from '../utils/cn';
 import { useLanguage } from '../LanguageContext';
 
-// Initialize Gemini API
-const genAI = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || "" });
-
+// Messages interface
 interface Message {
   role: 'user' | 'bot';
   text: string;
@@ -20,6 +18,15 @@ export default function Chatbot() {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const { t, language } = useLanguage();
+
+  // Lazy initialize Gemini API
+  const genAIRef = useRef<GoogleGenAI | null>(null);
+  const getGenAI = () => {
+    if (!genAIRef.current) {
+      genAIRef.current = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || "" });
+    }
+    return genAIRef.current;
+  };
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -46,7 +53,8 @@ export default function Chatbot() {
     setIsLoading(true);
 
     try {
-      const chat = genAI.chats.create({
+      const ai = getGenAI();
+      const chat = ai.chats.create({
         model: "gemini-3-flash-preview",
         config: {
           systemInstruction: `

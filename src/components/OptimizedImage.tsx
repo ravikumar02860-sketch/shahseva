@@ -17,6 +17,7 @@ export default function OptimizedImage({
   src, 
   alt, 
   className, 
+  loading: loadingProp,
   fallbackSrc = "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=800",
   containerClassName,
   ...props 
@@ -73,6 +74,7 @@ export default function OptimizedImage({
         {...props}
         src={currentSrc}
         alt={alt}
+        loading={loadingProp}
         onLoad={handleLoad}
         onError={handleError}
         className={cn(

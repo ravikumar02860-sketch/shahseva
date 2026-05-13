@@ -2,6 +2,7 @@ import express from "express";
 import { createServer as createViteServer } from "vite";
 import path from "path";
 import { fileURLToPath } from "url";
+import fs from "fs/promises";
 import dotenv from "dotenv";
 import { db, collection, addDoc, getDocs, query, where, orderBy, Timestamp, doc, updateDoc } from './src/firebase.ts';
 
@@ -154,7 +155,8 @@ async function startServer() {
       if (req.originalUrl.startsWith('/api')) return next();
       try {
         const url = req.originalUrl;
-        let template = await vite.transformIndexHtml(url, `<!DOCTYPE html><html><head></head><body><div id="root"></div></body></html>`);
+        const indexHtml = await fs.readFile(path.resolve(__dirname, 'index.html'), 'utf-8');
+        const template = await vite.transformIndexHtml(url, indexHtml);
         res.status(200).set({ 'Content-Type': 'text/html' }).end(template);
       } catch (e) {
         vite.ssrFixStacktrace(e as Error);
