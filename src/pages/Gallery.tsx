@@ -123,7 +123,8 @@ export default function GalleryPage() {
               <OptimizedImage 
                 src={img.url} 
                 alt={img.title} 
-                loading="lazy"
+                loading={idx < 3 ? "eager" : "lazy"}
+                fetchPriority={idx < 3 ? "high" : "auto"}
                 className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-[2s]"
                 referrerPolicy="no-referrer"
               />

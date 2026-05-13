@@ -8,14 +8,33 @@ import { db, collection, addDoc, getDocs, query, where, orderBy, Timestamp, doc,
 
 dotenv.config();
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// Handle __dirname and __filename in both ESM and CJS environments
+// This is critical for locating static assets in both dev and production
+let _filename: string;
+let _dirname: string;
+
+if (typeof __filename !== 'undefined') {
+  _filename = __filename;
+  _dirname = __dirname;
+} else if (typeof import.meta !== 'undefined' && import.meta.url) {
+  _filename = fileURLToPath(import.meta.url);
+  _dirname = path.dirname(_filename);
+} else {
+  // Fallback for edge cases, though process.cwd() is less reliable than script location
+  _dirname = process.cwd();
+  _filename = path.join(_dirname, 'server.ts');
+}
 
 async function startServer() {
   const app = express();
   app.use(express.json());
 
   const PORT = 3000;
+
+  // Health check for deployment monitoring
+  app.get("/api/health", (req, res) => {
+    res.json({ status: "ok", mode: process.env.NODE_ENV });
+  });
 
   // API to handle donation details
   app.post("/api/donate", async (req, res) => {
@@ -142,7 +161,7 @@ async function startServer() {
     res.send(sitemap);
   });
 
-  // Vite middleware for development
+  // Optimized SPA fallback and static serving
   if (process.env.NODE_ENV !== "production") {
     const vite = await createViteServer({
       server: { middlewareMode: true },
@@ -150,12 +169,17 @@ async function startServer() {
     });
     app.use(vite.middlewares);
     
-    // Explicit SPA fallback for dev
+    // Explicit SPA fallback for development reload support
     app.get("*", async (req, res, next) => {
-      if (req.originalUrl.startsWith('/api')) return next();
+      // Don't intercept API routes – they should 404 if not matched above
+      if (req.path.startsWith('/api') || req.path.includes('.')) {
+        return next();
+      }
+
       try {
         const url = req.originalUrl;
-        const indexHtml = await fs.readFile(path.resolve(__dirname, 'index.html'), 'utf-8');
+        // In dev, index.html is at project root
+        const indexHtml = await fs.readFile(path.resolve(_dirname, 'index.html'), 'utf-8');
         const template = await vite.transformIndexHtml(url, indexHtml);
         res.status(200).set({ 'Content-Type': 'text/html' }).end(template);
       } catch (e) {
@@ -164,10 +188,22 @@ async function startServer() {
       }
     });
   } else {
-    const distPath = path.join(process.cwd(), "dist");
-    app.use(express.static(distPath, { index: false }));
-    app.get("*", (req, res) => {
-      res.sendFile(path.join(distPath, "index.html"));
+    // Production: serve from the dist directory
+    // If the server is in dist/server.cjs, _dirname is dist/
+    const staticPath = path.resolve(_dirname);
+    const indexPath = path.join(staticPath, "index.html");
+
+    console.log(`Serving static files from: ${staticPath}`);
+    console.log(`SPA fallback index: ${indexPath}`);
+
+    app.use(express.static(staticPath, { index: false }));
+    
+    app.get("*", (req, res, next) => {
+      // Don't intercept API routes
+      if (req.path.startsWith('/api') || req.path.includes('.')) {
+        return next();
+      }
+      res.sendFile(indexPath);
     });
   }
 
