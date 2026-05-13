@@ -14,12 +14,6 @@ export const translations = {
       categories: 'Donation Categories',
       blog: 'Blog',
     },
-    common: {
-      notFoundTitle: "Page Not Found",
-      notFoundDesc: "The path you follow has led to a dead end. Perhaps the content has moved or the link is broken.",
-      backHome: "Return Home",
-      goBack: "Go Back",
-    },
     hero: {
       badge: 'Shah Seva: Trusted NGO in Bhilwara Since 2010',
       title: 'Donate Money to Charity in India: Shah Seva Helping Poor & Homeless Families',
@@ -650,6 +644,11 @@ export const translations = {
         smiles: 'Children Smiles',
         success: 'Student Success',
         hope: 'Hope for Future',
+        fieldWork: 'Field Work at Grassroots',
+        communityService: 'Community Service in Action',
+        volunteerAction: 'Our Dedicated Volunteers',
+        charityEvent: 'Annual Charity Distribution',
+        socialImpact: 'Creating Lasting Social Impact',
       },
     },
     impact: {
@@ -834,13 +833,7 @@ export const translations = {
       istikhara: 'इस्तखारा गाइड',
       mission: 'मिशन',
       volunteer: 'स्वयंसेवक',
-      blog: 'ब्लॉग',
-    },
-    common: {
-      notFoundTitle: "पेज नहीं मिला",
-      notFoundDesc: "जिस रास्ते पर आप आए हैं वह बंद है। शायद पेज हटा दिया गया है या लिंक टूट गया है।",
-      backHome: "होम पर वापस जाएं",
-      goBack: "पीछे जाएं",
+      transparency: 'पारदर्शिता'
     },
     hero: {
       badge: 'शाह सेवा: 2010 से भीलवाड़ा में भरोसेमंद एनजीओ',
@@ -1290,6 +1283,11 @@ export const translations = {
         smiles: 'बच्चों की मुस्कान',
         success: 'छात्र की सफलता',
         hope: 'भविष्य के लिए आशा',
+        fieldWork: 'जमीनी स्तर पर क्षेत्रीय कार्य',
+        communityService: 'सामुदायिक सेवा सक्रियता',
+        volunteerAction: 'हमारे समर्पित स्वयंसेवक',
+        charityEvent: 'वार्षिक चैरिटी वितरण',
+        socialImpact: 'स्थायी सामाजिक प्रभाव पैदा करना',
       },
     },
     impact: {

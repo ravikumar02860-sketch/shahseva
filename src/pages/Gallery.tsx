@@ -9,6 +9,26 @@ export default function GalleryPage() {
 
   const images = [
     {
+      url: 'https://drive.google.com/thumbnail?id=1PWQgc83oOVirju9985Yhu48lni4xsgSZ&sz=w1000',
+      title: t.gallery.images.fieldWork
+    },
+    {
+      url: 'https://drive.google.com/thumbnail?id=17XD9Er6fHTP2GNh5quCwpX2RZBlSQp3z&sz=w1000',
+      title: t.gallery.images.communityService
+    },
+    {
+      url: 'https://drive.google.com/thumbnail?id=1q3K6YwXNqq8zMYi7ei9jgcn9Yw9nKqET&sz=w1000',
+      title: t.gallery.images.volunteerAction
+    },
+    {
+      url: 'https://drive.google.com/thumbnail?id=1l4mwQNjn0zywtBkhuWrbdbR5608CH3CG&sz=w1000',
+      title: t.gallery.images.charityEvent
+    },
+    {
+      url: 'https://drive.google.com/thumbnail?id=18y9VZ3zDfeeSaiIRyT3otc53-7qDTRCg&sz=w1000',
+      title: t.gallery.images.socialImpact
+    },
+    {
       url: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=1000',
       title: t.gallery.images.food
     },
@@ -103,6 +123,7 @@ export default function GalleryPage() {
               <OptimizedImage 
                 src={img.url} 
                 alt={img.title} 
+                loading="lazy"
                 className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-[2s]"
                 referrerPolicy="no-referrer"
               />
