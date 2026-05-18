@@ -173,8 +173,8 @@ async function startServer() {
     app.use(vite.middlewares);
     
     app.get("*", async (req, res, next) => {
-      // Ignore API routes and file requests
-      if (req.path.startsWith('/api') || req.path.includes('.')) {
+      // Ignore API routes
+      if (req.path.startsWith('/api')) {
         return next();
       }
 
@@ -195,10 +195,10 @@ async function startServer() {
     // Serve static files first
     app.use(express.static(staticPath, { index: false }));
     
-    // Fallback for all other routes to serve index.html
+    // Fallback for all other routes to serve index.html (SPA)
     app.get("*", (req, res, next) => {
-      // Ignore API routes and file requests that weren't caught by express.static
-      if (req.path.startsWith('/api') || req.path.includes('.')) {
+      // Ignore API routes
+      if (req.path.startsWith('/api')) {
         return next();
       }
       res.sendFile(indexPath);

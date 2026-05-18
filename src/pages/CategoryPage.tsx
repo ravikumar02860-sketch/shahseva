@@ -43,15 +43,23 @@ export default function CategoryPage({ categoryId: propCategoryId }: CategoryPag
   const categoryId = propCategoryId || params.categoryId;
   const { t } = useLanguage();
   
-  const category = categoryId ? t.categories[categoryId as keyof typeof t.categories] : null;
+  const category = categoryId ? (t.categories ? t.categories[categoryId as keyof typeof t.categories] : null) : null;
   const Icon = categoryId ? iconMap[categoryId] : Heart;
 
   if (!category) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Category Not Found</h1>
-          <Link to="/" className="text-primary hover:underline">Return Home</Link>
+      <div className="min-h-screen flex items-center justify-center bg-slate-50">
+        <div className="text-center p-8 bg-white rounded-3xl shadow-xl max-w-md border border-slate-100">
+          <div className="w-20 h-20 bg-primary/5 rounded-full flex items-center justify-center text-primary mx-auto mb-6">
+            <Heart size={40} className="animate-pulse" />
+          </div>
+          <h1 className="text-3xl font-serif font-bold text-primary mb-4">Category Not Found</h1>
+          <p className="text-slate-600 mb-8 leading-relaxed">
+            We couldn't find the donation category you're looking for. Please explore our other causes.
+          </p>
+          <Link to="/" className="btn-primary w-full justify-center">
+            Return Home
+          </Link>
         </div>
       </div>
     );
@@ -60,9 +68,9 @@ export default function CategoryPage({ categoryId: propCategoryId }: CategoryPag
   return (
     <div className="bg-white">
       <SEO 
-        title={category.title}
-        description={category.metaDescription}
-        keywords={`${category.title}, help ${category.title.toLowerCase()}, donate for ${category.title.toLowerCase()} india, NGO ${category.title.toLowerCase()} rajasthan, Shah Seva charity`}
+        title={category?.title || t.nav.donate}
+        description={category?.metaDescription || category?.description}
+        keywords={`${category?.title || ''}, help ${category?.title?.toLowerCase() || ''}, donate for ${category?.title?.toLowerCase() || ''} india, NGO ${category?.title?.toLowerCase() || ''} rajasthan, Shah Seva charity`}
         schema={{
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
@@ -76,7 +84,7 @@ export default function CategoryPage({ categoryId: propCategoryId }: CategoryPag
             {
               "@type": "ListItem",
               "position": 2,
-              "name": category.title,
+              "name": category?.title || 'Donation',
               "item": `https://shahseva.vercel.app/donate-for-${categoryId}`
             }
           ]
@@ -103,7 +111,7 @@ export default function CategoryPage({ categoryId: propCategoryId }: CategoryPag
               transition={{ delay: 0.1 }}
               className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight"
             >
-              {category.h1}
+              {category?.h1 || category?.title}
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -111,7 +119,7 @@ export default function CategoryPage({ categoryId: propCategoryId }: CategoryPag
               transition={{ delay: 0.2 }}
               className="text-xl text-gray-600 mb-10 leading-relaxed"
             >
-              {category.description}
+              {category?.description}
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -122,7 +130,7 @@ export default function CategoryPage({ categoryId: propCategoryId }: CategoryPag
                 to="/donate"
                 className="inline-flex items-center px-8 py-4 bg-primary text-white rounded-xl font-semibold hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/25 group"
               >
-                {category.cta}
+                {category?.cta || 'Donate Now'}
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </motion.div>
@@ -140,17 +148,17 @@ export default function CategoryPage({ categoryId: propCategoryId }: CategoryPag
               viewport={{ once: true }}
             >
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                {category.section1Title}
+                {category?.section1Title || category?.title}
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                {category.section1Text}
+                {category?.section1Text || category?.description}
               </p>
               <div className="space-y-4">
                 {[
-                  { icon: ShieldCheck, text: t.donation.reasons[0] },
-                  { icon: Users, text: t.donation.reasons[2] },
-                  { icon: CheckCircle2, text: t.donation.reasons[3] }
-                ].map((item, index) => (
+                  { icon: ShieldCheck, text: t.donation?.reasons?.[0] },
+                  { icon: Users, text: t.donation?.reasons?.[2] },
+                  { icon: CheckCircle2, text: t.donation?.reasons?.[3] }
+                ].filter(item => item.text).map((item, index) => (
                   <div key={index} className="flex items-start">
                     <div className="flex-shrink-0 p-1 bg-primary/10 rounded-lg mr-4">
                       <item.icon className="w-5 h-5 text-primary" />
@@ -170,7 +178,7 @@ export default function CategoryPage({ categoryId: propCategoryId }: CategoryPag
               <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <img
                   src={`https://picsum.photos/seed/${categoryId}/800/800`}
-                  alt={category.title}
+                  alt={category?.title || 'Donation Cause'}
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
@@ -188,11 +196,11 @@ export default function CategoryPage({ categoryId: propCategoryId }: CategoryPag
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">{t.impactSection.title}</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">{t.impact.desc}</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">{t.donation?.impactSection?.title}</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">{t.impact?.desc}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {t.donation.impactSection.items.map((item, index) => (
+            {t.donation?.impactSection?.items?.map((item: any, index: number) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}

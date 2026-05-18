@@ -577,7 +577,10 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredCauses.map((cause, idx) => {
-              const category = t.categories[cause.id as keyof typeof t.categories];
+              const category = t.categories?.[cause.id as keyof typeof t.categories];
+              
+              if (!category) return null;
+
               return (
                 <motion.div
                   key={idx}
@@ -597,7 +600,7 @@ export default function HomePage() {
                   <div className="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:bg-white/20 group-hover:text-white transition-all">
                     <cause.icon size={28} />
                   </div>
-                  <h3 className="text-xl font-bold mb-4">{category.title.split('|')[0].trim()}</h3>
+                  <h3 className="text-xl font-bold mb-4">{category.title?.split('|')[0].trim()}</h3>
                   <p className="text-slate-500 group-hover:text-slate-200 text-sm mb-8 line-clamp-2">
                     {category.description}
                   </p>

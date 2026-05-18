@@ -5,6 +5,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import { LanguageProvider } from './LanguageContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import { ScrollToTopButton } from './components/ScrollToTopButton';
 import SEO from './components/SEO';
 import HomePage from './pages/Home';
 
@@ -118,11 +119,13 @@ export default function App() {
                       <Route path="/tasbeeh-counter" element={<TasbeehCounterPage />} />
                       <Route path="/qurbani-2026" element={<QurbaniPage />} />
                       <Route path="/success-stories" element={<StoriesPage />} />
+                      <Route path="*" element={<HomePage />} />
                     </Routes>
                   </PageWrapper>
                 </Suspense>
               </main>
               <Footer />
+              <ScrollToTopButton />
             </div>
           </Router>
         </LanguageProvider>
