@@ -15,8 +15,8 @@ interface SEOProps {
 
 export default function SEO({
   title = "Donate Money to Charity in India | Shah Seva NGO | Best NGO in Rajasthan for Poor Families",
-  description = "Learn how to donate money to help poor and homeless families in India online. Shah Seva is the best NGO in Rajasthan for sponsoring child education, food distribution, and medical treatment for homeless patients in Bhilwara. Trusted charity since 2010.",
-  keywords = "how to donate money to help poor families in India online, donate to help homeless people in India, best NGO in Rajasthan for homeless support, trusted charity for food distribution in Bhilwara, donate for medical treatment of poor patients in Rajasthan, homeless shelter aid Rajasthan, safe online donation for homeless in India, Shah Seva Sansthan",
+  description = "Learn how to donate money to support the best old age home in Bhilwara, sponsor children's education, and help poor families online. Shah Seva is a trusted NGO in Rajasthan since 2010.",
+  keywords = "old age home bhilwara, old age home in bhilwara, best old age home in bhilwara, how to donate money to help poor families in India online, donate to help homeless people in India, best NGO in Rajasthan for homeless support, trusted charity for food distribution in Bhilwara, donate for medical treatment of poor patients in Rajasthan, homeless shelter aid Rajasthan, safe online donation for homeless in India, Shah Seva Sansthan",
   canonical,
   ogImage = "https://lh3.googleusercontent.com/d/1tkQ_k0ElpNrVeVF5psmj_OjufAA2Ur4F",
   ogType = "website",
