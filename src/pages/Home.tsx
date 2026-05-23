@@ -394,7 +394,7 @@ export default function HomePage() {
                     </div>
                     <div className="w-full h-3 bg-slate-100 rounded-full overflow-hidden">
                       <motion.div 
-                        initial={{ width: 0 }}
+                        initial={{ width: "0%" }}
                         whileInView={{ width: item.value }}
                         viewport={{ once: true }}
                         transition={{ duration: 1, delay: i * 0.2 }}

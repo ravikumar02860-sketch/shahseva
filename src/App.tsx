@@ -6,7 +6,6 @@ import { LanguageProvider } from './LanguageContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { ScrollToTopButton } from './components/ScrollToTopButton';
-import SEO from './components/SEO';
 import HomePage from './pages/Home';
 
 // Lazy load secondary pages to reduce initial bundle size
@@ -59,11 +58,11 @@ const PageWrapper = ({ children }: { children: React.ReactNode }) => {
     <AnimatePresence mode="wait">
       <motion.div
         key={location.pathname}
-        initial={{ opacity: 0, rotateY: 10, translateZ: -100 }}
-        animate={{ opacity: 1, rotateY: 0, translateZ: 0 }}
-        exit={{ opacity: 0, rotateY: -10, translateZ: 100 }}
-        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-        className="perspective-2000 preserve-3d"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -10 }}
+        transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+        className="w-full"
       >
         {children}
       </motion.div>
@@ -77,7 +76,6 @@ export default function App() {
       <HelmetProvider>
         <LanguageProvider>
           <Router>
-            <SEO />
             <ScrollToTop />
             <div className="min-h-screen flex flex-col overflow-x-hidden">
               <Header />

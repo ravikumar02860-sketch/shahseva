@@ -37,23 +37,21 @@ export default function OptimizedImage({
   const isVisible = !!entry?.isIntersecting;
 
   useEffect(() => {
-    if (isVisible && !currentSrc) {
-      setCurrentSrc(src);
-    }
-  }, [isVisible, src, currentSrc]);
-
-  useEffect(() => {
     if (loadingProp === 'eager') {
       setCurrentSrc(src);
-    } else if (!isVisible) {
+      setError(false);
+      return;
+    }
+
+    if (isVisible) {
+      setCurrentSrc(src);
+    } else {
       setCurrentSrc(undefined);
       setIsLoaded(false);
-    } else {
-      setCurrentSrc(src);
     }
     setError(false);
     setRetryCount(0);
-  }, [src, loadingProp]);
+  }, [src, loadingProp, isVisible]);
 
   const handleLoad = () => {
     setIsLoaded(true);
