@@ -24,6 +24,9 @@ const TransparencyPage = lazy(() => import('./pages/Transparency'));
 const AdminCampaigns = lazy(() => import('./pages/AdminCampaigns'));
 const ImageGenerator = lazy(() => import('./pages/ImageGenerator'));
 const CategoryPage = lazy(() => import('./pages/CategoryPage'));
+const CampaignLandingPage = lazy(() => import('./pages/CampaignLandingPage'));
+const IslamicLandingPage = lazy(() => import('./pages/IslamicLandingPage'));
+const AnimalLandingPage = lazy(() => import('./pages/AnimalLandingPage'));
 const BlogPage = lazy(() => import('./pages/Blog'));
 const BlogPost = lazy(() => import('./pages/BlogPost'));
 const CSRPage = lazy(() => import('./pages/CSR'));
@@ -110,6 +113,42 @@ export default function App() {
                       <Route path="/donate-for-cancer-patient-treatment" element={<CategoryPage categoryId="cancer" />} />
                       <Route path="/donate-for-old-age-home" element={<CategoryPage categoryId="oldAge" />} />
                       <Route path="/donate-for-homeless-people" element={<CategoryPage categoryId="homeless" />} />
+                      
+                      {/* Dynamic campaign route */}
+                      <Route path="/campaign/:id" element={<CampaignLandingPage />} />
+                      
+                      {/* 10 special donation landing pages mapped directly */}
+                      <Route path="/donate-for-child-surgery" element={<CampaignLandingPage campaignId="donate-for-child-surgery" />} />
+                      <Route path="/urgent-medical-help-donation" element={<CampaignLandingPage campaignId="urgent-medical-help-donation" />} />
+                      <Route path="/help-cancer-patient-donate" element={<CampaignLandingPage campaignId="help-cancer-patient-donate" />} />
+                      <Route path="/donate-for-accident-victim" element={<CampaignLandingPage campaignId="donate-for-accident-victim" />} />
+                      <Route path="/donate-hospital-bills" element={<CampaignLandingPage campaignId="donate-hospital-bills" />} />
+                      <Route path="/child-heart-surgery-donation" element={<CampaignLandingPage campaignId="child-heart-surgery-donation" />} />
+                      <Route path="/emergency-fundraiser-for-child" element={<CampaignLandingPage campaignId="emergency-fundraiser-for-child" />} />
+                      <Route path="/online-donation-for-surgery" element={<CampaignLandingPage campaignId="online-donation-for-surgery" />} />
+                      <Route path="/crowdfunding-medical-emergency" element={<CampaignLandingPage campaignId="crowdfunding-medical-emergency" />} />
+                      <Route path="/donate-for-life-saving-treatment" element={<CampaignLandingPage campaignId="donate-for-life-saving-treatment" />} />
+
+                      {/* Dynamic Islamic landing page route */}
+                      <Route path="/islamic/:id" element={<IslamicLandingPage />} />
+                      
+                      {/* 6 special Islamic donation landing pages mapped directly */}
+                      <Route path="/zakat-donation-online" element={<IslamicLandingPage pageId="zakat-donation-online" />} />
+                      <Route path="/donate-sadaqah-online" element={<IslamicLandingPage pageId="donate-sadaqah-online" />} />
+                      <Route path="/masjid-donation-online" element={<IslamicLandingPage pageId="masjid-donation-online" />} />
+                      <Route path="/donate-food-in-ramadan" element={<IslamicLandingPage pageId="donate-food-in-ramadan" />} />
+                      <Route path="/fidya-donation-online" element={<IslamicLandingPage pageId="fidya-donation-online" />} />
+                      <Route path="/kaffara-donation" element={<IslamicLandingPage pageId="kaffara-donation" />} />
+
+                      {/* Dynamic Animal welfare landing page route */}
+                      <Route path="/animal/:id" element={<AnimalLandingPage />} />
+                      
+                      {/* 4 special Animal welfare landing pages mapped directly */}
+                      <Route path="/donate-for-injured-dog" element={<AnimalLandingPage pageId="donate-for-injured-dog" />} />
+                      <Route path="/animal-rescue-donation" element={<AnimalLandingPage pageId="animal-rescue-donation" />} />
+                      <Route path="/feed-street-dogs-donate" element={<AnimalLandingPage pageId="feed-street-dogs-donate" />} />
+                      <Route path="/rescue-injured-animals-donate" element={<AnimalLandingPage pageId="rescue-injured-animals-donate" />} />
+
                       <Route path="/csr-partnership" element={<CSRPage />} />
                       <Route path="/donate-zakat-online" element={<ZakatPage />} />
                       <Route path="/zakat-calculator" element={<ZakatCalculatorPage />} />

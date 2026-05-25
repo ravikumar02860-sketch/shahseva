@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import { useLanguage } from '../LanguageContext';
 import { ArrowLeft, Calendar, Tag, User, Share2, Heart } from 'lucide-react';
 import SEO from '../components/SEO';
+import { seoBlogPosts } from '../data/seoBlogPosts';
 
 const blogContent: Record<string, any> = {
   'how-to-donate-securely': {
@@ -51,11 +52,20 @@ const blogContent: Record<string, any> = {
 export default function BlogPost() {
   const { id } = useParams<{ id: string }>();
   const { t } = useLanguage();
-  const post = t.blog.posts.find((p: any) => p.id === id);
-  const content = id ? blogContent[id] : null;
+  
+  const seoPost = seoBlogPosts.find((p) => p.id === id);
+  const post = t.blog.posts.find((p: any) => p.id === id) || (seoPost ? {
+    id: seoPost.id,
+    title: seoPost.title,
+    excerpt: seoPost.excerpt,
+    date: seoPost.date,
+    isoDate: seoPost.isoDate,
+    category: seoPost.category,
+  } : null);
 
-  const articleSchema = post ? {
-    "@context": "https://schema.org",
+  const content = id ? (blogContent[id] || (seoPost ? { sections: seoPost.sections } : null)) : null;
+
+  const article = post ? {
     "@type": "Article",
     "headline": post.title,
     "description": post.excerpt,
@@ -79,6 +89,115 @@ export default function BlogPost() {
       "@type": "WebPage",
       "@id": `https://shahseva.vercel.app/blog/${id}`
     }
+  } : null;
+
+  const howToSchema = id === 'how-to-donate-hair-india' ? {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Donate Hair in India",
+    "description": "A comprehensive step-by-step guide on how to safely cut, package, and donate your healthy hair to make custom medical wigs for cancer patients in India.",
+    "image": "https://picsum.photos/seed/how-to-donate-hair-india/1200/800",
+    "totalTime": "PT30M",
+    "estimatedCost": {
+      "@type": "MonetaryAmount",
+      "currency": "INR",
+      "value": "0"
+    },
+    "supply": [
+      {
+        "@type": "HowToSupply",
+        "name": "Elastic hair ties or rubber bands"
+      },
+      {
+        "@type": "HowToSupply",
+        "name": "Ziplock plastic storage bag"
+      },
+      {
+        "@type": "HowToSupply",
+        "name": "Padded bubble shipping envelope"
+      }
+    ],
+    "tool": [
+      {
+        "@type": "HowToTool",
+        "name": "Sharp hair shears or hair-cutting scissors"
+      },
+      {
+        "@type": "HowToTool",
+        "name": "Ruler or measuring tape"
+      },
+      {
+        "@type": "HowToTool",
+        "name": "Hair comb or brush"
+      }
+    ],
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Measure Minimum Length Required",
+        "text": "Using a ruler or tape measure, check that your ponytail will measure at least 10 inches (25 cm) long in the area you intend to cut.",
+        "url": "https://shahseva.vercel.app/blog/how-to-donate-hair-india#step-1",
+        "image": "https://picsum.photos/seed/measure-hair/400/300"
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Wash and Dry Meticulously",
+        "text": "Cleanse your hair thoroughly with a mild shampoo. Do not apply conditioners, sprays, or styling products. Blow dry completely so no humidity or moisture remains in the strands.",
+        "url": "https://shahseva.vercel.app/blog/how-to-donate-hair-india#step-2",
+        "image": "https://picsum.photos/seed/wash-dry/400/300"
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Tie in Multiple Rubber Bands",
+        "text": "Gather your dry hair into 1 or more tightly bound ponytails. Apply elastic bands at the top near your neck, in the middle, and close to the tips to prevent loose strands from shifting.",
+        "url": "https://shahseva.vercel.app/blog/how-to-donate-hair-india#step-3",
+        "image": "https://picsum.photos/seed/tie-bands/400/300"
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Cut cleanly above the top band",
+        "text": "Using professional hair-cutting scissors, cut carefully 0.5 inches above your highest rubber band. Hold the pony or braid securely to avoid scattering loose hair.",
+        "url": "https://shahseva.vercel.app/blog/how-to-donate-hair-india#step-4",
+        "image": "https://picsum.photos/seed/cut-hair/400/300"
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Seal in Ziplock & Mail to NGO",
+        "text": "Wrap the dry ponytail bundle in clean paper towels or tissue, place it in an airtight zip seal plastic bag, place inside a padded shipping envelope, and send it to your chosen NGO address.",
+        "url": "https://shahseva.vercel.app/blog/how-to-donate-hair-india#step-5",
+        "image": "https://picsum.photos/seed/seal-mail/400/300"
+      }
+    ]
+  } : null;
+
+  const graph: any[] = [];
+  if (article) {
+    graph.push({
+      "@context": "https://schema.org",
+      ...article
+    });
+  }
+  if (seoPost && seoPost.faqs && seoPost.faqs.length > 0) {
+    graph.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": seoPost.faqs.map((faq) => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    });
+  }
+  if (howToSchema) {
+    graph.push(howToSchema);
+  }
+
+  const articleSchema = graph.length > 0 ? {
+    "@context": "https://schema.org",
+    "@graph": graph
   } : null;
 
   if (!post || !content) {
@@ -154,6 +273,22 @@ export default function BlogPost() {
                 </div>
               </div>
             ))}
+
+            {seoPost && seoPost.faqs && seoPost.faqs.length > 0 && (
+              <div className="mt-20 pt-16 border-t border-slate-100">
+                <h2 className="text-4xl font-serif font-bold text-primary mb-10">Frequently Asked Questions</h2>
+                <div className="space-y-8">
+                  {seoPost.faqs.map((faq, fIdx) => (
+                    <div key={fIdx} className="bg-slate-50/50 p-8 rounded-[2rem] border border-slate-100 not-italic">
+                      <h3 className="text-xl font-bold text-primary mb-4 flex gap-3">
+                        <span className="text-accent font-serif font-bold">Q:</span> {faq.question}
+                      </h3>
+                      <p className="text-slate-600 leading-relaxed pl-8">{faq.answer}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
 
           <div className="mt-20 pt-10 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-8">

@@ -160,6 +160,78 @@ export const translations = {
           date: 'March 15, 2026',
           isoDate: '2026-03-15',
           category: 'Medical'
+        },
+        {
+          id: 'how-long-to-donate-plasma',
+          title: 'How Long Does It Take to Donate Plasma? Everything You Need to Know',
+          excerpt: 'Planning to donate plasma but not sure about the time commitment? Discover exactly how long does it take to donate plasma, the step-by-step process of apheresis, and how this life-giving yellowish fluid supports critical healthcare.',
+          date: 'May 20, 2026',
+          isoDate: '2026-05-20',
+          category: 'Guides'
+        },
+        {
+          id: 'how-much-for-donating-plasma',
+          title: 'How Much Do You Get for Donating Plasma in India? Complete Guide',
+          excerpt: 'Find out the physical and legal rules regarding how much do you get for donating plasma in India, non-commercial laws, benefits, and patient support.',
+          date: 'May 21, 2026',
+          isoDate: '2026-05-21',
+          category: 'Guides'
+        },
+        {
+          id: 'how-often-can-you-donate-blood',
+          title: 'How Often Can You Donate Blood? Rules, Gaps & Health Tips',
+          excerpt: 'Learn the safe intervals of blood donation: how often can you donate blood, gender intervals, physiological benefits, and hematology tips.',
+          date: 'May 22, 2026',
+          isoDate: '2026-05-22',
+          category: 'Health'
+        },
+        {
+          id: 'does-donating-plasma-hurt',
+          title: 'Does Donating Plasma Hurt? Honest Answer + What to Expect',
+          excerpt: 'Worried about discomfort or pain? Read our candid analysis of does donating plasma hurt, physical feelings during extraction, and cozy tips.',
+          date: 'May 23, 2026',
+          isoDate: '2026-05-23',
+          category: 'Health'
+        },
+        {
+          id: 'how-long-to-donate-blood',
+          title: 'How Long Does It Take to Donate Blood? Step-by-Step Process',
+          excerpt: 'Discover exactly how long does it take to donate blood, the timeline of registration, hemoglobin check, extraction, and active recovery.',
+          date: 'May 24, 2026',
+          isoDate: '2026-05-24',
+          category: 'Guides'
+        },
+        {
+          id: 'can-you-donate-blood-with-tattoo',
+          title: 'Can You Donate Blood If You Have a Tattoo? Rules in India Explained',
+          excerpt: 'Got ink or piercing? Get correct clarity on can you donate blood if you have a tattoo in India, mandatory wait times, and safety guidelines.',
+          date: 'May 25, 2026',
+          isoDate: '2026-05-25',
+          category: 'Guides'
+        },
+        {
+          id: 'why-not-to-donate-plasma',
+          title: "Why You Shouldn't Donate Plasma: Risks, Myths & Safer Alternatives",
+          excerpt: "Explore the clinical reasons why you shouldn't donate plasma, from specific side effects to medical deferrals and health conditions. Learn how to support plasma therapy patients safely through secondary help.",
+          date: 'May 26, 2026',
+          isoDate: '2026-05-26',
+          category: 'Health'
+        },
+        {
+          id: 'is-plasma-donation-safe',
+          title: "Is Donating Plasma Safe or Bad for You? Medical Facts Explained",
+          excerpt: "Curious about the actual safety records of plasmapheresis? Find out: is donating plasma safe, or is donating plasma bad for you over the long term? Read our comprehensive clinical analysis.",
+          date: 'May 27, 2026',
+          isoDate: '2026-05-27',
+          category: 'Health'
+        },
+        {
+          id: 'how-to-donate-hair-india',
+          title: "How to Donate Hair in India: Complete Guide + Support Cancer Patients",
+          excerpt: "Planning to donate your hair but don't know the rules? Read our step-by-step guide on how to donate hair in India, requirements, top organizations, and alternative support at Shah Seva.",
+          date: 'May 28, 2026',
+          isoDate: '2026-05-28',
+          category: 'Guides'
         }
       ]
     },
@@ -1508,6 +1580,78 @@ export const translations = {
           date: '15 मार्च, 2026',
           isoDate: '2026-03-15',
           category: 'चिकित्सा'
+        },
+        {
+          id: 'how-long-to-donate-plasma',
+          title: 'प्लाज्मा दान करने में कितना समय लगता है? वह सब कुछ जो आपको जानना आवश्यक है',
+          excerpt: 'प्लाज्मा दान करने की योजना बना रहे हैं लेकिन समय के बारे में सुनिश्चित नहीं हैं? जानें कि प्लाज्मा दान करने में कितना समय लगता है, एफेरेसिस की चरण-दर-चरण प्रक्रिया क्या है।',
+          date: '20 मई, 2026',
+          isoDate: '2026-05-20',
+          category: 'मार्गदर्शिका'
+        },
+        {
+          id: 'how-much-for-donating-plasma',
+          title: 'भारत में प्लाज्मा दान करने पर आपको कितना भुगतान मिलता है? पूर्ण गाइड',
+          excerpt: 'भारत में प्लाज्मा दान करने के लिए कितना पैसा मिलता है, इसके कानूनी नियमों, स्वैच्छिक दान के लाभों और मरीजों की सहायता के बारे में जानें।',
+          date: '21 मई, 2026',
+          isoDate: '2026-05-21',
+          category: 'मार्गदर्शिका'
+        },
+        {
+          id: 'how-often-can-you-donate-blood',
+          title: 'आप कितनी बार रक्तदान कर सकते हैं? नियम, अंतराल और स्वास्थ्य टिप्स',
+          excerpt: 'रक्तदान के सुरक्षित अंतरालों को जानें: आप कितनी बार रक्तदान कर सकते हैं, महिला और पुरुष के लिए नियम, और स्वास्थ्य लाभ।',
+          date: '22 मई, 2026',
+          isoDate: '2026-05-22',
+          category: 'स्वास्थ्य'
+        },
+        {
+          id: 'does-donating-plasma-hurt',
+          title: 'क्या प्लाज्मा दान करने में दर्द होता है? ईमानदार जवाब और क्या उम्मीद करें',
+          excerpt: 'असुविधा या दर्द के बारे में चिंतित हैं? क्या प्लाज्मा दान करने में दर्द होता है, सुई लगने का अनुभव और आरामदायक टिप्स के बारे में हमारा ईमानदार विश्लेषण पढ़ें।',
+          date: '23 मई, 2026',
+          isoDate: '2026-05-23',
+          category: 'स्वास्थ्य'
+        },
+        {
+          id: 'how-long-to-donate-blood',
+          title: 'रक्तदान करने में कितना समय लगता है? चरण-दर-चरण प्रक्रिया',
+          excerpt: 'रक्तदान करने में कितना समय लगता है, पंजीकरण से लेकर हीमोग्लोबिन जांच, रक्त निकालने और आराम करने के समय के बारे में जानें।',
+          date: '24 मई, 2026',
+          isoDate: '2026-05-24',
+          category: 'मार्गदर्शिका'
+        },
+        {
+          id: 'can-you-donate-blood-with-tattoo',
+          title: 'क्या टैटू होने पर आप रक्तदान कर सकते हैं? भारत में नियमों की व्याख्या',
+          excerpt: 'टैटू या पियर्सिंग है? टैटू होने पर रक्तदान करने के भारत में नियम, अनिवार्य प्रतीक्षा अवधि और स्वास्थ्य सुरक्षा दिशानिर्देशों के बारे में जानें।',
+          date: '25 मई, 2026',
+          isoDate: '2026-05-25',
+          category: 'मार्गदर्शिका'
+        },
+        {
+          id: 'why-not-to-donate-plasma',
+          title: 'आपको प्लाज्मा दान क्यों नहीं करना चाहिए? जोखिम, मिथक और सुरक्षित विकल्प',
+          excerpt: 'उन नैदानिक ​​कारणों को जानें कि आपको प्लाज्मा दान क्यों नहीं करना चाहिए, साइड इफेक्ट से लेकर चिकित्सा नियम और स्वास्थ्य स्थितियां। शाह सेवा में गरीब रोगियों की मदद करने के सुरक्षित तरीकों के बारे में जानें।',
+          date: '26 मई, 2026',
+          isoDate: '2026-05-26',
+          category: 'स्वास्थ्य'
+        },
+        {
+          id: 'is-plasma-donation-safe',
+          title: 'क्या प्लाज्मा दान करना सुरक्षित है या आपके लिए बुरा है? चिकित्सा तथ्य समझाए गए',
+          excerpt: 'प्लाज्मा दान करने की सुरक्षा के बारे में उत्सुक हैं? जानें: क्या प्लाज्मा दान करना सुरक्षित है, या क्या यह लंबे समय में आपके शरीर के लिए नुकसानदेह हो सकता है।',
+          date: '27 मई, 2026',
+          isoDate: '2026-05-27',
+          category: 'स्वास्थ्य'
+        },
+        {
+          id: 'how-to-donate-hair-india',
+          title: 'भारत में बाल कैसे दान करें: संपूर्ण मार्गदर्शिका और कैंसर मरीजों की सहायता',
+          excerpt: 'अपने बाल दान करने की योजना बना रहे हैं लेकिन नियम नहीं जानते? भारत में बाल दान करने के तरीके, आवश्यकताओं, शीर्ष संगठनों और शाह सेवा की सहायता के बारे में मार्गदर्शिका पढ़ें।',
+          date: '28 मई, 2026',
+          isoDate: '2026-05-28',
+          category: 'मार्गदर्शिका'
         }
       ]
     },
