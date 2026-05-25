@@ -5,6 +5,7 @@ import { useLanguage } from '../LanguageContext';
 import { ArrowLeft, Calendar, Tag, User, Share2, Heart } from 'lucide-react';
 import SEO from '../components/SEO';
 import { seoBlogPosts } from '../data/seoBlogPosts';
+import { getTopicImageUrl } from '../utils/topicImages';
 
 const blogContent: Record<string, any> = {
   'how-to-donate-securely': {
@@ -69,7 +70,7 @@ export default function BlogPost() {
     "@type": "Article",
     "headline": post.title,
     "description": post.excerpt,
-    "image": `https://picsum.photos/seed/${post.id}/1200/800`,
+    "image": getTopicImageUrl(post.id),
     "datePublished": `${post.isoDate}T08:00:00+05:30`,
     "dateModified": `${post.isoDate}T08:00:00+05:30`,
     "author": {
@@ -96,7 +97,7 @@ export default function BlogPost() {
     "@type": "HowTo",
     "name": "How to Donate Hair in India",
     "description": "A comprehensive step-by-step guide on how to safely cut, package, and donate your healthy hair to make custom medical wigs for cancer patients in India.",
-    "image": "https://picsum.photos/seed/how-to-donate-hair-india/1200/800",
+    "image": getTopicImageUrl('how-to-donate-hair-india'),
     "totalTime": "PT30M",
     "estimatedCost": {
       "@type": "MonetaryAmount",
@@ -253,7 +254,7 @@ export default function BlogPost() {
 
           <div className="rounded-[3rem] overflow-hidden shadow-strong mb-16 aspect-video">
             <img 
-              src={`https://picsum.photos/seed/${post.id}/1200/800`} 
+              src={getTopicImageUrl(post.id)} 
               alt={post.title} 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"

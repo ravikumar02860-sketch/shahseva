@@ -4,6 +4,7 @@ import { useLanguage } from '../LanguageContext';
 import { ArrowRight, Calendar, Tag } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import { getTopicImageUrl } from '../utils/topicImages';
 
 export default function BlogPage() {
   const { t } = useLanguage();
@@ -46,7 +47,7 @@ export default function BlogPage() {
             >
               <div className="h-60 overflow-hidden relative">
                 <img 
-                  src={`https://picsum.photos/seed/${post.id}/800/600`} 
+                  src={getTopicImageUrl(post.id)} 
                   alt={post.title} 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   referrerPolicy="no-referrer"

@@ -16,6 +16,7 @@ import { seoLandingPages } from '../data/seoLandingPages';
 import { AdditionalSEOPage, seoAdditionalPages } from '../data/seoAdditionalPages';
 import { seoAdditionalPagesPart2 } from '../data/seoAdditionalPagesPart2';
 import { seoAdditionalPagesPart3 } from '../data/seoAdditionalPagesPart3';
+import { getTopicImageUrl } from '../utils/topicImages';
 
 // Aggregate all SEO landing pages from standard, parts 1, 2, and 3, typecasted to AdditionalSEOPage
 const allCampaignPages: AdditionalSEOPage[] = [
@@ -150,13 +151,15 @@ export default function CampaignLandingPage({ campaignId: propCampaignId }: Camp
             </h2>
             <div className="aspect-[16/10] rounded-2xl overflow-hidden mb-8 relative">
               <img 
-                src={`https://picsum.photos/seed/${campaign.id}/800/500`} 
+                src={getTopicImageUrl(campaign.id)} 
                 alt={campaign.storyTitle} 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 text-white text-xs font-mono">
-                Verified Medical Aid Campaign Case Study // Rajasthan Office
+                {campaign.id.includes('zakat') || campaign.id.includes('sadaqah') || campaign.id.includes('masjid') || campaign.id.includes('ramadan') || campaign.id.includes('fidya') ? 'Verified Islamic Charity Initiative // Field Operations' : 
+                 campaign.id.includes('dog') || campaign.id.includes('animal') ? 'Verified Animal Welfare Rescue // Rajasthan Shelter' : 
+                 'Verified Medical Aid Campaign Case Study // Rajasthan Office'}
               </div>
             </div>
             <p className="text-slate-600 leading-relaxed text-base whitespace-pre-line">

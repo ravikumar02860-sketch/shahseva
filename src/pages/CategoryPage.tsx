@@ -20,6 +20,7 @@ import {
 } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import SEO from '../components/SEO';
+import { getTopicImageUrl } from '../utils/topicImages';
 
 const iconMap: Record<string, any> = {
   education: BookOpen,
@@ -177,7 +178,7 @@ export default function CategoryPage({ categoryId: propCategoryId }: CategoryPag
             >
               <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src={`https://picsum.photos/seed/${categoryId}/800/800`}
+                  src={getTopicImageUrl(categoryId || '')}
                   alt={category?.title || 'Donation Cause'}
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
