@@ -13,6 +13,17 @@ import {
 } from 'lucide-react';
 import SEO from '../components/SEO';
 import { seoLandingPages } from '../data/seoLandingPages';
+import { AdditionalSEOPage, seoAdditionalPages } from '../data/seoAdditionalPages';
+import { seoAdditionalPagesPart2 } from '../data/seoAdditionalPagesPart2';
+import { seoAdditionalPagesPart3 } from '../data/seoAdditionalPagesPart3';
+
+// Aggregate all SEO landing pages from standard, parts 1, 2, and 3, typecasted to AdditionalSEOPage
+const allCampaignPages: AdditionalSEOPage[] = [
+  ...seoLandingPages as AdditionalSEOPage[],
+  ...seoAdditionalPages,
+  ...seoAdditionalPagesPart2,
+  ...seoAdditionalPagesPart3
+];
 
 interface CampaignLandingPageProps {
   campaignId?: string;
@@ -23,8 +34,8 @@ export default function CampaignLandingPage({ campaignId: propCampaignId }: Camp
   const campaignSlug = propCampaignId || id;
   const { t } = useLanguage();
   
-  // Find the campaign data from our SEO Landing Pages dataset
-  const campaign = seoLandingPages.find(p => p.id === campaignSlug);
+  // Find the campaign data from our aggregated SEO Landing Pages datasets
+  const campaign = allCampaignPages.find(p => p.id === campaignSlug);
   
   // Local state for interactive donation selector
   const [selectedAmount, setSelectedAmount] = useState<number | null>(null);
@@ -196,6 +207,66 @@ export default function CampaignLandingPage({ campaignId: propCampaignId }: Camp
               {campaign.transparencyContent}
             </p>
           </section>
+
+          {/* Optional Emergency Bullet Points Section */}
+          {(campaign.negativeBullets || campaign.positiveBullets) && (
+            <section className="bg-white p-8 sm:p-10 rounded-[2.5rem] border border-slate-100 shadow-sm space-y-8">
+              {campaign.bulletPointsLabel && (
+                <h3 className="text-2xl font-serif font-bold text-primary">{campaign.bulletPointsLabel}</h3>
+              )}
+              {campaign.negativeBullets && (
+                <div className="space-y-3">
+                  <h4 className="font-bold text-rose-600 text-sm tracking-wide uppercase">What Happens If We Fail To Act</h4>
+                  <ul className="space-y-3">
+                    {campaign.negativeBullets.map((bullet, idx) => (
+                      <li key={idx} className="flex gap-3 items-start text-slate-600 text-sm">
+                        <span className="text-rose-500 font-bold shrink-0 mt-0.5">✕</span>
+                        <span>{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {campaign.positiveBullets && (
+                <div className="space-y-3 pt-4 border-t border-slate-100">
+                  <h4 className="font-bold text-emerald-600 text-sm tracking-wide uppercase">Your Donation's Direct Impact</h4>
+                  <ul className="space-y-3">
+                    {campaign.positiveBullets.map((bullet, idx) => (
+                      <li key={idx} className="flex gap-3 items-start text-slate-600 text-sm">
+                        <span className="text-emerald-500 font-bold shrink-0 mt-0.5">✓</span>
+                        <span>{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100/80 flex items-center justify-between text-xs font-mono text-slate-500">
+                <span>NGO Verified</span>
+                <span>●</span>
+                <span>100% Transparent</span>
+                <span>●</span>
+                <span>Instant Receipt</span>
+              </div>
+            </section>
+          )}
+
+          {/* FAQ Schema Accordion Section */}
+          {campaign.faqs && campaign.faqs.length > 0 && (
+            <section className="bg-white p-8 sm:p-10 rounded-[2.5rem] border border-slate-100 shadow-sm space-y-6">
+              <h3 className="text-2.5xl font-serif font-bold text-primary mb-2 flex items-center gap-3">
+                <span className="w-2 h-8 bg-accent rounded-full inline-block" />
+                Frequently Asked Questions
+              </h3>
+              <div className="divide-y divide-slate-100">
+                {campaign.faqs.map((faq, idx) => (
+                  <div key={idx} className="py-5 first:pt-0 last:pb-0">
+                    <h4 className="text-base font-bold text-primary mb-2 leading-snug">{faq.question}</h4>
+                    <p className="text-sm text-slate-600 leading-relaxed whitespace-pre-line">{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
         </div>
 
         {/* Right side checkout columns */}

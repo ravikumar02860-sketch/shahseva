@@ -129,6 +129,57 @@ export default function App() {
                       <Route path="/crowdfunding-medical-emergency" element={<CampaignLandingPage campaignId="crowdfunding-medical-emergency" />} />
                       <Route path="/donate-for-life-saving-treatment" element={<CampaignLandingPage campaignId="donate-for-life-saving-treatment" />} />
 
+                      {/* Food distribution pages (Task 7) */}
+                      <Route path="/feed-hungry-children-donate" element={<CampaignLandingPage campaignId="feed-hungry-children-donate" />} />
+                      <Route path="/food-donation-for-poor" element={<CampaignLandingPage campaignId="food-donation-for-poor" />} />
+                      <Route path="/sponsor-a-meal" element={<CampaignLandingPage campaignId="sponsor-a-meal" />} />
+                      <Route path="/donate-for-village-poor-families" element={<CampaignLandingPage campaignId="donate-for-village-poor-families" />} />
+                      <Route path="/donate-food-in-ramadan-general" element={<CampaignLandingPage campaignId="donate-food-in-ramadan-general" />} />
+
+                      {/* Education support pages (Task 8) */}
+                      <Route path="/sponsor-a-child-education" element={<CampaignLandingPage campaignId="sponsor-a-child-education" />} />
+                      <Route path="/donate-school-supplies" element={<CampaignLandingPage campaignId="donate-school-supplies" />} />
+                      <Route path="/help-poor-students-donate" element={<CampaignLandingPage campaignId="help-poor-students-donate" />} />
+                      <Route path="/school-fee-donation" element={<CampaignLandingPage campaignId="school-fee-donation" />} />
+                      <Route path="/donate-for-orphan-education" element={<CampaignLandingPage campaignId="donate-for-orphan-education" />} />
+                      <Route path="/donate-for-poor-girls-education" element={<CampaignLandingPage campaignId="donate-for-poor-girls-education" />} />
+
+                      {/* Urgent donation / Emergency pages (Task 9) */}
+                      <Route path="/donate-now-urgent" element={<CampaignLandingPage campaignId="donate-now-urgent" />} />
+                      <Route path="/urgent-help-needed-donation" element={<CampaignLandingPage campaignId="urgent-help-needed-donation" />} />
+                      <Route path="/emergency-fundraiser" element={<CampaignLandingPage campaignId="emergency-fundraiser" />} />
+                      <Route path="/donate-immediately" element={<CampaignLandingPage campaignId="donate-immediately" />} />
+                      <Route path="/save-life-donate-now" element={<CampaignLandingPage campaignId="save-life-donate-now" />} />
+                      <Route path="/donate-for-poor-child-emergency" element={<CampaignLandingPage campaignId="donate-for-poor-child-emergency" />} />
+                      <Route path="/help-orphan-kids-donation" element={<CampaignLandingPage campaignId="help-orphan-kids-donation" />} />
+                      <Route path="/emergency-donation-needed" element={<CampaignLandingPage campaignId="emergency-donation-needed" />} />
+
+                      {/* Medical conditions pages (Task 10) */}
+                      <Route path="/donate-for-blood-cancer-treatment" element={<CampaignLandingPage campaignId="donate-for-blood-cancer-treatment" />} />
+                      <Route path="/donate-for-kidney-treatment" element={<CampaignLandingPage campaignId="donate-for-kidney-treatment" />} />
+                      <Route path="/donate-for-liver-transplant" element={<CampaignLandingPage campaignId="donate-for-liver-transplant" />} />
+                      <Route path="/donate-for-icu-patient" element={<CampaignLandingPage campaignId="donate-for-icu-patient" />} />
+                      <Route path="/urgent-blood-donation-help" element={<CampaignLandingPage campaignId="urgent-blood-donation-help" />} />
+                      <Route path="/donate-for-oxygen-cylinder" element={<CampaignLandingPage campaignId="donate-for-oxygen-cylinder" />} />
+                      <Route path="/donate-for-baby-treatment" element={<CampaignLandingPage campaignId="donate-for-baby-treatment" />} />
+                      <Route path="/urgent-child-treatment-donation" element={<CampaignLandingPage campaignId="urgent-child-treatment-donation" />} />
+
+                      {/* Disaster relief & Social Cause pages (Task 11) */}
+                      <Route path="/donate-for-flood-victims" element={<CampaignLandingPage campaignId="donate-for-flood-victims" />} />
+                      <Route path="/earthquake-relief-donation" element={<CampaignLandingPage campaignId="earthquake-relief-donation" />} />
+                      <Route path="/donate-clothes-for-poor" element={<CampaignLandingPage campaignId="donate-clothes-for-poor" />} />
+                      <Route path="/help-elderly-people-donation" element={<CampaignLandingPage campaignId="help-elderly-people-donation" />} />
+                      <Route path="/donate-to-homeless-people" element={<CampaignLandingPage campaignId="donate-for-homeless-people" />} />
+
+                      {/* General charity pages (Task 12) */}
+                      <Route path="/charity-donation-online" element={<CampaignLandingPage campaignId="charity-donation-online" />} />
+                      <Route path="/online-charity-fundraiser" element={<CampaignLandingPage campaignId="online-charity-fundraiser" />} />
+                      <Route path="/donate-to-poor-muslim-family" element={<CampaignLandingPage campaignId="donate-to-poor-muslim-family" />} />
+
+                      {/* Additional high-intent pages (Task 13) */}
+                      <Route path="/donate-for-ambulance-support" element={<CampaignLandingPage campaignId="donate-for-ambulance-support" />} />
+                      <Route path="/donate-for-disabled-child" element={<CampaignLandingPage campaignId="donate-for-disabled-child" />} />
+
                       {/* Dynamic Islamic landing page route */}
                       <Route path="/islamic/:id" element={<IslamicLandingPage />} />
                       
