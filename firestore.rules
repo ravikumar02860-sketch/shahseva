@@ -48,8 +48,8 @@ service cloud.firestore {
              (data.amount is number || data.amount is int) && data.amount > 0 &&
              data.timestamp is timestamp &&
              data.emailedInBatch is bool &&
-             (!('email' in data) || (data.email is string && data.email.size() < 100)) &&
-             (!('campaignId' in data) || (data.campaignId is string || data.campaignId == null));
+             (!('email' in data) || data.email == null || (data.email is string && data.email.size() < 100)) &&
+             (!('campaignId' in data) || data.campaignId == null || (data.campaignId is string && data.campaignId.size() < 100));
     }
 
     // Default deny

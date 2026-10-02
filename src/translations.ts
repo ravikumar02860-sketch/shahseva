@@ -573,7 +573,7 @@ export const translations = {
       verifying: 'Verifying Payment...',
       generateQR: 'Generate Payment QR',
       detailsRecorded: 'Details Recorded!',
-      qrInstruction: 'Please scan the QR code on the right to complete your donation.',
+      qrInstruction: 'Please scan the payment QR code to complete your donation.',
       completed: 'I have completed the payment',
       edit: 'Edit Details',
       confidential: 'Your details are kept confidential and used only for donation records.',

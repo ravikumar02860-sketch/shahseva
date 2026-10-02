@@ -2,177 +2,356 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://shahseva.vercel.app/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/about</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/work</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/donate</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/impact</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/gallery</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/contact</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/mission</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/transparency</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/faq</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/blog</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/volunteer</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <!-- Category Pages -->
+
+  <!-- Core Dynamic Cause Groups & Campaigns -->
   <url>
     <loc>https://shahseva.vercel.app/donate-for-education</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/donate-for-poor-children</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/donate-for-medical-help</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/donate-for-food-for-poor</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/donate-for-disaster-relief</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/donate-to-orphanage-india</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/donate-for-girl-child-education</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/donate-for-cancer-patient-treatment</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/donate-for-old-age-home</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/donate-for-homeless-people</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/csr-partnership</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/donate-zakat-online</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/zakat-calculator</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/hijri-converter</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/tasbeeh-counter</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/qurbani-2026</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://shahseva.vercel.app/success-stories</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Complete Set of 20 Blog SEO Articles -->
+  <url>
+    <loc>https://shahseva.vercel.app/blog/how-long-does-it-take-to-donate-plasma</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/how-much-do-you-get-for-donating-sperm</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/sperm-donation-payment</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/can-you-donate-plasma-while-pregnant</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/donating-property-to-a-nonprofit</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/donating-real-estate-to-charity</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/can-you-donate-blood-if-you-smoke</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/can-you-donate-blood-if-you-have-a-tattoo</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/donate-house-to-charity</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/donate-land-to-charity</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/salvation-army-donation-pick-up</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/egg-donation-near-me</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/mackenzie-scott-2025-donations</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/shiloh-donation</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/donation-center-near-me</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/pls-donate-codes</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/goodwill-donation-pick-up</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/donate-eggs</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/car-donation-to-charity</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/donation-box-near-me</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Legacy Pre-Existing Blog Posts -->
+  <url>
+    <loc>https://shahseva.vercel.app/blog/how-long-to-donate-plasma</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/how-much-for-donating-plasma</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/how-often-can-you-donate-blood</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/does-donating-plasma-hurt</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/how-long-to-donate-blood</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/can-you-donate-blood-with-tattoo</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/why-not-to-donate-plasma</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/is-plasma-donation-safe</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://shahseva.vercel.app/blog/how-to-donate-hair-india</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

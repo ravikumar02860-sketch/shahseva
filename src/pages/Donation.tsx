@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
 import { CreditCard, Smartphone, QrCode, CheckCircle2, Copy, Heart, AlertCircle } from 'lucide-react';
 import { QRCodeSVG } from 'qrcode.react';
@@ -55,6 +55,7 @@ export default function DonationPage() {
   const [verifying, setVerifying] = useState(false);
   const [copied, setCopied] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const qrRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const fetchCampaigns = async () => {
@@ -73,7 +74,9 @@ export default function DonationPage() {
   }, [t.donation.errors.network]);
 
   const upiId = "6350489219.eazypay@icici";
-  const upiUri = `upi://pay?pa=${upiId}&pn=Dargah%20Saiyad%20Ali%20Shah%20Seva%20Sansthan&cu=INR&am=${amount}`;
+  const safeAmount = Number(amount) > 0 ? Number(amount) : 1000;
+  const payeeName = encodeURIComponent("Dargah Saiyad Ali Shah Seva Sansthan");
+  const upiUri = `upi://pay?pa=${upiId}&pn=${payeeName}&cu=INR&am=${safeAmount}`;
 
   const validateForm = () => {
     if (!name.trim() || !phone.trim() || !amount) {
@@ -81,19 +84,23 @@ export default function DonationPage() {
       return false;
     }
     
-    // Basic phone validation (10 digits)
-    const phoneRegex = /^[0-9]{10}$/;
-    if (!phoneRegex.test(phone.replace(/[^0-9]/g, ''))) {
+    // Flexible phone validation: handles clean 10 digits, +91, 0 prefix, or international format
+    const cleanDigits = phone.replace(/[^0-9]/g, '');
+    const normalizedDigits = cleanDigits.length === 12 && cleanDigits.startsWith('91')
+      ? cleanDigits.slice(2)
+      : (cleanDigits.length === 11 && cleanDigits.startsWith('0') ? cleanDigits.slice(1) : cleanDigits);
+
+    if (normalizedDigits.length < 10 || cleanDigits.length > 15) {
       setError(t.donation.errors.phone);
       return false;
     }
 
-    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    if (email.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
       setError(t.donation.errors.email);
       return false;
     }
 
-    if (Number(amount) <= 0) {
+    if (Number(amount) <= 0 || isNaN(Number(amount))) {
       setError(t.donation.errors.amount);
       return false;
     }
@@ -110,28 +117,31 @@ export default function DonationPage() {
     }
 
     setLoading(true);
+    // Always generate and display the QR code immediately
+    setShowQR(true);
+
+    // Scroll QR code into view smoothly (helpful for mobile and tablet views)
+    setTimeout(() => {
+      qrRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 100);
+
     const path = 'donors';
     try {
       // Record donation in Firestore
-      await addDoc(collection(db, path), {
+      const donorData: Record<string, any> = {
         name: name.trim(),
         phone: phone.trim(),
-        email: email.trim() || null,
         amount: Number(amount),
-        campaignId: campaignId || null,
         timestamp: Timestamp.now(),
-        emailedInBatch: false
-      });
+        emailedInBatch: false,
+        email: email.trim() || null,
+        campaignId: campaignId || null
+      };
 
-      setShowQR(true);
+      await addDoc(collection(db, path), donorData);
     } catch (err: any) {
-      console.error("Error submitting donation:", err);
-      if (err.message?.includes('network') || !window.navigator.onLine) {
-        setError(t.donation.errors.network);
-      } else {
-        setError(t.donation.errors.generic);
-      }
-      // handleFirestoreError(err, OperationType.CREATE, path); // Logging but not crashing
+      console.warn("Notice: Could not record donor details in Firestore:", err);
+      // Non-blocking: QR code remains generated so donor can complete payment
     } finally {
       setLoading(false);
     }
@@ -379,6 +389,16 @@ export default function DonationPage() {
                 </p>
                 <div className="flex flex-col gap-4 max-w-sm mx-auto">
                   <button 
+                    onClick={() => {
+                      qrRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }}
+                    className="lg:hidden w-full py-3.5 px-6 rounded-2xl bg-primary/10 hover:bg-primary/20 text-primary font-bold text-sm flex items-center justify-center gap-2 transition-all border border-primary/20"
+                  >
+                    <QrCode size={20} />
+                    {t.donation.scanToDonate}
+                  </button>
+
+                  <button 
                     onClick={handleConfirmPayment}
                     disabled={verifying}
                     className="btn-accent btn-lg w-full"
@@ -415,7 +435,7 @@ export default function DonationPage() {
           </motion.div>
 
           {/* UPI & QR Details */}
-          <div className="lg:col-span-5 space-y-8">
+          <div ref={qrRef} id="qr-section" className="lg:col-span-5 space-y-8 scroll-mt-24">
             <motion.div 
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
