@@ -164,7 +164,65 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-500 text-[10px] uppercase tracking-widest font-bold">
+      {/* Comprehensive Donation Guides SEO Links */}
+      <div className="max-w-7xl mx-auto mt-20 pt-12 border-t border-white/10 relative z-10">
+        <h4 className="font-serif text-lg font-bold text-accent mb-6">
+          Explore Donation Guides &amp; Community Resources
+        </h4>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-xs text-slate-400">
+          <div>
+            <h5 className="font-bold text-white uppercase tracking-wider mb-3 text-[11px]">Plasma &amp; Blood</h5>
+            <ul className="space-y-2">
+              <li><Link to="/blog/how-long-does-it-take-to-donate-plasma" className="hover:text-accent transition-colors">How Long to Donate Plasma</Link></li>
+              <li><Link to="/blog/can-you-donate-plasma-while-pregnant" className="hover:text-accent transition-colors">Plasma While Pregnant</Link></li>
+              <li><Link to="/blog/can-you-donate-blood-if-you-smoke" className="hover:text-accent transition-colors">Donate Blood If You Smoke</Link></li>
+              <li><Link to="/blog/can-you-donate-blood-if-you-have-a-tattoo" className="hover:text-accent transition-colors">Donate Blood With Tattoo</Link></li>
+              <li><Link to="/urgent-blood-donation-help" className="hover:text-accent transition-colors">Urgent Blood Aid</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h5 className="font-bold text-white uppercase tracking-wider mb-3 text-[11px]">Fertility Donation</h5>
+            <ul className="space-y-2">
+              <li><Link to="/blog/how-much-do-you-get-for-donating-sperm" className="hover:text-accent transition-colors">How Much for Donating Sperm</Link></li>
+              <li><Link to="/blog/sperm-donation-payment" className="hover:text-accent transition-colors">Sperm Donation Payment</Link></li>
+              <li><Link to="/blog/egg-donation-near-me" className="hover:text-accent transition-colors">Egg Donation Near Me</Link></li>
+              <li><Link to="/blog/donate-eggs" className="hover:text-accent transition-colors">Donate Eggs Guide</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h5 className="font-bold text-white uppercase tracking-wider mb-3 text-[11px]">Real Estate &amp; Property</h5>
+            <ul className="space-y-2">
+              <li><Link to="/blog/donating-property-to-a-nonprofit" className="hover:text-accent transition-colors">Donating Property to Nonprofit</Link></li>
+              <li><Link to="/blog/donating-real-estate-to-charity" className="hover:text-accent transition-colors">Real Estate to Charity</Link></li>
+              <li><Link to="/blog/donate-house-to-charity" className="hover:text-accent transition-colors">Donate House to Charity</Link></li>
+              <li><Link to="/blog/donate-land-to-charity" className="hover:text-accent transition-colors">Donate Land to Charity</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h5 className="font-bold text-white uppercase tracking-wider mb-3 text-[11px]">Pickups &amp; Drop-Offs</h5>
+            <ul className="space-y-2">
+              <li><Link to="/blog/salvation-army-donation-pick-up" className="hover:text-accent transition-colors">Salvation Army Pickup</Link></li>
+              <li><Link to="/blog/goodwill-donation-pick-up" className="hover:text-accent transition-colors">Goodwill Donation Pickup</Link></li>
+              <li><Link to="/blog/donation-center-near-me" className="hover:text-accent transition-colors">Donation Center Near Me</Link></li>
+              <li><Link to="/blog/donation-box-near-me" className="hover:text-accent transition-colors">Donation Box Near Me</Link></li>
+              <li><Link to="/blog/car-donation-to-charity" className="hover:text-accent transition-colors">Car Donation to Charity</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h5 className="font-bold text-white uppercase tracking-wider mb-3 text-[11px]">Faith &amp; Philanthropy</h5>
+            <ul className="space-y-2">
+              <li><Link to="/donate-money-to-charity" className="font-bold text-accent hover:text-white transition-colors">Donate Money to Charity</Link></li>
+              <li><Link to="/blog/shiloh-donation" className="hover:text-accent transition-colors">Shiloh Donation Meaning</Link></li>
+              <li><Link to="/blog/mackenzie-scott-2025-donations" className="hover:text-accent transition-colors">MacKenzie Scott 2025 Grants</Link></li>
+              <li><Link to="/blog/pls-donate-codes" className="hover:text-accent transition-colors">PLS Donate Codes 2025</Link></li>
+              <li><Link to="/donate-zakat-online" className="hover:text-accent transition-colors">Zakat Donation Online</Link></li>
+              <li><Link to="/donate-for-food-for-poor" className="hover:text-accent transition-colors">Food for Poor Donation</Link></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-500 text-[10px] uppercase tracking-widest font-bold">
         <p>© 2026 Dargah Saiyad Ali Shah Seva Sansthan. {t.footer.rights}</p>
         <div className="flex gap-8">
           <Link to="/privacy" className="hover:text-accent transition-colors">{t.footer.privacy}</Link>

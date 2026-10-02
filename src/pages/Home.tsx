@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
-import { ArrowRight, Users, BookOpen, HeartPulse, Utensils, Home, Heart, Shield } from 'lucide-react';
+import { ArrowRight, Users, BookOpen, HeartPulse, Utensils, Home, Heart, Shield, Sparkles, HelpCircle, CheckCircle, ChevronDown, Building, Car, Droplet, FileText, Gift, Award, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../LanguageContext';
 import SEO from '../components/SEO';
@@ -8,6 +8,7 @@ import OptimizedImage from '../components/OptimizedImage';
 
 export default function HomePage() {
   const { t } = useLanguage();
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: heroRef,
@@ -845,6 +846,419 @@ export default function HomePage() {
                 </div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SEO SECTION 1: WHAT WE DO */}
+      <section className="py-24 bg-white px-6 border-t border-slate-100">
+        <div className="max-w-5xl mx-auto text-center">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-primary/5 text-primary font-bold rounded-full text-xs uppercase tracking-widest mb-6">
+            <Sparkles size={14} className="text-accent" />
+            About Shah Seva Portal
+          </span>
+          <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-8 leading-tight">
+            What We Do: Connecting Generous Donors with Life-Changing Causes
+          </h2>
+          <div className="text-slate-600 text-lg leading-relaxed text-left space-y-6 bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 shadow-sm">
+            <p>
+              <strong>Shah Seva</strong> (operating under <em>Dargah Saiyad Ali Shah Seva Sansthan</em>, Registration No. COOP/2025/BHILWARA/500577) is a trusted philanthropic portal dedicated to bridging the gap between compassionate donors and verified humanitarian causes across India and international communities. Our comprehensive platform helps donors navigate critical giving pathways—from life-saving medical contributions such as blood and plasma donations to long-term philanthropic investments including real estate, residential property, vacant land, vehicles, and clothing drives.
+            </p>
+            <p>
+              Since 2010, our registered society has worked on the frontlines of human welfare. We ensure that 100% of community contributions are delivered with total transparency, direct photographic documentation, and audited beneficiary distribution. Whether you are researching how to donate plasma safely, exploring the tax write-offs of donating real estate or houses to a certified nonprofit, scheduling a Salvation Army or Goodwill clothing pickup, or supporting emergency cancer surgeries and child nutrition, Shah Seva provides the authoritative guides, tools, and direct avenues to maximize your humanitarian impact.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO SECTION 2: TYPES OF DONATIONS WE SUPPORT */}
+      <section className="py-24 bg-slate-50/50 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="inline-block px-4 py-1.5 bg-primary/5 text-primary font-bold rounded-full text-xs uppercase tracking-widest mb-4">
+              Comprehensive Giving
+            </span>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-6">
+              Types of Donations We Support
+            </h2>
+            <p className="text-slate-600 text-lg">
+              Explore our comprehensive guides and direct support channels for every category of charitable and medical donation.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Blood Donation",
+                desc: "Learn donation eligibility, hemoglobin thresholds, and how smoking or recent tattoos affect giving whole blood. Your single pint of blood saves up to three lives.",
+                link: "/blog/can-you-donate-blood-if-you-smoke",
+                icon: Droplet,
+                tag: "Medical"
+              },
+              {
+                title: "Plasma Donation",
+                desc: "Discover how long it takes to donate plasma, the apheresis collection process, compensation guidelines, and rules for pregnancy. Plasma is liquid gold for trauma victims.",
+                link: "/blog/how-long-does-it-take-to-donate-plasma",
+                icon: HeartPulse,
+                tag: "Therapeutic"
+              },
+              {
+                title: "Sperm Donation",
+                desc: "Understand fertility compensation ($70 to $150 per sample), quarantine safety rules, and medical requirements. Help intended parents fulfill their dreams.",
+                link: "/blog/how-much-do-you-get-for-donating-sperm",
+                icon: Users,
+                tag: "Fertility"
+              },
+              {
+                title: "Egg Donation",
+                desc: "Explore the complete IVF donor stimulation process, clinic prerequisites, and generous compensation ($8K to $14K+). Learn how young women provide the gift of family.",
+                link: "/blog/donate-eggs",
+                icon: Sparkles,
+                tag: "Reproductive"
+              },
+              {
+                title: "Property to Nonprofit",
+                desc: "Learn how donating commercial and residential property to a 501(c)(3) nonprofit eliminates capital gains taxes and provides huge Fair Market Value deductions.",
+                link: "/blog/donating-property-to-a-nonprofit",
+                icon: Building,
+                tag: "Real Estate"
+              },
+              {
+                title: "Real Estate to Charity",
+                desc: "Discover the step-by-step process of deeding parcels to charity, avoiding broker commissions, and obtaining certified independent IRS Form 8283 appraisals.",
+                link: "/blog/donating-real-estate-to-charity",
+                icon: FileText,
+                tag: "Tax Relief"
+              },
+              {
+                title: "Land & Acreage",
+                desc: "Turn idle rural acreage, farmland, or vacant lots into tax-deductible assets while supporting educational scholarships and community healthcare clinics.",
+                link: "/blog/donate-land-to-charity",
+                icon: Home,
+                tag: "Acreage"
+              },
+              {
+                title: "House Donation",
+                desc: "Donate inherited, vacation, or residential homes in 'as-is' condition. Learn how Retained Life Estates allow you to donate your house while living in it for life.",
+                link: "/blog/donate-house-to-charity",
+                icon: Home,
+                tag: "Residential"
+              },
+              {
+                title: "Car & Vehicle Donation",
+                desc: "Enjoy 100% free towing for running or non-running cars, trucks, motorcycles, and RVs. Claim official IRS Form 1098-C deductions on the gross auction sale price.",
+                link: "/blog/car-donation-to-charity",
+                icon: Car,
+                tag: "Vehicles"
+              },
+              {
+                title: "Clothing & Furniture",
+                desc: "Schedule free home pickups through the Salvation Army and Goodwill, or locate neighborhood drop-off bins for clothes, shoes, and housewares.",
+                link: "/blog/salvation-army-donation-pick-up",
+                icon: Gift,
+                tag: "Goods"
+              },
+              {
+                title: "Direct Cash Donation",
+                desc: "Provide immediate, 100% transparent funding for poor patients facing critical surgeries, child nutrition, and emergency food rations in Bhilwara.",
+                link: "/donate",
+                icon: Heart,
+                tag: "Emergency Aid"
+              }
+            ].map((cat, i) => (
+              <div 
+                key={i}
+                className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-12 h-12 bg-primary/5 rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-accent transition-colors">
+                      <cat.icon size={24} />
+                    </div>
+                    <span className="text-[10px] uppercase font-bold tracking-widest px-3 py-1 bg-slate-100 text-slate-500 rounded-full">
+                      {cat.tag}
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-bold text-primary mb-3 group-hover:text-primary-dark transition-colors">
+                    {cat.title}
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-6">
+                    {cat.desc}
+                  </p>
+                </div>
+                <Link 
+                  to={cat.link}
+                  className="inline-flex items-center gap-2 text-sm font-bold text-primary hover:text-accent transition-colors mt-auto"
+                >
+                  Read Complete Guide <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SEO SECTION 3: HOW DONATION WORKS */}
+      <section className="py-24 bg-white px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="inline-block px-4 py-1.5 bg-accent/20 text-primary font-bold rounded-full text-xs uppercase tracking-widest mb-4">
+              Simple &amp; Transparent
+            </span>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-6">
+              How Donation Works: 4 Simple Steps
+            </h2>
+            <p className="text-slate-600 text-lg">
+              Whether you are contributing funds, donating goods, or booking a medical donation, our transparent process ensures complete peace of mind.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                step: "01",
+                title: "Choose Your Cause or Donation Type",
+                desc: "Select the area where you want to make an impact—emergency medical treatment, food relief, student education, or specialized donations (blood, plasma, property, vehicles)."
+              },
+              {
+                step: "02",
+                title: "Review Guidelines & Eligibility",
+                desc: "Check donor prerequisites, medical waiting periods, or IRS tax documentation requirements using our comprehensive guides and tools."
+              },
+              {
+                step: "03",
+                title: "Complete Your Contribution or Pickup",
+                desc: "Donate instantly using our secure UPI/card QR gateway, schedule a free household pickup, or visit a certified local collection center."
+              },
+              {
+                step: "04",
+                title: "Receive Verification & Impact Updates",
+                desc: "Get an immediate official receipt for tax write-offs and follow our transparent photo and video updates documenting how your gift changes lives."
+              }
+            ].map((st, i) => (
+              <div key={i} className="relative p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-primary/20 transition-all">
+                <div className="text-5xl font-serif font-black text-primary/10 mb-4">{st.step}</div>
+                <h3 className="text-xl font-bold text-primary mb-3">{st.title}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">{st.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SEO SECTION 4: DONATION STATISTICS */}
+      <section className="py-20 bg-primary text-white px-6 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="inline-block px-4 py-1.5 bg-white/10 text-accent font-bold rounded-full text-xs uppercase tracking-widest mb-4">
+              Proven Track Record
+            </span>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6">
+              Our Humanitarian Impact by the Numbers
+            </h2>
+            <p className="text-slate-300 text-lg">
+              Over a decade of dedicated social service registered under COOP/2025/BHILWARA/500577.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            {[
+              { val: "50,000+", label: "Meals Distributed to Hungry Families", icon: Utensils },
+              { val: "1,200+", label: "Underprivileged Students Sponsored", icon: BookOpen },
+              { val: "150+", label: "Free Medical & Health Camps", icon: HeartPulse },
+              { val: "100%", label: "Verified Transparent Allocation", icon: CheckCircle }
+            ].map((stat, i) => (
+              <div key={i} className="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                <stat.icon className="mx-auto text-accent mb-4" size={32} />
+                <div className="text-4xl md:text-5xl font-serif font-bold text-accent mb-2">{stat.val}</div>
+                <div className="text-slate-300 text-sm font-medium">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SEO SECTION 5: FEATURED DONATION RESOURCES */}
+      <section className="py-24 bg-white px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="inline-block px-4 py-1.5 bg-primary/5 text-primary font-bold rounded-full text-xs uppercase tracking-widest mb-4">
+              Knowledge Base
+            </span>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-6">
+              Featured Donation Resources &amp; Guides
+            </h2>
+            <p className="text-slate-600 text-lg">
+              Expert guides written to answer your most common donation questions and help you rank on search engines.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "How Long Does It Take to Donate Plasma?",
+                slug: "how-long-does-it-take-to-donate-plasma",
+                desc: "Discover first-time vs returning donor timelines, the apheresis machine process, and expert hydration tips to speed up your appointment.",
+                date: "June 2026",
+                category: "Plasma"
+              },
+              {
+                title: "How Much Do You Get for Donating Sperm?",
+                slug: "how-much-do-you-get-for-donating-sperm",
+                desc: "Explore realistic pay rates ($70 to $150 per sample), monthly earnings up to $1,500, qualification criteria, and IRS tax rules.",
+                date: "June 2026",
+                category: "Fertility"
+              },
+              {
+                title: "Salvation Army Donation Pick Up Guide",
+                slug: "salvation-army-donation-pick-up",
+                desc: "Step-by-step instructions on scheduling a free home furniture pickup, accepted items list, and obtaining your tax receipt.",
+                date: "June 2026",
+                category: "Community"
+              },
+              {
+                title: "Donating Property & Real Estate to a Nonprofit",
+                slug: "donating-property-to-a-nonprofit",
+                desc: "How real estate donations eliminate capital gains taxes, provide massive income tax deductions, and support community causes.",
+                date: "June 2026",
+                category: "Property"
+              },
+              {
+                title: "Can You Donate Blood If You Smoke or Have a Tattoo?",
+                slug: "can-you-donate-blood-if-you-smoke",
+                desc: "Current medical regulations on cigarette smoking, vaping, cannabis, and state-regulated tattoo shop exemptions.",
+                date: "June 2026",
+                category: "Blood"
+              },
+              {
+                title: "Car Donation to Charity & Tax Benefits",
+                slug: "car-donation-to-charity",
+                desc: "Free towing for running and non-running vehicles, IRS Form 1098-C guidelines, and how auction sales determine your write-off.",
+                date: "June 2026",
+                category: "Vehicles"
+              }
+            ].map((res, i) => (
+              <div key={i} className="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-primary/20 hover:shadow-lg transition-all flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between text-xs text-slate-400 font-bold mb-4">
+                    <span className="text-primary bg-primary/10 px-3 py-1 rounded-full">{res.category}</span>
+                    <span>{res.date}</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-primary mb-3">
+                    <Link to={`/blog/${res.slug}`} className="hover:text-accent transition-colors">
+                      {res.title}
+                    </Link>
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-6">
+                    {res.desc}
+                  </p>
+                </div>
+                <Link 
+                  to={`/blog/${res.slug}`}
+                  className="inline-flex items-center gap-2 text-sm font-bold text-primary hover:text-accent transition-colors mt-auto"
+                >
+                  Read Full Article <ArrowRight size={16} />
+                </Link>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link to="/blog" className="btn-primary !px-8 !py-4 inline-flex items-center gap-2">
+              Explore All Donation Articles <ArrowRight size={18} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO SECTION 6: COMPREHENSIVE DONATION FAQ */}
+      <section className="py-24 bg-slate-50/50 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-primary/5 text-primary font-bold rounded-full text-xs uppercase tracking-widest mb-4">
+              <HelpCircle size={14} className="text-accent" />
+              Frequently Asked Questions
+            </span>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-6">
+              Donation FAQ: Everything You Need to Know
+            </h2>
+            <p className="text-slate-600 text-lg">
+              Quick, accurate answers to the most common low-competition search queries in the donation and charity niche.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            {[
+              {
+                q: "How long does it take to donate plasma?",
+                a: "A standard plasma donation (apheresis) takes about 45 to 60 minutes in the collection chair. However, for a first-time donation, expect your visit to take 90 to 120 minutes total due to registration, health history questionnaire, vitals check, and physical examination."
+              },
+              {
+                q: "How much do you get for donating sperm?",
+                a: "Qualified sperm donors typically receive between $70 and $150 per usable donation. Regular donors who visit 2 to 3 times a week can earn $1,000 to $1,500 per month depending on the fertility clinic, contract length, and quarantine completion bonuses."
+              },
+              {
+                q: "Can you donate plasma while pregnant?",
+                a: "No. You cannot donate plasma while pregnant under any circumstances. Pregnancy expands maternal blood volume by up to 50%, and plasma removal poses severe risks of sudden hypovolemia, maternal fainting, and compromised placental blood flow. Donors must wait at least 6 months postpartum."
+              },
+              {
+                q: "Can you donate blood if you smoke?",
+                a: "Yes. Smoking tobacco cigarettes, vaping, or consuming cannabis does not disqualify you from donating blood. However, blood banks strongly advise waiting at least 2 to 3 hours before and after donation to avoid carbon monoxide interference, elevated blood pressure, or post-donation fainting."
+              },
+              {
+                q: "Can you donate blood if you have a tattoo?",
+                a: "Yes! In 45 regulated US states, you can donate blood immediately with zero waiting period if your tattoo was applied in a licensed facility using sterile single-use needles and fresh ink. If the tattoo was done informally or in an unregulated state, a 3-month deferral applies."
+              },
+              {
+                q: "What are the tax benefits of donating real estate or property to charity?",
+                a: "Donating real estate or vacant land to a certified 501(c)(3) nonprofit allows you to claim an income tax deduction equal to the full Fair Market Value (FMV) determined by a certified independent appraisal, while completely eliminating federal and state capital gains taxes."
+              },
+              {
+                q: "How does Salvation Army donation pick up work?",
+                a: "You can schedule a free pickup online at satruck.org or call 1-800-SA-TRUCK. Enter your ZIP code, list the bulky items or boxes of clothing/furniture, and pick an available pickup date. Drivers collect items from your porch or driveway and leave an official tax receipt."
+              },
+              {
+                q: "How much do you get paid to donate eggs?",
+                a: "Egg donors typically receive between $8,000 and $14,000 per completed donation cycle. Donors with exceptional academic, athletic, or high-demand ethnic backgrounds can earn $15,000 to $20,000+. 100% of all medical visits, genetic tests, and medications are paid for."
+              },
+              {
+                q: "How does car donation to charity work?",
+                a: "Charities provide 100% free towing for running and non-running cars, trucks, vans, and motorcycles. Once sold at auction, the charity sends you IRS Form 1098-C confirming the exact gross sale price, which you use to claim your charitable tax write-off."
+              },
+              {
+                q: "Where can I find a donation box or donation center near me?",
+                a: "Donation boxes and drop-off centers are commonly located at local Goodwill branches, Salvation Army family stores, faith-based charities, fire stations, and shopping center parking lots. Check our donation center guide for locator tools."
+              }
+            ].map((faq, i) => {
+              const isOpen = openFaq === i;
+              return (
+                <div 
+                  key={i}
+                  className="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm transition-all"
+                >
+                  <button
+                    onClick={() => setOpenFaq(isOpen ? null : i)}
+                    className="w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-primary text-lg hover:text-accent transition-colors"
+                  >
+                    <span>{faq.q}</span>
+                    <ChevronDown 
+                      size={20} 
+                      className={`shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-accent' : 'text-slate-400'}`} 
+                    />
+                  </button>
+                  {isOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: 'auto' }}
+                      exit={{ opacity: 0, height: 0 }}
+                      className="px-6 pb-6 text-slate-600 leading-relaxed text-base border-t border-slate-100 pt-4"
+                    >
+                      {faq.a}
+                    </motion.div>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

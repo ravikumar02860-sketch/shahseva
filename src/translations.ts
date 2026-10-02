@@ -390,9 +390,9 @@ export const translations = {
     },
     seo: {
       home: {
-        title: 'Shah Seva | Old Age Home Bhilwara & NGO to Donate Online in India',
-        description: 'Looking to support an old age home in Bhilwara, Rajasthan? Shah Seva is the best NGO for sponsoring child education, elderly care, food distribution, and medical treatment for poor families. Safe online charity since 2010.',
-        keywords: 'old age home bhilwara, old age home in bhilwara, best old age home in bhilwara, how to donate money to help poor families in India online, donate to help homeless people in India, best NGO in Rajasthan for homeless support, trusted charity for food distribution in Bhilwara, donate for medical treatment of poor patients in Rajasthan, homeless shelter aid Rajasthan, safe online donation for homeless in India, Shah Seva Sansthan',
+        title: 'Donate Money to Charity | Shah Seva Trusted Charity Organization',
+        description: 'Donate money to charity online with 100% transparency at Shah Seva. Sponsor child education, food relief, emergency healthcare, and poor families in India.',
+        keywords: 'donate money to charity, donate money to charity online, best way to donate money to charity, safe charity donation, how to donate money to charity, donate money to help poor families, Shah Seva charity, old age home bhilwara, old age home in bhilwara, donate to help homeless people in India, best NGO in Rajasthan for homeless support, trusted charity for food distribution in Bhilwara, donate for medical treatment of poor patients in Rajasthan, Shah Seva Sansthan',
       },
       stories: {
         title: 'Success Stories | Impact of Charity for Homeless in Rajasthan | Shah Seva',
@@ -1126,9 +1126,9 @@ export const translations = {
     },
     seo: {
       home: {
-        title: 'भीलवाड़ा वृद्धाश्रम (Old Age Home Bhilwara) - शाह सेवा एनजीओ राजस्थान',
-        description: 'भीलवाड़ा में वृद्धाश्रम (Old Age Home Bhilwara) और गरीब परिवारों के लिए ऑनलाइन दान कैसे करें? शाह सेवा राजस्थान में बेसहारा वरिष्ठ नागरिकों और जरूरतमंद बच्चों की शिक्षा के लिए सबसे अच्छा एनजीओ है।',
-        keywords: 'old age home bhilwara, old age home in bhilwara, bhilwara vridhashram, भीलवाड़ा वृद्धाश्रम, vridhashram bhilwara, भारत में गरीबों की मदद के लिए ऑनलाइन दान, राजस्थान में बच्चों की शिक्षा के लिए एनजीओ, शाह सेवा भीलवाड़ा'
+        title: 'चैरिटी में दान करें (Donate Money to Charity) - शाह सेवा एनजीओ भीलवाड़ा',
+        description: 'शाह सेवा के माध्यम से सुरक्षित और 100% पारदर्शी तरीके से चैरिटी में ऑनलाइन दान करें। गरीब बच्चों की शिक्षा, भोजन और असहाय मरीजों के इलाज में सहयोग दें।',
+        keywords: 'donate money to charity, चैरिटी में दान करें, भारत में गरीबों की मदद के लिए ऑनलाइन दान, old age home bhilwara, राजस्थान में बच्चों की शिक्षा के लिए एनजीओ, शाह सेवा भीलवाड़ा'
       },
       stories: {
         title: 'सफलता की कहानियाँ | राजस्थान में बेघर लोगों के लिए चैरिटी का प्रभाव | शाह सेवा',

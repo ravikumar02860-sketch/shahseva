@@ -22,7 +22,7 @@ export interface SEOBlogPost {
   faqs?: FAQItem[];
 }
 
-export const seoBlogPosts: SEOBlogPost[] = [
+const baseSeoBlogPosts: SEOBlogPost[] = [
   {
     id: 'how-long-to-donate-plasma',
     title: 'How Long Does It Take to Donate Plasma? Everything You Need to Know',
@@ -573,6 +573,13 @@ At Dargah Saiyad Ali Shah Seva Sansthan (Shah Seva) in Bhilwara, Rajasthan, regi
       }
     ]
   }
+];
+
+import { targetDonationPosts } from './targetDonationPosts';
+
+export const seoBlogPosts: SEOBlogPost[] = [
+  ...baseSeoBlogPosts,
+  ...targetDonationPosts
 ];
 
 

@@ -3,6 +3,7 @@ import { createServer as createViteServer } from "vite";
 import path from "path";
 import { fileURLToPath } from "url";
 import fs from "fs/promises";
+import fsSync from "fs";
 import dotenv from "dotenv";
 import { db, collection, addDoc, getDocs, query, where, orderBy, Timestamp, doc, updateDoc } from './src/firebase.ts';
 
@@ -128,40 +129,27 @@ async function startServer() {
   });
 
   // Sitemap route
-  app.get("/sitemap.xml", (req, res) => {
-    const baseUrl = process.env.APP_URL || "https://shahseva.vercel.app";
-    const pages = [
-      "",
-      "/about",
-      "/work",
-      "/donate",
-      "/impact",
-      "/gallery",
-      "/contact",
-      "/istikhara",
-      "/privacy",
-      "/terms",
-      "/faq",
-      "/volunteer"
-    ];
+  app.get("/sitemap.xml", async (req, res) => {
+    try {
+      const sitemapPath = path.resolve(_dirname, "public", "sitemap.xml");
+      const content = await fs.readFile(sitemapPath, "utf-8");
+      res.header("Content-Type", "application/xml");
+      res.send(content);
+    } catch (e) {
+      res.status(404).send("Sitemap not found");
+    }
+  });
 
-    const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  ${pages
-    .map((page) => {
-      return `
-  <url>
-    <loc>${baseUrl}${page}</loc>
-    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>${page === "" ? "1.0" : "0.8"}</priority>
-  </url>`;
-    })
-    .join("")}
-</urlset>`;
-
-    res.header("Content-Type", "application/xml");
-    res.send(sitemap);
+  // Robots.txt route
+  app.get("/robots.txt", async (req, res) => {
+    try {
+      const robotsPath = path.resolve(_dirname, "public", "robots.txt");
+      const content = await fs.readFile(robotsPath, "utf-8");
+      res.header("Content-Type", "text/plain");
+      res.send(content);
+    } catch (e) {
+      res.status(404).send("Robots.txt not found");
+    }
   });
 
   // Optimized SPA fallback and static serving
@@ -189,11 +177,21 @@ async function startServer() {
       }
     });
   } else {
-    const staticPath = path.resolve(_dirname);
+    const candidateDirs = [
+      path.resolve(_dirname, "dist"),
+      path.resolve(_dirname),
+      path.resolve(process.cwd(), "dist"),
+      path.resolve(process.cwd())
+    ];
+
+    const staticPath = candidateDirs.find(d => fsSync.existsSync(path.join(d, "index.html"))) || _dirname;
     const indexPath = path.join(staticPath, "index.html");
 
-    // Serve static files first
+    // Serve static files
     app.use(express.static(staticPath, { index: false }));
+    if (fsSync.existsSync(path.resolve(_dirname, "public"))) {
+      app.use(express.static(path.resolve(_dirname, "public"), { index: false }));
+    }
     
     // Fallback for all other routes to serve index.html (SPA)
     app.get("*", (req, res, next) => {

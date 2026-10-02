@@ -98,6 +98,7 @@ export default function App() {
                       <Route path="/faq" element={<FAQ />} />
                       <Route path="/blog" element={<BlogPage />} />
                       <Route path="/blog/:id" element={<BlogPost />} />
+                      <Route path="/donate-money-to-charity" element={<BlogPost />} />
                       <Route path="/volunteer" element={<Volunteer />} />
                       <Route path="/mission" element={<MissionPage />} />
                       <Route path="/transparency" element={<TransparencyPage />} />

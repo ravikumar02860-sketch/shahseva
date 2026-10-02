@@ -51,10 +51,17 @@ const blogContent: Record<string, any> = {
 };
 
 export default function BlogPost() {
-  const { id } = useParams<{ id: string }>();
+  const { id: paramId } = useParams<{ id: string }>();
   const { t } = useLanguage();
   
-  const seoPost = seoBlogPosts.find((p) => p.id === id);
+  const id = paramId || (typeof window !== 'undefined' ? window.location.pathname.replace(/^\/(blog\/)?/, '').replace(/\/$/, '') : '');
+  
+  const seoPost = seoBlogPosts.find((p) => 
+    p.id === id || 
+    p.id === id?.replace(/-does-it-take/g, '') ||
+    p.id === `how-long-to-${id?.replace('how-long-does-it-take-to-', '')}` ||
+    p.id === id?.replace(/-if-you-have-a-/g, '-with-')
+  );
   const post = t.blog.posts.find((p: any) => p.id === id) || (seoPost ? {
     id: seoPost.id,
     title: seoPost.title,
