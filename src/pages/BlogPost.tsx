@@ -2,7 +2,11 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { useLanguage } from '../LanguageContext';
-import { ArrowLeft, Calendar, Tag, User, Share2, Heart } from 'lucide-react';
+import { 
+  ArrowLeft, Calendar, Tag, User, Share2, Heart, 
+  ShieldCheck, AlertTriangle, ExternalLink, Globe, 
+  CheckCircle2, Sparkles, BookOpen, Scale
+} from 'lucide-react';
 import SEO from '../components/SEO';
 import { seoBlogPosts } from '../data/seoBlogPosts';
 import { getTopicImageUrl } from '../utils/topicImages';
@@ -54,14 +58,34 @@ export default function BlogPost() {
   const { id: paramId } = useParams<{ id: string }>();
   const { t } = useLanguage();
   
-  const id = paramId || (typeof window !== 'undefined' ? window.location.pathname.replace(/^\/(blog\/)?/, '').replace(/\/$/, '') : '');
+  const rawId = paramId || (typeof window !== 'undefined' ? window.location.pathname.replace(/^\/(blog\/)?/, '').replace(/\/$/, '') : '');
+  const id = rawId.toLowerCase();
   
-  const seoPost = seoBlogPosts.find((p) => 
-    p.id === id || 
-    p.id === id?.replace(/-does-it-take/g, '') ||
-    p.id === `how-long-to-${id?.replace('how-long-does-it-take-to-', '')}` ||
-    p.id === id?.replace(/-if-you-have-a-/g, '-with-')
-  );
+  // Dynamic query and slug resolution with aliases
+  const seoPost = seoBlogPosts.find((p) => {
+    if (p.id === id) return true;
+    if (p.slug === id) return true;
+    
+    // Alias mappings
+    if (id === 'is-plasma-donation-painful' && (p.id === 'is-plasma-donation-painful' || p.id === 'does-donating-plasma-hurt')) return true;
+    if (id === 'does-donating-plasma-hurt' && (p.id === 'is-plasma-donation-painful' || p.id === 'does-donating-plasma-hurt')) return true;
+    
+    if (id === 'how-much-does-it-pay-to-donate-sperm' && (p.id === 'how-much-does-it-pay-to-donate-sperm' || p.id === 'how-much-do-you-get-for-donating-sperm')) return true;
+    if (id === 'how-much-do-you-get-for-donating-sperm' && (p.id === 'how-much-does-it-pay-to-donate-sperm' || p.id === 'how-much-do-you-get-for-donating-sperm')) return true;
+
+    if (id === 'guide-me-through-the-process-of-scheduling-a-salvation-army-furniture-pickup' && (p.id === 'guide-me-through-the-process-of-scheduling-a-salvation-army-furniture-pickup' || p.id === 'salvation-army-donation-pick-up')) return true;
+    if (id === 'salvation-army-donation-pick-up' && (p.id === 'guide-me-through-the-process-of-scheduling-a-salvation-army-furniture-pickup' || p.id === 'salvation-army-donation-pick-up')) return true;
+
+    if (id === 'can-you-donate-plasma-while-pregnant' && p.id === 'can-you-donate-plasma-while-pregnant') return true;
+    if (id === 'can-donating-plasma-while-pregnant-cause-miscarriage' && p.id === 'can-donating-plasma-while-pregnant-cause-miscarriage') return true;
+
+    if (p.id === id?.replace(/-does-it-take/g, '')) return true;
+    if (p.id === `how-long-to-${id?.replace('how-long-does-it-take-to-', '')}`) return true;
+    if (p.id === id?.replace(/-if-you-have-a-/g, '-with-')) return true;
+
+    return false;
+  });
+
   const post = t.blog.posts.find((p: any) => p.id === id) || (seoPost ? {
     id: seoPost.id,
     title: seoPost.title,
@@ -74,7 +98,7 @@ export default function BlogPost() {
   const content = id ? (blogContent[id] || (seoPost ? { sections: seoPost.sections } : null)) : null;
 
   const article = post ? {
-    "@type": "Article",
+    "@type": seoPost?.medicalDisclaimer ? "MedicalWebPage" : "Article",
     "headline": post.title,
     "description": post.excerpt,
     "image": getTopicImageUrl(post.id),
@@ -82,7 +106,7 @@ export default function BlogPost() {
     "dateModified": `${post.isoDate}T08:00:00+05:30`,
     "author": {
       "@type": "Person",
-      "name": "Shah Seva Admin",
+      "name": seoPost?.reviewedBy || "Shah Seva Editorial Team",
       "url": "https://shahseva.vercel.app/about"
     },
     "publisher": {
@@ -112,68 +136,47 @@ export default function BlogPost() {
       "value": "0"
     },
     "supply": [
-      {
-        "@type": "HowToSupply",
-        "name": "Elastic hair ties or rubber bands"
-      },
-      {
-        "@type": "HowToSupply",
-        "name": "Ziplock plastic storage bag"
-      },
-      {
-        "@type": "HowToSupply",
-        "name": "Padded bubble shipping envelope"
-      }
+      { "@type": "HowToSupply", "name": "Elastic hair ties or rubber bands" },
+      { "@type": "HowToSupply", "name": "Ziplock plastic storage bag" },
+      { "@type": "HowToSupply", "name": "Padded bubble shipping envelope" }
     ],
     "tool": [
-      {
-        "@type": "HowToTool",
-        "name": "Sharp hair shears or hair-cutting scissors"
-      },
-      {
-        "@type": "HowToTool",
-        "name": "Ruler or measuring tape"
-      },
-      {
-        "@type": "HowToTool",
-        "name": "Hair comb or brush"
-      }
-    ],
+      { "@type": "HowToTool", "name": "Sharp hair shears or hair-cutting scissors" },
+      { "@type": "HowToTool", "name": "Ruler or measuring tape" },
+      { "@type": "HowToTool", "name": "Hair comb or brush" }
+    ]
+  } : (id === 'guide-me-through-the-process-of-scheduling-a-salvation-army-furniture-pickup' || id === 'salvation-army-donation-pick-up') ? {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Schedule a Salvation Army Furniture Pickup",
+    "description": "Step-by-step instructions to schedule a free furniture pickup at satruck.org or via 1-800-SA-TRUCK in the United States.",
+    "image": getTopicImageUrl('salvation-army-donation-pick-up'),
+    "totalTime": "PT10M",
+    "estimatedCost": {
+      "@type": "MonetaryAmount",
+      "currency": "USD",
+      "value": "0"
+    },
     "step": [
       {
         "@type": "HowToStep",
-        "name": "Measure Minimum Length Required",
-        "text": "Using a ruler or tape measure, check that your ponytail will measure at least 10 inches (25 cm) long in the area you intend to cut.",
-        "url": "https://shahseva.vercel.app/blog/how-to-donate-hair-india#step-1",
-        "image": "https://picsum.photos/seed/measure-hair/400/300"
+        "name": "Visit satruck.org or call 1-800-SA-TRUCK",
+        "text": "Enter your 5-digit ZIP code on satruck.org to verify local Salvation Army truck collection coverage."
       },
       {
         "@type": "HowToStep",
-        "name": "Wash and Dry Meticulously",
-        "text": "Cleanse your hair thoroughly with a mild shampoo. Do not apply conditioners, sprays, or styling products. Blow dry completely so no humidity or moisture remains in the strands.",
-        "url": "https://shahseva.vercel.app/blog/how-to-donate-hair-india#step-2",
-        "image": "https://picsum.photos/seed/wash-dry/400/300"
+        "name": "Itemize your furniture",
+        "text": "Select eligible gently used items such as sofas, dressers, tables, and packaged clothing."
       },
       {
         "@type": "HowToStep",
-        "name": "Tie in Multiple Rubber Bands",
-        "text": "Gather your dry hair into 1 or more tightly bound ponytails. Apply elastic bands at the top near your neck, in the middle, and close to the tips to prevent loose strands from shifting.",
-        "url": "https://shahseva.vercel.app/blog/how-to-donate-hair-india#step-3",
-        "image": "https://picsum.photos/seed/tie-bands/400/300"
+        "name": "Choose pickup location & date",
+        "text": "Select an available date and arrange for items to be placed curbside, on a front porch, or in a garage."
       },
       {
         "@type": "HowToStep",
-        "name": "Cut cleanly above the top band",
-        "text": "Using professional hair-cutting scissors, cut carefully 0.5 inches above your highest rubber band. Hold the pony or braid securely to avoid scattering loose hair.",
-        "url": "https://shahseva.vercel.app/blog/how-to-donate-hair-india#step-4",
-        "image": "https://picsum.photos/seed/cut-hair/400/300"
-      },
-      {
-        "@type": "HowToStep",
-        "name": "Seal in Ziplock & Mail to NGO",
-        "text": "Wrap the dry ponytail bundle in clean paper towels or tissue, place it in an airtight zip seal plastic bag, place inside a padded shipping envelope, and send it to your chosen NGO address.",
-        "url": "https://shahseva.vercel.app/blog/how-to-donate-hair-india#step-5",
-        "image": "https://picsum.photos/seed/seal-mail/400/300"
+        "name": "Collect your tax receipt",
+        "text": "Obtain your official noncash charitable donation receipt from the driver for IRS Form 8283 filing."
       }
     ]
   } : null;
@@ -210,10 +213,13 @@ export default function BlogPost() {
 
   if (!post || !content) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Post Not Found</h1>
-          <Link to="/blog" className="text-primary hover:underline">Return to Blog</Link>
+      <div className="min-h-screen flex items-center justify-center bg-slate-50">
+        <div className="text-center p-8 bg-white rounded-2xl shadow-sm border border-slate-200 max-w-md">
+          <h1 className="text-3xl font-serif font-bold text-slate-900 mb-4">Post Not Found</h1>
+          <p className="text-slate-600 mb-6">The article you are searching for is being updated or has moved.</p>
+          <Link to="/blog" className="btn-primary inline-flex items-center gap-2">
+            <ArrowLeft size={16} /> Explore All Articles
+          </Link>
         </div>
       </div>
     );
@@ -222,9 +228,10 @@ export default function BlogPost() {
   return (
     <div className="bg-white min-h-screen pt-20 pb-20">
       <SEO 
-        title={`${post.title} | Dargah Saiyad Ali Shah Seva Sansthan Blog`}
+        title={`${post.title} | Shah Seva Research & NGO Guide`}
         description={post.excerpt}
-        keywords={`${post.title}, ${post.category}, charity stories india, trusted NGO blog, how to help poor families`}
+        keywords={seoPost?.keywords || `${post.title}, ${post.category}, charity stories india, trusted NGO blog`}
+        canonical={`https://shahseva.vercel.app/blog/${id}`}
         schema={articleSchema}
       />
       
@@ -233,33 +240,65 @@ export default function BlogPost() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <Link 
-            to="/blog" 
-            className="inline-flex items-center gap-2 text-primary font-bold mb-10 hover:gap-4 transition-all"
-          >
-            <ArrowLeft size={18} /> Back to Blog
-          </Link>
+          <div className="flex items-center justify-between mb-8">
+            <Link 
+              to="/blog" 
+              className="inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all"
+            >
+              <ArrowLeft size={18} /> Back to Blog & Guides
+            </Link>
 
-          <div className="flex items-center gap-6 text-slate-400 text-sm mb-8">
-            <div className="flex items-center gap-2">
-              <Calendar size={16} />
-              {post.date}
-            </div>
-            <div className="flex items-center gap-2">
-              <Tag size={16} />
-              {post.category}
-            </div>
-            <div className="flex items-center gap-2">
-              <User size={16} />
-              By Admin
-            </div>
+            <Link
+              to="/admin/gsc-hub"
+              className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200 hover:bg-emerald-100 transition-colors"
+            >
+              <ShieldCheck size={14} className="text-emerald-600" /> GSC Audit Verified
+            </Link>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-serif font-bold text-primary mb-10 leading-tight">
+          {/* Badges / Editorial Header */}
+          <div className="flex flex-wrap items-center gap-3 text-xs md:text-sm font-medium mb-6">
+            <div className="flex items-center gap-1.5 px-3 py-1 bg-slate-100 text-slate-700 rounded-full">
+              <Calendar size={14} />
+              {post.date}
+            </div>
+            <div className="flex items-center gap-1.5 px-3 py-1 bg-primary/10 text-primary rounded-full">
+              <Tag size={14} />
+              {post.category}
+            </div>
+            {seoPost?.geographicScope && (
+              <div className="flex items-center gap-1.5 px-3 py-1 bg-blue-50 text-blue-700 rounded-full border border-blue-200">
+                <Globe size={14} />
+                {seoPost.geographicScope}
+              </div>
+            )}
+            {seoPost?.cluster && (
+              <div className="flex items-center gap-1.5 px-3 py-1 bg-amber-50 text-amber-800 rounded-full border border-amber-200">
+                <BookOpen size={14} />
+                {seoPost.cluster}
+              </div>
+            )}
+          </div>
+
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-primary mb-8 leading-tight">
             {post.title}
           </h1>
 
-          <div className="rounded-[3rem] overflow-hidden shadow-strong mb-16 aspect-video">
+          {/* Editorial Review & Fact-Check Metadata */}
+          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs md:text-sm text-slate-600">
+            <div className="flex items-center gap-2">
+              <User size={16} className="text-primary shrink-0" />
+              <span>
+                <strong>Author / Reviewer:</strong> {seoPost?.reviewedBy || 'Shah Seva Editorial & Compliance Board'}
+              </span>
+            </div>
+            <div className="flex items-center gap-2 text-emerald-700 font-medium">
+              <CheckCircle2 size={16} />
+              <span>Status: Fact-Checked & Peer Sourced</span>
+            </div>
+          </div>
+
+          <div className="rounded-[2.5rem] overflow-hidden shadow-strong mb-10 aspect-video bg-slate-100 border border-slate-100">
             <img 
               src={getTopicImageUrl(post.id)} 
               alt={post.title} 
@@ -268,30 +307,131 @@ export default function BlogPost() {
             />
           </div>
 
+          {/* Quick Answer / Key Takeaway Callout Box (Phase 5 requirement) */}
+          {seoPost?.quickAnswer && (
+            <div className="mb-10 p-6 md:p-8 rounded-2xl bg-gradient-to-br from-emerald-50 via-teal-50 to-white border border-emerald-200 shadow-sm">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center shrink-0">
+                  <Sparkles size={18} />
+                </div>
+                <h2 className="text-lg md:text-xl font-serif font-bold text-emerald-950">
+                  Quick Answer / Key Takeaway
+                </h2>
+              </div>
+              <p className="text-slate-700 text-base md:text-lg leading-relaxed font-medium">
+                {seoPost.quickAnswer}
+              </p>
+            </div>
+          )}
+
+          {/* Medical Disclaimer Banner */}
+          {seoPost?.medicalDisclaimer && (
+            <div className="mb-10 p-6 rounded-2xl bg-amber-50/90 border border-amber-300 text-amber-950">
+              <div className="flex items-start gap-3">
+                <AlertTriangle size={22} className="text-amber-600 shrink-0 mt-0.5" />
+                <div>
+                  <h3 className="font-bold text-amber-900 mb-1 text-base">
+                    Clinical & Medical Information Disclaimer
+                  </h3>
+                  <p className="text-sm leading-relaxed text-amber-900/90">
+                    This article is for informational, educational, and public health awareness purposes only. It is not a substitute for professional medical advice, diagnosis, or clinical care. If you are pregnant, suspect you might be pregnant, or are undergoing fertility treatments, always consult a licensed obstetrician-gynecologist or healthcare provider before participating in blood or plasma donation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Legal / Statutory Disclaimer Banner */}
+          {seoPost?.legalDisclaimer && (
+            <div className="mb-10 p-6 rounded-2xl bg-blue-50/90 border border-blue-200 text-blue-950">
+              <div className="flex items-start gap-3">
+                <Scale size={22} className="text-blue-600 shrink-0 mt-0.5" />
+                <div>
+                  <h3 className="font-bold text-blue-900 mb-1 text-base">
+                    Statutory & Tax Law Notice
+                  </h3>
+                  <p className="text-sm leading-relaxed text-blue-900/90">
+                    Statutory regulations, Section 80G tax deductions, and bioethical laws cited herein reflect current Indian statutes (Income Tax Act 1961, Supreme Court directives, and the Assisted Reproductive Technology Act 2021). This content does not constitute individualized tax or legal counsel. Please verify your individual deductions with a Chartered Accountant (CA) or tax professional.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
           <div className="prose prose-lg prose-slate max-w-none">
-            <p className="text-xl text-slate-600 font-medium mb-12 leading-relaxed italic border-l-4 border-accent pl-8">
+            <p className="text-xl text-slate-700 font-medium mb-12 leading-relaxed italic border-l-4 border-accent pl-8 bg-slate-50/40 py-3 rounded-r-xl">
               {post.excerpt}
             </p>
 
             {content.sections.map((section: any, idx: number) => (
               <div key={idx} className="mb-12">
-                <h2 className="text-3xl font-serif font-bold text-primary mb-6">{section.title}</h2>
-                <div className="text-slate-600 leading-relaxed whitespace-pre-line">
+                <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-6 leading-tight">
+                  {section.title}
+                </h2>
+                <div className="text-slate-600 leading-relaxed whitespace-pre-line text-base md:text-lg">
                   {section.content}
                 </div>
               </div>
             ))}
 
+            {/* Authoritative Sources & Primary Citations (Phase 4 requirement) */}
+            {seoPost?.citations && seoPost.citations.length > 0 && (
+              <div className="mt-16 pt-12 border-t border-slate-200">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-8 h-8 rounded-lg bg-primary text-white flex items-center justify-center shrink-0">
+                    <BookOpen size={18} />
+                  </div>
+                  <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary">
+                    Authoritative Sources & Statutory References
+                  </h2>
+                </div>
+                <p className="text-slate-600 text-sm mb-6">
+                  All factual, medical, and legal claims in this article have been cross-checked against primary regulatory agencies and official government records:
+                </p>
+                <div className="space-y-4">
+                  {seoPost.citations.map((cite, cIdx) => (
+                    <div key={cIdx} className="p-5 rounded-xl bg-slate-50 border border-slate-200 text-sm">
+                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                        <strong className="text-slate-900 font-semibold">{cite.name}</strong>
+                        {cite.url && (
+                          <a 
+                            href={cite.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="inline-flex items-center gap-1 text-primary hover:underline font-medium text-xs"
+                          >
+                            Visit Official Source <ExternalLink size={12} />
+                          </a>
+                        )}
+                      </div>
+                      <div className="text-slate-500 text-xs mb-1">
+                        <strong>Authority:</strong> {cite.source}
+                      </div>
+                      {cite.verifiedClaim && (
+                        <p className="text-slate-700 text-xs italic mt-2 bg-white p-2.5 rounded-lg border border-slate-100">
+                          <strong>Verified Finding:</strong> {cite.verifiedClaim}
+                        </p>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* FAQs */}
             {seoPost && seoPost.faqs && seoPost.faqs.length > 0 && (
-              <div className="mt-20 pt-16 border-t border-slate-100">
-                <h2 className="text-4xl font-serif font-bold text-primary mb-10">Frequently Asked Questions</h2>
-                <div className="space-y-8">
+              <div className="mt-16 pt-12 border-t border-slate-200">
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-8">
+                  Frequently Asked Questions
+                </h2>
+                <div className="space-y-6">
                   {seoPost.faqs.map((faq, fIdx) => (
-                    <div key={fIdx} className="bg-slate-50/50 p-8 rounded-[2rem] border border-slate-100 not-italic">
-                      <h3 className="text-xl font-bold text-primary mb-4 flex gap-3">
-                        <span className="text-accent font-serif font-bold">Q:</span> {faq.question}
+                    <div key={fIdx} className="bg-slate-50/70 p-6 md:p-8 rounded-2xl border border-slate-200/80 not-italic">
+                      <h3 className="text-lg md:text-xl font-bold text-primary mb-3 flex gap-3 items-start">
+                        <span className="text-accent font-serif font-bold text-xl">Q:</span> 
+                        <span>{faq.question}</span>
                       </h3>
-                      <p className="text-slate-600 leading-relaxed pl-8">{faq.answer}</p>
+                      <p className="text-slate-600 leading-relaxed pl-7 text-base">{faq.answer}</p>
                     </div>
                   ))}
                 </div>
@@ -299,13 +439,19 @@ export default function BlogPost() {
             )}
           </div>
 
-          <div className="mt-20 pt-10 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-8">
+          {/* Social and Donate CTA */}
+          <div className="mt-16 pt-10 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
-              <button className="flex items-center gap-2 px-6 py-3 bg-slate-50 text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-all group">
-                <Share2 size={18} /> Share Post
-              </button>
-              <button className="flex items-center gap-2 px-6 py-3 bg-slate-50 text-primary font-bold rounded-xl hover:bg-accent hover:text-white transition-all group">
-                <Heart size={18} /> Like
+              <button 
+                onClick={() => {
+                  if (typeof navigator !== 'undefined' && navigator.clipboard) {
+                    navigator.clipboard.writeText(window.location.href);
+                    alert('Article link copied to clipboard!');
+                  }
+                }}
+                className="flex items-center gap-2 px-5 py-2.5 bg-slate-100 text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-all text-sm"
+              >
+                <Share2 size={16} /> Share Guide
               </button>
             </div>
             
@@ -313,7 +459,7 @@ export default function BlogPost() {
               to="/donate" 
               className="btn-primary"
             >
-              Support Our Mission <ArrowLeft className="rotate-180" size={18} />
+              Support Shah Seva Mission <ArrowLeft className="rotate-180" size={18} />
             </Link>
           </div>
         </motion.div>

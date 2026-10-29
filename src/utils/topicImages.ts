@@ -100,7 +100,16 @@ const exactImageMap: Record<string, string> = {
   "is-plasma-donation-safe": "https://images.unsplash.com/photo-1536856788636-e875147be4ef?auto=format&fit=crop&q=80&w=1000",
   "how-to-donate-hair-india": "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=1000",
   "how-much-is-kidney-transplant": "https://images.unsplash.com/photo-1530026405186-ed1ea0ac7a63?auto=format&fit=crop&q=80&w=1000",
-  "blood-cancer-treatment-cost-india": "https://images.unsplash.com/photo-1579153138244-3917a00b01d7?auto=format&fit=crop&q=80&w=1000"
+  "blood-cancer-treatment-cost-india": "https://images.unsplash.com/photo-1579153138244-3917a00b01d7?auto=format&fit=crop&q=80&w=1000",
+  "how-to-send-money-to-charity-in-india": "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&q=80&w=1000",
+  "best-way-to-donate-money-in-india": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=1000",
+  "what-about-in-india-charity-guide": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&q=80&w=1000",
+  "how-much-money-for-blood-donation": "https://images.unsplash.com/photo-1615461066841-6116ecd12cfc?auto=format&fit=crop&q=80&w=1000",
+  "can-donating-plasma-while-pregnant-cause-miscarriage": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1000",
+  "can-plasma-donation-affect-fertility": "https://images.unsplash.com/photo-1530026405186-ed1ea0ac7a63?auto=format&fit=crop&q=80&w=1000",
+  "is-plasma-donation-painful": "https://images.unsplash.com/photo-1536856788636-e875147be4ef?auto=format&fit=crop&q=80&w=1000",
+  "how-much-does-it-pay-to-donate-sperm": "https://images.unsplash.com/photo-1579153138244-3917a00b01d7?auto=format&fit=crop&q=80&w=1000",
+  "guide-me-through-the-process-of-scheduling-a-salvation-army-furniture-pickup": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80&w=1000"
 };
 
 /**

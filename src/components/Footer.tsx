@@ -171,52 +171,53 @@ export default function Footer() {
         </h4>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-xs text-slate-400">
           <div>
-            <h5 className="font-bold text-white uppercase tracking-wider mb-3 text-[11px]">Plasma &amp; Blood</h5>
+            <h5 className="font-bold text-white uppercase tracking-wider mb-3 text-[11px]">Charity in India</h5>
             <ul className="space-y-2">
-              <li><Link to="/blog/how-long-does-it-take-to-donate-plasma" className="hover:text-accent transition-colors">How Long to Donate Plasma</Link></li>
-              <li><Link to="/blog/can-you-donate-plasma-while-pregnant" className="hover:text-accent transition-colors">Plasma While Pregnant</Link></li>
+              <li><Link to="/how-to-send-money-to-charity-in-india" className="font-semibold text-accent hover:text-white transition-colors">How to Send Money in India</Link></li>
+              <li><Link to="/best-way-to-donate-money-in-india" className="hover:text-accent transition-colors">Best Way to Donate in India</Link></li>
+              <li><Link to="/what-about-in-india-charity-guide" className="hover:text-accent transition-colors">What About in India? Legal Rules</Link></li>
+              <li><Link to="/donate-money-to-charity" className="hover:text-accent transition-colors">Donate Money to Charity</Link></li>
+              <li><Link to="/donate" className="hover:text-accent transition-colors">Direct UPI Donation (80G)</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h5 className="font-bold text-white uppercase tracking-wider mb-3 text-[11px]">Blood Donation Rules</h5>
+            <ul className="space-y-2">
+              <li><Link to="/how-much-money-for-blood-donation" className="font-semibold text-accent hover:text-white transition-colors">How Much for Blood Donation</Link></li>
+              <li><Link to="/blog/how-often-can-you-donate-blood" className="hover:text-accent transition-colors">How Often to Donate Blood</Link></li>
               <li><Link to="/blog/can-you-donate-blood-if-you-smoke" className="hover:text-accent transition-colors">Donate Blood If You Smoke</Link></li>
               <li><Link to="/blog/can-you-donate-blood-if-you-have-a-tattoo" className="hover:text-accent transition-colors">Donate Blood With Tattoo</Link></li>
-              <li><Link to="/urgent-blood-donation-help" className="hover:text-accent transition-colors">Urgent Blood Aid</Link></li>
+              <li><Link to="/urgent-blood-donation-help" className="hover:text-accent transition-colors">Emergency Blood Network</Link></li>
             </ul>
           </div>
           <div>
-            <h5 className="font-bold text-white uppercase tracking-wider mb-3 text-[11px]">Fertility Donation</h5>
+            <h5 className="font-bold text-white uppercase tracking-wider mb-3 text-[11px]">Plasma &amp; Pregnancy</h5>
             <ul className="space-y-2">
-              <li><Link to="/blog/how-much-do-you-get-for-donating-sperm" className="hover:text-accent transition-colors">How Much for Donating Sperm</Link></li>
-              <li><Link to="/blog/sperm-donation-payment" className="hover:text-accent transition-colors">Sperm Donation Payment</Link></li>
-              <li><Link to="/blog/egg-donation-near-me" className="hover:text-accent transition-colors">Egg Donation Near Me</Link></li>
+              <li><Link to="/blog/can-you-donate-plasma-while-pregnant" className="hover:text-accent transition-colors">Donate Plasma While Pregnant</Link></li>
+              <li><Link to="/can-donating-plasma-while-pregnant-cause-miscarriage" className="hover:text-accent transition-colors">Plasma &amp; Miscarriage Risks</Link></li>
+              <li><Link to="/can-plasma-donation-affect-fertility" className="hover:text-accent transition-colors">Plasma &amp; Fertility Facts</Link></li>
+              <li><Link to="/is-plasma-donation-painful" className="hover:text-accent transition-colors">Is Plasma Donation Painful?</Link></li>
+              <li><Link to="/blog/how-long-does-it-take-to-donate-plasma" className="hover:text-accent transition-colors">How Long Does Plasma Take?</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h5 className="font-bold text-white uppercase tracking-wider mb-3 text-[11px]">Fertility &amp; ART Act</h5>
+            <ul className="space-y-2">
+              <li><Link to="/how-much-does-it-pay-to-donate-sperm" className="font-semibold text-accent hover:text-white transition-colors">How Much to Donate Sperm</Link></li>
+              <li><Link to="/blog/sperm-donation-payment" className="hover:text-accent transition-colors">Sperm Donation Payouts (US)</Link></li>
+              <li><Link to="/blog/egg-donation-near-me" className="hover:text-accent transition-colors">Egg Donation Centers</Link></li>
               <li><Link to="/blog/donate-eggs" className="hover:text-accent transition-colors">Donate Eggs Guide</Link></li>
+              <li><Link to="/admin/gsc-hub" className="text-emerald-400 font-semibold hover:text-white transition-colors">GSC Editorial Audit Hub</Link></li>
             </ul>
           </div>
           <div>
-            <h5 className="font-bold text-white uppercase tracking-wider mb-3 text-[11px]">Real Estate &amp; Property</h5>
+            <h5 className="font-bold text-white uppercase tracking-wider mb-3 text-[11px]">Pickups &amp; Property</h5>
             <ul className="space-y-2">
-              <li><Link to="/blog/donating-property-to-a-nonprofit" className="hover:text-accent transition-colors">Donating Property to Nonprofit</Link></li>
-              <li><Link to="/blog/donating-real-estate-to-charity" className="hover:text-accent transition-colors">Real Estate to Charity</Link></li>
-              <li><Link to="/blog/donate-house-to-charity" className="hover:text-accent transition-colors">Donate House to Charity</Link></li>
-              <li><Link to="/blog/donate-land-to-charity" className="hover:text-accent transition-colors">Donate Land to Charity</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h5 className="font-bold text-white uppercase tracking-wider mb-3 text-[11px]">Pickups &amp; Drop-Offs</h5>
-            <ul className="space-y-2">
-              <li><Link to="/blog/salvation-army-donation-pick-up" className="hover:text-accent transition-colors">Salvation Army Pickup</Link></li>
-              <li><Link to="/blog/goodwill-donation-pick-up" className="hover:text-accent transition-colors">Goodwill Donation Pickup</Link></li>
-              <li><Link to="/blog/donation-center-near-me" className="hover:text-accent transition-colors">Donation Center Near Me</Link></li>
-              <li><Link to="/blog/donation-box-near-me" className="hover:text-accent transition-colors">Donation Box Near Me</Link></li>
-              <li><Link to="/blog/car-donation-to-charity" className="hover:text-accent transition-colors">Car Donation to Charity</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h5 className="font-bold text-white uppercase tracking-wider mb-3 text-[11px]">Faith &amp; Philanthropy</h5>
-            <ul className="space-y-2">
-              <li><Link to="/donate-money-to-charity" className="font-bold text-accent hover:text-white transition-colors">Donate Money to Charity</Link></li>
-              <li><Link to="/blog/shiloh-donation" className="hover:text-accent transition-colors">Shiloh Donation Meaning</Link></li>
-              <li><Link to="/blog/mackenzie-scott-2025-donations" className="hover:text-accent transition-colors">MacKenzie Scott 2025 Grants</Link></li>
-              <li><Link to="/blog/pls-donate-codes" className="hover:text-accent transition-colors">PLS Donate Codes 2025</Link></li>
-              <li><Link to="/donate-zakat-online" className="hover:text-accent transition-colors">Zakat Donation Online</Link></li>
-              <li><Link to="/donate-for-food-for-poor" className="hover:text-accent transition-colors">Food for Poor Donation</Link></li>
+              <li><Link to="/guide-me-through-the-process-of-scheduling-a-salvation-army-furniture-pickup" className="font-semibold text-accent hover:text-white transition-colors">Salvation Army Furniture Pickup</Link></li>
+              <li><Link to="/blog/goodwill-donation-pick-up" className="hover:text-accent transition-colors">Goodwill Home Pickup</Link></li>
+              <li><Link to="/blog/donating-property-to-a-nonprofit" className="hover:text-accent transition-colors">Donating Property to Charity</Link></li>
+              <li><Link to="/blog/donating-real-estate-to-charity" className="hover:text-accent transition-colors">Real Estate Tax Write-Off</Link></li>
+              <li><Link to="/blog/car-donation-to-charity" className="hover:text-accent transition-colors">Car Donation Guide</Link></li>
             </ul>
           </div>
         </div>

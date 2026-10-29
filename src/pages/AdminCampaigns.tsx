@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { Plus, Trash2, Megaphone, CheckCircle2, AlertCircle, Image as ImageIcon, LogIn, LogOut } from 'lucide-react';
+import { Plus, Trash2, Megaphone, CheckCircle2, AlertCircle, Image as ImageIcon, LogIn, LogOut, FileCheck } from 'lucide-react';
 import { cn } from '../utils/cn';
 import { db, collection, addDoc, getDocs, query, where, orderBy, Timestamp, auth, signInWithPopup, GoogleAuthProvider, doc, updateDoc, onSnapshot } from '../firebase';
 import SEO from '../components/SEO';
@@ -189,6 +189,13 @@ export default function AdminCampaigns() {
             </div>
           </div>
           <div className="flex items-center gap-3">
+            <Link 
+              to="/admin/gsc-hub"
+              className="btn-outline btn-sm group text-emerald-800 border-emerald-300 hover:bg-emerald-50"
+            >
+              <FileCheck size={18} className="text-emerald-600" />
+              GSC SEO Hub
+            </Link>
             <Link 
               to="/admin/generate-images"
               className="btn-outline btn-sm group"

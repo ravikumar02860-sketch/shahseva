@@ -8,8 +8,16 @@ export interface FAQItem {
   answer: string;
 }
 
+export interface PostCitation {
+  name: string;
+  source: string;
+  url?: string;
+  verifiedClaim?: string;
+}
+
 export interface SEOBlogPost {
   id: string;
+  slug?: string;
   title: string;
   excerpt: string;
   category: string;
@@ -20,6 +28,15 @@ export interface SEOBlogPost {
   imageAlts: string[];
   sections: BlogPostSection[];
   faqs?: FAQItem[];
+  citations?: PostCitation[];
+  medicalDisclaimer?: boolean;
+  legalDisclaimer?: boolean;
+  quickAnswer?: string;
+  targetQuery?: string;
+  cluster?: string;
+  geographicScope?: string;
+  reviewStatus?: 'Draft' | 'Fact-Checked' | 'Approved' | 'Published';
+  reviewedBy?: string;
 }
 
 const baseSeoBlogPosts: SEOBlogPost[] = [
@@ -576,8 +593,10 @@ At Dargah Saiyad Ali Shah Seva Sansthan (Shah Seva) in Bhilwara, Rajasthan, regi
 ];
 
 import { targetDonationPosts } from './targetDonationPosts';
+import { gscBlogPosts } from './gscBlogPosts';
 
 export const seoBlogPosts: SEOBlogPost[] = [
+  ...gscBlogPosts,
   ...baseSeoBlogPosts,
   ...targetDonationPosts
 ];

@@ -36,6 +36,7 @@ const ZakatCalculatorPage = lazy(() => import('./pages/ZakatCalculator'));
 const IslamicConverterPage = lazy(() => import('./pages/IslamicConverter'));
 const TasbeehCounterPage = lazy(() => import('./pages/TasbeehCounter'));
 const QurbaniPage = lazy(() => import('./pages/Qurbani'));
+const GSCEditorialHub = lazy(() => import('./pages/GSCEditorialHub'));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -99,11 +100,26 @@ export default function App() {
                       <Route path="/blog" element={<BlogPage />} />
                       <Route path="/blog/:id" element={<BlogPost />} />
                       <Route path="/donate-money-to-charity" element={<BlogPost />} />
+                      
+                      {/* Search Console Pillar & Query Routes (Direct Crawlability) */}
+                      <Route path="/how-to-send-money-to-charity-in-india" element={<BlogPost />} />
+                      <Route path="/best-way-to-donate-money-in-india" element={<BlogPost />} />
+                      <Route path="/what-about-in-india-charity-guide" element={<BlogPost />} />
+                      <Route path="/how-much-money-for-blood-donation" element={<BlogPost />} />
+                      <Route path="/can-donating-plasma-while-pregnant-cause-miscarriage" element={<BlogPost />} />
+                      <Route path="/can-plasma-donation-affect-fertility" element={<BlogPost />} />
+                      <Route path="/is-plasma-donation-painful" element={<BlogPost />} />
+                      <Route path="/how-much-does-it-pay-to-donate-sperm" element={<BlogPost />} />
+                      <Route path="/guide-me-through-the-process-of-scheduling-a-salvation-army-furniture-pickup" element={<BlogPost />} />
+
                       <Route path="/volunteer" element={<Volunteer />} />
                       <Route path="/mission" element={<MissionPage />} />
                       <Route path="/transparency" element={<TransparencyPage />} />
                       <Route path="/admin/campaigns" element={<AdminCampaigns />} />
                       <Route path="/admin/generate-images" element={<ImageGenerator />} />
+                      <Route path="/admin/gsc-hub" element={<GSCEditorialHub />} />
+                      <Route path="/admin/editorial-hub" element={<GSCEditorialHub />} />
+                      <Route path="/admin/content-review" element={<GSCEditorialHub />} />
                       <Route path="/donate-for-education" element={<CategoryPage categoryId="education" />} />
                       <Route path="/donate-for-poor-children" element={<CategoryPage categoryId="children" />} />
                       <Route path="/donate-for-medical-help" element={<CategoryPage categoryId="medical" />} />
