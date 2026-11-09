@@ -138,6 +138,14 @@ export const translations = {
       readMore: 'Read More',
       posts: [
         {
+          id: 'fee-vs-fees-meaning-difference-examples',
+          title: 'Fee vs Fees: Meaning, Difference & Examples (Simple Guide)',
+          excerpt: 'Confused between fee and fees? Learn the meaning, difference, when to use each, plus easy examples and Hindi meaning in this simple guide.',
+          date: 'November 9, 2026',
+          isoDate: '2026-11-09',
+          category: 'Grammar Guide'
+        },
+        {
           id: 'how-to-donate-securely',
           title: 'How to Donate Money to Society Online Securely in India: A Complete Guide',
           excerpt: 'Wondering how to donate money to Society online? Learn how to ensure your online charity donation reaches those in need safely through a trusted Society to donate online in India.',
@@ -1557,6 +1565,14 @@ export const translations = {
       desc: 'भीलवाड़ा, राजस्थान में हमारे सामाजिक कार्य, चैरिटी गतिविधियों और सामुदायिक प्रभाव के बारे में नवीनतम अपडेट और कहानियाँ पढ़ें।',
       readMore: 'पूरा ब्लॉग पढ़ें',
       posts: [
+        {
+          id: 'fee-vs-fees-meaning-difference-examples',
+          title: 'Fee vs Fees: Meaning, Difference & Examples (Simple Guide)',
+          excerpt: 'Fee और Fees में अंतर, अर्थ और सही प्रयोग समझें। सरल उदाहरणों और हिंदी अर्थ के साथ विस्तृत गाइड।',
+          date: '9 नवंबर, 2026',
+          isoDate: '2026-11-09',
+          category: 'ग्रामर गाइड'
+        },
         {
           id: 'how-to-donate-securely',
           title: 'भारत में सुरक्षित रूप से सोसाइटी को ऑनलाइन पैसा कैसे दान करें: एक पूर्ण मार्गदर्शिका',

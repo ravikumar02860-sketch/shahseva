@@ -37,6 +37,7 @@ const IslamicConverterPage = lazy(() => import('./pages/IslamicConverter'));
 const TasbeehCounterPage = lazy(() => import('./pages/TasbeehCounter'));
 const QurbaniPage = lazy(() => import('./pages/Qurbani'));
 const GSCEditorialHub = lazy(() => import('./pages/GSCEditorialHub'));
+const FeeVsFeesPage = lazy(() => import('./pages/FeeVsFeesPage'));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -111,6 +112,7 @@ export default function App() {
                       <Route path="/terms" element={<Terms />} />
                       <Route path="/faq" element={<FAQ />} />
                       <Route path="/blog" element={<BlogPage />} />
+                      <Route path="/blog/fee-vs-fees-meaning-difference-examples" element={<FeeVsFeesPage />} />
                       <Route path="/blog/:id" element={<BlogPost />} />
                       <Route path="/donate-money-to-charity" element={<BlogPost />} />
                       
