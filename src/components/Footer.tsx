@@ -242,11 +242,10 @@ export default function Footer() {
         href="https://wa.me/916350489219" 
         target="_blank" 
         rel="noopener noreferrer"
-        aria-label="Chat with Shah Seva on WhatsApp"
-        className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] text-white rounded-2xl flex items-center justify-center shadow-strong hover:scale-110 active:scale-90 transition-all z-50 group"
+        className="fixed bottom-8 right-8 w-16 h-16 bg-[#25D366] text-white rounded-2xl flex items-center justify-center shadow-strong hover:scale-110 active:scale-90 transition-all z-50 group"
       >
-        <MessageCircle size={32} fill="currentColor" className="group-hover:rotate-12 transition-transform sm:w-9 sm:h-9" />
-        <div className="absolute -top-1.5 -right-1.5 w-4 h-4 bg-red-500 rounded-full border-2 border-white animate-pulse"></div>
+        <MessageCircle size={36} fill="currentColor" className="group-hover:rotate-12 transition-transform" />
+        <div className="absolute -top-2 -right-2 w-5 h-5 bg-red-500 rounded-full border-2 border-white animate-pulse"></div>
       </a>
     </footer>
   );
