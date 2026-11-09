@@ -707,6 +707,180 @@ However, if you donate plasma through the American Red Cross or non-profit hospi
         answer: "No. Federal safety regulations strictly prohibit donating plasma more than once in a single day. You must wait at least 48 hours between any two donations."
       }
     ]
+  },
+  {
+    id: 'how-often-can-you-donate-plasma-at-biolife-csl-plasma',
+    slug: 'how-often-can-you-donate-plasma-at-biolife-csl-plasma',
+    title: "How Often Can You Donate Plasma at BioLife vs CSL Plasma? Full Comparison & Safety Rules",
+    excerpt: "Compare BioLife vs CSL Plasma donation frequency, 48-hour mandatory recovery rules, monthly earnings limits, and why donating at both centers is strictly prohibited.",
+    category: 'Health Guide',
+    date: 'November 9, 2026',
+    isoDate: '2026-11-09',
+    metaDescription: "Learn how often you can donate plasma at BioLife vs CSL Plasma. Find out FDA limits (2x/week), 48-hr rules, monthly caps, and why dual-center donations are banned.",
+    keywords: 'how often can you donate plasma at BioLife, how often can you donate plasma at CSL Plasma, BioLife vs CSL Plasma donation frequency, can you donate at both BioLife and CSL',
+    targetQuery: 'how often can you donate plasma at BioLife',
+    reviewStatus: 'Published',
+    reviewedBy: 'Shah Seva Editorial & Medical Review Board',
+    quickAnswer: "Under federal FDA standards, both BioLife Plasma Services and CSL Plasma permit you to donate up to twice within any 7-day rolling window, requiring at least 48 hours of rest between visits. Crucially, you cannot donate at both BioLife and CSL Plasma simultaneously; cross-center biometric registries track all donations, and dual-donating results in permanent lifetime bans.",
+    imageAlts: [
+      'Comparative chart of BioLife vs CSL Plasma center donation guidelines and rest intervals'
+    ],
+    sections: [
+      {
+        title: 'BioLife vs CSL Plasma Frequency Overview',
+        content: `Both BioLife Plasma Services and CSL Plasma operate under US FDA regulation 21 CFR 640.65, limiting donors to a maximum of two donations per seven-day period with a mandatory 48-hour gap between appointments. Donors are tracked nationwide via the Cross-Donation Check System (CDCS).`
+      }
+    ],
+    faqs: [
+      {
+        question: "How often can you donate plasma at BioLife?",
+        answer: "At BioLife Plasma Services, you can donate up to two times within any rolling seven-day calendar window, with a mandatory minimum of 48 hours between appointments."
+      },
+      {
+        question: "How often can you donate plasma at CSL Plasma?",
+        answer: "CSL Plasma permits eligible donors to donate up to twice in a seven-day rolling window, provided there are at least two full calendar days (48 hours) between donations."
+      },
+      {
+        question: "Can you donate at both BioLife and CSL Plasma?",
+        answer: "No. You cannot donate at both centers concurrently. Biometric donor tracking (CDCS and NDDR) flags unauthorized cross-donations and triggers an immediate lifetime ban."
+      }
+    ]
+  },
+  {
+    id: 'can-i-donate-at-biolife-in-another-state',
+    slug: 'can-i-donate-at-biolife-in-another-state',
+    title: "Can I Donate at BioLife in Another State? Transfer Rules, Moving & Residency Requirements",
+    excerpt: "Moving or traveling out of state? Learn the official rules for donating at BioLife across state lines, transferring your donor account, and proof of address rules.",
+    category: 'Health Guide',
+    date: 'November 9, 2026',
+    isoDate: '2026-11-09',
+    metaDescription: "Can I donate at BioLife in another state? Find out official relocation rules, residency verification, account transfer steps, and new vs existing donor bonuses.",
+    keywords: 'can I donate at BioLife in another state, can you donate plasma in different states, BioLife donor account transfer, new donor vs existing donor, plasma donation across state lines',
+    targetQuery: 'can I donate at BioLife in another state',
+    reviewStatus: 'Published',
+    reviewedBy: 'Shah Seva Editorial & Medical Review Board',
+    quickAnswer: "Yes, you can donate at BioLife in another state, but you cannot simply walk in on a short vacation. BioLife requires proof of local residence within their geographic catchment zone (25–50 miles). If you are moving permanently or attending college out of state, you can transfer your BioLife donor account with updated address documentation.",
+    imageAlts: [
+      'Donor card and address transfer documents for BioLife interstate donation registration'
+    ],
+    sections: [
+      {
+        title: 'Interstate Plasma Rules',
+        content: `Commercial plasma centers mandate local address verification within 25–50 miles of the center to maintain post-donation safety and contactability in the event of abnormal infectious disease screenings.`
+      }
+    ],
+    faqs: [
+      {
+        question: "Can I donate at BioLife in another state?",
+        answer: "Yes, provided you live within the local catchment radius and provide official proof of address (utility bill or lease) dated within 30 to 60 days."
+      },
+      {
+        question: "Can you donate plasma in different states while traveling?",
+        answer: "Generally no for short vacations because plasma centers require proof of local residence within their geographic service territory."
+      }
+    ]
+  },
+  {
+    id: 'can-i-donate-plasma-if-i-smoke-weed',
+    slug: 'can-i-donate-plasma-if-i-smoke-weed',
+    title: "Can I Donate Plasma If I Smoke Weed? Cannabis, THC & Drug Testing Rules",
+    excerpt: "Discover the medical truth about smoking marijuana and plasma donation: FDA drug testing policies, active sobriety mandates, and pre-donation vitals checks.",
+    category: 'Health Guide',
+    date: 'November 9, 2026',
+    isoDate: '2026-11-09',
+    metaDescription: "Can I donate plasma if I smoke weed? Yes, but you must be 100% sober at intake. Learn FDA THC testing rules, vital signs checks, and waiting intervals.",
+    keywords: 'can I donate plasma if I smoke weed, cannabis and plasma donation, THC plasma donation, plasma donation drug testing, how long to wait after smoking',
+    targetQuery: 'can I donate plasma if I smoke weed',
+    reviewStatus: 'Published',
+    reviewedBy: 'Shah Seva Editorial & Medical Review Board',
+    quickAnswer: "Yes, you can donate plasma if you smoke weed or use cannabis products. Neither the FDA nor commercial centers (BioLife, CSL Plasma) test for THC or disqualify donors for marijuana. However, you must be 100% sober at intake, and waiting at least 24 hours is recommended to avoid elevated heart rates that cause deferral.",
+    imageAlts: [
+      'Healthcare intake screening vitals and plasma donation eligibility facts'
+    ],
+    sections: [
+      {
+        title: 'Cannabis and Plasma Screening',
+        content: `Plasma centers test for transmissible bloodborne pathogens (HIV, Hepatitis, Syphilis), not recreational cannabinoids. However, acute intoxication prevents legally binding informed consent.`
+      }
+    ],
+    faqs: [
+      {
+        question: "Can I donate plasma if I smoke weed?",
+        answer: "Yes, provided you are fully sober and unimpaired at the time of your donation appointment."
+      },
+      {
+        question: "Do plasma centers drug test for weed (THC)?",
+        answer: "No. Blood and plasma donation centers do not conduct toxicology drug tests for THC or cannabis metabolites."
+      }
+    ]
+  },
+  {
+    id: 'can-you-donate-plasma-while-pregnant',
+    slug: 'can-you-donate-plasma-while-pregnant',
+    title: "Can You Donate Plasma While Pregnant? Medical Risks, Postpartum Rules & Safety",
+    excerpt: "Learn why donating plasma during pregnancy is strictly deferred, fetal hypoxia dangers, TRALI HLA antibody testing, and postpartum recovery timelines.",
+    category: 'Health Guide',
+    date: 'November 9, 2026',
+    isoDate: '2026-11-09',
+    metaDescription: "Can you donate plasma while pregnant? No. Discover fetal risks, FDA & Red Cross deferrals, HLA antibodies (TRALI), breastfeeding rules, and when it's safe.",
+    keywords: 'can you donate plasma while pregnant, donate plasma after pregnancy, breastfeeding plasma donation, how long to wait after giving birth',
+    targetQuery: 'can you donate plasma while pregnant',
+    reviewStatus: 'Published',
+    reviewedBy: 'Shah Seva Editorial & Medical Review Board',
+    quickAnswer: "No, you cannot donate plasma while pregnant under any circumstances. Pregnancy requires a 50% increase in maternal blood volume. Donating plasma risks severe fetal hypoperfusion, miscarriage, and maternal protein depletion. After childbirth, you must wait at least 6 weeks (and finish breastfeeding) before donating.",
+    imageAlts: [
+      'Maternal clinical health and postpartum recovery timeline chart'
+    ],
+    sections: [
+      {
+        title: 'Pregnancy Plasma Deferrals',
+        content: `All regulatory agencies prohibit pregnancy donations due to hemodynamic maternal risks, fetal hypoxia dangers, and the formation of maternal HLA antibodies that can trigger fatal TRALI in transfusion recipients.`
+      }
+    ],
+    faqs: [
+      {
+        question: "Can you donate plasma while pregnant?",
+        answer: "No. Plasma donation is strictly prohibited throughout pregnancy by the FDA, Red Cross, and all global health agencies."
+      },
+      {
+        question: "How long after giving birth do you have to wait to donate plasma?",
+        answer: "You must wait at least 6 weeks (42 days) following delivery, and until you have completely finished breastfeeding."
+      }
+    ]
+  },
+  {
+    id: 'can-you-donate-plasma-if-you-have-herpes',
+    slug: 'can-you-donate-plasma-if-you-have-herpes',
+    title: "Can You Donate Plasma If You Have Herpes? Cold Sores, HSV-1, HSV-2 & Medication Rules",
+    excerpt: "Discover why dormant HSV-1 and HSV-2 do not disqualify you from plasma donation, active outbreak deferral timelines, and Valtrex/Acyclovir medication rules.",
+    category: 'Health Guide',
+    date: 'November 9, 2026',
+    isoDate: '2026-11-09',
+    metaDescription: "Can you donate plasma if you have herpes? Yes, as long as you have no active outbreak. Learn rules for cold sores, HSV-1, HSV-2, and Valtrex/Acyclovir.",
+    keywords: 'can you donate plasma if you have herpes, cold sores plasma donation, HSV plasma donation, plasma donation eligibility infections',
+    targetQuery: 'can you donate plasma if you have herpes',
+    reviewStatus: 'Published',
+    reviewedBy: 'Shah Seva Editorial & Medical Review Board',
+    quickAnswer: "Yes, you can donate plasma if you have herpes (HSV-1 or HSV-2). Having dormant herpes does NOT cause a permanent ban. However, you must be 100% free of active cold sores, open blisters, or systemic symptoms on donation day. Antiviral medications like Valtrex or Acyclovir are fully permitted.",
+    imageAlts: [
+      'Infectious disease donor guidelines and cold sore deferral timelines'
+    ],
+    sections: [
+      {
+        title: 'HSV and Plasma Safety',
+        content: `Over 67% of adults carry HSV-1. Herpes resides in nerve ganglia rather than circulating in blood plasma, and pharmaceutical viral inactivation eliminates lipid-enveloped viruses during processing.`
+      }
+    ],
+    faqs: [
+      {
+        question: "Can you donate plasma if you have herpes?",
+        answer: "Yes, provided you have no active outbreak, cold sore, or open blister on the day of donation."
+      },
+      {
+        question: "Can you donate plasma while taking Valtrex or Acyclovir?",
+        answer: "Yes. Daily suppressive therapy with valacyclovir or acyclovir is accepted at major collection centers."
+      }
+    ]
   }
 ];
 

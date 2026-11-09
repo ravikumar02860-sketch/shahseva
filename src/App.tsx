@@ -39,6 +39,11 @@ const QurbaniPage = lazy(() => import('./pages/Qurbani'));
 const GSCEditorialHub = lazy(() => import('./pages/GSCEditorialHub'));
 const FeeVsFeesPage = lazy(() => import('./pages/FeeVsFeesPage'));
 const HowOftenCanYouDonatePlasmaPage = lazy(() => import('./pages/HowOftenCanYouDonatePlasmaPage'));
+const BioLifeVsCSLPlasmaPage = lazy(() => import('./pages/BioLifeVsCSLPlasmaPage'));
+const BioLifeAnotherStatePage = lazy(() => import('./pages/BioLifeAnotherStatePage'));
+const DonatePlasmaSmokeWeedPage = lazy(() => import('./pages/DonatePlasmaSmokeWeedPage'));
+const DonatePlasmaPregnantPage = lazy(() => import('./pages/DonatePlasmaPregnantPage'));
+const DonatePlasmaHerpesPage = lazy(() => import('./pages/DonatePlasmaHerpesPage'));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -115,6 +120,11 @@ export default function App() {
                       <Route path="/blog" element={<BlogPage />} />
                       <Route path="/blog/fee-vs-fees-meaning-difference-examples" element={<FeeVsFeesPage />} />
                       <Route path="/blog/how-often-can-you-donate-plasma" element={<HowOftenCanYouDonatePlasmaPage />} />
+                      <Route path="/blog/how-often-can-you-donate-plasma-at-biolife-csl-plasma" element={<BioLifeVsCSLPlasmaPage />} />
+                      <Route path="/blog/can-i-donate-at-biolife-in-another-state" element={<BioLifeAnotherStatePage />} />
+                      <Route path="/blog/can-i-donate-plasma-if-i-smoke-weed" element={<DonatePlasmaSmokeWeedPage />} />
+                      <Route path="/blog/can-you-donate-plasma-while-pregnant" element={<DonatePlasmaPregnantPage />} />
+                      <Route path="/blog/can-you-donate-plasma-if-you-have-herpes" element={<DonatePlasmaHerpesPage />} />
                       <Route path="/blog/:id" element={<BlogPost />} />
                       <Route path="/donate-money-to-charity" element={<BlogPost />} />
                       

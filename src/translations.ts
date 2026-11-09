@@ -146,6 +146,46 @@ export const translations = {
           category: 'Health Guide'
         },
         {
+          id: 'how-often-can-you-donate-plasma-at-biolife-csl-plasma',
+          title: 'How Often Can You Donate Plasma at BioLife vs CSL Plasma?',
+          excerpt: 'Compare BioLife vs CSL Plasma donation frequency, 48-hour mandatory recovery rules, monthly earnings limits, and why donating at both centers is strictly prohibited.',
+          date: 'November 9, 2026',
+          isoDate: '2026-11-09',
+          category: 'Health Guide'
+        },
+        {
+          id: 'can-i-donate-at-biolife-in-another-state',
+          title: 'Can I Donate at BioLife in Another State? Transfer Rules & Residency',
+          excerpt: 'Moving or traveling out of state? Learn the official rules for donating at BioLife across state lines, transferring your donor account, and proof of address rules.',
+          date: 'November 9, 2026',
+          isoDate: '2026-11-09',
+          category: 'Health Guide'
+        },
+        {
+          id: 'can-i-donate-plasma-if-i-smoke-weed',
+          title: 'Can I Donate Plasma If I Smoke Weed? Cannabis, THC & Testing Rules',
+          excerpt: 'Discover the medical truth about smoking marijuana and plasma donation: FDA drug testing policies, active sobriety mandates, and pre-donation vitals checks.',
+          date: 'November 9, 2026',
+          isoDate: '2026-11-09',
+          category: 'Health Guide'
+        },
+        {
+          id: 'can-you-donate-plasma-while-pregnant',
+          title: 'Can You Donate Plasma While Pregnant? Medical Risks & Postpartum Rules',
+          excerpt: 'Learn why donating plasma during pregnancy is strictly deferred, fetal hypoxia dangers, TRALI HLA antibody testing, and postpartum recovery timelines.',
+          date: 'November 9, 2026',
+          isoDate: '2026-11-09',
+          category: 'Health Guide'
+        },
+        {
+          id: 'can-you-donate-plasma-if-you-have-herpes',
+          title: 'Can You Donate Plasma If You Have Herpes? Cold Sores & HSV Rules',
+          excerpt: 'Discover why dormant HSV-1 and HSV-2 do not disqualify you from plasma donation, active outbreak deferral timelines, and Valtrex/Acyclovir medication rules.',
+          date: 'November 9, 2026',
+          isoDate: '2026-11-09',
+          category: 'Health Guide'
+        },
+        {
           id: 'fee-vs-fees-meaning-difference-examples',
           title: 'Fee, Fees: Meaning, Difference & Examples (Simple Guide)',
           excerpt: 'Confused between fee and fees? Learn the meaning, difference, when to use each, plus easy examples and Hindi meaning in this simple guide.',
@@ -1577,6 +1617,46 @@ export const translations = {
           id: 'how-often-can-you-donate-plasma',
           title: 'आप कितनी बार प्लाज्मा दान कर सकते हैं? (How Often Can You Donate Plasma)',
           excerpt: 'FDA नियमों, रेड क्रॉस और बायोलाइफ / CSL प्लाज्मा केंद्रों के अनुसार जानें कि एक सप्ताह, महीने और वर्ष में सुरक्षित रूप से प्लाज्मा कितनी बार दे सकते हैं।',
+          date: '9 नवंबर, 2026',
+          isoDate: '2026-11-09',
+          category: 'स्वास्थ्य गाइड'
+        },
+        {
+          id: 'how-often-can-you-donate-plasma-at-biolife-csl-plasma',
+          title: 'BioLife vs CSL Plasma: प्लाज्मा कितनी बार दे सकते हैं?',
+          excerpt: 'BioLife और CSL प्लाज्मा में डोनेशन फ्रीक्वेंसी, 48 घंटे का रिकवरी नियम और दोनों सेंटर्स पर एक साथ डोनेट न करने की चेतावनी।',
+          date: '9 नवंबर, 2026',
+          isoDate: '2026-11-09',
+          category: 'स्वास्थ्य गाइड'
+        },
+        {
+          id: 'can-i-donate-at-biolife-in-another-state',
+          title: 'क्या आप दूसरे राज्य के BioLife सेंटर में प्लाज्मा दान कर सकते हैं?',
+          excerpt: 'दूसरे राज्य में BioLife में डोनेट करने के नियम, अकाउंट ट्रांसफर प्रक्रिया और एड्रेस प्रूफ की जरूरी शर्तें।',
+          date: '9 नवंबर, 2026',
+          isoDate: '2026-11-09',
+          category: 'स्वास्थ्य गाइड'
+        },
+        {
+          id: 'can-i-donate-plasma-if-i-smoke-weed',
+          title: 'क्या गांजा (Weed/Cannabis) पीने वाले प्लाज्मा दान कर सकते हैं?',
+          excerpt: 'कैनबिस और THC प्लाज्मा डोनेशन नियम: क्या ड्रग टेस्ट होता है, कितना समय रुकना चाहिए और सोबर होने की शर्तें।',
+          date: '9 नवंबर, 2026',
+          isoDate: '2026-11-09',
+          category: 'स्वास्थ्य गाइड'
+        },
+        {
+          id: 'can-you-donate-plasma-while-pregnant',
+          title: 'क्या गर्भावस्था (Pregnancy) में प्लाज्मा दान कर सकते हैं?',
+          excerpt: 'गर्भावस्था में प्लाज्मा क्यों नहीं देना चाहिए, माँ और बच्चे पर खतरे, TRALI एंटीबॉडीज और डिलीवरी के बाद का सही समय।',
+          date: '9 नवंबर, 2026',
+          isoDate: '2026-11-09',
+          category: 'स्वास्थ्य गाइड'
+        },
+        {
+          id: 'can-you-donate-plasma-if-you-have-herpes',
+          title: 'क्या हर्पीस (HSV-1 / Cold Sores) होने पर प्लाज्मा दे सकते हैं?',
+          excerpt: 'हर्पीस और कोल्ड सोर के प्लाज्मा डोनेशन नियम, एक्टिव आउटब्रेक में डिफरल और Valtrex/Acyclovir दवाओं का असर।',
           date: '9 नवंबर, 2026',
           isoDate: '2026-11-09',
           category: 'स्वास्थ्य गाइड'
