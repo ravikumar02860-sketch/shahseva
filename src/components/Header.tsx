@@ -4,6 +4,7 @@ import { Menu, X, Heart, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { cn } from '../utils/cn';
 import { useLanguage } from '../LanguageContext';
+import { prefetchBlogPage } from '../utils/prefetch';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -117,6 +118,8 @@ export default function Header() {
               <Link
                 key={link.path}
                 to={link.path}
+                onMouseEnter={link.path === '/blog' ? prefetchBlogPage : undefined}
+                onFocus={link.path === '/blog' ? prefetchBlogPage : undefined}
                 className={cn(
                   'px-4 py-2 text-base font-semibold rounded-xl transition-all duration-300 hover:bg-slate-50',
                   location.pathname === link.path 

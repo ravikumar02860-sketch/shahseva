@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { useLanguage } from '../LanguageContext';
@@ -57,45 +57,50 @@ const blogContent: Record<string, any> = {
 export default function BlogPost() {
   const { id: paramId } = useParams<{ id: string }>();
   const { t } = useLanguage();
+  const [copied, setCopied] = useState(false);
   
   const rawId = paramId || (typeof window !== 'undefined' ? window.location.pathname.replace(/^\/(blog\/)?/, '').replace(/\/$/, '') : '');
   const id = rawId.toLowerCase();
   
-  // Dynamic query and slug resolution with aliases
-  const seoPost = seoBlogPosts.find((p) => {
-    if (p.id === id) return true;
-    if (p.slug === id) return true;
-    
-    // Alias mappings
-    if (id === 'is-plasma-donation-painful' && (p.id === 'is-plasma-donation-painful' || p.id === 'does-donating-plasma-hurt')) return true;
-    if (id === 'does-donating-plasma-hurt' && (p.id === 'is-plasma-donation-painful' || p.id === 'does-donating-plasma-hurt')) return true;
-    
-    if (id === 'how-much-does-it-pay-to-donate-sperm' && (p.id === 'how-much-does-it-pay-to-donate-sperm' || p.id === 'how-much-do-you-get-for-donating-sperm')) return true;
-    if (id === 'how-much-do-you-get-for-donating-sperm' && (p.id === 'how-much-does-it-pay-to-donate-sperm' || p.id === 'how-much-do-you-get-for-donating-sperm')) return true;
+  // Memoized query and slug resolution with aliases
+  const { seoPost, post, content } = useMemo(() => {
+    const matchedSeoPost = seoBlogPosts.find((p) => {
+      if (p.id === id) return true;
+      if (p.slug === id) return true;
+      
+      // Alias mappings
+      if (id === 'is-plasma-donation-painful' && (p.id === 'is-plasma-donation-painful' || p.id === 'does-donating-plasma-hurt')) return true;
+      if (id === 'does-donating-plasma-hurt' && (p.id === 'is-plasma-donation-painful' || p.id === 'does-donating-plasma-hurt')) return true;
+      
+      if (id === 'how-much-does-it-pay-to-donate-sperm' && (p.id === 'how-much-does-it-pay-to-donate-sperm' || p.id === 'how-much-do-you-get-for-donating-sperm')) return true;
+      if (id === 'how-much-do-you-get-for-donating-sperm' && (p.id === 'how-much-does-it-pay-to-donate-sperm' || p.id === 'how-much-do-you-get-for-donating-sperm')) return true;
 
-    if (id === 'guide-me-through-the-process-of-scheduling-a-salvation-army-furniture-pickup' && (p.id === 'guide-me-through-the-process-of-scheduling-a-salvation-army-furniture-pickup' || p.id === 'salvation-army-donation-pick-up')) return true;
-    if (id === 'salvation-army-donation-pick-up' && (p.id === 'guide-me-through-the-process-of-scheduling-a-salvation-army-furniture-pickup' || p.id === 'salvation-army-donation-pick-up')) return true;
+      if (id === 'guide-me-through-the-process-of-scheduling-a-salvation-army-furniture-pickup' && (p.id === 'guide-me-through-the-process-of-scheduling-a-salvation-army-furniture-pickup' || p.id === 'salvation-army-donation-pick-up')) return true;
+      if (id === 'salvation-army-donation-pick-up' && (p.id === 'guide-me-through-the-process-of-scheduling-a-salvation-army-furniture-pickup' || p.id === 'salvation-army-donation-pick-up')) return true;
 
-    if (id === 'can-you-donate-plasma-while-pregnant' && p.id === 'can-you-donate-plasma-while-pregnant') return true;
-    if (id === 'can-donating-plasma-while-pregnant-cause-miscarriage' && p.id === 'can-donating-plasma-while-pregnant-cause-miscarriage') return true;
+      if (id === 'can-you-donate-plasma-while-pregnant' && p.id === 'can-you-donate-plasma-while-pregnant') return true;
+      if (id === 'can-donating-plasma-while-pregnant-cause-miscarriage' && p.id === 'can-donating-plasma-while-pregnant-cause-miscarriage') return true;
 
-    if (p.id === id?.replace(/-does-it-take/g, '')) return true;
-    if (p.id === `how-long-to-${id?.replace('how-long-does-it-take-to-', '')}`) return true;
-    if (p.id === id?.replace(/-if-you-have-a-/g, '-with-')) return true;
+      if (p.id === id?.replace(/-does-it-take/g, '')) return true;
+      if (p.id === `how-long-to-${id?.replace('how-long-does-it-take-to-', '')}`) return true;
+      if (p.id === id?.replace(/-if-you-have-a-/g, '-with-')) return true;
 
-    return false;
-  });
+      return false;
+    });
 
-  const post = t.blog.posts.find((p: any) => p.id === id) || (seoPost ? {
-    id: seoPost.id,
-    title: seoPost.title,
-    excerpt: seoPost.excerpt,
-    date: seoPost.date,
-    isoDate: seoPost.isoDate,
-    category: seoPost.category,
-  } : null);
+    const matchedPost = t.blog.posts.find((p: any) => p.id === id) || (matchedSeoPost ? {
+      id: matchedSeoPost.id,
+      title: matchedSeoPost.title,
+      excerpt: matchedSeoPost.excerpt,
+      date: matchedSeoPost.date,
+      isoDate: matchedSeoPost.isoDate,
+      category: matchedSeoPost.category,
+    } : null);
 
-  const content = id ? (blogContent[id] || (seoPost ? { sections: seoPost.sections } : null)) : null;
+    const matchedContent = id ? (blogContent[id] || (matchedSeoPost ? { sections: matchedSeoPost.sections } : null)) : null;
+
+    return { seoPost: matchedSeoPost, post: matchedPost, content: matchedContent };
+  }, [id, t]);
 
   const article = post ? {
     "@type": seoPost?.medicalDisclaimer ? "MedicalWebPage" : "Article",
@@ -300,8 +305,10 @@ export default function BlogPost() {
 
           <div className="rounded-[2.5rem] overflow-hidden shadow-strong mb-10 aspect-video bg-slate-100 border border-slate-100">
             <img 
-              src={getTopicImageUrl(post.id)} 
+              src={getTopicImageUrl(post.id, 900)} 
               alt={post.title} 
+              loading="eager"
+              decoding="async"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />
@@ -446,12 +453,21 @@ export default function BlogPost() {
                 onClick={() => {
                   if (typeof navigator !== 'undefined' && navigator.clipboard) {
                     navigator.clipboard.writeText(window.location.href);
-                    alert('Article link copied to clipboard!');
+                    setCopied(true);
+                    setTimeout(() => setCopied(false), 2000);
                   }
                 }}
                 className="flex items-center gap-2 px-5 py-2.5 bg-slate-100 text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-all text-sm"
               >
-                <Share2 size={16} /> Share Guide
+                {copied ? (
+                  <>
+                    <CheckCircle2 size={16} className="text-emerald-500" /> Link Copied!
+                  </>
+                ) : (
+                  <>
+                    <Share2 size={16} /> Share Guide
+                  </>
+                )}
               </button>
             </div>
             

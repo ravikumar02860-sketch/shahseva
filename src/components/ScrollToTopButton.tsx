@@ -37,7 +37,7 @@ export function ScrollToTopButton() {
           exit={{ opacity: 0, scale: 0.5, y: 20 }}
           onClick={scrollToTop}
           className={cn(
-            "fixed bottom-8 right-8 z-50 p-3 rounded-full",
+            "fixed bottom-[96px] right-6 sm:bottom-28 sm:right-8 z-50 p-3 rounded-2xl",
             "bg-primary text-white shadow-lg cursor-pointer",
             "hover:bg-primary/90 transition-colors duration-300",
             "focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"

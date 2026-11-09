@@ -46,35 +46,48 @@ function ScrollToTop() {
   return null;
 }
 
-// Loading fallback component
+// High-performance loading fallback
 const PageLoader = () => (
-  <div className="min-h-[60vh] flex items-center justify-center">
-    <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+  <div className="max-w-4xl mx-auto px-6 py-20 animate-pulse">
+    <div className="h-6 w-32 bg-slate-200 rounded-full mb-6"></div>
+    <div className="h-10 md:h-12 w-3/4 bg-slate-200 rounded-2xl mb-6"></div>
+    <div className="h-4 w-1/2 bg-slate-100 rounded-lg mb-8"></div>
+    <div className="aspect-video w-full bg-slate-200 rounded-3xl mb-8"></div>
+    <div className="space-y-3">
+      <div className="h-4 bg-slate-100 rounded w-full"></div>
+      <div className="h-4 bg-slate-100 rounded w-5/6"></div>
+      <div className="h-4 bg-slate-100 rounded w-4/6"></div>
+    </div>
   </div>
 );
 
 import ErrorBoundary from './components/ErrorBoundary';
+import { prefetchBlogPost, prefetchBlogPage } from './utils/prefetch';
 
-// Layout wrapper for 3D page transitions
+// Fast, non-blocking page transition wrapper (removes 400ms delay)
 const PageWrapper = ({ children }: { children: React.ReactNode }) => {
-  const location = useLocation();
   return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        key={location.pathname}
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -10 }}
-        transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-        className="w-full"
-      >
-        {children}
-      </motion.div>
-    </AnimatePresence>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.15, ease: 'easeOut' }}
+      className="w-full"
+    >
+      {children}
+    </motion.div>
   );
 };
 
 export default function App() {
+  useEffect(() => {
+    // Prefetch blog bundles in background when browser is idle
+    const timer = setTimeout(() => {
+      prefetchBlogPage();
+      prefetchBlogPost();
+    }, 800);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <ErrorBoundary>
       <HelmetProvider>

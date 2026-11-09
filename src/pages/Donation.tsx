@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { CreditCard, Smartphone, QrCode, CheckCircle2, Copy, Heart, AlertCircle } from 'lucide-react';
 import { QRCodeSVG } from 'qrcode.react';
@@ -43,11 +44,15 @@ function handleFirestoreError(error: unknown, operationType: OperationType, path
 
 export default function DonationPage() {
   const { t } = useLanguage();
-  const [amount, setAmount] = useState<number | string>(1000);
+  const [searchParams] = useSearchParams();
+  const initialAmount = searchParams.get('amount') ? Number(searchParams.get('amount')) : 1000;
+  const initialCategory = searchParams.get('category') || searchParams.get('campaign') || '';
+
+  const [amount, setAmount] = useState<number | string>(initialAmount > 0 ? initialAmount : 1000);
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
-  const [campaignId, setCampaignId] = useState<string>('');
+  const [campaignId, setCampaignId] = useState<string>(initialCategory);
   const [campaigns, setCampaigns] = useState<any[]>([]);
   const [showQR, setShowQR] = useState(false);
   const [paymentFinished, setPaymentFinished] = useState(false);
