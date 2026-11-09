@@ -39,7 +39,7 @@ export default function FeeVsFeesPage() {
     }
   ];
 
-  // Article structured data for rich snippet indexing
+  // Article, DefinedTermSet, Breadcrumbs and FAQ structured data for rich snippet indexing
   const articleSchema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -50,8 +50,8 @@ export default function FeeVsFeesPage() {
           "@type": "WebPage",
           "@id": "https://shahseva.vercel.app/blog/fee-vs-fees-meaning-difference-examples"
         },
-        "headline": "Fee vs Fees: Meaning, Difference & Examples (Simple Guide)",
-        "description": "Confused between fee and fees? Learn the meaning, difference, when to use each, plus easy examples and Hindi meaning in this simple guide.",
+        "headline": "Fee, Fees: Meaning, Difference & Examples (Simple Guide)",
+        "description": "Fee, fees meaning, difference, and usage: Learn when to use fee vs fees, singular vs plural grammar rules, common types like school fees, and Hindi meaning.",
         "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=1000",
         "datePublished": "2026-11-09T08:00:00+05:30",
         "dateModified": "2026-11-09T08:00:00+05:30",
@@ -74,6 +74,49 @@ export default function FeeVsFeesPage() {
         }
       },
       {
+        "@type": "DefinedTermSet",
+        "@id": "https://shahseva.vercel.app/blog/fee-vs-fees-meaning-difference-examples#terms",
+        "name": "English Grammar Vocabulary: Fee and Fees",
+        "hasDefinedTerm": [
+          {
+            "@type": "DefinedTerm",
+            "name": "Fee",
+            "termCode": "fee",
+            "description": "A singular countable noun denoting a fixed sum of money charged or paid for a specific service, privilege, transaction, or professional advice."
+          },
+          {
+            "@type": "DefinedTerm",
+            "name": "Fees",
+            "termCode": "fees",
+            "description": "The plural form of fee (multiple charges), or a collective institutional noun denoting the aggregate sum payable for ongoing services such as school fees, tuition fees, or legal fees."
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://shahseva.vercel.app/blog/fee-vs-fees-meaning-difference-examples#breadcrumbs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://shahseva.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://shahseva.vercel.app/blog"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Fee, Fees: Meaning & Difference",
+            "item": "https://shahseva.vercel.app/blog/fee-vs-fees-meaning-difference-examples"
+          }
+        ]
+      },
+      {
         "@type": "FAQPage",
         "@id": "https://shahseva.vercel.app/blog/fee-vs-fees-meaning-difference-examples#faq",
         "mainEntity": faqs.map((f) => ({
@@ -91,9 +134,9 @@ export default function FeeVsFeesPage() {
   return (
     <div className="bg-white min-h-screen pt-20 pb-20">
       <SEO 
-        title="Fee vs Fees: Meaning, Difference & Examples (Simple Guide)"
-        description="Confused between fee and fees? Learn the meaning, difference, when to use each, plus easy examples and Hindi meaning in this simple guide."
-        keywords="fees, fee vs fees, difference between fee and fees, fees meaning, fee or fees which is correct, fees meaning in hindi, fees vs fee examples, school fees, college fees, processing fees, service fees"
+        title="Fee, Fees: Meaning, Difference & Examples (Simple Guide)"
+        description="Fee, fees meaning, difference, and usage: Learn when to use fee vs fees, singular vs plural grammar rules, common types like school fees, and Hindi meaning."
+        keywords="fee, fees, fee vs fees, difference between fee and fees, fees meaning, fee or fees which is correct, fees meaning in hindi, fees vs fee examples, school fees, college fees, processing fees, service fees"
         canonical="https://shahseva.vercel.app/blog/fee-vs-fees-meaning-difference-examples"
         ogType="article"
         ogImage="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=1000"

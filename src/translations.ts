@@ -138,8 +138,16 @@ export const translations = {
       readMore: 'Read More',
       posts: [
         {
+          id: 'how-often-can-you-donate-plasma',
+          title: 'How Often Can You Donate Plasma? Frequency, Safety Limits & Center Guidelines',
+          excerpt: 'Find out exactly how often you can safely donate blood plasma in a week, month, and year under FDA rules, Red Cross limits, and center guidelines like BioLife and CSL Plasma.',
+          date: 'November 9, 2026',
+          isoDate: '2026-11-09',
+          category: 'Health Guide'
+        },
+        {
           id: 'fee-vs-fees-meaning-difference-examples',
-          title: 'Fee vs Fees: Meaning, Difference & Examples (Simple Guide)',
+          title: 'Fee, Fees: Meaning, Difference & Examples (Simple Guide)',
           excerpt: 'Confused between fee and fees? Learn the meaning, difference, when to use each, plus easy examples and Hindi meaning in this simple guide.',
           date: 'November 9, 2026',
           isoDate: '2026-11-09',
@@ -1565,6 +1573,14 @@ export const translations = {
       desc: 'भीलवाड़ा, राजस्थान में हमारे सामाजिक कार्य, चैरिटी गतिविधियों और सामुदायिक प्रभाव के बारे में नवीनतम अपडेट और कहानियाँ पढ़ें।',
       readMore: 'पूरा ब्लॉग पढ़ें',
       posts: [
+        {
+          id: 'how-often-can-you-donate-plasma',
+          title: 'आप कितनी बार प्लाज्मा दान कर सकते हैं? (How Often Can You Donate Plasma)',
+          excerpt: 'FDA नियमों, रेड क्रॉस और बायोलाइफ / CSL प्लाज्मा केंद्रों के अनुसार जानें कि एक सप्ताह, महीने और वर्ष में सुरक्षित रूप से प्लाज्मा कितनी बार दे सकते हैं।',
+          date: '9 नवंबर, 2026',
+          isoDate: '2026-11-09',
+          category: 'स्वास्थ्य गाइड'
+        },
         {
           id: 'fee-vs-fees-meaning-difference-examples',
           title: 'Fee vs Fees: Meaning, Difference & Examples (Simple Guide)',
